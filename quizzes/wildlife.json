@@ -194,5 +194,609 @@
     {
         "question": "What is a baby kangaroo called?",
         "answer": "Joey"
+    },
+    {
+        "question": "What is the largest cat in Africa?",
+        "answer": "Lion"
+    },
+    {
+        "question": "What do elephants use their tusks for?",
+        "answer": "Digging, stripping bark, defense"
+    },
+    {
+        "question": "What is the African wild dog also called?",
+        "answer": "Painted dog or painted wolf"
+    },
+    {
+        "question": "How many species of rhino exist?",
+        "answer": "Five"
+    },
+    {
+        "question": "What is a group of elephants called?",
+        "answer": "A herd"
+    },
+    {
+        "question": "Which snake is the fastest in Africa?",
+        "answer": "Black mamba"
+    },
+    {
+        "question": "What is the largest antelope in Africa?",
+        "answer": "Eland"
+    },
+    {
+        "question": "What bird is known for its long eyelashes?",
+        "answer": "Secretary bird"
+    },
+    {
+        "question": "What is the smallest antelope in Africa?",
+        "answer": "Royal antelope or blue duiker"
+    },
+    {
+        "question": "How do hippos communicate underwater?",
+        "answer": "Through clicks and sounds"
+    },
+    {
+        "question": "What makes the honey badger famous?",
+        "answer": "Its fearless and aggressive nature"
+    },
+    {
+        "question": "What is a group of zebras called?",
+        "answer": "A dazzle"
+    },
+    {
+        "question": "What is the main diet of a flamingo?",
+        "answer": "Algae, shrimp, and small crustaceans"
+    },
+    {
+        "question": "Why are flamingos pink?",
+        "answer": "From the carotenoids in their diet"
+    },
+    {
+        "question": "What is a baby elephant called?",
+        "answer": "A calf"
+    },
+    {
+        "question": "Which African animal kills the most humans annually?",
+        "answer": "Hippopotamus"
+    },
+    {
+        "question": "What is a group of hyenas called?",
+        "answer": "A cackle or clan"
+    },
+    {
+        "question": "How fast can an ostrich run?",
+        "answer": "Up to 70 km/h (45 mph)"
+    },
+    {
+        "question": "What is the lifespan of an African elephant?",
+        "answer": "60-70 years"
+    },
+    {
+        "question": "What are baby lions called?",
+        "answer": "Cubs"
+    },
+    {
+        "question": "What is unique about the warthog?",
+        "answer": "It runs with its tail straight up"
+    },
+    {
+        "question": "What is the fastest bird in the world?",
+        "answer": "Peregrine falcon"
+    },
+    {
+        "question": "What mammal has the most powerful bite?",
+        "answer": "Hippopotamus (or Nile crocodile for reptiles)"
+    },
+    {
+        "question": "What is a group of gorillas called?",
+        "answer": "A troop or band"
+    },
+    {
+        "question": "What is the only great ape found outside Africa and Asia?",
+        "answer": "None - all great apes are in Africa or Asia"
+    },
+    {
+        "question": "How long is a giraffe's tongue?",
+        "answer": "About 45-50 cm (18-20 inches)"
+    },
+    {
+        "question": "What is the Nile crocodile's lifespan?",
+        "answer": "70-100 years"
+    },
+    {
+        "question": "What is a group of buffalo called?",
+        "answer": "A herd or obstinacy"
+    },
+    {
+        "question": "Which bird is famous for its elaborate courtship dance?",
+        "answer": "Flamingo or crowned crane"
+    },
+    {
+        "question": "What is the aardvark's main food source?",
+        "answer": "Ants and termites"
+    },
+    {
+        "question": "How do meerkats protect their colony?",
+        "answer": "Sentries take turns watching for predators"
+    },
+    {
+        "question": "What is a baby giraffe called?",
+        "answer": "A calf"
+    },
+    {
+        "question": "What makes the shoebill stork unique?",
+        "answer": "Its massive shoe-shaped bill"
+    },
+    {
+        "question": "What is the gestation period of an elephant?",
+        "answer": "22 months"
+    },
+    {
+        "question": "Which African animal has the best hearing?",
+        "answer": "African elephant or fennec fox"
+    },
+    {
+        "question": "What is the difference between African and Asian elephants?",
+        "answer": "African elephants have larger ears"
+    },
+    {
+        "question": "What is a group of crocodiles called?",
+        "answer": "A bask or float"
+    },
+    {
+        "question": "How many stomachs does a giraffe have?",
+        "answer": "Four"
+    },
+    {
+        "question": "What is the Cape buffalo known for?",
+        "answer": "Being one of Africa's most dangerous animals"
+    },
+    {
+        "question": "What is a group of rhinos called?",
+        "answer": "A crash"
+    },
+    {
+        "question": "What is the lilac-breasted roller known for?",
+        "answer": "Its colorful plumage (8 colors)"
+    },
+    {
+        "question": "How do elephants communicate over long distances?",
+        "answer": "Infrasound (low-frequency rumbles)"
+    },
+    {
+        "question": "What is the oxpecker bird's relationship with large mammals?",
+        "answer": "Mutualistic - eats parasites off their skin"
+    },
+    {
+        "question": "What is the largest flying bird in Africa?",
+        "answer": "Marabou stork"
+    },
+    {
+        "question": "What is a cheetah's hunting success rate?",
+        "answer": "About 50%"
+    },
+    {
+        "question": "What is special about the African wild dog's pack structure?",
+        "answer": "They vote by sneezing on decisions"
+    },
+    {
+        "question": "What is the vervet monkey known for?",
+        "answer": "Different alarm calls for different predators"
+    },
+    {
+        "question": "What is the difference between a leopard and a cheetah?",
+        "answer": "Cheetahs have spots, leopards have rosettes"
+    },
+    {
+        "question": "What is the Serengeti famous for?",
+        "answer": "The great wildebeest migration"
+    },
+    {
+        "question": "What is a group of giraffes called?",
+        "answer": "A tower"
+    },
+    {
+        "question": "What makes the secretary bird unique among raptors?",
+        "answer": "It hunts on foot, stomping prey"
+    },
+    {
+        "question": "What is the Cape fur seal's main predator?",
+        "answer": "Great white shark"
+    },
+    {
+        "question": "How many subspecies of zebra exist?",
+        "answer": "Three main species"
+    },
+    {
+        "question": "What is the nyala found in South Africa?",
+        "answer": "A spiral-horned antelope"
+    },
+    {
+        "question": "What is the bontebok conservation success story?",
+        "answer": "Saved from near extinction in SA"
+    },
+    {
+        "question": "What makes the caracal unique?",
+        "answer": "Its distinctive ear tufts"
+    },
+    {
+        "question": "What is the Southern right whale known for?",
+        "answer": "Calving along South African coast"
+    },
+    {
+        "question": "What is a group of baboons called?",
+        "answer": "A troop"
+    },
+    {
+        "question": "What is the mountain gorilla's conservation status?",
+        "answer": "Endangered"
+    },
+    {
+        "question": "What makes the okapi unusual?",
+        "answer": "Only living relative of the giraffe"
+    },
+    {
+        "question": "What is the African fish eagle's distinctive feature?",
+        "answer": "Its haunting call"
+    },
+    {
+        "question": "What is the kudu known for?",
+        "answer": "Its spiral horns"
+    },
+    {
+        "question": "How do leopards store their prey?",
+        "answer": "They drag it up into trees"
+    },
+    {
+        "question": "What is the Addo Elephant National Park famous for?",
+        "answer": "Dense elephant population"
+    },
+    {
+        "question": "What is the jackal's role in the ecosystem?",
+        "answer": "Scavenger and small prey hunter"
+    },
+    {
+        "question": "What is the sunbird in South Africa?",
+        "answer": "Small nectar-feeding bird similar to hummingbird"
+    },
+    {
+        "question": "What is unique about the puff adder?",
+        "answer": "Causes most snakebite fatalities in Africa"
+    },
+    {
+        "question": "What is a group of flamingos called?",
+        "answer": "A flamboyance"
+    },
+    {
+        "question": "What is the African civet known for?",
+        "answer": "Musk used in perfume industry"
+    },
+    {
+        "question": "What is the springbok's distinctive behavior?",
+        "answer": "Pronking (jumping with arched back)"
+    },
+    {
+        "question": "What is the martial eagle's claim to fame?",
+        "answer": "Africa's most powerful eagle"
+    },
+    {
+        "question": "What is unique about the cape cobra?",
+        "answer": "One of Africa's most dangerous snakes"
+    },
+    {
+        "question": "What animal is called the 'laughing' animal?",
+        "answer": "Spotted hyena"
+    },
+    {
+        "question": "What is the tsessebe known for?",
+        "answer": "Fastest antelope in Africa"
+    },
+    {
+        "question": "What is the ground hornbill known for?",
+        "answer": "Turkey-like African bird with red throat"
+    },
+    {
+        "question": "What is the boomslang's danger?",
+        "answer": "Highly venomous rear-fanged snake"
+    },
+    {
+        "question": "What is unique about the vulture's role?",
+        "answer": "Essential scavenger for ecosystem health"
+    },
+    {
+        "question": "What is the sable antelope known for?",
+        "answer": "Magnificent curved horns"
+    },
+    {
+        "question": "What is the African rock python?",
+        "answer": "Africa's largest snake species"
+    },
+    {
+        "question": "What is the bat-eared fox known for?",
+        "answer": "Enormous ears for hearing insects"
+    },
+    {
+        "question": "What is the hamerkop bird known for?",
+        "answer": "Building enormous nests"
+    },
+    {
+        "question": "What is a group of ostriches called?",
+        "answer": "A flock"
+    },
+    {
+        "question": "What is the steenbok?",
+        "answer": "Small antelope common in Southern Africa"
+    },
+    {
+        "question": "What is the white rhino's name origin?",
+        "answer": "From Dutch 'wijd' meaning wide (mouth)"
+    },
+    {
+        "question": "What is the Southern yellow-billed hornbill?",
+        "answer": "Bird known for Zazu in The Lion King"
+    },
+    {
+        "question": "What is the black-footed cat?",
+        "answer": "Africa's smallest wild cat"
+    },
+    {
+        "question": "What is the African harrier-hawk known for?",
+        "answer": "Double-jointed legs for reaching prey"
+    },
+    {
+        "question": "What is the bushbaby?",
+        "answer": "Small nocturnal primate with huge eyes"
+    },
+    {
+        "question": "What is the duiker?",
+        "answer": "Small forest antelope"
+    },
+    {
+        "question": "What is unique about male lions' manes?",
+        "answer": "Indicates health and age"
+    },
+    {
+        "question": "What is the weaverbird known for?",
+        "answer": "Intricately woven hanging nests"
+    },
+    {
+        "question": "What is the klipspringer?",
+        "answer": "Antelope that walks on hoof tips on rocks"
+    },
+    {
+        "question": "What is the gemsbok's notable feature?",
+        "answer": "Long straight horns"
+    },
+    {
+        "question": "What is the spotted eagle-owl?",
+        "answer": "Most common large owl in Southern Africa"
+    },
+    {
+        "question": "What is the serval known for?",
+        "answer": "Long legs and large ears for hunting"
+    },
+    {
+        "question": "What is a group of hippos called?",
+        "answer": "A bloat"
+    },
+    {
+        "question": "What is the banded mongoose?",
+        "answer": "Social mongoose species in Africa"
+    },
+    {
+        "question": "What is the impala's escape strategy?",
+        "answer": "High jumps and zigzag running"
+    },
+    {
+        "question": "What is the African grey parrot known for?",
+        "answer": "Exceptional intelligence and speech"
+    },
+    {
+        "question": "What is the ratel another name for?",
+        "answer": "Honey badger"
+    },
+    {
+        "question": "What is the hartebeest?",
+        "answer": "Large antelope with elongated face"
+    },
+    {
+        "question": "What is the quelea bird?",
+        "answer": "Most numerous wild bird species"
+    },
+    {
+        "question": "What is the porcupine's defense?",
+        "answer": "Sharp quills that detach"
+    },
+    {
+        "question": "What is the waterbuck known for?",
+        "answer": "White ring on its rump"
+    },
+    {
+        "question": "What is the saddle-billed stork?",
+        "answer": "Africa's tallest stork"
+    },
+    {
+        "question": "What is the aardwolf's diet?",
+        "answer": "Almost exclusively termites"
+    },
+    {
+        "question": "What is the reedbuck?",
+        "answer": "Antelope found near water"
+    },
+    {
+        "question": "What is the fish eagle symbol of?",
+        "answer": "Zambia's national bird"
+    },
+    {
+        "question": "What is the African spurred tortoise?",
+        "answer": "Third largest tortoise species"
+    },
+    {
+        "question": "What is the genet?",
+        "answer": "Cat-like viverrid with spotted coat"
+    },
+    {
+        "question": "What is the Cape gannet?",
+        "answer": "Seabird that plunge-dives for fish"
+    },
+    {
+        "question": "What is the oribi?",
+        "answer": "Small graceful antelope"
+    },
+    {
+        "question": "What is the crowned eagle's prey?",
+        "answer": "Primarily monkeys"
+    },
+    {
+        "question": "What is the giant eland?",
+        "answer": "Largest antelope species"
+    },
+    {
+        "question": "What is the Kalahari lion known for?",
+        "answer": "Darker mane and desert adaptation"
+    },
+    {
+        "question": "What is the Southern ground hornbill's status?",
+        "answer": "Vulnerable to extinction"
+    },
+    {
+        "question": "What is the blue wildebeest?",
+        "answer": "Species famous for great migration"
+    },
+    {
+        "question": "What is the African clawless otter?",
+        "answer": "Second largest freshwater otter"
+    },
+    {
+        "question": "What is the Cape porcupine?",
+        "answer": "Largest rodent in Southern Africa"
+    },
+    {
+        "question": "What is the African bullfrog?",
+        "answer": "One of the largest frogs in Africa"
+    },
+    {
+        "question": "What is the lesser flamingo's habitat in SA?",
+        "answer": "Alkaline lakes and lagoons"
+    },
+    {
+        "question": "What is the spotted hyena's clan structure?",
+        "answer": "Matriarchal society"
+    },
+    {
+        "question": "What is the black rhinoceros also called?",
+        "answer": "Hook-lipped rhinoceros"
+    },
+    {
+        "question": "What is the verreaux's eagle's prey?",
+        "answer": "Primarily rock hyraxes"
+    },
+    {
+        "question": "What is the Temminck's pangolin?",
+        "answer": "Ground pangolin of South Africa"
+    },
+    {
+        "question": "What is unique about zebra stripes?",
+        "answer": "Each pattern is unique like fingerprints"
+    },
+    {
+        "question": "What is the yellow mongoose?",
+        "answer": "Common mongoose in Southern Africa"
+    },
+    {
+        "question": "What is a group of meerkats called?",
+        "answer": "A mob or gang"
+    },
+    {
+        "question": "What is the red-billed oxpecker?",
+        "answer": "Bird that removes parasites from large mammals"
+    },
+    {
+        "question": "What is the white-backed vulture's status?",
+        "answer": "Critically endangered"
+    },
+    {
+        "question": "What is the side-striped jackal?",
+        "answer": "Jackal species with pale stripes"
+    },
+    {
+        "question": "What is the African wildcat?",
+        "answer": "Ancestor of domestic cats"
+    },
+    {
+        "question": "What is the tree hyrax known for?",
+        "answer": "Screaming nocturnal calls"
+    },
+    {
+        "question": "What is the greater kudu's horn length?",
+        "answer": "Up to 180 cm (71 inches)"
+    },
+    {
+        "question": "What is the brown hyena's range?",
+        "answer": "Southern Africa"
+    },
+    {
+        "question": "What is the African golden cat?",
+        "answer": "Secretive forest cat"
+    },
+    {
+        "question": "What is the blesbok?",
+        "answer": "Antelope endemic to South Africa"
+    },
+    {
+        "question": "What is the Bryde's whale?",
+        "answer": "Tropical whale seen off SA coast"
+    },
+    {
+        "question": "What is the African dwarf kingfisher?",
+        "answer": "One of Africa's smallest kingfishers"
+    },
+    {
+        "question": "What is the blue duiker?",
+        "answer": "One of the smallest antelopes"
+    },
+    {
+        "question": "What is the rock monitor?",
+        "answer": "Large lizard in Southern Africa"
+    },
+    {
+        "question": "What is the Gaboon viper known for?",
+        "answer": "Longest fangs of any snake"
+    },
+    {
+        "question": "What is the African forest elephant?",
+        "answer": "Smaller forest-dwelling elephant species"
+    },
+    {
+        "question": "What is the Nile monitor?",
+        "answer": "Africa's largest lizard"
+    },
+    {
+        "question": "What is the suni antelope?",
+        "answer": "Very small shy antelope"
+    },
+    {
+        "question": "What is the lappet-faced vulture?",
+        "answer": "Largest African vulture"
+    },
+    {
+        "question": "What is the Cape grysbok?",
+        "answer": "Small antelope of the Cape"
+    },
+    {
+        "question": "What is the striped polecat?",
+        "answer": "Skunk-like African mustelid"
+    },
+    {
+        "question": "What is the African palm civet?",
+        "answer": "Tree-dwelling viverrid"
+    },
+    {
+        "question": "What is the Egyptian mongoose?",
+        "answer": "Mongoose known for killing cobras"
+    },
+    {
+        "question": "What is the African leopard's hunting style?",
+        "answer": "Solitary ambush predator"
     }
 ]
