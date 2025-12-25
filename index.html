@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gibbon Quiz Master</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gibbon Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .themes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .theme-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 120px;
+      margin: 10px;
+      padding: 10px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .theme-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .theme-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Gibbon Quiz Master</h1>
-    </header>
-
-    <main>
-        <section id="theme-selection">
-            <h2>Select a Quiz Theme</h2>
-            <div class="themes">
-                <button class="theme-button" data-theme="Formula 1">Formula 1</button>
-                <button class="theme-button" data-theme="Global History">Global History</button>
-                <button class="theme-button" data-theme="South African History">South African History</button>
-                <button class="theme-button" data-theme="Music">Music</button>
-                <button class="theme-button" data-theme="Premier League">Premier League</button>
-                <button class="theme-button" data-theme="World Cup Rugby">World Cup Rugby</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Gibbon Quiz Master. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>Welcome to Gibbon Quiz!</h1>
+    <p>Select a theme to get started:</p>
+    <div class="themes">
+      <div class="theme-item">
+        <img src="theme-icons/science.png" alt="Science">
+        <span>Science</span>
+      </div>
+      <div class="theme-item">
+        <img src="theme-icons/history.png" alt="History">
+        <span>History</span>
+      </div>
+      <div class="theme-item">
+        <img src="theme-icons/sports.png" alt="Sports">
+        <span>Sports</span>
+      </div>
+      <div class="theme-item">
+        <img src="theme-icons/geography.png" alt="Geography">
+        <span>Geography</span>
+      </div>
+      <div class="theme-item">
+        <img src="theme-icons/music.png" alt="Music">
+        <span>Music</span>
+      </div>
+      <div class="theme-item">
+        <img src="theme-icons/movies.png" alt="Movies">
+        <span>Movies</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
