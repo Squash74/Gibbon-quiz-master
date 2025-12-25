@@ -546,6 +546,49 @@ header h1 {
 }
 
 /* ============================================
+   LOADING STATE STYLES
+   ============================================ */
+.theme-buttons.loading {
+    opacity: 0.6;
+    pointer-events: none;
+    position: relative;
+}
+
+.theme-buttons.loading::after {
+    content: 'Loading quizzes...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(102, 126, 234, 0.95);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.load-error {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fee2e2;
+    border-radius: 10px;
+    color: #dc2626;
+}
+
+.load-error p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .load-error {
+    background: #451a1a;
+    color: #fca5a5;
+}
+
+/* ============================================
    DARK MODE STYLES
    ============================================ */
 [data-theme="dark"] body {

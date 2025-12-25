@@ -44,16 +44,16 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 5. External Quiz Data (JSON)
-- [ ] Move quiz data from `script.js` into separate `quizzes.json` file
-- [ ] Implement async loading of quiz data
-- [ ] Smaller initial JS bundle
-- [ ] Support for loading custom quiz files
+- [x] Move quiz data from `script.js` into separate `quizzes.json` file
+- [x] Implement async loading of quiz data
+- [x] Smaller initial JS bundle
+- [ ] Support for loading custom quiz files (future enhancement)
 
 **Benefits:**
 - Easier to add/edit questions without touching code
 - Could later support user-uploaded quiz files
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
