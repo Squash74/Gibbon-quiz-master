@@ -36,23 +36,23 @@
         "answer": "Boer"
     },
     {
-        "question": "Which mountain pass connects the Western Cape to the Eastern Cape through the Outeniqua Mountains?",
+        "question": "Which mountain pass connects the Western Cape to the Eastern Cape?",
         "answer": "Outeniqua Pass"
     },
     {
         "question": "What is the name of the famous wine-producing region near Cape Town?",
-        "answer": "Stellenbosch (or Franschhoek/Cape Winelands)"
+        "answer": "Stellenbosch"
     },
     {
         "question": "Which South African national park is famous for its elephant population?",
         "answer": "Addo Elephant National Park"
     },
     {
-        "question": "What does 'Madiba' mean and who was it associated with?",
+        "question": "What does 'Madiba' mean?",
         "answer": "Nelson Mandela's clan name"
     },
     {
-        "question": "In which year did apartheid officially end in South Africa?",
+        "question": "In which year did apartheid officially end?",
         "answer": "1994"
     },
     {
@@ -72,8 +72,8 @@
         "answer": "Bobotie"
     },
     {
-        "question": "What is 'biltong'?",
-        "answer": "Dried, cured meat (similar to jerky)"
+        "question": "What is biltong?",
+        "answer": "Dried, cured meat"
     },
     {
         "question": "Which language has the most native speakers in South Africa?",
@@ -84,7 +84,7 @@
         "answer": "11"
     },
     {
-        "question": "What is the name of the South African Airways' home airport?",
+        "question": "What is the name of Johannesburg's international airport?",
         "answer": "O.R. Tambo International Airport"
     },
     {
@@ -100,31 +100,31 @@
         "answer": "Indian Ocean"
     },
     {
-        "question": "What is the southernmost point of Africa called?",
+        "question": "What is the southernmost point of Africa?",
         "answer": "Cape Agulhas"
     },
     {
-        "question": "Which famous garden in Cape Town is one of the oldest in the southern hemisphere?",
+        "question": "Which famous botanical garden is in Cape Town?",
         "answer": "Kirstenbosch National Botanical Garden"
     },
     {
-        "question": "What is the name of the canyon in Mpumalanga, one of the largest on Earth?",
+        "question": "What is the name of the canyon in Mpumalanga?",
         "answer": "Blyde River Canyon"
     },
     {
         "question": "Which South African holiday is celebrated on 24 September?",
-        "answer": "Heritage Day (also known as National Braai Day)"
+        "answer": "Heritage Day"
     },
     {
         "question": "What does 'Ubuntu' mean?",
         "answer": "I am because we are (humanity towards others)"
     },
     {
-        "question": "Which South African architect designed the Union Buildings in Pretoria?",
+        "question": "Which architect designed the Union Buildings in Pretoria?",
         "answer": "Herbert Baker"
     },
     {
-        "question": "What is the name of the train that travels between Pretoria and Cape Town?",
+        "question": "What is the name of the luxury train between Pretoria and Cape Town?",
         "answer": "The Blue Train"
     },
     {
@@ -132,67 +132,671 @@
         "answer": "Gauteng"
     },
     {
-        "question": "What is a 'dassie'?",
+        "question": "What is a dassie?",
         "answer": "A rock hyrax (small mammal)"
     },
     {
-        "question": "Which endangered bird is native to South Africa and known for its blue feathers?",
-        "answer": "Blue Crane (national bird)"
+        "question": "What is South Africa's national bird?",
+        "answer": "Blue Crane"
     },
     {
-        "question": "What is the name of the famous reef system off the coast of KwaZulu-Natal?",
+        "question": "What is the name of the reef off KwaZulu-Natal coast?",
         "answer": "Aliwal Shoal"
     },
     {
-        "question": "Which South African freedom fighter was known as 'The Spear of the Nation'?",
-        "answer": "uMkhonto we Sizwe (MK) - the armed wing of the ANC"
+        "question": "What was uMkhonto we Sizwe?",
+        "answer": "The armed wing of the ANC"
     },
     {
         "question": "What is the Karoo?",
         "answer": "A semi-desert natural region in South Africa"
     },
     {
-        "question": "Which South African city was originally called 'eDuban' by the Zulu people?",
-        "answer": "Durban"
+        "question": "What was Durban originally called by the Zulu people?",
+        "answer": "eThekwini"
     },
     {
-        "question": "What is 'rooibos'?",
+        "question": "What is rooibos?",
         "answer": "A herbal tea plant native to South Africa"
     },
     {
-        "question": "What is the name of South Africa's national anthem?",
-        "answer": "Nkosi Sikelel' iAfrika (combined with Die Stem)"
-    },
-    {
-        "question": "Which South African city hosted the 2010 FIFA World Cup final?",
-        "answer": "Johannesburg (Soccer City)"
-    },
-    {
-        "question": "What is 'ubuntu'?",
-        "answer": "A philosophy meaning 'I am because we are'"
-    },
-    {
-        "question": "Which South African national park is famous for the Big Five?",
+        "question": "Which national park is famous for the Big Five?",
         "answer": "Kruger National Park"
     },
     {
-        "question": "What is the Drakensberg?",
-        "answer": "A mountain range in South Africa"
-    },
-    {
         "question": "Who is Cyril Ramaphosa?",
-        "answer": "President of South Africa (as of 2024)"
+        "answer": "President of South Africa"
     },
     {
-        "question": "What is 'potjiekos'?",
-        "answer": "A traditional South African stew cooked in a pot"
+        "question": "What is potjiekos?",
+        "answer": "A traditional South African stew cooked in a three-legged pot"
     },
     {
-        "question": "Which ocean borders South Africa's east coast?",
-        "answer": "Indian Ocean"
-    },
-    {
-        "question": "What is the Apartheid Museum located in?",
+        "question": "Where is the Apartheid Museum located?",
         "answer": "Johannesburg"
+    },
+    {
+        "question": "What is South Africa's national flower?",
+        "answer": "King Protea"
+    },
+    {
+        "question": "What is South Africa's national animal?",
+        "answer": "Springbok"
+    },
+    {
+        "question": "Which city is the legislative capital of South Africa?",
+        "answer": "Cape Town"
+    },
+    {
+        "question": "Which city is the administrative capital of South Africa?",
+        "answer": "Pretoria"
+    },
+    {
+        "question": "Which city is the judicial capital of South Africa?",
+        "answer": "Bloemfontein"
+    },
+    {
+        "question": "What is the highest mountain in South Africa?",
+        "answer": "Mafadi (3,450 meters)"
+    },
+    {
+        "question": "Which river is the longest in South Africa?",
+        "answer": "Orange River"
+    },
+    {
+        "question": "What is Table Mountain known for?",
+        "answer": "Its flat top and cable car, one of the New7Wonders of Nature"
+    },
+    {
+        "question": "What is the Cape of Good Hope?",
+        "answer": "A rocky headland on the Atlantic coast of the Cape Peninsula"
+    },
+    {
+        "question": "Which South African city is known as the City of Gold?",
+        "answer": "Johannesburg"
+    },
+    {
+        "question": "What does eGoli mean?",
+        "answer": "Place of Gold (Johannesburg)"
+    },
+    {
+        "question": "What is the N1?",
+        "answer": "South Africa's main national highway running from Cape Town to Zimbabwe"
+    },
+    {
+        "question": "Which South African beach town is famous for shark diving?",
+        "answer": "Gansbaai"
+    },
+    {
+        "question": "What is the Garden Route?",
+        "answer": "A scenic stretch of coast along the Western and Eastern Cape"
+    },
+    {
+        "question": "Which South African town is known as the 'oyster capital'?",
+        "answer": "Knysna"
+    },
+    {
+        "question": "What is Boulders Beach famous for?",
+        "answer": "African penguin colony"
+    },
+    {
+        "question": "Which waterfall is in the Mpumalanga province?",
+        "answer": "Lisbon Falls or Mac-Mac Falls"
+    },
+    {
+        "question": "What is the Cradle of Humankind?",
+        "answer": "A UNESCO World Heritage Site with fossil hominid finds"
+    },
+    {
+        "question": "Which caves are found at the Cradle of Humankind?",
+        "answer": "Sterkfontein Caves"
+    },
+    {
+        "question": "What is a 'shebeen'?",
+        "answer": "An informal drinking establishment"
+    },
+    {
+        "question": "What is 'muti'?",
+        "answer": "Traditional African medicine"
+    },
+    {
+        "question": "What is a sangoma?",
+        "answer": "A traditional healer or diviner"
+    },
+    {
+        "question": "What is the Gautrain?",
+        "answer": "A rapid rail network linking Johannesburg, Pretoria, and the airport"
+    },
+    {
+        "question": "Which South African province borders Lesotho?",
+        "answer": "Free State and KwaZulu-Natal and Eastern Cape"
+    },
+    {
+        "question": "What is Soweto short for?",
+        "answer": "South Western Townships"
+    },
+    {
+        "question": "What happened in Soweto on June 16, 1976?",
+        "answer": "The Soweto Uprising (student protests against Afrikaans in schools)"
+    },
+    {
+        "question": "What is the Voortrekker Monument?",
+        "answer": "A monument in Pretoria commemorating the Voortrekkers"
+    },
+    {
+        "question": "What is Constitution Hill?",
+        "answer": "A former prison complex now home to the Constitutional Court"
+    },
+    {
+        "question": "Which South African city is known as the Mother City?",
+        "answer": "Cape Town"
+    },
+    {
+        "question": "What is the Two Oceans Aquarium located?",
+        "answer": "V&A Waterfront, Cape Town"
+    },
+    {
+        "question": "What is the V&A Waterfront?",
+        "answer": "A shopping and entertainment area in Cape Town's harbor"
+    },
+    {
+        "question": "Which South African race is known as the Comrades Marathon?",
+        "answer": "An ultramarathon between Durban and Pietermaritzburg"
+    },
+    {
+        "question": "How far is the Comrades Marathon?",
+        "answer": "About 90 kilometers"
+    },
+    {
+        "question": "What is the Cape Argus Cycle Tour?",
+        "answer": "The world's largest timed cycling event"
+    },
+    {
+        "question": "Which South African surfing spot is world famous?",
+        "answer": "Jeffreys Bay (J-Bay)"
+    },
+    {
+        "question": "What are the Cango Caves?",
+        "answer": "Limestone cave system near Oudtshoorn"
+    },
+    {
+        "question": "What is Oudtshoorn famous for?",
+        "answer": "Ostrich farming"
+    },
+    {
+        "question": "What is the Namaqualand famous for?",
+        "answer": "Spring wildflower displays"
+    },
+    {
+        "question": "Which South African wine region is in Paarl?",
+        "answer": "Cape Winelands"
+    },
+    {
+        "question": "What is Franschhoek known for?",
+        "answer": "French Huguenot heritage and wine"
+    },
+    {
+        "question": "What is the Sardine Run?",
+        "answer": "Annual migration of sardines along the KwaZulu-Natal coast"
+    },
+    {
+        "question": "Which airport serves Durban?",
+        "answer": "King Shaka International Airport"
+    },
+    {
+        "question": "What is the Moses Mabhida Stadium famous for?",
+        "answer": "2010 World Cup venue with iconic arch in Durban"
+    },
+    {
+        "question": "What is uShaka Marine World?",
+        "answer": "A theme park and aquarium in Durban"
+    },
+    {
+        "question": "Which South African beach is known as the Golden Mile?",
+        "answer": "Durban beachfront"
+    },
+    {
+        "question": "What is Sun City?",
+        "answer": "A luxury resort and casino complex in North West Province"
+    },
+    {
+        "question": "What is Pilanesberg National Park known for?",
+        "answer": "Big Five viewing near Sun City"
+    },
+    {
+        "question": "What is the Hole in the Wall?",
+        "answer": "A natural rock formation on the Wild Coast"
+    },
+    {
+        "question": "What is the Wild Coast?",
+        "answer": "The rugged coastline of the Eastern Cape"
+    },
+    {
+        "question": "Which South African town has the world's highest commercial bungee jump?",
+        "answer": "Bloukrans Bridge (near Nature's Valley)"
+    },
+    {
+        "question": "What is Signal Hill?",
+        "answer": "A hill in Cape Town known for its noon gun"
+    },
+    {
+        "question": "What is Lion's Head?",
+        "answer": "A mountain peak in Cape Town popular for hiking"
+    },
+    {
+        "question": "What is the Big Hole?",
+        "answer": "A former diamond mine in Kimberley"
+    },
+    {
+        "question": "Which city is known as the diamond city?",
+        "answer": "Kimberley"
+    },
+    {
+        "question": "What is the Cullinan Diamond?",
+        "answer": "The largest gem-quality rough diamond ever found (1905, South Africa)"
+    },
+    {
+        "question": "What is SANParks?",
+        "answer": "South African National Parks organization"
+    },
+    {
+        "question": "Which animal is the Big Five NOT including?",
+        "answer": "The Big Five includes lion, leopard, rhino, elephant, buffalo"
+    },
+    {
+        "question": "What is a 'lekker'?",
+        "answer": "Afrikaans slang meaning 'nice' or 'good'"
+    },
+    {
+        "question": "What does 'now now' mean in South African English?",
+        "answer": "Soon (but not immediately)"
+    },
+    {
+        "question": "What does 'just now' mean in South African English?",
+        "answer": "In a little while (could be hours)"
+    },
+    {
+        "question": "What is a 'bakkie'?",
+        "answer": "A pickup truck"
+    },
+    {
+        "question": "What is a 'robot' in South African English?",
+        "answer": "A traffic light"
+    },
+    {
+        "question": "What is a 'circle' in South African English?",
+        "answer": "A traffic roundabout"
+    },
+    {
+        "question": "What is 'bunny chow'?",
+        "answer": "A Durban dish of hollowed bread filled with curry"
+    },
+    {
+        "question": "What is 'koeksister'?",
+        "answer": "A syrupy braided doughnut"
+    },
+    {
+        "question": "What is 'melktert'?",
+        "answer": "A traditional South African milk tart"
+    },
+    {
+        "question": "What is 'boerewors'?",
+        "answer": "Traditional South African sausage"
+    },
+    {
+        "question": "What is 'pap'?",
+        "answer": "Maize meal porridge"
+    },
+    {
+        "question": "What is 'chakalaka'?",
+        "answer": "A spicy vegetable relish"
+    },
+    {
+        "question": "What is 'amadumbe'?",
+        "answer": "African potato (taro)"
+    },
+    {
+        "question": "What is 'samp'?",
+        "answer": "Dried corn kernels"
+    },
+    {
+        "question": "What is 'morogo'?",
+        "answer": "Traditional leafy greens"
+    },
+    {
+        "question": "What is 'vetkoek'?",
+        "answer": "Deep-fried dough bread"
+    },
+    {
+        "question": "What is the Shosholoza Meyl?",
+        "answer": "South Africa's long-distance passenger rail service"
+    },
+    {
+        "question": "What is the Springbok rugby team's home stadium?",
+        "answer": "Various, including Ellis Park and Cape Town Stadium"
+    },
+    {
+        "question": "When did South Africa win their first Rugby World Cup?",
+        "answer": "1995"
+    },
+    {
+        "question": "How many Rugby World Cups has South Africa won?",
+        "answer": "Four (1995, 2007, 2019, 2023)"
+    },
+    {
+        "question": "What is Bafana Bafana?",
+        "answer": "The South African national football team"
+    },
+    {
+        "question": "What does 'Bafana Bafana' mean?",
+        "answer": "'The Boys, The Boys' in Zulu"
+    },
+    {
+        "question": "What is the Proteas?",
+        "answer": "The South African national cricket team"
+    },
+    {
+        "question": "What are the Stormers?",
+        "answer": "A rugby union team based in Cape Town"
+    },
+    {
+        "question": "What are the Bulls?",
+        "answer": "A rugby union team based in Pretoria"
+    },
+    {
+        "question": "What are the Sharks?",
+        "answer": "A rugby union team based in Durban"
+    },
+    {
+        "question": "What is the Highveld?",
+        "answer": "The high-altitude plateau of central South Africa"
+    },
+    {
+        "question": "What is the Lowveld?",
+        "answer": "The low-altitude area in the east, including Kruger Park"
+    },
+    {
+        "question": "What is the Bushveld?",
+        "answer": "A subtropical woodland region in northern South Africa"
+    },
+    {
+        "question": "What is a 'township'?",
+        "answer": "Urban residential areas that were designated for non-whites during apartheid"
+    },
+    {
+        "question": "What is Vilakazi Street famous for?",
+        "answer": "The only street with two Nobel Prize winners' homes (Mandela and Tutu)"
+    },
+    {
+        "question": "Where is Vilakazi Street?",
+        "answer": "Soweto, Johannesburg"
+    },
+    {
+        "question": "What is the Mandela House?",
+        "answer": "Nelson Mandela's former home, now a museum in Soweto"
+    },
+    {
+        "question": "What is District Six?",
+        "answer": "A former inner-city neighborhood in Cape Town forcibly cleared during apartheid"
+    },
+    {
+        "question": "What is the Bo-Kaap?",
+        "answer": "A colorful neighborhood in Cape Town with Cape Malay heritage"
+    },
+    {
+        "question": "What is the Cape Flats?",
+        "answer": "A low-lying area of Cape Town, largely developed as townships"
+    },
+    {
+        "question": "What is Sandton?",
+        "answer": "An affluent suburb and business district in Johannesburg"
+    },
+    {
+        "question": "What is Rosebank?",
+        "answer": "An upscale suburb in Johannesburg"
+    },
+    {
+        "question": "What is the Johannesburg Stock Exchange?",
+        "answer": "The largest stock exchange in Africa"
+    },
+    {
+        "question": "What is SASOL?",
+        "answer": "A South African oil and gas company"
+    },
+    {
+        "question": "What is Eskom?",
+        "answer": "South Africa's state-owned electricity utility"
+    },
+    {
+        "question": "What is 'load shedding'?",
+        "answer": "Scheduled power outages to prevent grid collapse"
+    },
+    {
+        "question": "What is Transnet?",
+        "answer": "South Africa's freight rail, pipeline, and port company"
+    },
+    {
+        "question": "What is the SABC?",
+        "answer": "South African Broadcasting Corporation"
+    },
+    {
+        "question": "What is MultiChoice?",
+        "answer": "A South African media company that owns DStv"
+    },
+    {
+        "question": "What is DStv?",
+        "answer": "A digital satellite television service in South Africa"
+    },
+    {
+        "question": "What is Nandos?",
+        "answer": "A South African-origin restaurant chain famous for peri-peri chicken"
+    },
+    {
+        "question": "What is Woolworths in South Africa?",
+        "answer": "A premium retail chain (not related to US/UK Woolworths)"
+    },
+    {
+        "question": "What is Pick n Pay?",
+        "answer": "A South African supermarket chain"
+    },
+    {
+        "question": "What is Shoprite?",
+        "answer": "Africa's largest supermarket retailer"
+    },
+    {
+        "question": "What is FNB?",
+        "answer": "First National Bank"
+    },
+    {
+        "question": "What is Nedbank?",
+        "answer": "One of South Africa's big four banks"
+    },
+    {
+        "question": "What is Standard Bank?",
+        "answer": "One of Africa's largest banks"
+    },
+    {
+        "question": "What is ABSA?",
+        "answer": "Amalgamated Banks of South Africa"
+    },
+    {
+        "question": "What is Capitec?",
+        "answer": "A South African retail bank"
+    },
+    {
+        "question": "What is the rand symbol?",
+        "answer": "R or ZAR"
+    },
+    {
+        "question": "What is Madiba Magic?",
+        "answer": "The inspiring influence of Nelson Mandela"
+    },
+    {
+        "question": "What year did Nelson Mandela become president?",
+        "answer": "1994"
+    },
+    {
+        "question": "How many years did Mandela serve as president?",
+        "answer": "5 years (1994-1999)"
+    },
+    {
+        "question": "Who succeeded Mandela as president?",
+        "answer": "Thabo Mbeki"
+    },
+    {
+        "question": "What is Freedom Day in South Africa?",
+        "answer": "April 27 - commemorating the first democratic elections in 1994"
+    },
+    {
+        "question": "What is Human Rights Day in South Africa?",
+        "answer": "March 21 - commemorating Sharpeville Massacre"
+    },
+    {
+        "question": "What is Youth Day in South Africa?",
+        "answer": "June 16 - commemorating Soweto Uprising"
+    },
+    {
+        "question": "What is Women's Day in South Africa?",
+        "answer": "August 9 - commemorating the 1956 women's march"
+    },
+    {
+        "question": "What is Reconciliation Day?",
+        "answer": "December 16 - promoting reconciliation and national unity"
+    },
+    {
+        "question": "What was the Truth and Reconciliation Commission?",
+        "answer": "A body established to investigate apartheid-era crimes"
+    },
+    {
+        "question": "Who chaired the Truth and Reconciliation Commission?",
+        "answer": "Archbishop Desmond Tutu"
+    },
+    {
+        "question": "What is the Constitutional Court?",
+        "answer": "South Africa's highest court for constitutional matters"
+    },
+    {
+        "question": "Where is the Constitutional Court located?",
+        "answer": "Constitution Hill, Johannesburg"
+    },
+    {
+        "question": "What is the National Assembly?",
+        "answer": "The lower house of Parliament"
+    },
+    {
+        "question": "Where is the Parliament of South Africa?",
+        "answer": "Cape Town"
+    },
+    {
+        "question": "What is NEDLAC?",
+        "answer": "National Economic Development and Labour Council"
+    },
+    {
+        "question": "What are the ANC colors?",
+        "answer": "Black, green, and gold"
+    },
+    {
+        "question": "What are the DA colors?",
+        "answer": "Blue"
+    },
+    {
+        "question": "What is the EFF?",
+        "answer": "Economic Freedom Fighters - a political party"
+    },
+    {
+        "question": "Who founded the EFF?",
+        "answer": "Julius Malema"
+    },
+    {
+        "question": "What is the IFP?",
+        "answer": "Inkatha Freedom Party"
+    },
+    {
+        "question": "What is COSATU?",
+        "answer": "Congress of South African Trade Unions"
+    },
+    {
+        "question": "What is the Tripartite Alliance?",
+        "answer": "ANC, COSATU, and SACP"
+    },
+    {
+        "question": "What is the SACP?",
+        "answer": "South African Communist Party"
+    },
+    {
+        "question": "What was the Group Areas Act?",
+        "answer": "Apartheid law enforcing racial segregation of residential areas"
+    },
+    {
+        "question": "What was the Pass Laws?",
+        "answer": "Laws requiring Black South Africans to carry identification documents"
+    },
+    {
+        "question": "What was the Bantu Education Act?",
+        "answer": "Apartheid law creating separate, inferior education for Black people"
+    },
+    {
+        "question": "What is the Fynbos?",
+        "answer": "A unique shrubland biome in the Western Cape"
+    },
+    {
+        "question": "What is the Cape Floral Region?",
+        "answer": "A UNESCO World Heritage Site with exceptional plant diversity"
+    },
+    {
+        "question": "What are the Cape Peninsula's famous wines?",
+        "answer": "Pinotage, Chenin Blanc, Shiraz"
+    },
+    {
+        "question": "What is Pinotage?",
+        "answer": "A red wine grape variety developed in South Africa"
+    },
+    {
+        "question": "What is a 'dorp'?",
+        "answer": "A small town (Afrikaans)"
+    },
+    {
+        "question": "What is Hermanus famous for?",
+        "answer": "Whale watching"
+    },
+    {
+        "question": "What is the iSimangaliso Wetland Park?",
+        "answer": "A UNESCO World Heritage Site in KwaZulu-Natal"
+    },
+    {
+        "question": "What is the Hluhluwe-iMfolozi Park?",
+        "answer": "The oldest proclaimed nature reserve in Africa"
+    },
+    {
+        "question": "What animal was saved from extinction at Hluhluwe?",
+        "answer": "White rhino"
+    },
+    {
+        "question": "What is Mapungubwe?",
+        "answer": "An ancient African kingdom and UNESCO World Heritage Site"
+    },
+    {
+        "question": "What is the Richtersveld?",
+        "answer": "A desert region in the Northern Cape, UNESCO World Heritage Site"
+    },
+    {
+        "question": "What is the Otter Trail?",
+        "answer": "A famous 5-day hiking trail along the Garden Route coast"
+    },
+    {
+        "question": "What is Augrabies Falls?",
+        "answer": "A waterfall on the Orange River in the Northern Cape"
+    },
+    {
+        "question": "What is the Kgalagadi Transfrontier Park?",
+        "answer": "A large wildlife reserve spanning South Africa and Botswana"
+    },
+    {
+        "question": "What is the Golden Gate Highlands National Park?",
+        "answer": "A national park in the Free State known for sandstone cliffs"
+    },
+    {
+        "question": "What is the Maropeng Visitor Centre?",
+        "answer": "An exhibition at the Cradle of Humankind about human origins"
     }
 ]
