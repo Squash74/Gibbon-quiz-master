@@ -256,7 +256,11 @@ function handleTimeout() {
     if (answerSection) answerSection.classList.remove('hidden');
     if (showAnswerBtn) showAnswerBtn.classList.add('hidden');
     if (scoringButtons) scoringButtons.classList.add('hidden');
-    if (nextBtn) nextBtn.classList.remove('hidden');
+    if (nextBtn) {
+        const isLastQuestion = currentQuestionIndex === questions.length - 1;
+        nextBtn.textContent = isLastQuestion ? 'See Results' : 'Next Question';
+        nextBtn.classList.remove('hidden');
+    }
 
     answerRevealed = true;
 
@@ -355,7 +359,7 @@ function getShareText() {
 Theme: ${themeName}
 Score: ${score}/${questions.length} (${percentScore}%)${streakText}
 
-Play at: [your-url-here]`;
+Play at: https://squash74.github.io/Gibbon-quiz-master/`;
 }
 
 async function shareResults() {
@@ -564,6 +568,12 @@ function updateRunningPercent() {
     runningPercentEl.textContent = percent;
 }
 
+// Update next button text based on whether it's the last question
+function updateNextButtonText() {
+    const isLastQuestion = currentQuestionIndex === questions.length - 1;
+    nextBtn.textContent = isLastQuestion ? 'See Results' : 'Next Question';
+}
+
 // Correct Answer
 correctBtn.addEventListener('click', () => {
     score++;
@@ -571,6 +581,7 @@ correctBtn.addEventListener('click', () => {
     incrementStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
+    updateNextButtonText();
     nextBtn.classList.remove('hidden');
 });
 
@@ -579,6 +590,7 @@ incorrectBtn.addEventListener('click', () => {
     resetStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
+    updateNextButtonText();
     nextBtn.classList.remove('hidden');
 });
 
