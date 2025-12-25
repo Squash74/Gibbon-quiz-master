@@ -1,24 +1,85 @@
-# Gibbon-Quiz-Master
+# 🎉 Gibbon Quiz Master 🎉
 
-Welcome to the **Gibbon Quiz Master**! This repository will host a fun and interactive web-based quiz application where users can test their knowledge on various themes. 
+Welcome to the **Gibbon Quiz Master**! A fun and interactive web-based quiz application where users can test their knowledge across various entertaining themes.
 
-## Initial Themes
-The quiz will include the following themes:
-1. Christmas
-2. Movies
-3. Places
-4. People
-5. Sport
+## 🎯 Features
 
-The quiz will be designed to cater to a South African and international audience.
+- **5 Engaging Themes**: Christmas 🎄, Movies 🎬, Places 🌍, People 👤, and Sport ⚽
+- **190+ Questions**: Carefully curated questions catering to both South African and international audiences
+- **Interactive Quiz Flow**: One question at a time with click-to-reveal answers
+- **Scoring System**: Track your correct answers throughout the quiz
+- **New Game Button**: Reset stats and start fresh anytime
+- **Responsive Design**: Works beautifully on desktop and mobile devices
+- **Beautiful UI**: Festive purple gradient theme with smooth animations
 
-## Features
-- Display one question at a time.
-- Click to reveal the answer.
-- Track scores as you play.
-- Restart the game and reset stats.
+## 🎮 How to Play
 
-## How to Host
-This application will be simple to deploy and can be hosted on platforms like GitHub Pages.
+1. Choose a theme from the home screen
+2. Read the question and think of your answer
+3. Click "Show Answer" or tap the question card to reveal the answer
+4. Mark yourself as correct or incorrect
+5. Continue through all questions in the theme
+6. View your final score and percentage
+7. Click "Play Again" to try another theme or "New Game" to return to theme selection
 
-Stay tuned for updates and enhancements!
+## 🚀 GitHub Pages Deployment
+
+This application is ready to deploy to GitHub Pages:
+
+1. Go to your repository Settings
+2. Navigate to Pages section
+3. Under "Source", select the branch (e.g., `main`)
+4. Select `/` (root) as the folder
+5. Click Save
+6. Your quiz will be available at: `https://yourusername.github.io/Gibbon-quiz-master/`
+
+## 💻 Local Development
+
+To run the quiz locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Squash74/Gibbon-quiz-master.git
+cd Gibbon-quiz-master
+
+# Start a simple HTTP server (Python 3)
+python3 -m http.server 8080
+
+# Or with Node.js
+npx serve
+
+# Open your browser to http://localhost:8080
+```
+
+## 📁 File Structure
+
+```
+Gibbon-quiz-master/
+├── index.html      # Main HTML structure
+├── styles.css      # All styling and responsive design
+├── script.js       # Quiz logic and question data
+└── README.md       # This file
+```
+
+## 🌍 Question Coverage
+
+Questions are designed to be engaging and educational, with content that includes:
+- South African references (cities, people, sports, culture)
+- International content from various regions
+- Balanced mix avoiding over-representation of any single country
+- Mix of easy, medium, and challenging questions
+
+## 🛠️ Technologies Used
+
+- Pure HTML5
+- CSS3 (with Flexbox and Grid)
+- Vanilla JavaScript (ES6+)
+- No external dependencies or build process required
+
+## 📝 License
+
+Feel free to use and modify this quiz application for your own purposes!
+
+---
+
+**Enjoy testing your knowledge! 🎊**
