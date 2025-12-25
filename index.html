@@ -44,6 +44,27 @@
 
         <div id="themeSelection" class="theme-selection">
             <h2>Choose Your Theme</h2>
+
+            <div class="quiz-options">
+                <div class="option-group">
+                    <label class="option-label">Questions per quiz:</label>
+                    <div class="question-count-selector">
+                        <button class="count-btn" data-count="5">5</button>
+                        <button class="count-btn" data-count="10">10</button>
+                        <button class="count-btn active" data-count="15">15</button>
+                        <button class="count-btn" data-count="20">20</button>
+                        <button class="count-btn" data-count="30">30</button>
+                    </div>
+                </div>
+                <div class="option-group">
+                    <label class="timer-toggle-label">
+                        <input type="checkbox" id="timerToggle" class="timer-checkbox">
+                        <span class="timer-slider"></span>
+                        <span class="timer-text">⏱️ Timer Mode (30s per question)</span>
+                    </label>
+                </div>
+            </div>
+
             <div class="theme-buttons">
                 <button class="theme-btn" data-theme="christmas">🎄 Christmas</button>
                 <button class="theme-btn" data-theme="movies">🎬 Movies</button>
@@ -80,6 +101,14 @@
                     <span id="score" class="score-value">0</span>
                     <span class="score-value running-percent">(<span id="runningPercent">0</span>%)</span>
                 </div>
+                <div class="score-item timer-display hidden" id="timerDisplay">
+                    <span class="score-label">⏱️</span>
+                    <span id="timerValue" class="score-value timer-value">30</span>
+                </div>
+                <div class="score-item streak-display hidden" id="streakDisplay">
+                    <span class="score-label">🔥</span>
+                    <span id="streakValue" class="score-value streak-value">0</span>
+                </div>
             </div>
 
             <div class="question-card">
@@ -110,8 +139,12 @@
                 <p>Your Final Score:</p>
                 <p class="big-score"><span id="finalScore">0</span> / <span id="finalTotal">0</span></p>
                 <p class="percentage" id="percentage"></p>
+                <p class="best-streak hidden" id="bestStreakDisplay">🔥 Best Streak: <span id="bestStreakValue">0</span> in a row!</p>
             </div>
-            <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            <div class="game-over-buttons">
+                <button id="shareBtn" class="btn btn-share">📋 Share Score</button>
+                <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
         </div>
         </div>
     </div>

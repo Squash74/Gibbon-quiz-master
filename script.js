@@ -1,23 +1,28 @@
-// Quiz Data - Loaded from external JSON file
-let quizData = null;
-let quizDataLoaded = false;
-let quizDataError = null;
+// Quiz Data - Lazy loaded per category for better performance
+const quizCache = {}; // Cache loaded categories
+const AVAILABLE_THEMES = [
+    'christmas', 'movies', 'places', 'people', 'sport',
+    'southafrica', 'international', 'music', 'science',
+    'history', 'food', 'tvshows', 'artculture', 'wildlife', 'african'
+];
 
-// Load quiz data from external JSON file
-async function loadQuizData() {
+// Load a specific category's quiz data
+async function loadCategoryData(category) {
+    // Return from cache if already loaded
+    if (quizCache[category]) {
+        return quizCache[category];
+    }
+
     try {
-        const response = await fetch('quizzes.json');
+        const response = await fetch(`quizzes/${category}.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        quizData = await response.json();
-        quizDataLoaded = true;
-        hideLoadingState();
-        return quizData;
+        const data = await response.json();
+        quizCache[category] = data;
+        return data;
     } catch (error) {
-        console.error('Failed to load quiz data:', error);
-        quizDataError = error;
-        showLoadError();
+        console.error(`Failed to load ${category} quiz data:`, error);
         throw error;
     }
 }
@@ -160,6 +165,264 @@ function initializeTheme() {
 }
 
 // ============================================
+// TIMER MANAGER
+// ============================================
+const TIMER_STORAGE_KEY = 'gibbonQuizTimerEnabled';
+const TIMER_DURATION = 30; // seconds per question
+let timerEnabled = false;
+let timerInterval = null;
+let timeRemaining = TIMER_DURATION;
+
+function getTimerPreference() {
+    return localStorage.getItem(TIMER_STORAGE_KEY) === 'true';
+}
+
+function setTimerPreference(enabled) {
+    localStorage.setItem(TIMER_STORAGE_KEY, enabled.toString());
+    timerEnabled = enabled;
+}
+
+function initializeTimerToggle() {
+    const timerToggle = document.getElementById('timerToggle');
+    if (timerToggle) {
+        // Load saved preference
+        timerEnabled = getTimerPreference();
+        timerToggle.checked = timerEnabled;
+
+        // Listen for changes
+        timerToggle.addEventListener('change', (e) => {
+            setTimerPreference(e.target.checked);
+        });
+    }
+}
+
+function startTimer() {
+    if (!timerEnabled) return;
+
+    const timerDisplay = document.getElementById('timerDisplay');
+    const timerValue = document.getElementById('timerValue');
+
+    if (timerDisplay) {
+        timerDisplay.classList.remove('hidden');
+    }
+
+    timeRemaining = TIMER_DURATION;
+    updateTimerDisplay();
+
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+
+        if (timeRemaining <= 0) {
+            handleTimeout();
+        }
+    }, 1000);
+}
+
+function stopTimer() {
+    if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+    }
+}
+
+function updateTimerDisplay() {
+    const timerValue = document.getElementById('timerValue');
+    if (timerValue) {
+        timerValue.textContent = timeRemaining;
+
+        // Remove existing classes
+        timerValue.classList.remove('warning', 'danger');
+
+        // Add warning/danger classes based on time
+        if (timeRemaining <= 5) {
+            timerValue.classList.add('danger');
+        } else if (timeRemaining <= 10) {
+            timerValue.classList.add('warning');
+        }
+    }
+}
+
+function handleTimeout() {
+    stopTimer();
+    resetStreak(); // Timeout counts as incorrect
+
+    // Auto-reveal answer and mark as incorrect
+    const answerSection = document.getElementById('answerSection');
+    const showAnswerBtn = document.getElementById('showAnswerBtn');
+    const scoringButtons = document.getElementById('scoringButtons');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (answerSection) answerSection.classList.remove('hidden');
+    if (showAnswerBtn) showAnswerBtn.classList.add('hidden');
+    if (scoringButtons) scoringButtons.classList.add('hidden');
+    if (nextBtn) nextBtn.classList.remove('hidden');
+
+    answerRevealed = true;
+
+    // Show timeout message
+    const timerValue = document.getElementById('timerValue');
+    if (timerValue) {
+        timerValue.textContent = "Time's up!";
+    }
+}
+
+function hideTimerDisplay() {
+    const timerDisplay = document.getElementById('timerDisplay');
+    if (timerDisplay) {
+        timerDisplay.classList.add('hidden');
+    }
+}
+
+// ============================================
+// STREAK SYSTEM
+// ============================================
+let currentStreak = 0;
+let maxStreak = 0;
+
+function updateStreakDisplay() {
+    const streakValue = document.getElementById('streakValue');
+    const streakDisplay = document.getElementById('streakDisplay');
+
+    if (streakValue) {
+        streakValue.textContent = currentStreak;
+    }
+
+    if (streakDisplay) {
+        // Remove all milestone classes
+        streakDisplay.classList.remove('streak-5', 'streak-10', 'streak-15');
+
+        // Add appropriate milestone class
+        if (currentStreak >= 15) {
+            streakDisplay.classList.add('streak-15');
+        } else if (currentStreak >= 10) {
+            streakDisplay.classList.add('streak-10');
+        } else if (currentStreak >= 5) {
+            streakDisplay.classList.add('streak-5');
+        }
+
+        // Show/hide based on streak
+        if (currentStreak >= 2) {
+            streakDisplay.classList.remove('hidden');
+        } else {
+            streakDisplay.classList.add('hidden');
+        }
+    }
+}
+
+function incrementStreak() {
+    currentStreak++;
+    if (currentStreak > maxStreak) {
+        maxStreak = currentStreak;
+    }
+    updateStreakDisplay();
+
+    // Show milestone celebration
+    if (currentStreak === 5 || currentStreak === 10 || currentStreak === 15) {
+        showStreakMilestone(currentStreak);
+    }
+}
+
+function resetStreak() {
+    currentStreak = 0;
+    updateStreakDisplay();
+}
+
+function showStreakMilestone(milestone) {
+    const streakDisplay = document.getElementById('streakDisplay');
+    if (streakDisplay) {
+        streakDisplay.classList.add('milestone-celebration');
+        setTimeout(() => {
+            streakDisplay.classList.remove('milestone-celebration');
+        }, 600);
+    }
+}
+
+// ============================================
+// SHARE RESULTS
+// ============================================
+function getShareText() {
+    const percentScore = Math.round((score / questions.length) * 100);
+    const themeName = capitalizeFirstLetter(currentTheme);
+
+    let streakText = '';
+    if (maxStreak >= 3) {
+        streakText = `\nBest Streak: ${maxStreak} in a row!`;
+    }
+
+    return `🎉 Gibbon Quiz Master 🎉
+
+Theme: ${themeName}
+Score: ${score}/${questions.length} (${percentScore}%)${streakText}
+
+Play at: [your-url-here]`;
+}
+
+async function shareResults() {
+    const shareText = getShareText();
+    const shareBtn = document.getElementById('shareBtn');
+
+    try {
+        await navigator.clipboard.writeText(shareText);
+
+        // Show feedback
+        if (shareBtn) {
+            const originalText = shareBtn.textContent;
+            shareBtn.textContent = '✓ Copied!';
+            shareBtn.classList.add('copied');
+            setTimeout(() => {
+                shareBtn.textContent = originalText;
+                shareBtn.classList.remove('copied');
+            }, 2000);
+        }
+    } catch (err) {
+        console.error('Failed to copy:', err);
+        // Fallback: show the text in an alert
+        alert('Copy this to share:\n\n' + shareText);
+    }
+}
+
+// ============================================
+// QUESTION COUNT SELECTOR
+// ============================================
+const QUESTION_COUNT_KEY = 'gibbonQuizQuestionCount';
+let selectedQuestionCount = 15; // Default
+
+function getQuestionCountPreference() {
+    const stored = localStorage.getItem(QUESTION_COUNT_KEY);
+    return stored ? parseInt(stored, 10) : 15;
+}
+
+function setQuestionCountPreference(count) {
+    localStorage.setItem(QUESTION_COUNT_KEY, count.toString());
+    selectedQuestionCount = count;
+}
+
+function initializeQuestionCountSelector() {
+    selectedQuestionCount = getQuestionCountPreference();
+
+    const buttons = document.querySelectorAll('.count-btn');
+    buttons.forEach(btn => {
+        const count = parseInt(btn.dataset.count, 10);
+
+        // Set active state based on stored preference
+        if (count === selectedQuestionCount) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+
+        btn.addEventListener('click', () => {
+            // Update active state
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            setQuestionCountPreference(count);
+        });
+    });
+}
+
+// ============================================
 // QUIZ STATE
 // ============================================
 let currentTheme = '';
@@ -194,35 +457,63 @@ const runningPercentEl = document.getElementById('runningPercent');
 
 // Theme Selection
 document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
         currentTheme = btn.dataset.theme;
-        startQuiz();
+        await startQuiz();
     });
 });
 
 // Start Quiz
-function startQuiz() {
-    // Reset state
-    score = 0;
-    currentQuestionIndex = 0;
-    answerRevealed = false;
-    
-    // Get and shuffle questions for the theme
-    questions = [...quizData[currentTheme]];
-    shuffleArray(questions);
-    
-    // Update UI
-    container.classList.add('quiz-active');
-    themeSelection.classList.add('hidden');
-    quizContainer.classList.remove('hidden');
-    gameOver.classList.add('hidden');
-    
-    currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
-    totalQuestions.textContent = questions.length;
-    scoreEl.textContent = score;
-    runningPercentEl.textContent = '0';
+async function startQuiz() {
+    // Show loading state on the button
+    showLoadingState();
 
-    displayQuestion();
+    try {
+        // Load category data (from cache or fetch)
+        const categoryData = await loadCategoryData(currentTheme);
+
+        // Reset state
+        score = 0;
+        currentQuestionIndex = 0;
+        answerRevealed = false;
+        currentStreak = 0;
+        maxStreak = 0;
+        updateStreakDisplay();
+
+        // Get and shuffle questions for the theme
+        let allQuestions = [...categoryData];
+        shuffleArray(allQuestions);
+
+        // Limit to selected question count
+        const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
+        questions = allQuestions.slice(0, maxQuestions);
+
+        hideLoadingState();
+
+        // Update UI
+        container.classList.add('quiz-active');
+        themeSelection.classList.add('hidden');
+        quizContainer.classList.remove('hidden');
+        gameOver.classList.add('hidden');
+
+        currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
+        totalQuestions.textContent = questions.length;
+        scoreEl.textContent = score;
+        runningPercentEl.textContent = '0';
+
+        // Show/hide timer display based on preference
+        if (timerEnabled) {
+            document.getElementById('timerDisplay')?.classList.remove('hidden');
+        } else {
+            hideTimerDisplay();
+        }
+
+        displayQuestion();
+    } catch (error) {
+        hideLoadingState();
+        alert('Failed to load quiz. Please try again.');
+        console.error('Failed to start quiz:', error);
+    }
 }
 
 // Display Current Question
@@ -230,20 +521,25 @@ function displayQuestion() {
     const question = questions[currentQuestionIndex];
     questionText.textContent = question.question;
     answerText.textContent = question.answer;
-    
+
     // Update question number
     questionNumber.textContent = currentQuestionIndex + 1;
-    
+
     // Reset UI state
     answerSection.classList.add('hidden');
     showAnswerBtn.classList.remove('hidden');
     scoringButtons.classList.add('hidden');
     nextBtn.classList.add('hidden');
     answerRevealed = false;
+
+    // Start timer for this question
+    stopTimer(); // Clear any existing timer
+    startTimer();
 }
 
 // Show Answer
 showAnswerBtn.addEventListener('click', () => {
+    stopTimer(); // Stop the timer when answer is revealed
     answerSection.classList.remove('hidden');
     showAnswerBtn.classList.add('hidden');
     scoringButtons.classList.remove('hidden');
@@ -253,6 +549,7 @@ showAnswerBtn.addEventListener('click', () => {
 // Alternative: Click question card to show answer
 document.querySelector('.question-card').addEventListener('click', () => {
     if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
+        stopTimer(); // Stop the timer when answer is revealed
         answerSection.classList.remove('hidden');
         showAnswerBtn.classList.add('hidden');
         scoringButtons.classList.remove('hidden');
@@ -271,6 +568,7 @@ function updateRunningPercent() {
 correctBtn.addEventListener('click', () => {
     score++;
     scoreEl.textContent = score;
+    incrementStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
     nextBtn.classList.remove('hidden');
@@ -278,6 +576,7 @@ correctBtn.addEventListener('click', () => {
 
 // Incorrect Answer
 incorrectBtn.addEventListener('click', () => {
+    resetStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
     nextBtn.classList.remove('hidden');
@@ -296,6 +595,9 @@ nextBtn.addEventListener('click', () => {
 
 // End Quiz
 function endQuiz() {
+    stopTimer();
+    hideTimerDisplay();
+
     quizContainer.classList.add('hidden');
     gameOver.classList.remove('hidden');
 
@@ -304,6 +606,18 @@ function endQuiz() {
 
     const percentScore = Math.round((score / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Update best streak display
+    const bestStreakValue = document.getElementById('bestStreakValue');
+    const bestStreakDisplay = document.getElementById('bestStreakDisplay');
+    if (bestStreakValue && bestStreakDisplay) {
+        if (maxStreak >= 3) {
+            bestStreakValue.textContent = maxStreak;
+            bestStreakDisplay.classList.remove('hidden');
+        } else {
+            bestStreakDisplay.classList.add('hidden');
+        }
+    }
 
     // Save progress to localStorage
     const progress = updateHighScore(currentTheme, score, questions.length);
@@ -327,6 +641,8 @@ function endQuiz() {
 
 // New Game
 newGameBtn.addEventListener('click', () => {
+    stopTimer();
+    hideTimerDisplay();
     container.classList.remove('quiz-active');
     quizContainer.classList.add('hidden');
     themeSelection.classList.remove('hidden');
@@ -336,6 +652,8 @@ newGameBtn.addEventListener('click', () => {
 
 // Play Again
 playAgainBtn.addEventListener('click', () => {
+    stopTimer();
+    hideTimerDisplay();
     container.classList.remove('quiz-active');
     gameOver.classList.add('hidden');
     themeSelection.classList.remove('hidden');
@@ -377,7 +695,7 @@ function updateStatsDisplay() {
 
     if (!statsPanel) return;
 
-    const totalThemes = Object.keys(quizData).length;
+    const totalThemes = AVAILABLE_THEMES.length;
     const completedCount = progress.completedThemes.length;
     const accuracy = getOverallAccuracy();
 
@@ -429,17 +747,11 @@ function updateThemeButtons() {
 // Initialize on page load
 async function initializeApp() {
     initializeTheme();
+    initializeTimerToggle();
+    initializeQuestionCountSelector();
 
-    // Show loading state while fetching quiz data
-    showLoadingState();
-
-    // Load quiz data from JSON file
-    try {
-        await loadQuizData();
-    } catch (error) {
-        console.error('Failed to initialize quiz data:', error);
-        // Error is already handled in loadQuizData
-    }
+    // Quiz data is now lazy-loaded per category when a theme is selected
+    // No need to pre-load all data
 
     updateStatsDisplay();
     updateThemeButtons();
@@ -452,6 +764,12 @@ async function initializeApp() {
                 clearAllProgress();
             }
         });
+    }
+
+    // Share button handler
+    const shareBtn = document.getElementById('shareBtn');
+    if (shareBtn) {
+        shareBtn.addEventListener('click', shareResults);
     }
 }
 

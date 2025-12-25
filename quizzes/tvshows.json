@@ -1,0 +1,198 @@
+[
+    {
+        "question": "What is the longest-running animated TV show?",
+        "answer": "The Simpsons"
+    },
+    {
+        "question": "Which South African soapie is set in Johannesburg's Hillside?",
+        "answer": "Generations"
+    },
+    {
+        "question": "In which fictional country is 'Game of Thrones' primarily set?",
+        "answer": "Westeros"
+    },
+    {
+        "question": "What is the most-watched South African TV drama?",
+        "answer": "Uzalo"
+    },
+    {
+        "question": "What is the name of the chemistry teacher in 'Breaking Bad'?",
+        "answer": "Walter White"
+    },
+    {
+        "question": "Which SA show features the Dlamini family in KwaMashu?",
+        "answer": "Uzalo"
+    },
+    {
+        "question": "What streaming service produced 'Stranger Things'?",
+        "answer": "Netflix"
+    },
+    {
+        "question": "Which South African reality show finds new singing talent?",
+        "answer": "Idols South Africa"
+    },
+    {
+        "question": "In which city is 'Friends' set?",
+        "answer": "New York City"
+    },
+    {
+        "question": "What is the SA soapie set in Pretoria's Turfloop?",
+        "answer": "Skeem Saam"
+    },
+    {
+        "question": "What animated show features a family named Griffin?",
+        "answer": "Family Guy"
+    },
+    {
+        "question": "Which SA show is known for the phrase 'Yebo, Gogo'?",
+        "answer": "Generations"
+    },
+    {
+        "question": "What HBO series features dragons and White Walkers?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "question": "What South African telenovela is set in Venda?",
+        "answer": "Muvhango"
+    },
+    {
+        "question": "In 'The Office' (US), what company do they work for?",
+        "answer": "Dunder Mifflin"
+    },
+    {
+        "question": "Which British show features a time-traveling alien?",
+        "answer": "Doctor Who"
+    },
+    {
+        "question": "What is Trevor Noah's SA comedy show called?",
+        "answer": "Trevor Noah: African American (and others)"
+    },
+    {
+        "question": "What is the name of the coffee shop in 'Friends'?",
+        "answer": "Central Perk"
+    },
+    {
+        "question": "Which SA show follows a sangoma solving crimes?",
+        "answer": "iSibaya"
+    },
+    {
+        "question": "What medical drama featured George Clooney?",
+        "answer": "ER"
+    },
+    {
+        "question": "Which cooking competition show is hosted by Gordon Ramsay?",
+        "answer": "Hell's Kitchen (or MasterChef)"
+    },
+    {
+        "question": "What is the setting of 'The Queen' on Mzansi Magic?",
+        "answer": "Johannesburg"
+    },
+    {
+        "question": "What show follows a Colombian drug lord?",
+        "answer": "Narcos"
+    },
+    {
+        "question": "Which SA comedy show featured sketches with politicians?",
+        "answer": "ZA News (or Late Nite News)"
+    },
+    {
+        "question": "In what decade is 'Stranger Things' set?",
+        "answer": "1980s"
+    },
+    {
+        "question": "Which British baking show became internationally popular?",
+        "answer": "The Great British Bake Off"
+    },
+    {
+        "question": "What e.tv show features the Moroka family?",
+        "answer": "Scandal!"
+    },
+    {
+        "question": "What Korean show involves deadly children's games?",
+        "answer": "Squid Game"
+    },
+    {
+        "question": "Which SA show is about a taxi business?",
+        "answer": "Gomora"
+    },
+    {
+        "question": "What HBO show features the Targaryen family prequel?",
+        "answer": "House of the Dragon"
+    },
+    {
+        "question": "Which talk show did Oprah Winfrey host?",
+        "answer": "The Oprah Winfrey Show"
+    },
+    {
+        "question": "What SABC 1 show follows high school students in Tembisa?",
+        "answer": "Skeem Saam"
+    },
+    {
+        "question": "What dystopian show is based on Margaret Atwood's novel?",
+        "answer": "The Handmaid's Tale"
+    },
+    {
+        "question": "Which SA game show is based on the UK's 'Who Wants to Be a Millionaire'?",
+        "answer": "Who Wants to Be a Millionaire South Africa"
+    },
+    {
+        "question": "What show features the fictional paper company in Scranton?",
+        "answer": "The Office"
+    },
+    {
+        "question": "What BBC nature documentary series is narrated by David Attenborough?",
+        "answer": "Planet Earth (or Blue Planet)"
+    },
+    {
+        "question": "Which SA show featured comedian Marc Sobel?",
+        "answer": "Sober Companion (or his comedy specials)"
+    },
+    {
+        "question": "What crime drama features a detective named Sherlock?",
+        "answer": "Sherlock"
+    },
+    {
+        "question": "Which SA show is set in the world of gospel music?",
+        "answer": "Imbewu: The Seed (or various gospel shows)"
+    },
+    {
+        "question": "What is the most-watched series finale in US history?",
+        "answer": "M*A*S*H"
+    },
+    {
+        "question": "Which superhero show is set in Star City?",
+        "answer": "Arrow"
+    },
+    {
+        "question": "What animated show features a yellow sponge?",
+        "answer": "SpongeBob SquarePants"
+    },
+    {
+        "question": "Which reality show features people surviving on an island?",
+        "answer": "Survivor"
+    },
+    {
+        "question": "What sitcom is set in a bar in Boston?",
+        "answer": "Cheers"
+    },
+    {
+        "question": "Which Netflix show is about a chess prodigy?",
+        "answer": "The Queen's Gambit"
+    },
+    {
+        "question": "What show features the Pearson family across different time periods?",
+        "answer": "This Is Us"
+    },
+    {
+        "question": "Which cartoon features Scooby-Doo?",
+        "answer": "Scooby-Doo, Where Are You!"
+    },
+    {
+        "question": "What hospital drama is the longest-running in TV history?",
+        "answer": "Grey's Anatomy"
+    },
+    {
+        "question": "Which show is about a high school chemistry teacher turned drug dealer?",
+        "answer": "Breaking Bad"
+    }
+]

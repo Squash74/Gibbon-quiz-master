@@ -1,0 +1,802 @@
+[
+    {
+        "question": "Which 1994 film features the line 'Life is like a box of chocolates'?",
+        "answer": "Forrest Gump"
+    },
+    {
+        "question": "What is the highest-grossing film of all time (not adjusted for inflation)?",
+        "answer": "Avatar (2009)"
+    },
+    {
+        "question": "In which South African city is the 2009 film 'District 9' set?",
+        "answer": "Johannesburg"
+    },
+    {
+        "question": "Who directed the 'Lord of the Rings' trilogy?",
+        "answer": "Peter Jackson"
+    },
+    {
+        "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+        "answer": "Robert Downey Jr."
+    },
+    {
+        "question": "What 1997 film became the first to gross over $1 billion worldwide?",
+        "answer": "Titanic"
+    },
+    {
+        "question": "In which film does Leonardo DiCaprio say 'I'm the king of the world!'?",
+        "answer": "Titanic"
+    },
+    {
+        "question": "Which South African actress won an Oscar for her role in 'Monster'?",
+        "answer": "Charlize Theron"
+    },
+    {
+        "question": "What is the name of the fictional African nation in 'Black Panther'?",
+        "answer": "Wakanda"
+    },
+    {
+        "question": "Who directed 'Jurassic Park'?",
+        "answer": "Steven Spielberg"
+    },
+    {
+        "question": "Which 1994 film features John Travolta and Samuel L. Jackson as hitmen?",
+        "answer": "Pulp Fiction"
+    },
+    {
+        "question": "What is the name of the island in 'Jurassic Park'?",
+        "answer": "Isla Nublar"
+    },
+    {
+        "question": "Which film won the Academy Award for Best Picture in 2020?",
+        "answer": "Parasite"
+    },
+    {
+        "question": "Who played Neo in 'The Matrix' trilogy?",
+        "answer": "Keanu Reeves"
+    },
+    {
+        "question": "Which animated film features a character named Simba?",
+        "answer": "The Lion King"
+    },
+    {
+        "question": "In which city is the South African film 'Tsotsi' set?",
+        "answer": "Johannesburg"
+    },
+    {
+        "question": "What is the name of Han Solo's ship in 'Star Wars'?",
+        "answer": "Millennium Falcon"
+    },
+    {
+        "question": "Which director is known for films like 'Inception,' 'Interstellar,' and 'The Dark Knight'?",
+        "answer": "Christopher Nolan"
+    },
+    {
+        "question": "Who played Jack Dawson in 'Titanic'?",
+        "answer": "Leonardo DiCaprio"
+    },
+    {
+        "question": "Which film features the song 'My Heart Will Go On' by Celine Dion?",
+        "answer": "Titanic"
+    },
+    {
+        "question": "What is the name of the computer in '2001: A Space Odyssey'?",
+        "answer": "HAL 9000"
+    },
+    {
+        "question": "Which South African comedian starred in 'Crazy Monkey: Straight Outta Benoni'?",
+        "answer": "Leon Schuster"
+    },
+    {
+        "question": "In 'The Shawshank Redemption,' how many years was Andy Dufresne imprisoned?",
+        "answer": "19 years"
+    },
+    {
+        "question": "Which actress played Hermione Granger in the 'Harry Potter' series?",
+        "answer": "Emma Watson"
+    },
+    {
+        "question": "What year was the first 'Toy Story' film released?",
+        "answer": "1995"
+    },
+    {
+        "question": "Who directed 'Schindler's List'?",
+        "answer": "Steven Spielberg"
+    },
+    {
+        "question": "Which film features the line 'May the Force be with you'?",
+        "answer": "Star Wars"
+    },
+    {
+        "question": "What is the name of the actor who played Wolverine in the X-Men films?",
+        "answer": "Hugh Jackman"
+    },
+    {
+        "question": "In which decade is 'Stranger Things' set?",
+        "answer": "1980s"
+    },
+    {
+        "question": "Which 2018 superhero film was the first to be nominated for Best Picture at the Oscars?",
+        "answer": "Black Panther"
+    },
+    {
+        "question": "Who composed the instrumental score for 'The Lion King'?",
+        "answer": "Hans Zimmer"
+    },
+    {
+        "question": "What is the name of the hobbit played by Elijah Wood in 'Lord of the Rings'?",
+        "answer": "Frodo Baggins"
+    },
+    {
+        "question": "Which film won the first ever Academy Award for Best Picture in 1929?",
+        "answer": "Wings"
+    },
+    {
+        "question": "In 'The Godfather,' what is placed in the bed as a warning?",
+        "answer": "A horse's head"
+    },
+    {
+        "question": "Which actress played Furiosa in 'Mad Max: Fury Road'?",
+        "answer": "Charlize Theron"
+    },
+    {
+        "question": "What is the name of the ship in 'Pirates of the Caribbean'?",
+        "answer": "The Black Pearl"
+    },
+    {
+        "question": "Who directed 'E.T. the Extra-Terrestrial'?",
+        "answer": "Steven Spielberg"
+    },
+    {
+        "question": "Which 2019 film won the Oscar for Best Picture?",
+        "answer": "Green Book"
+    },
+    {
+        "question": "What is the name of the wizard school in the Harry Potter films?",
+        "answer": "Hogwarts"
+    },
+    {
+        "question": "Who played the Joker in 'The Dark Knight' (2008)?",
+        "answer": "Heath Ledger"
+    },
+    {
+        "question": "What is the name of the AI antagonist in 'The Terminator'?",
+        "answer": "Skynet"
+    },
+    {
+        "question": "Which 2022 film won the Oscar for Best Picture?",
+        "answer": "CODA"
+    },
+    {
+        "question": "Who directed 'Pulp Fiction'?",
+        "answer": "Quentin Tarantino"
+    },
+    {
+        "question": "What is the name of the magical land in 'The Chronicles of Narnia'?",
+        "answer": "Narnia"
+    },
+    {
+        "question": "Which actor plays Thanos in the Marvel Cinematic Universe?",
+        "answer": "Josh Brolin"
+    },
+    {
+        "question": "What year was 'Jaws' released?",
+        "answer": "1975"
+    },
+    {
+        "question": "Who directed 'Avatar' (2009)?",
+        "answer": "James Cameron"
+    },
+    {
+        "question": "In 'Finding Nemo,' what type of fish is Nemo?",
+        "answer": "Clownfish"
+    },
+    {
+        "question": "Which actress played Katniss Everdeen in 'The Hunger Games'?",
+        "answer": "Jennifer Lawrence"
+    },
+    {
+        "question": "What is the name of the fictional town in 'Back to the Future'?",
+        "answer": "Hill Valley"
+    },
+    {
+        "question": "Who played Forrest Gump?",
+        "answer": "Tom Hanks"
+    },
+    {
+        "question": "Which film features the quote 'Here's looking at you, kid'?",
+        "answer": "Casablanca"
+    },
+    {
+        "question": "What is the name of Bruce Wayne's butler in Batman films?",
+        "answer": "Alfred"
+    },
+    {
+        "question": "Which 2017 film is about a deaf-mute woman who falls in love with an amphibian creature?",
+        "answer": "The Shape of Water"
+    },
+    {
+        "question": "Who directed 'The Shining'?",
+        "answer": "Stanley Kubrick"
+    },
+    {
+        "question": "What is the name of the flying car in 'Back to the Future'?",
+        "answer": "DeLorean"
+    },
+    {
+        "question": "Which actor played Jack Sparrow in 'Pirates of the Caribbean'?",
+        "answer": "Johnny Depp"
+    },
+    {
+        "question": "What film franchise features the character Dominic Toretto?",
+        "answer": "Fast and Furious"
+    },
+    {
+        "question": "Who directed 'Gravity'?",
+        "answer": "Alfonso Cuarón"
+    },
+    {
+        "question": "Which film features the line 'You can't handle the truth!'?",
+        "answer": "A Few Good Men"
+    },
+    {
+        "question": "What is the name of the lead character in 'The Bourne Identity'?",
+        "answer": "Jason Bourne"
+    },
+    {
+        "question": "Who played Hannibal Lecter in 'The Silence of the Lambs'?",
+        "answer": "Anthony Hopkins"
+    },
+    {
+        "question": "Which Pixar film features a rat who dreams of becoming a chef?",
+        "answer": "Ratatouille"
+    },
+    {
+        "question": "What is the name of the kingdom in 'Frozen'?",
+        "answer": "Arendelle"
+    },
+    {
+        "question": "Who directed 'Blade Runner'?",
+        "answer": "Ridley Scott"
+    },
+    {
+        "question": "Which film features the line 'I'll be back'?",
+        "answer": "The Terminator"
+    },
+    {
+        "question": "What is the name of Woody's owner in 'Toy Story'?",
+        "answer": "Andy"
+    },
+    {
+        "question": "Who played James Bond the most times in official films?",
+        "answer": "Roger Moore (7 times)"
+    },
+    {
+        "question": "Which 2023 film featured Barbie leaving Barbieland?",
+        "answer": "Barbie"
+    },
+    {
+        "question": "What is the name of the secret agent in 'Kingsman: The Secret Service'?",
+        "answer": "Eggsy"
+    },
+    {
+        "question": "Who directed 'Get Out'?",
+        "answer": "Jordan Peele"
+    },
+    {
+        "question": "Which film features a character named Tyler Durden?",
+        "answer": "Fight Club"
+    },
+    {
+        "question": "What is the name of the robot in 'Wall-E'?",
+        "answer": "WALL-E"
+    },
+    {
+        "question": "Who played the lead role in 'The Revenant'?",
+        "answer": "Leonardo DiCaprio"
+    },
+    {
+        "question": "Which film is about a young lion who must reclaim his throne?",
+        "answer": "The Lion King"
+    },
+    {
+        "question": "What is the name of Thor's hammer?",
+        "answer": "Mjolnir"
+    },
+    {
+        "question": "Who directed 'Dunkirk'?",
+        "answer": "Christopher Nolan"
+    },
+    {
+        "question": "Which film features the quote 'Why so serious?'?",
+        "answer": "The Dark Knight"
+    },
+    {
+        "question": "What is the name of the main character in 'John Wick'?",
+        "answer": "John Wick"
+    },
+    {
+        "question": "Who voiced Buzz Lightyear in 'Toy Story'?",
+        "answer": "Tim Allen"
+    },
+    {
+        "question": "Which film is set in the fictional country of Genovia?",
+        "answer": "The Princess Diaries"
+    },
+    {
+        "question": "What is the name of the disease in '28 Days Later'?",
+        "answer": "Rage virus"
+    },
+    {
+        "question": "Who directed 'The Social Network'?",
+        "answer": "David Fincher"
+    },
+    {
+        "question": "Which actress played Black Widow in the Marvel films?",
+        "answer": "Scarlett Johansson"
+    },
+    {
+        "question": "What is the name of the spaceship in 'Alien'?",
+        "answer": "Nostromo"
+    },
+    {
+        "question": "Who played the Genie in the 1992 animated 'Aladdin'?",
+        "answer": "Robin Williams (voice)"
+    },
+    {
+        "question": "Which film features a family trapped in a house with monsters attracted to sound?",
+        "answer": "A Quiet Place"
+    },
+    {
+        "question": "What is the name of the protagonist in 'The Truman Show'?",
+        "answer": "Truman Burbank"
+    },
+    {
+        "question": "Who directed 'La La Land'?",
+        "answer": "Damien Chazelle"
+    },
+    {
+        "question": "Which film features the quote 'My precious'?",
+        "answer": "The Lord of the Rings"
+    },
+    {
+        "question": "What is the name of the villain in 'Black Panther'?",
+        "answer": "Killmonger"
+    },
+    {
+        "question": "Who played Erin Brockovich in the film of the same name?",
+        "answer": "Julia Roberts"
+    },
+    {
+        "question": "Which film features time-traveling using a phone booth?",
+        "answer": "Bill & Ted's Excellent Adventure"
+    },
+    {
+        "question": "What is the name of the main character in 'Inception'?",
+        "answer": "Dom Cobb"
+    },
+    {
+        "question": "Who directed 'Inglourious Basterds'?",
+        "answer": "Quentin Tarantino"
+    },
+    {
+        "question": "Which film features the quote 'I see dead people'?",
+        "answer": "The Sixth Sense"
+    },
+    {
+        "question": "What is the name of the dragon in 'How to Train Your Dragon'?",
+        "answer": "Toothless"
+    },
+    {
+        "question": "Who played the Joker in 'Joker' (2019)?",
+        "answer": "Joaquin Phoenix"
+    },
+    {
+        "question": "Which film features a group of thieves who enter people's dreams?",
+        "answer": "Inception"
+    },
+    {
+        "question": "What is the name of the wizard played by Ian McKellen in 'Lord of the Rings'?",
+        "answer": "Gandalf"
+    },
+    {
+        "question": "Who directed 'The Grand Budapest Hotel'?",
+        "answer": "Wes Anderson"
+    },
+    {
+        "question": "Which film features the line 'To infinity and beyond!'?",
+        "answer": "Toy Story"
+    },
+    {
+        "question": "What is the name of the planet in 'Avatar'?",
+        "answer": "Pandora"
+    },
+    {
+        "question": "Who played the lead role in 'Cast Away'?",
+        "answer": "Tom Hanks"
+    },
+    {
+        "question": "Which 1999 film features a red pill and blue pill choice?",
+        "answer": "The Matrix"
+    },
+    {
+        "question": "What is the name of Spider-Man's alter ego?",
+        "answer": "Peter Parker"
+    },
+    {
+        "question": "Who directed '12 Years a Slave'?",
+        "answer": "Steve McQueen"
+    },
+    {
+        "question": "Which film features astronauts stranded on Mars?",
+        "answer": "The Martian"
+    },
+    {
+        "question": "What is the name of the main character in 'Gladiator'?",
+        "answer": "Maximus Decimus Meridius"
+    },
+    {
+        "question": "Who played Lara Croft in the 2018 'Tomb Raider'?",
+        "answer": "Alicia Vikander"
+    },
+    {
+        "question": "Which film features the line 'After all, tomorrow is another day'?",
+        "answer": "Gone with the Wind"
+    },
+    {
+        "question": "What is the name of the superhero team in 'Guardians of the Galaxy'?",
+        "answer": "Guardians of the Galaxy"
+    },
+    {
+        "question": "Who directed 'No Country for Old Men'?",
+        "answer": "Joel and Ethan Coen"
+    },
+    {
+        "question": "Which film features a young wizard named Harry?",
+        "answer": "Harry Potter series"
+    },
+    {
+        "question": "What is the name of the hotel in 'The Shining'?",
+        "answer": "Overlook Hotel"
+    },
+    {
+        "question": "Who played Maleficent in the 2014 film?",
+        "answer": "Angelina Jolie"
+    },
+    {
+        "question": "Which film is about a toy cowboy and space ranger who become friends?",
+        "answer": "Toy Story"
+    },
+    {
+        "question": "What is the name of the lead character in 'Wonder Woman'?",
+        "answer": "Diana Prince"
+    },
+    {
+        "question": "Who directed 'The Departed'?",
+        "answer": "Martin Scorsese"
+    },
+    {
+        "question": "Which film features a character called 'The Dude'?",
+        "answer": "The Big Lebowski"
+    },
+    {
+        "question": "What is the fictional metal in the Marvel universe?",
+        "answer": "Vibranium"
+    },
+    {
+        "question": "Who played Queen Elizabeth II in 'The Queen' (2006)?",
+        "answer": "Helen Mirren"
+    },
+    {
+        "question": "Which film features a giant ape named Kong?",
+        "answer": "King Kong"
+    },
+    {
+        "question": "What is the name of the dog in 'Marley & Me'?",
+        "answer": "Marley"
+    },
+    {
+        "question": "Who directed 'Mad Max: Fury Road'?",
+        "answer": "George Miller"
+    },
+    {
+        "question": "Which film is about a clownfish searching for his son?",
+        "answer": "Finding Nemo"
+    },
+    {
+        "question": "What is the name of Batman's love interest in 'The Dark Knight'?",
+        "answer": "Rachel Dawes"
+    },
+    {
+        "question": "Who played Tony Montana in 'Scarface'?",
+        "answer": "Al Pacino"
+    },
+    {
+        "question": "Which film features the Oompa Loompas?",
+        "answer": "Charlie and the Chocolate Factory"
+    },
+    {
+        "question": "What is the name of the prison in 'The Shawshank Redemption'?",
+        "answer": "Shawshank State Penitentiary"
+    },
+    {
+        "question": "Who directed 'Birdman'?",
+        "answer": "Alejandro González Iñárritu"
+    },
+    {
+        "question": "Which film features the line 'There's no place like home'?",
+        "answer": "The Wizard of Oz"
+    },
+    {
+        "question": "What is the name of the lead character in 'Moana'?",
+        "answer": "Moana"
+    },
+    {
+        "question": "Who played the T-800 in 'The Terminator'?",
+        "answer": "Arnold Schwarzenegger"
+    },
+    {
+        "question": "Which film features the young wizard attending Hogwarts?",
+        "answer": "Harry Potter"
+    },
+    {
+        "question": "What is the name of Doc Brown's dog in 'Back to the Future'?",
+        "answer": "Einstein"
+    },
+    {
+        "question": "Who directed 'Once Upon a Time in Hollywood'?",
+        "answer": "Quentin Tarantino"
+    },
+    {
+        "question": "Which film features the line 'Hasta la vista, baby'?",
+        "answer": "Terminator 2: Judgment Day"
+    },
+    {
+        "question": "What is the name of the vampire played by Robert Pattinson in 'Twilight'?",
+        "answer": "Edward Cullen"
+    },
+    {
+        "question": "Who played Elle Woods in 'Legally Blonde'?",
+        "answer": "Reese Witherspoon"
+    },
+    {
+        "question": "Which film is about toys that come to life when humans aren't around?",
+        "answer": "Toy Story"
+    },
+    {
+        "question": "What is the name of the love interest in 'The Notebook'?",
+        "answer": "Allie Hamilton"
+    },
+    {
+        "question": "Who directed 'Moonlight'?",
+        "answer": "Barry Jenkins"
+    },
+    {
+        "question": "Which film features a character called 'The Bride'?",
+        "answer": "Kill Bill"
+    },
+    {
+        "question": "What is the name of the kingdom in 'Tangled'?",
+        "answer": "Corona"
+    },
+    {
+        "question": "Who played Magneto in the original 'X-Men' trilogy?",
+        "answer": "Ian McKellen"
+    },
+    {
+        "question": "Which film features a sentient robot named Baymax?",
+        "answer": "Big Hero 6"
+    },
+    {
+        "question": "What is the name of the bar in 'Star Wars' where Luke first meets Han Solo?",
+        "answer": "Mos Eisley Cantina"
+    },
+    {
+        "question": "Who directed 'Arrival'?",
+        "answer": "Denis Villeneuve"
+    },
+    {
+        "question": "Which film features the line 'Nobody puts Baby in a corner'?",
+        "answer": "Dirty Dancing"
+    },
+    {
+        "question": "What is the name of the main character in 'The Grand Budapest Hotel'?",
+        "answer": "M. Gustave"
+    },
+    {
+        "question": "Who played the lead role in 'A Beautiful Mind'?",
+        "answer": "Russell Crowe"
+    },
+    {
+        "question": "Which film features a post-apocalyptic world controlled by machines?",
+        "answer": "The Matrix"
+    },
+    {
+        "question": "What is the name of the fish friend in 'Finding Nemo'?",
+        "answer": "Dory"
+    },
+    {
+        "question": "Who directed 'There Will Be Blood'?",
+        "answer": "Paul Thomas Anderson"
+    },
+    {
+        "question": "Which film features the line 'You talking to me?'?",
+        "answer": "Taxi Driver"
+    },
+    {
+        "question": "What is the name of the ogre in 'Shrek'?",
+        "answer": "Shrek"
+    },
+    {
+        "question": "Who played Clarice Starling in 'The Silence of the Lambs'?",
+        "answer": "Jodie Foster"
+    },
+    {
+        "question": "Which film features a boy who befriends an alien?",
+        "answer": "E.T. the Extra-Terrestrial"
+    },
+    {
+        "question": "What is the name of Captain America's shield material?",
+        "answer": "Vibranium"
+    },
+    {
+        "question": "Who directed 'Whiplash'?",
+        "answer": "Damien Chazelle"
+    },
+    {
+        "question": "Which film features a ship that sinks on its maiden voyage?",
+        "answer": "Titanic"
+    },
+    {
+        "question": "What is the name of the monster in 'Frankenstein'?",
+        "answer": "Frankenstein's Monster"
+    },
+    {
+        "question": "Who played the lead in 'The Greatest Showman'?",
+        "answer": "Hugh Jackman"
+    },
+    {
+        "question": "Which film features the quote 'Rosebud'?",
+        "answer": "Citizen Kane"
+    },
+    {
+        "question": "What is the name of the boat in 'Jaws'?",
+        "answer": "Orca"
+    },
+    {
+        "question": "Who directed 'Eternal Sunshine of the Spotless Mind'?",
+        "answer": "Michel Gondry"
+    },
+    {
+        "question": "Which superhero carries an indestructible shield?",
+        "answer": "Captain America"
+    },
+    {
+        "question": "What is the name of the villain in 'The Little Mermaid'?",
+        "answer": "Ursula"
+    },
+    {
+        "question": "Who played Vito Corleone in 'The Godfather'?",
+        "answer": "Marlon Brando"
+    },
+    {
+        "question": "Which film features a reality TV show where contestants fight to the death?",
+        "answer": "The Hunger Games"
+    },
+    {
+        "question": "What is the year the first Star Wars film was released?",
+        "answer": "1977"
+    },
+    {
+        "question": "Who directed 'The Wolf of Wall Street'?",
+        "answer": "Martin Scorsese"
+    },
+    {
+        "question": "Which film features a magical nanny named Mary Poppins?",
+        "answer": "Mary Poppins"
+    },
+    {
+        "question": "What is the name of the main character in 'Up'?",
+        "answer": "Carl Fredricksen"
+    },
+    {
+        "question": "Who played Rey in the Star Wars sequel trilogy?",
+        "answer": "Daisy Ridley"
+    },
+    {
+        "question": "Which film features the line 'You're gonna need a bigger boat'?",
+        "answer": "Jaws"
+    },
+    {
+        "question": "What is the name of the villain in 'The Lion King'?",
+        "answer": "Scar"
+    },
+    {
+        "question": "Who directed 'Spirited Away'?",
+        "answer": "Hayao Miyazaki"
+    },
+    {
+        "question": "Which film features secret agents known as 'Men in Black'?",
+        "answer": "Men in Black"
+    },
+    {
+        "question": "What is the name of the protagonist in 'Shutter Island'?",
+        "answer": "Teddy Daniels"
+    },
+    {
+        "question": "Who played Catwoman in 'The Dark Knight Rises'?",
+        "answer": "Anne Hathaway"
+    },
+    {
+        "question": "Which film features a group of friends exploring a cave system?",
+        "answer": "The Descent"
+    },
+    {
+        "question": "What is the name of the snail in the movie 'Turbo'?",
+        "answer": "Turbo (or Theo)"
+    },
+    {
+        "question": "Who directed 'Her'?",
+        "answer": "Spike Jonze"
+    },
+    {
+        "question": "Which film features the quote 'Keep your friends close, but your enemies closer'?",
+        "answer": "The Godfather Part II"
+    },
+    {
+        "question": "What is the name of the lead character in 'Rogue One'?",
+        "answer": "Jyn Erso"
+    },
+    {
+        "question": "Who played the Mad Hatter in Tim Burton's 'Alice in Wonderland'?",
+        "answer": "Johnny Depp"
+    },
+    {
+        "question": "Which film is about a man who lives inside a TV show?",
+        "answer": "The Truman Show"
+    },
+    {
+        "question": "What is the name of the evil queen in 'Snow White'?",
+        "answer": "The Evil Queen"
+    },
+    {
+        "question": "Who directed 'Blade Runner 2049'?",
+        "answer": "Denis Villeneuve"
+    },
+    {
+        "question": "Which film features a young girl discovering a secret world through a tunnel?",
+        "answer": "Coraline"
+    },
+    {
+        "question": "What is the name of the compound where the Avengers meet?",
+        "answer": "Avengers Compound"
+    },
+    {
+        "question": "Who played The Joker in 'Suicide Squad' (2016)?",
+        "answer": "Jared Leto"
+    },
+    {
+        "question": "Which film franchise features Optimus Prime?",
+        "answer": "Transformers"
+    },
+    {
+        "question": "What is the name of the princess in 'Brave'?",
+        "answer": "Merida"
+    },
+    {
+        "question": "Who directed 'The Irishman'?",
+        "answer": "Martin Scorsese"
+    },
+    {
+        "question": "Which film features a boy named Miguel who travels to the Land of the Dead?",
+        "answer": "Coco"
+    },
+    {
+        "question": "What is the name of Gru's adoptive daughters in 'Despicable Me'?",
+        "answer": "Margo, Edith, and Agnes"
+    },
+    {
+        "question": "Who played the Hulk in 'The Avengers' (2012)?",
+        "answer": "Mark Ruffalo"
+    }
+]

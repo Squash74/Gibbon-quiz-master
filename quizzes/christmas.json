@@ -1,0 +1,806 @@
+[
+    {
+        "question": "In which country did the tradition of putting up a Christmas tree originate?",
+        "answer": "Germany"
+    },
+    {
+        "question": "What is the name of the plant often hung in doorways during Christmas, under which people kiss?",
+        "answer": "Mistletoe"
+    },
+    {
+        "question": "In the song 'The Twelve Days of Christmas,' what gift is given on the fifth day?",
+        "answer": "Five golden rings"
+    },
+    {
+        "question": "Which ancient civilization started the tradition of exchanging gifts during winter celebrations?",
+        "answer": "Ancient Rome"
+    },
+    {
+        "question": "What beverage is traditionally left out for Santa Claus on Christmas Eve?",
+        "answer": "Milk"
+    },
+    {
+        "question": "In South Africa, what is the popular Christmas tradition involving singing door-to-door?",
+        "answer": "Carol singing or Christmas carols"
+    },
+    {
+        "question": "What are the three gifts that the Wise Men brought to baby Jesus?",
+        "answer": "Gold, frankincense, and myrrh"
+    },
+    {
+        "question": "Which popular Christmas song was originally written for Thanksgiving?",
+        "answer": "Jingle Bells"
+    },
+    {
+        "question": "In which ocean is Christmas Island located?",
+        "answer": "Indian Ocean"
+    },
+    {
+        "question": "What is the main ingredient in the South African traditional Christmas dish 'Malva pudding'?",
+        "answer": "Apricot jam"
+    },
+    {
+        "question": "What is the name of the Grinch's dog in 'How the Grinch Stole Christmas'?",
+        "answer": "Max"
+    },
+    {
+        "question": "In what year did Coca-Cola start the modern Santa Claus advertising campaign?",
+        "answer": "1931"
+    },
+    {
+        "question": "What Christmas decoration was originally made from silver strands?",
+        "answer": "Tinsel"
+    },
+    {
+        "question": "Which country traditionally eats KFC for Christmas dinner?",
+        "answer": "Japan"
+    },
+    {
+        "question": "What is the name of the famous Christmas ballet featuring the Sugar Plum Fairy?",
+        "answer": "The Nutcracker"
+    },
+    {
+        "question": "In South Africa, where do many people celebrate Christmas Day?",
+        "answer": "At the beach"
+    },
+    {
+        "question": "What year was the first Christmas stamp issued in the USA?",
+        "answer": "1962"
+    },
+    {
+        "question": "What is the name of the period leading up to Christmas in the Christian calendar?",
+        "answer": "Advent"
+    },
+    {
+        "question": "In the movie 'Home Alone,' where is the McCallister family traveling when they leave Kevin behind?",
+        "answer": "Paris"
+    },
+    {
+        "question": "What is Boxing Day (December 26th) called in South Africa?",
+        "answer": "Day of Goodwill"
+    },
+    {
+        "question": "Which Christmas carol contains the lyrics 'Sleep in heavenly peace'?",
+        "answer": "Silent Night"
+    },
+    {
+        "question": "What is traditionally hidden in a Christmas pudding?",
+        "answer": "A coin (silver sixpence)"
+    },
+    {
+        "question": "What is the best-selling Christmas song of all time?",
+        "answer": "White Christmas by Bing Crosby"
+    },
+    {
+        "question": "In which modern-day country was Saint Nicholas born?",
+        "answer": "Turkey"
+    },
+    {
+        "question": "What do children in the Netherlands leave out for Sinterklaas's horse?",
+        "answer": "Carrots or hay"
+    },
+    {
+        "question": "How many reindeer does Santa have (including Rudolph)?",
+        "answer": "Nine"
+    },
+    {
+        "question": "Which composer wrote the music for 'The Nutcracker' ballet?",
+        "answer": "Tchaikovsky"
+    },
+    {
+        "question": "In which year did Christmas become a federal holiday in the United States?",
+        "answer": "1870"
+    },
+    {
+        "question": "What fruit is traditionally placed in Christmas stockings?",
+        "answer": "Orange or tangerine"
+    },
+    {
+        "question": "What is the name of the main antagonist in 'The Nightmare Before Christmas'?",
+        "answer": "Oogie Boogie"
+    },
+    {
+        "question": "What bird is traditionally eaten for Christmas dinner in the UK?",
+        "answer": "Turkey"
+    },
+    {
+        "question": "In which country did the tradition of Christmas crackers originate?",
+        "answer": "England"
+    },
+    {
+        "question": "What is Scrooge's first name in 'A Christmas Carol'?",
+        "answer": "Ebenezer"
+    },
+    {
+        "question": "Which Christmas plant is known as the 'flower of the Holy Night' in Mexico?",
+        "answer": "Poinsettia"
+    },
+    {
+        "question": "What is the name of the snowman in the movie 'Frozen'?",
+        "answer": "Olaf"
+    },
+    {
+        "question": "In which modern-day country is the city of Bethlehem located?",
+        "answer": "Palestine (West Bank)"
+    },
+    {
+        "question": "What do people traditionally put on top of a Christmas tree?",
+        "answer": "A star or angel"
+    },
+    {
+        "question": "Which Christmas movie features the song 'Have Yourself a Merry Little Christmas'?",
+        "answer": "Meet Me in St. Louis"
+    },
+    {
+        "question": "What is the traditional filling of a British Christmas mince pie?",
+        "answer": "Mincemeat (dried fruit and spices)"
+    },
+    {
+        "question": "In Scandinavia, which mythical creature delivers Christmas presents?",
+        "answer": "The Yule Goat (Julbock)"
+    },
+    {
+        "question": "What is the French name for Santa Claus?",
+        "answer": "Père Noël"
+    },
+    {
+        "question": "Which gas makes Christmas tree lights glow?",
+        "answer": "Neon or argon"
+    },
+    {
+        "question": "What is the name of Santa's workshop located at the North Pole?",
+        "answer": "Elf workshop or Santa's workshop"
+    },
+    {
+        "question": "In 'The Polar Express,' where does the train take children?",
+        "answer": "The North Pole"
+    },
+    {
+        "question": "What are the names of the ghosts that visit Scrooge in 'A Christmas Carol'?",
+        "answer": "Past, Present, and Yet to Come"
+    },
+    {
+        "question": "Which reindeer has a name meaning 'thunder' in German?",
+        "answer": "Donner"
+    },
+    {
+        "question": "What type of pie is traditionally left out for Santa in the US?",
+        "answer": "Chocolate chip cookies (not pie)"
+    },
+    {
+        "question": "In which year did the first Christmas card get sent?",
+        "answer": "1843"
+    },
+    {
+        "question": "What color are the berries on a holly plant?",
+        "answer": "Red"
+    },
+    {
+        "question": "What is the name of Santa's most famous reindeer with a red nose?",
+        "answer": "Rudolph"
+    },
+    {
+        "question": "Which country celebrates Christmas with a witch called La Befana?",
+        "answer": "Italy"
+    },
+    {
+        "question": "What is the German word for Christmas?",
+        "answer": "Weihnachten"
+    },
+    {
+        "question": "In 'A Charlie Brown Christmas,' what does Charlie Brown buy?",
+        "answer": "A small, sparse Christmas tree"
+    },
+    {
+        "question": "What drink is often served warm with spices at Christmas markets?",
+        "answer": "Mulled wine (Glühwein)"
+    },
+    {
+        "question": "Which Christmas song was first performed on Christmas Eve 1818 in Austria?",
+        "answer": "Silent Night"
+    },
+    {
+        "question": "What is the name of the elf in the movie 'Elf' played by Will Ferrell?",
+        "answer": "Buddy"
+    },
+    {
+        "question": "In which city did 'Miracle on 34th Street' take place?",
+        "answer": "New York City"
+    },
+    {
+        "question": "What is wassailing?",
+        "answer": "Going door-to-door singing Christmas carols"
+    },
+    {
+        "question": "Which country has a tradition of hiding a pickle ornament on the Christmas tree?",
+        "answer": "United States (German-American tradition)"
+    },
+    {
+        "question": "What is the name of the Christmas song that starts 'Chestnuts roasting on an open fire'?",
+        "answer": "The Christmas Song"
+    },
+    {
+        "question": "In which Hans Christian Andersen story does a girl freeze on Christmas Eve?",
+        "answer": "The Little Match Girl"
+    },
+    {
+        "question": "What is the traditional Italian Christmas Eve meal called?",
+        "answer": "Feast of the Seven Fishes"
+    },
+    {
+        "question": "Which actor played multiple roles in 'The Polar Express'?",
+        "answer": "Tom Hanks"
+    },
+    {
+        "question": "What are the small doors on an Advent calendar for?",
+        "answer": "Opening one each day leading up to Christmas"
+    },
+    {
+        "question": "In which country did the tradition of the Advent wreath originate?",
+        "answer": "Germany"
+    },
+    {
+        "question": "What is the Spanish word for Christmas?",
+        "answer": "Navidad"
+    },
+    {
+        "question": "Which reindeer's name means 'lightning' in German?",
+        "answer": "Blitzen"
+    },
+    {
+        "question": "What type of tree is traditionally used as a Christmas tree?",
+        "answer": "Fir, spruce, or pine"
+    },
+    {
+        "question": "In 'The Night Before Christmas,' what were the children nestled in?",
+        "answer": "Their beds"
+    },
+    {
+        "question": "What is frankincense?",
+        "answer": "An aromatic resin used as incense"
+    },
+    {
+        "question": "Which saint is Santa Claus based on?",
+        "answer": "Saint Nicholas"
+    },
+    {
+        "question": "What is myrrh?",
+        "answer": "A resin used in perfumes and incense"
+    },
+    {
+        "question": "In 'How the Grinch Stole Christmas,' what size is the Grinch's heart?",
+        "answer": "Two sizes too small"
+    },
+    {
+        "question": "What is the day after Christmas called in the UK?",
+        "answer": "Boxing Day"
+    },
+    {
+        "question": "Which country celebrates Christmas on January 7th?",
+        "answer": "Russia and other Orthodox Christian countries"
+    },
+    {
+        "question": "What is eggnog?",
+        "answer": "A creamy drink made with eggs, milk, and spices"
+    },
+    {
+        "question": "In 'A Christmas Story,' what does Ralphie want for Christmas?",
+        "answer": "A Red Ryder BB gun"
+    },
+    {
+        "question": "What is the tradition of Krampus?",
+        "answer": "A horned creature who punishes naughty children"
+    },
+    {
+        "question": "Which country has the tradition of 13 Yule Lads visiting children before Christmas?",
+        "answer": "Iceland"
+    },
+    {
+        "question": "What is a Yule log?",
+        "answer": "A log burned on the fireplace or a chocolate cake shaped like a log"
+    },
+    {
+        "question": "In 'Die Hard,' what building does the action take place in?",
+        "answer": "Nakatomi Plaza"
+    },
+    {
+        "question": "What is the most popular Christmas cookie in the United States?",
+        "answer": "Sugar cookies or gingerbread"
+    },
+    {
+        "question": "Which carol mentions 'figgy pudding'?",
+        "answer": "We Wish You a Merry Christmas"
+    },
+    {
+        "question": "What is the Swedish name for Santa Claus?",
+        "answer": "Jultomten"
+    },
+    {
+        "question": "In 'The Snowman,' what does the boy's snowman come to life and do?",
+        "answer": "Takes him flying"
+    },
+    {
+        "question": "What is panettone?",
+        "answer": "An Italian Christmas sweet bread"
+    },
+    {
+        "question": "Which famous Christmas song mentions 'dashing through the snow'?",
+        "answer": "Jingle Bells"
+    },
+    {
+        "question": "What is the name of Scrooge's deceased business partner in 'A Christmas Carol'?",
+        "answer": "Jacob Marley"
+    },
+    {
+        "question": "In Venezuela, how do people traditionally travel to Christmas Eve mass?",
+        "answer": "On roller skates"
+    },
+    {
+        "question": "What is stollen?",
+        "answer": "A German Christmas fruitcake"
+    },
+    {
+        "question": "Which country has a Christmas tradition of a giant straw goat?",
+        "answer": "Sweden (Gävle goat)"
+    },
+    {
+        "question": "What is the Russian name for Santa Claus?",
+        "answer": "Ded Moroz (Grandfather Frost)"
+    },
+    {
+        "question": "In 'Elf,' where does Buddy travel to find his father?",
+        "answer": "New York City"
+    },
+    {
+        "question": "What are the first words of the carol 'Deck the Halls'?",
+        "answer": "Deck the halls with boughs of holly"
+    },
+    {
+        "question": "Which country celebrates Christmas with surfing Santas?",
+        "answer": "Australia"
+    },
+    {
+        "question": "What is a traditional Christmas flower other than poinsettia?",
+        "answer": "Christmas rose or amaryllis"
+    },
+    {
+        "question": "In 'The Muppet Christmas Carol,' who plays Ebenezer Scrooge?",
+        "answer": "Michael Caine"
+    },
+    {
+        "question": "What is the Philippine word for Christmas?",
+        "answer": "Pasko"
+    },
+    {
+        "question": "Which Christmas movie features a leg lamp as a major plot point?",
+        "answer": "A Christmas Story"
+    },
+    {
+        "question": "What is glogg?",
+        "answer": "Scandinavian mulled wine"
+    },
+    {
+        "question": "In which country do people traditionally eat 12 grapes at midnight on New Year's Eve?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the name of Mrs. Claus's first name in most traditions?",
+        "answer": "No official name, but often Jessica, Mary, or Martha"
+    },
+    {
+        "question": "Which Dickens novel features the Cratchit family?",
+        "answer": "A Christmas Carol"
+    },
+    {
+        "question": "What is the traditional Ethiopian Christmas dish?",
+        "answer": "Doro wat (chicken stew)"
+    },
+    {
+        "question": "In 'It's a Wonderful Life,' what is the name of the angel?",
+        "answer": "Clarence"
+    },
+    {
+        "question": "What is the Christmas tradition in Catalonia involving a log?",
+        "answer": "Caga Tió (the pooping log)"
+    },
+    {
+        "question": "Which Christmas carol was written during the American Civil War?",
+        "answer": "I Heard the Bells on Christmas Day"
+    },
+    {
+        "question": "What is the traditional Christmas Eve dinner in Poland called?",
+        "answer": "Wigilia"
+    },
+    {
+        "question": "In 'Rudolph the Red-Nosed Reindeer,' what is the name of Rudolph's friend who wants to be a dentist?",
+        "answer": "Hermey"
+    },
+    {
+        "question": "What is the Christmas Island famous for migrating at Christmas time?",
+        "answer": "Red crabs"
+    },
+    {
+        "question": "Which European country has a tradition of witches on Christmas?",
+        "answer": "Norway"
+    },
+    {
+        "question": "What is the Japanese name for their romantic Christmas tradition?",
+        "answer": "Kurisumasu (Christmas)"
+    },
+    {
+        "question": "In which movie does a boy accidentally wish his family would disappear?",
+        "answer": "Home Alone"
+    },
+    {
+        "question": "What is lebkuchen?",
+        "answer": "German Christmas gingerbread"
+    },
+    {
+        "question": "Which reindeer shares its name with a famous Roman god?",
+        "answer": "Cupid"
+    },
+    {
+        "question": "What is the traditional Christmas dessert in Australia?",
+        "answer": "Pavlova or Christmas pudding"
+    },
+    {
+        "question": "In 'Love Actually,' which British Prime Minister character falls for his assistant?",
+        "answer": "The one played by Hugh Grant"
+    },
+    {
+        "question": "What is the tradition of Las Posadas in Mexico?",
+        "answer": "Reenacting Mary and Joseph's search for lodging"
+    },
+    {
+        "question": "Which carol mentions 'good King Wenceslas'?",
+        "answer": "Good King Wenceslas"
+    },
+    {
+        "question": "What is mince pie filling originally made of?",
+        "answer": "Minced meat (now typically dried fruit)"
+    },
+    {
+        "question": "In which country is it traditional to eat carp for Christmas dinner?",
+        "answer": "Czech Republic and Poland"
+    },
+    {
+        "question": "What is the name of the song that starts 'I'm dreaming of a white Christmas'?",
+        "answer": "White Christmas"
+    },
+    {
+        "question": "Which country has the tradition of Sinterklaas arriving by steamboat from Spain?",
+        "answer": "Netherlands"
+    },
+    {
+        "question": "What is buche de Noel?",
+        "answer": "A French Yule log cake"
+    },
+    {
+        "question": "In 'The Nightmare Before Christmas,' what is Jack Skellington's nickname?",
+        "answer": "The Pumpkin King"
+    },
+    {
+        "question": "What is the Greek word for Christmas?",
+        "answer": "Christougenna"
+    },
+    {
+        "question": "Which Christmas character has a carrot nose?",
+        "answer": "Frosty the Snowman"
+    },
+    {
+        "question": "What is the tradition of hiding a spider in the Christmas tree?",
+        "answer": "Ukrainian tradition for good luck"
+    },
+    {
+        "question": "In 'Jingle All the Way,' what toy is Arnold Schwarzenegger trying to buy?",
+        "answer": "Turbo-Man"
+    },
+    {
+        "question": "What is rosolio?",
+        "answer": "Italian Christmas liqueur"
+    },
+    {
+        "question": "Which flower is traditionally used in Christmas decorations in South Africa?",
+        "answer": "Protea or Christmas bush"
+    },
+    {
+        "question": "What is the Portuguese word for Christmas?",
+        "answer": "Natal"
+    },
+    {
+        "question": "In 'Klaus,' where is the postman Jesper sent as punishment?",
+        "answer": "Smeerensburg"
+    },
+    {
+        "question": "What are the colored balls hung on Christmas trees called?",
+        "answer": "Baubles or ornaments"
+    },
+    {
+        "question": "Which country has a tradition of eating KFC on Christmas Day?",
+        "answer": "Japan"
+    },
+    {
+        "question": "What is the traditional color of Advent candles?",
+        "answer": "Purple (or blue) and pink"
+    },
+    {
+        "question": "In which country is Krampusnacht celebrated on December 5th?",
+        "answer": "Austria and Germany"
+    },
+    {
+        "question": "What is the name of the angel who announced Jesus's birth to the shepherds?",
+        "answer": "Gabriel (traditionally)"
+    },
+    {
+        "question": "Which spice is commonly used in Christmas baking and is shaped like a star?",
+        "answer": "Star anise"
+    },
+    {
+        "question": "In 'The Holiday,' which two women swap homes for Christmas?",
+        "answer": "Cameron Diaz and Kate Winslet's characters"
+    },
+    {
+        "question": "What is the traditional Christmas bread of Greece?",
+        "answer": "Christopsomo"
+    },
+    {
+        "question": "Which reindeer is sometimes called 'Donner' in some versions?",
+        "answer": "Donder"
+    },
+    {
+        "question": "What is the Japanese Christmas cake called?",
+        "answer": "Christmas cake (strawberry shortcake)"
+    },
+    {
+        "question": "In 'Scrooged,' who plays the main character?",
+        "answer": "Bill Murray"
+    },
+    {
+        "question": "What is aguinaldo?",
+        "answer": "A Christmas bonus or gift in Spanish-speaking countries"
+    },
+    {
+        "question": "Which Christmas carol was written by Franz Gruber?",
+        "answer": "Silent Night"
+    },
+    {
+        "question": "What is the tradition of the Nutcracker story based on?",
+        "answer": "E.T.A. Hoffmann's story 'The Nutcracker and the Mouse King'"
+    },
+    {
+        "question": "In which country do children leave shoes out for presents instead of stockings?",
+        "answer": "Netherlands and other European countries"
+    },
+    {
+        "question": "What is speculoos?",
+        "answer": "Belgian spiced Christmas cookies"
+    },
+    {
+        "question": "Which Christmas movie features the line 'Every time a bell rings, an angel gets its wings'?",
+        "answer": "It's a Wonderful Life"
+    },
+    {
+        "question": "What is the Finnish name for Santa Claus?",
+        "answer": "Joulupukki"
+    },
+    {
+        "question": "In 'Gremlins,' what are the three rules for caring for a Mogwai?",
+        "answer": "No bright light, no water, no food after midnight"
+    },
+    {
+        "question": "What is traditionally burned in the fireplace at Christmas?",
+        "answer": "Yule log"
+    },
+    {
+        "question": "Which Christmas carol mentions 'three ships come sailing in'?",
+        "answer": "I Saw Three Ships"
+    },
+    {
+        "question": "What is the Indian word for the celebration during Christmas season?",
+        "answer": "Bada Din (Big Day)"
+    },
+    {
+        "question": "In 'National Lampoon's Christmas Vacation,' what is the main character's name?",
+        "answer": "Clark Griswold"
+    },
+    {
+        "question": "What is the traditional Christmas dinner in many Caribbean countries?",
+        "answer": "Jerk chicken or ham"
+    },
+    {
+        "question": "Which country has a tradition of a giant lantern festival at Christmas?",
+        "answer": "Philippines"
+    },
+    {
+        "question": "What is the Hungarian word for Christmas?",
+        "answer": "Karácsony"
+    },
+    {
+        "question": "In 'Arthur Christmas,' what is the name of Santa's son?",
+        "answer": "Arthur"
+    },
+    {
+        "question": "What is the name of the reindeer who loves to dance?",
+        "answer": "Dancer"
+    },
+    {
+        "question": "Which fruit is traditionally turned into a Christmas pudding sauce in the UK?",
+        "answer": "Brandy (brandy sauce)"
+    },
+    {
+        "question": "What is the Welsh word for Christmas?",
+        "answer": "Nadolig"
+    },
+    {
+        "question": "In 'The Santa Clause,' who accidentally causes Santa to fall off the roof?",
+        "answer": "Scott Calvin (Tim Allen)"
+    },
+    {
+        "question": "What is the traditional Christmas pastry in Portugal?",
+        "answer": "Rabanadas (French toast)"
+    },
+    {
+        "question": "Which animal pulls Father Christmas's sleigh in Russia?",
+        "answer": "Three horses (troika)"
+    },
+    {
+        "question": "What is kourabiedes?",
+        "answer": "Greek Christmas butter cookies"
+    },
+    {
+        "question": "In 'Bad Santa,' what is Willie's profession during Christmas?",
+        "answer": "Mall Santa"
+    },
+    {
+        "question": "What is the Dutch word for Christmas?",
+        "answer": "Kerstmis"
+    },
+    {
+        "question": "Which carol mentions 'pa rum pum pum pum'?",
+        "answer": "The Little Drummer Boy"
+    },
+    {
+        "question": "What is the traditional Christmas tree ornament in Finland?",
+        "answer": "Himmeli (straw ornaments)"
+    },
+    {
+        "question": "In 'The Grinch' (2018), who voices the Grinch?",
+        "answer": "Benedict Cumberbatch"
+    },
+    {
+        "question": "What is roscón de reyes?",
+        "answer": "Spanish Three Kings cake"
+    },
+    {
+        "question": "Which country has a tradition of children leaving letters for the Three Kings instead of Santa?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the Norwegian word for Christmas?",
+        "answer": "Jul"
+    },
+    {
+        "question": "In 'The Ref,' who plays the burglar held hostage by a feuding family?",
+        "answer": "Denis Leary"
+    },
+    {
+        "question": "What is the name of the reindeer who prances?",
+        "answer": "Prancer"
+    },
+    {
+        "question": "Which Christmas song was written by Mariah Carey?",
+        "answer": "All I Want for Christmas Is You"
+    },
+    {
+        "question": "What is the Irish word for Christmas?",
+        "answer": "Nollaig"
+    },
+    {
+        "question": "In 'Four Christmases,' who stars alongside Vince Vaughn?",
+        "answer": "Reese Witherspoon"
+    },
+    {
+        "question": "What is the name of the reindeer who is known for speed?",
+        "answer": "Dasher"
+    },
+    {
+        "question": "What is melomakarona?",
+        "answer": "Greek honey-dipped Christmas cookies"
+    },
+    {
+        "question": "Which country has a tradition of the 'Cavalcade of the Magi' on January 5th?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the Polish word for Christmas?",
+        "answer": "Boże Narodzenie"
+    },
+    {
+        "question": "In 'Fred Claus,' who plays Santa's brother?",
+        "answer": "Vince Vaughn"
+    },
+    {
+        "question": "What is the traditional Christmas centerpiece in a Scandinavian home?",
+        "answer": "Julbord (Christmas table/feast)"
+    },
+    {
+        "question": "Which European city is famous for its Christmas markets?",
+        "answer": "Strasbourg, Vienna, or Nuremberg"
+    },
+    {
+        "question": "What is the Czech word for Christmas?",
+        "answer": "Vánoce"
+    },
+    {
+        "question": "In 'Surviving Christmas,' who plays the main character?",
+        "answer": "Ben Affleck"
+    },
+    {
+        "question": "What is the name of the reindeer who leaps through the sky?",
+        "answer": "Vixen"
+    },
+    {
+        "question": "What is szaloncukor?",
+        "answer": "Hungarian Christmas tree candies"
+    },
+    {
+        "question": "Which country celebrates Christmas on December 24th as the main day?",
+        "answer": "Germany, Poland, and other European countries"
+    },
+    {
+        "question": "What is the Hebrew word for Christmas used by some?",
+        "answer": "Chag HaMolad"
+    },
+    {
+        "question": "In 'A Very Harold & Kumar Christmas,' what do they accidentally burn down?",
+        "answer": "The Christmas tree"
+    },
+    {
+        "question": "What is the traditional Christmas Eve fish dish in Italy?",
+        "answer": "Baccalà (salted cod)"
+    },
+    {
+        "question": "What is the name of the reindeer who is always playful?",
+        "answer": "Comet"
+    },
+    {
+        "question": "Which Christmas movie features a young Macaulay Culkin defending his home?",
+        "answer": "Home Alone"
+    },
+    {
+        "question": "What country has the tradition of the 'Julnissen' or Christmas gnome?",
+        "answer": "Denmark and Norway"
+    },
+    {
+        "question": "What is the traditional Christmas drink in Puerto Rico?",
+        "answer": "Coquito"
+    },
+    {
+        "question": "In 'The Nightmare Before Christmas,' where does Jack Skellington live?",
+        "answer": "Halloween Town"
+    },
+    {
+        "question": "What is the traditional Christmas greeting in Hawaiian?",
+        "answer": "Mele Kalikimaka"
+    }
+]
