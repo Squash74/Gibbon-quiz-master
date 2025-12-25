@@ -5,6 +5,62 @@
     box-sizing: border-box;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.theme-icon-light,
+.theme-icon-dark {
+    font-size: 1.3rem;
+    position: absolute;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.theme-icon-dark {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+.theme-icon-light {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Dark mode icon states */
+[data-theme="dark"] .theme-icon-light {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+[data-theme="dark"] .theme-icon-dark {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: #374151;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -14,6 +70,7 @@ body {
     align-items: center;
     padding: 20px;
     color: #333;
+    transition: background 0.3s;
 }
 
 .container {
@@ -55,6 +112,62 @@ header h1 {
     color: #666;
 }
 
+/* Stats Panel */
+.stats-panel {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-clear-stats {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-clear-stats:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
 /* Theme Selection */
 .theme-selection {
     text-align: center;
@@ -92,6 +205,27 @@ header h1 {
 
 .theme-btn:active {
     transform: translateY(-2px);
+}
+
+.theme-btn.completed {
+    position: relative;
+}
+
+.theme-btn.last-played {
+    box-shadow: 0 0 0 3px #fbbf24, 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #10b981;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Quiz Container */
@@ -322,6 +456,19 @@ header h1 {
         font-size: 0.9rem;
     }
 
+    .stats-panel {
+        padding: 12px 15px;
+        margin-bottom: 15px;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
     .theme-buttons {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -330,6 +477,13 @@ header h1 {
     .theme-btn {
         padding: 12px;
         font-size: 1rem;
+    }
+
+    .theme-badge {
+        font-size: 0.6rem;
+        padding: 2px 5px;
+        top: -6px;
+        right: -6px;
     }
 
     .score-board {
@@ -389,4 +543,119 @@ header h1 {
     .question-text {
         font-size: 1rem;
     }
+}
+
+/* ============================================
+   LOADING STATE STYLES
+   ============================================ */
+.theme-buttons.loading {
+    opacity: 0.6;
+    pointer-events: none;
+    position: relative;
+}
+
+.theme-buttons.loading::after {
+    content: 'Loading quizzes...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(102, 126, 234, 0.95);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.load-error {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fee2e2;
+    border-radius: 10px;
+    color: #dc2626;
+}
+
+.load-error p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .load-error {
+    background: #451a1a;
+    color: #fca5a5;
+}
+
+/* ============================================
+   DARK MODE STYLES
+   ============================================ */
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+}
+
+[data-theme="dark"] .container {
+    background: #1f2937;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] header h1 {
+    color: #a5b4fc;
+}
+
+[data-theme="dark"] .subtitle {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .theme-selection h2 {
+    color: #a5b4fc;
+}
+
+[data-theme="dark"] .theme-btn {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+[data-theme="dark"] .theme-btn.last-played {
+    box-shadow: 0 0 0 3px #fbbf24, 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .question-card {
+    background: #374151;
+}
+
+[data-theme="dark"] .question-text {
+    color: #f3f4f6;
+}
+
+[data-theme="dark"] .answer-section {
+    border-top-color: #a5b4fc;
+}
+
+[data-theme="dark"] .answer-label {
+    color: #a5b4fc;
+}
+
+[data-theme="dark"] .answer-text {
+    color: #e5e7eb;
+}
+
+[data-theme="dark"] .game-over h2 {
+    color: #a5b4fc;
+}
+
+[data-theme="dark"] .stats-panel {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+[data-theme="dark"] .score-board {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+[data-theme="dark"] .final-score {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+[data-theme="dark"] .btn-primary {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
