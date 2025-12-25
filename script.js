@@ -210,6 +210,7 @@ let score = 0;
 let answerRevealed = false;
 
 // DOM Elements
+const container = document.querySelector('.container');
 const themeSelection = document.getElementById('themeSelection');
 const quizContainer = document.getElementById('quizContainer');
 const gameOver = document.getElementById('gameOver');
@@ -252,6 +253,7 @@ function startQuiz() {
     shuffleArray(questions);
     
     // Update UI
+    container.classList.add('quiz-active');
     themeSelection.classList.add('hidden');
     quizContainer.classList.remove('hidden');
     gameOver.classList.add('hidden');
@@ -347,12 +349,14 @@ function endQuiz() {
 
 // New Game
 newGameBtn.addEventListener('click', () => {
+    container.classList.remove('quiz-active');
     quizContainer.classList.add('hidden');
     themeSelection.classList.remove('hidden');
 });
 
 // Play Again
 playAgainBtn.addEventListener('click', () => {
+    container.classList.remove('quiz-active');
     gameOver.classList.add('hidden');
     themeSelection.classList.remove('hidden');
 });

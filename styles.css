@@ -293,44 +293,86 @@ header h1 {
     display: none !important;
 }
 
+/* Hide header when quiz is active */
+.quiz-active header {
+    display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
     .container {
-        padding: 20px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    header {
+        margin-bottom: 15px;
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .theme-buttons {
-        grid-template-columns: 1fr;
-    }
-
-    .question-text {
-        font-size: 1.2rem;
-    }
-
-    .answer-text {
-        font-size: 1.1rem;
-    }
-
-    .score-board {
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
-    .scoring-buttons {
-        flex-direction: column;
+    .theme-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .score-board {
+        padding: 10px 12px;
+        gap: 5px 15px;
+        font-size: 0.85rem;
+    }
+
+    .score-label {
+        font-size: 0.8rem;
+    }
+
+    .score-value {
+        font-size: 0.95rem;
+    }
+
+    .question-card {
+        padding: 15px;
+        min-height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .answer-text {
+        font-size: 1rem;
+    }
+
+    .button-group {
+        gap: 8px;
+        margin-bottom: 8px;
     }
 
     .btn {
-        padding: 12px 20px;
-        font-size: 1rem;
+        padding: 10px 16px;
+        font-size: 0.95rem;
+    }
+
+    .game-controls {
+        margin-top: 5px;
     }
 
     .big-score {
@@ -339,15 +381,12 @@ header h1 {
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
     .theme-selection h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
     }
 
     .question-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
