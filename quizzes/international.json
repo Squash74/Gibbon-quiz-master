@@ -194,5 +194,609 @@
     {
         "question": "What language has the most native speakers in the world?",
         "answer": "Mandarin Chinese"
+    },
+    {
+        "question": "What is the capital of Australia?",
+        "answer": "Canberra"
+    },
+    {
+        "question": "Which country is known as the 'Land of the Midnight Sun'?",
+        "answer": "Norway"
+    },
+    {
+        "question": "What is the smallest country in the world?",
+        "answer": "Vatican City"
+    },
+    {
+        "question": "Which river runs through London?",
+        "answer": "Thames"
+    },
+    {
+        "question": "What is the capital of Mexico?",
+        "answer": "Mexico City"
+    },
+    {
+        "question": "Which country has the most active volcanoes?",
+        "answer": "Indonesia"
+    },
+    {
+        "question": "What is the currency of Russia?",
+        "answer": "Russian Ruble"
+    },
+    {
+        "question": "Which continent has the most countries?",
+        "answer": "Africa (54 countries)"
+    },
+    {
+        "question": "What is the capital of New Zealand?",
+        "answer": "Wellington"
+    },
+    {
+        "question": "Which country is home to Angkor Wat?",
+        "answer": "Cambodia"
+    },
+    {
+        "question": "What is the largest lake in Africa?",
+        "answer": "Lake Victoria"
+    },
+    {
+        "question": "Which European capital straddles two continents?",
+        "answer": "Istanbul (Turkey - though technically not capital)"
+    },
+    {
+        "question": "What is the capital of Saudi Arabia?",
+        "answer": "Riyadh"
+    },
+    {
+        "question": "Which country invented paper?",
+        "answer": "China"
+    },
+    {
+        "question": "What is the currency of Mexico?",
+        "answer": "Mexican Peso"
+    },
+    {
+        "question": "Which country has the largest area of Amazon Rainforest?",
+        "answer": "Brazil"
+    },
+    {
+        "question": "What is the capital of Greece?",
+        "answer": "Athens"
+    },
+    {
+        "question": "Which country is famous for its tulips?",
+        "answer": "Netherlands"
+    },
+    {
+        "question": "What is the deepest lake in the world?",
+        "answer": "Lake Baikal (Russia)"
+    },
+    {
+        "question": "Which country has the most pyramids?",
+        "answer": "Sudan"
+    },
+    {
+        "question": "What is the capital of Indonesia?",
+        "answer": "Jakarta (moving to Nusantara)"
+    },
+    {
+        "question": "Which country is famous for sake?",
+        "answer": "Japan"
+    },
+    {
+        "question": "What is the longest river in Europe?",
+        "answer": "Volga"
+    },
+    {
+        "question": "Which country is home to the Taj Mahal?",
+        "answer": "India"
+    },
+    {
+        "question": "What is the capital of Poland?",
+        "answer": "Warsaw"
+    },
+    {
+        "question": "Which country has the most official languages?",
+        "answer": "Zimbabwe (16 official languages)"
+    },
+    {
+        "question": "What is the largest island in the world?",
+        "answer": "Greenland"
+    },
+    {
+        "question": "Which country is famous for flamenco dancing?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the capital of Thailand?",
+        "answer": "Bangkok"
+    },
+    {
+        "question": "Which country is known for the Northern Lights?",
+        "answer": "Norway (or Iceland, Finland, Sweden)"
+    },
+    {
+        "question": "What is the currency of South Korea?",
+        "answer": "South Korean Won"
+    },
+    {
+        "question": "Which country is home to the Serengeti?",
+        "answer": "Tanzania"
+    },
+    {
+        "question": "What is the capital of Iran?",
+        "answer": "Tehran"
+    },
+    {
+        "question": "Which country produces the most olive oil?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the oldest country in the world?",
+        "answer": "San Marino (founded 301 AD)"
+    },
+    {
+        "question": "Which country has the most lakes?",
+        "answer": "Canada"
+    },
+    {
+        "question": "What is the capital of the Philippines?",
+        "answer": "Manila"
+    },
+    {
+        "question": "Which country is known for the Running of the Bulls?",
+        "answer": "Spain (Pamplona)"
+    },
+    {
+        "question": "What is the currency of Brazil?",
+        "answer": "Brazilian Real"
+    },
+    {
+        "question": "Which country is home to Christ the Redeemer?",
+        "answer": "Brazil"
+    },
+    {
+        "question": "What is the capital of Czech Republic?",
+        "answer": "Prague"
+    },
+    {
+        "question": "Which country has the fastest internet speed?",
+        "answer": "Singapore (or South Korea)"
+    },
+    {
+        "question": "What is the largest country in South America?",
+        "answer": "Brazil"
+    },
+    {
+        "question": "Which country is famous for curry?",
+        "answer": "India"
+    },
+    {
+        "question": "What is the capital of Hungary?",
+        "answer": "Budapest"
+    },
+    {
+        "question": "Which country invented pizza?",
+        "answer": "Italy"
+    },
+    {
+        "question": "What is the currency of Egypt?",
+        "answer": "Egyptian Pound"
+    },
+    {
+        "question": "Which country is known as the 'Land of Smiles'?",
+        "answer": "Thailand"
+    },
+    {
+        "question": "What is the capital of Malaysia?",
+        "answer": "Kuala Lumpur"
+    },
+    {
+        "question": "Which country has the most spoken languages?",
+        "answer": "Papua New Guinea (over 800)"
+    },
+    {
+        "question": "What is the largest country in the Middle East?",
+        "answer": "Saudi Arabia"
+    },
+    {
+        "question": "Which country is famous for samba?",
+        "answer": "Brazil"
+    },
+    {
+        "question": "What is the capital of Finland?",
+        "answer": "Helsinki"
+    },
+    {
+        "question": "Which country consumes the most rice?",
+        "answer": "China"
+    },
+    {
+        "question": "What is the currency of Thailand?",
+        "answer": "Thai Baht"
+    },
+    {
+        "question": "Which country is home to the Outback?",
+        "answer": "Australia"
+    },
+    {
+        "question": "What is the capital of Morocco?",
+        "answer": "Rabat"
+    },
+    {
+        "question": "Which country is famous for the Northern Lights tourism?",
+        "answer": "Finland, Iceland, or Norway"
+    },
+    {
+        "question": "What is the longest mountain range in the world?",
+        "answer": "The Andes"
+    },
+    {
+        "question": "Which country is known for kimchi?",
+        "answer": "South Korea"
+    },
+    {
+        "question": "What is the capital of Portugal?",
+        "answer": "Lisbon"
+    },
+    {
+        "question": "Which country produces the most chocolate?",
+        "answer": "Ivory Coast (cocoa)"
+    },
+    {
+        "question": "What is the currency of Australia?",
+        "answer": "Australian Dollar"
+    },
+    {
+        "question": "Which country is home to the Parthenon?",
+        "answer": "Greece"
+    },
+    {
+        "question": "What is the capital of Kenya?",
+        "answer": "Nairobi"
+    },
+    {
+        "question": "Which country is known as the 'Pearl of Africa'?",
+        "answer": "Uganda"
+    },
+    {
+        "question": "What is the largest desert in the world?",
+        "answer": "Antarctica (cold desert) or Sahara (hot desert)"
+    },
+    {
+        "question": "Which country is famous for tango?",
+        "answer": "Argentina"
+    },
+    {
+        "question": "What is the capital of Ukraine?",
+        "answer": "Kyiv"
+    },
+    {
+        "question": "Which country has the most nuclear reactors?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the currency of Israel?",
+        "answer": "Israeli New Shekel"
+    },
+    {
+        "question": "Which country is home to the Dead Sea?",
+        "answer": "Israel and Jordan"
+    },
+    {
+        "question": "What is the capital of Chile?",
+        "answer": "Santiago"
+    },
+    {
+        "question": "Which country has the highest GDP?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the driest inhabited continent?",
+        "answer": "Australia"
+    },
+    {
+        "question": "Which country is famous for its windmills?",
+        "answer": "Netherlands"
+    },
+    {
+        "question": "What is the capital of Colombia?",
+        "answer": "Bogota"
+    },
+    {
+        "question": "Which country has the most World Heritage Sites?",
+        "answer": "Italy"
+    },
+    {
+        "question": "What is the currency of Norway?",
+        "answer": "Norwegian Krone"
+    },
+    {
+        "question": "Which country is known for baklava?",
+        "answer": "Turkey (or Greece)"
+    },
+    {
+        "question": "What is the capital of Singapore?",
+        "answer": "Singapore (city-state)"
+    },
+    {
+        "question": "Which river runs through Egypt?",
+        "answer": "Nile"
+    },
+    {
+        "question": "What is the northernmost country?",
+        "answer": "Norway (Svalbard)"
+    },
+    {
+        "question": "Which country is home to Victoria Falls?",
+        "answer": "Zimbabwe and Zambia"
+    },
+    {
+        "question": "What is the capital of Denmark?",
+        "answer": "Copenhagen"
+    },
+    {
+        "question": "Which country invented the Olympic Games?",
+        "answer": "Greece"
+    },
+    {
+        "question": "What is the currency of Poland?",
+        "answer": "Polish Zloty"
+    },
+    {
+        "question": "Which country is famous for cheese fondue?",
+        "answer": "Switzerland"
+    },
+    {
+        "question": "What is the capital of Cuba?",
+        "answer": "Havana"
+    },
+    {
+        "question": "Which country is known for the pyramids of Giza?",
+        "answer": "Egypt"
+    },
+    {
+        "question": "What is the smallest country in Africa?",
+        "answer": "Seychelles"
+    },
+    {
+        "question": "Which country is home to the Amazon River?",
+        "answer": "Brazil (and others)"
+    },
+    {
+        "question": "What is the capital of Austria?",
+        "answer": "Vienna"
+    },
+    {
+        "question": "Which country invented gunpowder?",
+        "answer": "China"
+    },
+    {
+        "question": "What is the currency of Turkey?",
+        "answer": "Turkish Lira"
+    },
+    {
+        "question": "Which country is known as the 'Gift of the Nile'?",
+        "answer": "Egypt"
+    },
+    {
+        "question": "What is the capital of Peru?",
+        "answer": "Lima"
+    },
+    {
+        "question": "Which country has the most Nobel Prize winners?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the largest island country?",
+        "answer": "Indonesia"
+    },
+    {
+        "question": "Which country is famous for kangaroos?",
+        "answer": "Australia"
+    },
+    {
+        "question": "What is the capital of Iraq?",
+        "answer": "Baghdad"
+    },
+    {
+        "question": "Which country invented the printing press?",
+        "answer": "Germany (Gutenberg)"
+    },
+    {
+        "question": "What is the currency of Sweden?",
+        "answer": "Swedish Krona"
+    },
+    {
+        "question": "Which country is home to Mount Kilimanjaro?",
+        "answer": "Tanzania"
+    },
+    {
+        "question": "What is the capital of Belgium?",
+        "answer": "Brussels"
+    },
+    {
+        "question": "Which country is famous for the Eiffel Tower?",
+        "answer": "France"
+    },
+    {
+        "question": "What is the southernmost continent?",
+        "answer": "Antarctica"
+    },
+    {
+        "question": "Which country produces the most wine?",
+        "answer": "Italy (or France)"
+    },
+    {
+        "question": "What is the capital of Bangladesh?",
+        "answer": "Dhaka"
+    },
+    {
+        "question": "Which country is famous for Oktoberfest?",
+        "answer": "Germany (Munich)"
+    },
+    {
+        "question": "What is the currency of Denmark?",
+        "answer": "Danish Krone"
+    },
+    {
+        "question": "Which country is home to Petra?",
+        "answer": "Jordan"
+    },
+    {
+        "question": "What is the capital of Ethiopia?",
+        "answer": "Addis Ababa"
+    },
+    {
+        "question": "Which country is known for saunas?",
+        "answer": "Finland"
+    },
+    {
+        "question": "What is the largest country in Central America?",
+        "answer": "Nicaragua"
+    },
+    {
+        "question": "Which country is famous for paella?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the capital of Romania?",
+        "answer": "Bucharest"
+    },
+    {
+        "question": "Which country has the longest railway?",
+        "answer": "Russia (Trans-Siberian)"
+    },
+    {
+        "question": "What is the currency of Nigeria?",
+        "answer": "Nigerian Naira"
+    },
+    {
+        "question": "Which country is home to Stonehenge?",
+        "answer": "United Kingdom (England)"
+    },
+    {
+        "question": "What is the capital of Pakistan?",
+        "answer": "Islamabad"
+    },
+    {
+        "question": "Which country invented democracy?",
+        "answer": "Greece (Athens)"
+    },
+    {
+        "question": "What is the smallest country in South America?",
+        "answer": "Suriname"
+    },
+    {
+        "question": "Which country is famous for borscht?",
+        "answer": "Ukraine (or Russia)"
+    },
+    {
+        "question": "What is the capital of Ireland?",
+        "answer": "Dublin"
+    },
+    {
+        "question": "Which country has the most museums?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the currency of Canada?",
+        "answer": "Canadian Dollar"
+    },
+    {
+        "question": "Which country is home to the Alhambra?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the capital of Myanmar?",
+        "answer": "Naypyidaw"
+    },
+    {
+        "question": "Which country is famous for carnival?",
+        "answer": "Brazil (Rio de Janeiro)"
+    },
+    {
+        "question": "What is the hottest country in the world?",
+        "answer": "Mali or Burkina Faso"
+    },
+    {
+        "question": "Which country is home to the Galápagos Islands?",
+        "answer": "Ecuador"
+    },
+    {
+        "question": "What is the capital of Nepal?",
+        "answer": "Kathmandu"
+    },
+    {
+        "question": "Which country invented sushi?",
+        "answer": "Japan"
+    },
+    {
+        "question": "What is the currency of New Zealand?",
+        "answer": "New Zealand Dollar"
+    },
+    {
+        "question": "Which country is known as the 'Heart of Africa'?",
+        "answer": "Rwanda (or Central African Republic)"
+    },
+    {
+        "question": "What is the capital of Ghana?",
+        "answer": "Accra"
+    },
+    {
+        "question": "Which country has the largest economy in Europe?",
+        "answer": "Germany"
+    },
+    {
+        "question": "What is the capital of Algeria?",
+        "answer": "Algiers"
+    },
+    {
+        "question": "Which country is famous for its fjords and vikings?",
+        "answer": "Norway"
+    },
+    {
+        "question": "What is the currency of Argentina?",
+        "answer": "Argentine Peso"
+    },
+    {
+        "question": "Which country is home to the Acropolis?",
+        "answer": "Greece"
+    },
+    {
+        "question": "What is the capital of Sweden?",
+        "answer": "Stockholm"
+    },
+    {
+        "question": "Which country invented pasta?",
+        "answer": "China (brought to Italy by Marco Polo)"
+    },
+    {
+        "question": "What is the capital of North Korea?",
+        "answer": "Pyongyang"
+    },
+    {
+        "question": "Which country is the largest producer of gold?",
+        "answer": "China"
+    },
+    {
+        "question": "What is the capital of Sri Lanka?",
+        "answer": "Sri Jayawardenepura Kotte (commercial: Colombo)"
+    },
+    {
+        "question": "Which country has the most billionaires?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the capital of Tanzania?",
+        "answer": "Dodoma"
+    },
+    {
+        "question": "Which country is known as the 'Switzerland of Asia'?",
+        "answer": "Nepal"
+    },
+    {
+        "question": "What is the capital of Botswana?",
+        "answer": "Gaborone"
     }
 ]
