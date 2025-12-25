@@ -240,6 +240,7 @@ function updateTimerDisplay() {
 
 function handleTimeout() {
     stopTimer();
+    resetStreak(); // Timeout counts as incorrect
 
     // Auto-reveal answer and mark as incorrect
     const answerSection = document.getElementById('answerSection');
@@ -265,6 +266,114 @@ function hideTimerDisplay() {
     const timerDisplay = document.getElementById('timerDisplay');
     if (timerDisplay) {
         timerDisplay.classList.add('hidden');
+    }
+}
+
+// ============================================
+// STREAK SYSTEM
+// ============================================
+let currentStreak = 0;
+let maxStreak = 0;
+
+function updateStreakDisplay() {
+    const streakValue = document.getElementById('streakValue');
+    const streakDisplay = document.getElementById('streakDisplay');
+
+    if (streakValue) {
+        streakValue.textContent = currentStreak;
+    }
+
+    if (streakDisplay) {
+        // Remove all milestone classes
+        streakDisplay.classList.remove('streak-5', 'streak-10', 'streak-15');
+
+        // Add appropriate milestone class
+        if (currentStreak >= 15) {
+            streakDisplay.classList.add('streak-15');
+        } else if (currentStreak >= 10) {
+            streakDisplay.classList.add('streak-10');
+        } else if (currentStreak >= 5) {
+            streakDisplay.classList.add('streak-5');
+        }
+
+        // Show/hide based on streak
+        if (currentStreak >= 2) {
+            streakDisplay.classList.remove('hidden');
+        } else {
+            streakDisplay.classList.add('hidden');
+        }
+    }
+}
+
+function incrementStreak() {
+    currentStreak++;
+    if (currentStreak > maxStreak) {
+        maxStreak = currentStreak;
+    }
+    updateStreakDisplay();
+
+    // Show milestone celebration
+    if (currentStreak === 5 || currentStreak === 10 || currentStreak === 15) {
+        showStreakMilestone(currentStreak);
+    }
+}
+
+function resetStreak() {
+    currentStreak = 0;
+    updateStreakDisplay();
+}
+
+function showStreakMilestone(milestone) {
+    const streakDisplay = document.getElementById('streakDisplay');
+    if (streakDisplay) {
+        streakDisplay.classList.add('milestone-celebration');
+        setTimeout(() => {
+            streakDisplay.classList.remove('milestone-celebration');
+        }, 600);
+    }
+}
+
+// ============================================
+// SHARE RESULTS
+// ============================================
+function getShareText() {
+    const percentScore = Math.round((score / questions.length) * 100);
+    const themeName = capitalizeFirstLetter(currentTheme);
+
+    let streakText = '';
+    if (maxStreak >= 3) {
+        streakText = `\nBest Streak: ${maxStreak} in a row!`;
+    }
+
+    return `🎉 Gibbon Quiz Master 🎉
+
+Theme: ${themeName}
+Score: ${score}/${questions.length} (${percentScore}%)${streakText}
+
+Play at: [your-url-here]`;
+}
+
+async function shareResults() {
+    const shareText = getShareText();
+    const shareBtn = document.getElementById('shareBtn');
+
+    try {
+        await navigator.clipboard.writeText(shareText);
+
+        // Show feedback
+        if (shareBtn) {
+            const originalText = shareBtn.textContent;
+            shareBtn.textContent = '✓ Copied!';
+            shareBtn.classList.add('copied');
+            setTimeout(() => {
+                shareBtn.textContent = originalText;
+                shareBtn.classList.remove('copied');
+            }, 2000);
+        }
+    } catch (err) {
+        console.error('Failed to copy:', err);
+        // Fallback: show the text in an alert
+        alert('Copy this to share:\n\n' + shareText);
     }
 }
 
@@ -315,6 +424,9 @@ function startQuiz() {
     score = 0;
     currentQuestionIndex = 0;
     answerRevealed = false;
+    currentStreak = 0;
+    maxStreak = 0;
+    updateStreakDisplay();
 
     // Get and shuffle questions for the theme
     questions = [...quizData[currentTheme]];
@@ -393,6 +505,7 @@ function updateRunningPercent() {
 correctBtn.addEventListener('click', () => {
     score++;
     scoreEl.textContent = score;
+    incrementStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
     nextBtn.classList.remove('hidden');
@@ -400,6 +513,7 @@ correctBtn.addEventListener('click', () => {
 
 // Incorrect Answer
 incorrectBtn.addEventListener('click', () => {
+    resetStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
     nextBtn.classList.remove('hidden');
@@ -429,6 +543,18 @@ function endQuiz() {
 
     const percentScore = Math.round((score / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Update best streak display
+    const bestStreakValue = document.getElementById('bestStreakValue');
+    const bestStreakDisplay = document.getElementById('bestStreakDisplay');
+    if (bestStreakValue && bestStreakDisplay) {
+        if (maxStreak >= 3) {
+            bestStreakValue.textContent = maxStreak;
+            bestStreakDisplay.classList.remove('hidden');
+        } else {
+            bestStreakDisplay.classList.add('hidden');
+        }
+    }
 
     // Save progress to localStorage
     const progress = updateHighScore(currentTheme, score, questions.length);
@@ -582,6 +708,12 @@ async function initializeApp() {
                 clearAllProgress();
             }
         });
+    }
+
+    // Share button handler
+    const shareBtn = document.getElementById('shareBtn');
+    if (shareBtn) {
+        shareBtn.addEventListener('click', shareResults);
     }
 }
 

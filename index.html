@@ -93,6 +93,10 @@
                     <span class="score-label">⏱️</span>
                     <span id="timerValue" class="score-value timer-value">30</span>
                 </div>
+                <div class="score-item streak-display hidden" id="streakDisplay">
+                    <span class="score-label">🔥</span>
+                    <span id="streakValue" class="score-value streak-value">0</span>
+                </div>
             </div>
 
             <div class="question-card">
@@ -123,8 +127,12 @@
                 <p>Your Final Score:</p>
                 <p class="big-score"><span id="finalScore">0</span> / <span id="finalTotal">0</span></p>
                 <p class="percentage" id="percentage"></p>
+                <p class="best-streak hidden" id="bestStreakDisplay">🔥 Best Streak: <span id="bestStreakValue">0</span> in a row!</p>
             </div>
-            <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            <div class="game-over-buttons">
+                <button id="shareBtn" class="btn btn-share">📋 Share Score</button>
+                <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
         </div>
         </div>
     </div>

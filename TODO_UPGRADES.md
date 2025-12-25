@@ -68,25 +68,25 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 7. Streak & Combo System
-- [ ] Track consecutive correct answers
-- [ ] Display "streak" counter during quiz
-- [ ] Award bonus visual effects for milestones:
-  - 5+ streak
-  - 10+ streak
-  - 15+ streak
+- [x] Track consecutive correct answers
+- [x] Display "streak" counter during quiz
+- [x] Award bonus visual effects for milestones:
+  - 5+ streak (golden glow)
+  - 10+ streak (orange glow)
+  - 15+ streak (red glow + celebration)
 - [ ] Optional: Bonus points for streaks
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
 ## 8. Share Results
-- [ ] Add "Share Score" button on results screen
-- [ ] Copy formatted result text to clipboard
+- [x] Add "Share Score" button on results screen
+- [x] Copy formatted result text to clipboard
 - [ ] Optional: Generate shareable image
 - [ ] Optional: Social media share links
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -113,18 +113,18 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 
 ## Priority Suggestions
 
-**Quick Wins (Low effort, high impact):**
-- Dark Mode Toggle (#10)
-- Local Storage Progress Tracking (#2)
+**Completed Features:**
+- Dark Mode Toggle (#10) ✅
+- Local Storage Progress Tracking (#2) ✅
+- Timer Mode (#3) ✅
+- External Quiz Data (#5) ✅
+- Streak & Combo System (#7) ✅
+- Share Results (#8) ✅
 
-**Medium Effort:**
+**Remaining - Medium Effort:**
 - Difficulty Levels (#1)
-- External Quiz Data (#5)
-- Share Results (#8)
 
-**Higher Effort:**
-- Timer Mode (#3)
-- Streak & Combo System (#7)
+**Remaining - Higher Effort:**
 - Multiplayer/Party Mode (#4)
 - Basic Testing Setup (#6)
 - Sound Effects (#9)
