@@ -14,12 +14,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 2. Local Storage Progress Tracking
-- [ ] Save high scores per theme
-- [ ] Track which themes have been completed
-- [ ] Remember last played theme
-- [ ] Show personal statistics (total questions answered, overall accuracy)
+- [x] Save high scores per theme
+- [x] Track which themes have been completed
+- [x] Remember last played theme
+- [x] Show personal statistics (total questions answered, overall accuracy)
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 

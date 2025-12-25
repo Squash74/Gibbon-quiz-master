@@ -622,7 +622,69 @@ const quizData = {
     ]
 };
 
-// Quiz State
+// ============================================
+// LOCAL STORAGE MANAGER
+// ============================================
+const STORAGE_KEY = 'gibbonQuizProgress';
+
+function getStoredProgress() {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+        return JSON.parse(stored);
+    }
+    return {
+        highScores: {},          // { theme: { score, total, percentage } }
+        completedThemes: [],     // themes played at least once
+        lastPlayedTheme: null,
+        totalQuestionsAnswered: 0,
+        totalCorrectAnswers: 0
+    };
+}
+
+function saveProgress(progress) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+
+function updateHighScore(theme, score, total) {
+    const progress = getStoredProgress();
+    const percentage = Math.round((score / total) * 100);
+
+    // Update high score if better or first time
+    if (!progress.highScores[theme] || percentage > progress.highScores[theme].percentage) {
+        progress.highScores[theme] = { score, total, percentage };
+    }
+
+    // Mark theme as completed
+    if (!progress.completedThemes.includes(theme)) {
+        progress.completedThemes.push(theme);
+    }
+
+    // Update last played theme
+    progress.lastPlayedTheme = theme;
+
+    // Update total stats
+    progress.totalQuestionsAnswered += total;
+    progress.totalCorrectAnswers += score;
+
+    saveProgress(progress);
+    return progress;
+}
+
+function getOverallAccuracy() {
+    const progress = getStoredProgress();
+    if (progress.totalQuestionsAnswered === 0) return 0;
+    return Math.round((progress.totalCorrectAnswers / progress.totalQuestionsAnswered) * 100);
+}
+
+function clearAllProgress() {
+    localStorage.removeItem(STORAGE_KEY);
+    updateStatsDisplay();
+    updateThemeButtons();
+}
+
+// ============================================
+// QUIZ STATE
+// ============================================
 let currentTheme = '';
 let questions = [];
 let currentQuestionIndex = 0;
@@ -759,12 +821,31 @@ nextBtn.addEventListener('click', () => {
 function endQuiz() {
     quizContainer.classList.add('hidden');
     gameOver.classList.remove('hidden');
-    
+
     finalScore.textContent = score;
     finalTotal.textContent = questions.length;
-    
+
     const percentScore = Math.round((score / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Save progress to localStorage
+    const progress = updateHighScore(currentTheme, score, questions.length);
+
+    // Check if new high score
+    const isNewHighScore = progress.highScores[currentTheme].score === score &&
+                           progress.highScores[currentTheme].percentage === percentScore;
+
+    // Show high score indicator if applicable
+    const highScoreIndicator = document.getElementById('highScoreIndicator');
+    if (highScoreIndicator) {
+        if (isNewHighScore && progress.completedThemes.filter(t => t === currentTheme).length <= 1) {
+            highScoreIndicator.classList.add('hidden');
+        } else if (isNewHighScore) {
+            highScoreIndicator.classList.remove('hidden');
+        } else {
+            highScoreIndicator.classList.add('hidden');
+        }
+    }
 }
 
 // New Game
@@ -772,6 +853,8 @@ newGameBtn.addEventListener('click', () => {
     container.classList.remove('quiz-active');
     quizContainer.classList.add('hidden');
     themeSelection.classList.remove('hidden');
+    updateStatsDisplay();
+    updateThemeButtons();
 });
 
 // Play Again
@@ -779,6 +862,8 @@ playAgainBtn.addEventListener('click', () => {
     container.classList.remove('quiz-active');
     gameOver.classList.add('hidden');
     themeSelection.classList.remove('hidden');
+    updateStatsDisplay();
+    updateThemeButtons();
 });
 
 // Utility Functions
@@ -804,4 +889,85 @@ function capitalizeFirstLetter(string) {
         'african': 'African'
     };
     return themeNames[string] || string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// ============================================
+// STATS DISPLAY FUNCTIONS
+// ============================================
+function updateStatsDisplay() {
+    const progress = getStoredProgress();
+    const statsPanel = document.getElementById('statsPanel');
+
+    if (!statsPanel) return;
+
+    const totalThemes = Object.keys(quizData).length;
+    const completedCount = progress.completedThemes.length;
+    const accuracy = getOverallAccuracy();
+
+    document.getElementById('statsTotalAnswered').textContent = progress.totalQuestionsAnswered;
+    document.getElementById('statsAccuracy').textContent = accuracy + '%';
+    document.getElementById('statsCompleted').textContent = `${completedCount}/${totalThemes}`;
+
+    // Show/hide stats panel based on whether there's any data
+    if (progress.totalQuestionsAnswered > 0) {
+        statsPanel.classList.remove('hidden');
+    } else {
+        statsPanel.classList.add('hidden');
+    }
+}
+
+function updateThemeButtons() {
+    const progress = getStoredProgress();
+
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+        const theme = btn.dataset.theme;
+        const highScore = progress.highScores[theme];
+        const isCompleted = progress.completedThemes.includes(theme);
+        const isLastPlayed = progress.lastPlayedTheme === theme;
+
+        // Remove existing badges
+        const existingBadge = btn.querySelector('.theme-badge');
+        if (existingBadge) existingBadge.remove();
+
+        // Add completion indicator and high score
+        if (isCompleted && highScore) {
+            const badge = document.createElement('span');
+            badge.className = 'theme-badge';
+            badge.textContent = `${highScore.percentage}%`;
+            btn.appendChild(badge);
+            btn.classList.add('completed');
+        } else {
+            btn.classList.remove('completed');
+        }
+
+        // Highlight last played theme
+        if (isLastPlayed) {
+            btn.classList.add('last-played');
+        } else {
+            btn.classList.remove('last-played');
+        }
+    });
+}
+
+// Initialize on page load
+function initializeApp() {
+    updateStatsDisplay();
+    updateThemeButtons();
+
+    // Clear stats button handler
+    const clearStatsBtn = document.getElementById('clearStatsBtn');
+    if (clearStatsBtn) {
+        clearStatsBtn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to reset all your progress? This cannot be undone.')) {
+                clearAllProgress();
+            }
+        });
+    }
+}
+
+// Run initialization when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeApp);
+} else {
+    initializeApp();
 }

@@ -55,6 +55,62 @@ header h1 {
     color: #666;
 }
 
+/* Stats Panel */
+.stats-panel {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-clear-stats {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-clear-stats:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
 /* Theme Selection */
 .theme-selection {
     text-align: center;
@@ -92,6 +148,27 @@ header h1 {
 
 .theme-btn:active {
     transform: translateY(-2px);
+}
+
+.theme-btn.completed {
+    position: relative;
+}
+
+.theme-btn.last-played {
+    box-shadow: 0 0 0 3px #fbbf24, 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #10b981;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Quiz Container */
@@ -322,6 +399,19 @@ header h1 {
         font-size: 0.9rem;
     }
 
+    .stats-panel {
+        padding: 12px 15px;
+        margin-bottom: 15px;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
     .theme-buttons {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -330,6 +420,13 @@ header h1 {
     .theme-btn {
         padding: 12px;
         font-size: 1rem;
+    }
+
+    .theme-badge {
+        font-size: 0.6rem;
+        padding: 2px 5px;
+        top: -6px;
+        right: -6px;
     }
 
     .score-board {

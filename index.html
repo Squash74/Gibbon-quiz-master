@@ -13,6 +13,27 @@
             <p class="subtitle">Test your knowledge across different themes!</p>
         </header>
 
+        <div id="statsPanel" class="stats-panel hidden">
+            <div class="stats-header">
+                <span>Your Stats</span>
+                <button id="clearStatsBtn" class="btn-clear-stats" title="Clear all progress">Reset</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-value" id="statsTotalAnswered">0</span>
+                    <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="statsAccuracy">0%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="statsCompleted">0/15</span>
+                    <span class="stat-label">Themes</span>
+                </div>
+            </div>
+        </div>
+
         <div id="themeSelection" class="theme-selection">
             <h2>Choose Your Theme</h2>
             <div class="theme-buttons">
