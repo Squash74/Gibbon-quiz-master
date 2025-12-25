@@ -102,12 +102,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 10. Dark Mode Toggle
-- [ ] Add theme switcher button in UI
-- [ ] Create dark mode CSS styles
-- [ ] Save theme preference to localStorage
-- [ ] Respect system preference as default
+- [x] Add theme switcher button in UI
+- [x] Create dark mode CSS styles
+- [x] Save theme preference to localStorage
+- [x] Respect system preference as default
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 

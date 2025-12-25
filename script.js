@@ -683,6 +683,56 @@ function clearAllProgress() {
 }
 
 // ============================================
+// DARK MODE MANAGER
+// ============================================
+const THEME_STORAGE_KEY = 'gibbonQuizTheme';
+
+function getPreferredTheme() {
+    // Check localStorage first
+    const stored = localStorage.getItem(THEME_STORAGE_KEY);
+    if (stored) {
+        return stored;
+    }
+    // Fall back to system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+    }
+    return 'light';
+}
+
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+}
+
+function initializeTheme() {
+    const theme = getPreferredTheme();
+    setTheme(theme);
+
+    // Listen for system theme changes
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            // Only auto-switch if user hasn't manually set a preference
+            if (!localStorage.getItem(THEME_STORAGE_KEY)) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
+
+    // Add click handler for theme toggle button
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+}
+
+// ============================================
 // QUIZ STATE
 // ============================================
 let currentTheme = '';
@@ -951,6 +1001,7 @@ function updateThemeButtons() {
 
 // Initialize on page load
 function initializeApp() {
+    initializeTheme();
     updateStatsDisplay();
     updateThemeButtons();
 
