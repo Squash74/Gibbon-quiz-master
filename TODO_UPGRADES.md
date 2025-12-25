@@ -24,12 +24,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 3. Timer Mode (Optional Challenge)
-- [ ] Add optional countdown timer for each question (e.g., 30 seconds)
-- [ ] Create toggle to enable/disable timer mode
-- [ ] Visual countdown display
-- [ ] Handle timeout as incorrect answer
+- [x] Add optional countdown timer for each question (30 seconds)
+- [x] Create toggle to enable/disable timer mode
+- [x] Visual countdown display with warning colors
+- [x] Handle timeout as incorrect answer (auto-reveals answer)
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 

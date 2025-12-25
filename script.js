@@ -160,6 +160,115 @@ function initializeTheme() {
 }
 
 // ============================================
+// TIMER MANAGER
+// ============================================
+const TIMER_STORAGE_KEY = 'gibbonQuizTimerEnabled';
+const TIMER_DURATION = 30; // seconds per question
+let timerEnabled = false;
+let timerInterval = null;
+let timeRemaining = TIMER_DURATION;
+
+function getTimerPreference() {
+    return localStorage.getItem(TIMER_STORAGE_KEY) === 'true';
+}
+
+function setTimerPreference(enabled) {
+    localStorage.setItem(TIMER_STORAGE_KEY, enabled.toString());
+    timerEnabled = enabled;
+}
+
+function initializeTimerToggle() {
+    const timerToggle = document.getElementById('timerToggle');
+    if (timerToggle) {
+        // Load saved preference
+        timerEnabled = getTimerPreference();
+        timerToggle.checked = timerEnabled;
+
+        // Listen for changes
+        timerToggle.addEventListener('change', (e) => {
+            setTimerPreference(e.target.checked);
+        });
+    }
+}
+
+function startTimer() {
+    if (!timerEnabled) return;
+
+    const timerDisplay = document.getElementById('timerDisplay');
+    const timerValue = document.getElementById('timerValue');
+
+    if (timerDisplay) {
+        timerDisplay.classList.remove('hidden');
+    }
+
+    timeRemaining = TIMER_DURATION;
+    updateTimerDisplay();
+
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+
+        if (timeRemaining <= 0) {
+            handleTimeout();
+        }
+    }, 1000);
+}
+
+function stopTimer() {
+    if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+    }
+}
+
+function updateTimerDisplay() {
+    const timerValue = document.getElementById('timerValue');
+    if (timerValue) {
+        timerValue.textContent = timeRemaining;
+
+        // Remove existing classes
+        timerValue.classList.remove('warning', 'danger');
+
+        // Add warning/danger classes based on time
+        if (timeRemaining <= 5) {
+            timerValue.classList.add('danger');
+        } else if (timeRemaining <= 10) {
+            timerValue.classList.add('warning');
+        }
+    }
+}
+
+function handleTimeout() {
+    stopTimer();
+
+    // Auto-reveal answer and mark as incorrect
+    const answerSection = document.getElementById('answerSection');
+    const showAnswerBtn = document.getElementById('showAnswerBtn');
+    const scoringButtons = document.getElementById('scoringButtons');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (answerSection) answerSection.classList.remove('hidden');
+    if (showAnswerBtn) showAnswerBtn.classList.add('hidden');
+    if (scoringButtons) scoringButtons.classList.add('hidden');
+    if (nextBtn) nextBtn.classList.remove('hidden');
+
+    answerRevealed = true;
+
+    // Show timeout message
+    const timerValue = document.getElementById('timerValue');
+    if (timerValue) {
+        timerValue.textContent = "Time's up!";
+    }
+}
+
+function hideTimerDisplay() {
+    const timerDisplay = document.getElementById('timerDisplay');
+    if (timerDisplay) {
+        timerDisplay.classList.add('hidden');
+    }
+}
+
+// ============================================
 // QUIZ STATE
 // ============================================
 let currentTheme = '';
@@ -206,21 +315,28 @@ function startQuiz() {
     score = 0;
     currentQuestionIndex = 0;
     answerRevealed = false;
-    
+
     // Get and shuffle questions for the theme
     questions = [...quizData[currentTheme]];
     shuffleArray(questions);
-    
+
     // Update UI
     container.classList.add('quiz-active');
     themeSelection.classList.add('hidden');
     quizContainer.classList.remove('hidden');
     gameOver.classList.add('hidden');
-    
+
     currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
     totalQuestions.textContent = questions.length;
     scoreEl.textContent = score;
     runningPercentEl.textContent = '0';
+
+    // Show/hide timer display based on preference
+    if (timerEnabled) {
+        document.getElementById('timerDisplay')?.classList.remove('hidden');
+    } else {
+        hideTimerDisplay();
+    }
 
     displayQuestion();
 }
@@ -230,20 +346,25 @@ function displayQuestion() {
     const question = questions[currentQuestionIndex];
     questionText.textContent = question.question;
     answerText.textContent = question.answer;
-    
+
     // Update question number
     questionNumber.textContent = currentQuestionIndex + 1;
-    
+
     // Reset UI state
     answerSection.classList.add('hidden');
     showAnswerBtn.classList.remove('hidden');
     scoringButtons.classList.add('hidden');
     nextBtn.classList.add('hidden');
     answerRevealed = false;
+
+    // Start timer for this question
+    stopTimer(); // Clear any existing timer
+    startTimer();
 }
 
 // Show Answer
 showAnswerBtn.addEventListener('click', () => {
+    stopTimer(); // Stop the timer when answer is revealed
     answerSection.classList.remove('hidden');
     showAnswerBtn.classList.add('hidden');
     scoringButtons.classList.remove('hidden');
@@ -253,6 +374,7 @@ showAnswerBtn.addEventListener('click', () => {
 // Alternative: Click question card to show answer
 document.querySelector('.question-card').addEventListener('click', () => {
     if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
+        stopTimer(); // Stop the timer when answer is revealed
         answerSection.classList.remove('hidden');
         showAnswerBtn.classList.add('hidden');
         scoringButtons.classList.remove('hidden');
@@ -296,6 +418,9 @@ nextBtn.addEventListener('click', () => {
 
 // End Quiz
 function endQuiz() {
+    stopTimer();
+    hideTimerDisplay();
+
     quizContainer.classList.add('hidden');
     gameOver.classList.remove('hidden');
 
@@ -327,6 +452,8 @@ function endQuiz() {
 
 // New Game
 newGameBtn.addEventListener('click', () => {
+    stopTimer();
+    hideTimerDisplay();
     container.classList.remove('quiz-active');
     quizContainer.classList.add('hidden');
     themeSelection.classList.remove('hidden');
@@ -336,6 +463,8 @@ newGameBtn.addEventListener('click', () => {
 
 // Play Again
 playAgainBtn.addEventListener('click', () => {
+    stopTimer();
+    hideTimerDisplay();
     container.classList.remove('quiz-active');
     gameOver.classList.add('hidden');
     themeSelection.classList.remove('hidden');
@@ -429,6 +558,7 @@ function updateThemeButtons() {
 // Initialize on page load
 async function initializeApp() {
     initializeTheme();
+    initializeTimerToggle();
 
     // Show loading state while fetching quiz data
     showLoadingState();

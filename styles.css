@@ -188,8 +188,96 @@ header h1 {
 
 .theme-selection h2 {
     color: #667eea;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 1.8rem;
+}
+
+/* Timer Option Toggle */
+.timer-option {
+    margin-bottom: 20px;
+}
+
+.timer-toggle-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+    padding: 10px 20px;
+    background: #f3f4f6;
+    border-radius: 25px;
+    transition: background 0.2s;
+}
+
+.timer-toggle-label:hover {
+    background: #e5e7eb;
+}
+
+.timer-checkbox {
+    display: none;
+}
+
+.timer-slider {
+    width: 44px;
+    height: 24px;
+    background: #cbd5e1;
+    border-radius: 12px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.timer-slider::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timer-checkbox:checked + .timer-slider {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.timer-checkbox:checked + .timer-slider::after {
+    transform: translateX(20px);
+}
+
+.timer-text {
+    font-size: 1rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+/* Timer Display in Quiz */
+.timer-display {
+    background: rgba(251, 191, 36, 0.2);
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+.timer-value {
+    font-size: 1.2rem;
+    min-width: 30px;
+    display: inline-block;
+}
+
+.timer-value.warning {
+    color: #fbbf24;
+    animation: pulse 0.5s ease-in-out infinite;
+}
+
+.timer-value.danger {
+    color: #ef4444;
+    animation: pulse 0.3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }
 
 .theme-buttons {
@@ -671,4 +759,24 @@ header h1 {
 
 [data-theme="dark"] .btn-primary {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+[data-theme="dark"] .timer-toggle-label {
+    background: #374151;
+}
+
+[data-theme="dark"] .timer-toggle-label:hover {
+    background: #4b5563;
+}
+
+[data-theme="dark"] .timer-slider {
+    background: #6b7280;
+}
+
+[data-theme="dark"] .timer-text {
+    color: #d1d5db;
+}
+
+[data-theme="dark"] .timer-display {
+    background: rgba(251, 191, 36, 0.15);
 }

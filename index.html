@@ -44,6 +44,15 @@
 
         <div id="themeSelection" class="theme-selection">
             <h2>Choose Your Theme</h2>
+
+            <div class="timer-option">
+                <label class="timer-toggle-label">
+                    <input type="checkbox" id="timerToggle" class="timer-checkbox">
+                    <span class="timer-slider"></span>
+                    <span class="timer-text">⏱️ Timer Mode (30s per question)</span>
+                </label>
+            </div>
+
             <div class="theme-buttons">
                 <button class="theme-btn" data-theme="christmas">🎄 Christmas</button>
                 <button class="theme-btn" data-theme="movies">🎬 Movies</button>
@@ -79,6 +88,10 @@
                     <span class="score-label">Score:</span>
                     <span id="score" class="score-value">0</span>
                     <span class="score-value running-percent">(<span id="runningPercent">0</span>%)</span>
+                </div>
+                <div class="score-item timer-display hidden" id="timerDisplay">
+                    <span class="score-label">⏱️</span>
+                    <span id="timerValue" class="score-value timer-value">30</span>
                 </div>
             </div>
 
