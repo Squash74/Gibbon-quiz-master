@@ -104,11 +104,11 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 30px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 
 .score-item {
@@ -132,26 +132,26 @@ header h1 {
 /* Question Card */
 .question-card {
     background: #f8f9fa;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    min-height: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    min-height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .question-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
 .answer-section {
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
     border-top: 2px solid #667eea;
     animation: slideDown 0.4s ease-out;
 }
@@ -175,17 +175,21 @@ header h1 {
 }
 
 .answer-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #2d3748;
-    line-height: 1.5;
+    line-height: 1.4;
+}
+
+.running-percent {
+    color: #fbbf24;
 }
 
 /* Buttons */
 .button-group {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .scoring-buttons {
@@ -195,8 +199,8 @@ header h1 {
 }
 
 .btn {
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    padding: 12px 24px;
+    font-size: 1rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -244,7 +248,7 @@ header h1 {
 /* Game Controls */
 .game-controls {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Game Over */
