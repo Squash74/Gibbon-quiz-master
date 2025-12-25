@@ -1,23 +1,28 @@
-// Quiz Data - Loaded from external JSON file
-let quizData = null;
-let quizDataLoaded = false;
-let quizDataError = null;
+// Quiz Data - Lazy loaded per category for better performance
+const quizCache = {}; // Cache loaded categories
+const AVAILABLE_THEMES = [
+    'christmas', 'movies', 'places', 'people', 'sport',
+    'southafrica', 'international', 'music', 'science',
+    'history', 'food', 'tvshows', 'artculture', 'wildlife', 'african'
+];
 
-// Load quiz data from external JSON file
-async function loadQuizData() {
+// Load a specific category's quiz data
+async function loadCategoryData(category) {
+    // Return from cache if already loaded
+    if (quizCache[category]) {
+        return quizCache[category];
+    }
+
     try {
-        const response = await fetch('quizzes.json');
+        const response = await fetch(`quizzes/${category}.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        quizData = await response.json();
-        quizDataLoaded = true;
-        hideLoadingState();
-        return quizData;
+        const data = await response.json();
+        quizCache[category] = data;
+        return data;
     } catch (error) {
-        console.error('Failed to load quiz data:', error);
-        quizDataError = error;
-        showLoadError();
+        console.error(`Failed to load ${category} quiz data:`, error);
         throw error;
     }
 }
@@ -452,49 +457,63 @@ const runningPercentEl = document.getElementById('runningPercent');
 
 // Theme Selection
 document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
         currentTheme = btn.dataset.theme;
-        startQuiz();
+        await startQuiz();
     });
 });
 
 // Start Quiz
-function startQuiz() {
-    // Reset state
-    score = 0;
-    currentQuestionIndex = 0;
-    answerRevealed = false;
-    currentStreak = 0;
-    maxStreak = 0;
-    updateStreakDisplay();
+async function startQuiz() {
+    // Show loading state on the button
+    showLoadingState();
 
-    // Get and shuffle questions for the theme
-    let allQuestions = [...quizData[currentTheme]];
-    shuffleArray(allQuestions);
+    try {
+        // Load category data (from cache or fetch)
+        const categoryData = await loadCategoryData(currentTheme);
 
-    // Limit to selected question count
-    const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
-    questions = allQuestions.slice(0, maxQuestions);
+        // Reset state
+        score = 0;
+        currentQuestionIndex = 0;
+        answerRevealed = false;
+        currentStreak = 0;
+        maxStreak = 0;
+        updateStreakDisplay();
 
-    // Update UI
-    container.classList.add('quiz-active');
-    themeSelection.classList.add('hidden');
-    quizContainer.classList.remove('hidden');
-    gameOver.classList.add('hidden');
+        // Get and shuffle questions for the theme
+        let allQuestions = [...categoryData];
+        shuffleArray(allQuestions);
 
-    currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
-    totalQuestions.textContent = questions.length;
-    scoreEl.textContent = score;
-    runningPercentEl.textContent = '0';
+        // Limit to selected question count
+        const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
+        questions = allQuestions.slice(0, maxQuestions);
 
-    // Show/hide timer display based on preference
-    if (timerEnabled) {
-        document.getElementById('timerDisplay')?.classList.remove('hidden');
-    } else {
-        hideTimerDisplay();
+        hideLoadingState();
+
+        // Update UI
+        container.classList.add('quiz-active');
+        themeSelection.classList.add('hidden');
+        quizContainer.classList.remove('hidden');
+        gameOver.classList.add('hidden');
+
+        currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
+        totalQuestions.textContent = questions.length;
+        scoreEl.textContent = score;
+        runningPercentEl.textContent = '0';
+
+        // Show/hide timer display based on preference
+        if (timerEnabled) {
+            document.getElementById('timerDisplay')?.classList.remove('hidden');
+        } else {
+            hideTimerDisplay();
+        }
+
+        displayQuestion();
+    } catch (error) {
+        hideLoadingState();
+        alert('Failed to load quiz. Please try again.');
+        console.error('Failed to start quiz:', error);
     }
-
-    displayQuestion();
 }
 
 // Display Current Question
@@ -676,7 +695,7 @@ function updateStatsDisplay() {
 
     if (!statsPanel) return;
 
-    const totalThemes = Object.keys(quizData).length;
+    const totalThemes = AVAILABLE_THEMES.length;
     const completedCount = progress.completedThemes.length;
     const accuracy = getOverallAccuracy();
 
@@ -731,16 +750,8 @@ async function initializeApp() {
     initializeTimerToggle();
     initializeQuestionCountSelector();
 
-    // Show loading state while fetching quiz data
-    showLoadingState();
-
-    // Load quiz data from JSON file
-    try {
-        await loadQuizData();
-    } catch (error) {
-        console.error('Failed to initialize quiz data:', error);
-        // Error is already handled in loadQuizData
-    }
+    // Quiz data is now lazy-loaded per category when a theme is selected
+    // No need to pre-load all data
 
     updateStatsDisplay();
     updateThemeButtons();

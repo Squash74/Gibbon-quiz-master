@@ -1,0 +1,722 @@
+[
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answer": "Au"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answer": "Mars"
+    },
+    {
+        "question": "What is the hardest natural substance on Earth?",
+        "answer": "Diamond"
+    },
+    {
+        "question": "Where is the Cradle of Humankind located?",
+        "answer": "South Africa (Gauteng)"
+    },
+    {
+        "question": "What gas do plants absorb from the atmosphere?",
+        "answer": "Carbon dioxide"
+    },
+    {
+        "question": "How many bones are in the adult human body?",
+        "answer": "206"
+    },
+    {
+        "question": "What is the largest organ in the human body?",
+        "answer": "Skin"
+    },
+    {
+        "question": "Which South African scientist won the Nobel Prize for molecular biology?",
+        "answer": "Sydney Brenner"
+    },
+    {
+        "question": "What is the speed of light in kilometers per second?",
+        "answer": "Approximately 300,000 km/s"
+    },
+    {
+        "question": "What is the chemical formula for water?",
+        "answer": "H2O"
+    },
+    {
+        "question": "Which planet has the most moons?",
+        "answer": "Saturn"
+    },
+    {
+        "question": "What fossil discovery was made at Sterkfontein caves in SA?",
+        "answer": "Mrs Ples (Australopithecus africanus)"
+    },
+    {
+        "question": "What is the study of earthquakes called?",
+        "answer": "Seismology"
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "answer": "Mitochondria"
+    },
+    {
+        "question": "Which element has the atomic number 1?",
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter"
+    },
+    {
+        "question": "What type of rock is formed from cooled lava?",
+        "answer": "Igneous rock"
+    },
+    {
+        "question": "What is South Africa's Square Kilometer Array (SKA)?",
+        "answer": "A radio telescope project"
+    },
+    {
+        "question": "What force keeps planets in orbit around the Sun?",
+        "answer": "Gravity"
+    },
+    {
+        "question": "How many chromosomes do humans have?",
+        "answer": "46 (23 pairs)"
+    },
+    {
+        "question": "What is the study of fungi called?",
+        "answer": "Mycology"
+    },
+    {
+        "question": "Which blood type is known as the universal donor?",
+        "answer": "O negative"
+    },
+    {
+        "question": "What is the boiling point of water in Celsius?",
+        "answer": "100°C"
+    },
+    {
+        "question": "What is the nearest star to Earth?",
+        "answer": "The Sun"
+    },
+    {
+        "question": "Which South African invented the CAT scan?",
+        "answer": "Allan Cormack (co-invented)"
+    },
+    {
+        "question": "What is the chemical symbol for iron?",
+        "answer": "Fe"
+    },
+    {
+        "question": "How long does it take for light from the Sun to reach Earth?",
+        "answer": "About 8 minutes"
+    },
+    {
+        "question": "What is the study of weather called?",
+        "answer": "Meteorology"
+    },
+    {
+        "question": "What part of the atom has a positive charge?",
+        "answer": "Proton"
+    },
+    {
+        "question": "What is the most abundant gas in Earth's atmosphere?",
+        "answer": "Nitrogen (78%)"
+    },
+    {
+        "question": "Which hormone regulates blood sugar?",
+        "answer": "Insulin"
+    },
+    {
+        "question": "What is the only metal that is liquid at room temperature?",
+        "answer": "Mercury"
+    },
+    {
+        "question": "What causes tides in the ocean?",
+        "answer": "The Moon's gravitational pull"
+    },
+    {
+        "question": "What is the smallest unit of life?",
+        "answer": "Cell"
+    },
+    {
+        "question": "Which vitamin is produced when skin is exposed to sunlight?",
+        "answer": "Vitamin D"
+    },
+    {
+        "question": "What is the study of birds called?",
+        "answer": "Ornithology"
+    },
+    {
+        "question": "How many planets are in our solar system?",
+        "answer": "Eight"
+    },
+    {
+        "question": "What is the pH of pure water?",
+        "answer": "7 (neutral)"
+    },
+    {
+        "question": "Which gas makes up about 21% of Earth's atmosphere?",
+        "answer": "Oxygen"
+    },
+    {
+        "question": "What is the name of the supercontinent that existed 200 million years ago?",
+        "answer": "Pangaea"
+    },
+    {
+        "question": "What is DNA an abbreviation for?",
+        "answer": "Deoxyribonucleic acid"
+    },
+    {
+        "question": "Which planet is closest to the Sun?",
+        "answer": "Mercury"
+    },
+    {
+        "question": "What is the chemical symbol for sodium?",
+        "answer": "Na"
+    },
+    {
+        "question": "How many teeth does an adult human typically have?",
+        "answer": "32"
+    },
+    {
+        "question": "What is photosynthesis?",
+        "answer": "The process by which plants convert sunlight to energy"
+    },
+    {
+        "question": "What particle has no electrical charge?",
+        "answer": "Neutron"
+    },
+    {
+        "question": "What is the largest moon in our solar system?",
+        "answer": "Ganymede (Jupiter's moon)"
+    },
+    {
+        "question": "What is the study of insects called?",
+        "answer": "Entomology"
+    },
+    {
+        "question": "What element makes up most of the Sun?",
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "What is the chemical symbol for potassium?",
+        "answer": "K"
+    },
+    {
+        "question": "What is the hottest planet in our solar system?",
+        "answer": "Venus"
+    },
+    {
+        "question": "What is the freezing point of water in Celsius?",
+        "answer": "0°C"
+    },
+    {
+        "question": "What type of energy is stored in food?",
+        "answer": "Chemical energy"
+    },
+    {
+        "question": "What is the study of the ocean called?",
+        "answer": "Oceanography"
+    },
+    {
+        "question": "Which organ filters blood in the human body?",
+        "answer": "Kidneys"
+    },
+    {
+        "question": "What is the chemical formula for table salt?",
+        "answer": "NaCl"
+    },
+    {
+        "question": "What is the speed of sound at sea level?",
+        "answer": "Approximately 343 m/s (1,235 km/h)"
+    },
+    {
+        "question": "What is the study of fossils called?",
+        "answer": "Paleontology"
+    },
+    {
+        "question": "What is the largest artery in the human body?",
+        "answer": "Aorta"
+    },
+    {
+        "question": "Which planet is known for its prominent rings?",
+        "answer": "Saturn"
+    },
+    {
+        "question": "What is the chemical symbol for silver?",
+        "answer": "Ag"
+    },
+    {
+        "question": "What type of blood vessels carry blood away from the heart?",
+        "answer": "Arteries"
+    },
+    {
+        "question": "What is absolute zero in Celsius?",
+        "answer": "-273.15°C"
+    },
+    {
+        "question": "What is the study of rocks called?",
+        "answer": "Geology"
+    },
+    {
+        "question": "What is the smallest bone in the human body?",
+        "answer": "Stapes (in the ear)"
+    },
+    {
+        "question": "What is the chemical formula for carbon dioxide?",
+        "answer": "CO2"
+    },
+    {
+        "question": "What is the largest bone in the human body?",
+        "answer": "Femur (thigh bone)"
+    },
+    {
+        "question": "Which planet has the Great Red Spot?",
+        "answer": "Jupiter"
+    },
+    {
+        "question": "What is the study of volcanoes called?",
+        "answer": "Volcanology"
+    },
+    {
+        "question": "What is the chemical symbol for lead?",
+        "answer": "Pb"
+    },
+    {
+        "question": "How many lobes does the human brain have?",
+        "answer": "Four (frontal, parietal, temporal, occipital)"
+    },
+    {
+        "question": "What is the most abundant element in the universe?",
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "What causes a rainbow?",
+        "answer": "Refraction and reflection of light through water droplets"
+    },
+    {
+        "question": "What is the study of plant life called?",
+        "answer": "Botany"
+    },
+    {
+        "question": "What is the chemical formula for methane?",
+        "answer": "CH4"
+    },
+    {
+        "question": "Which planet rotates on its side?",
+        "answer": "Uranus"
+    },
+    {
+        "question": "What is the process of cell division called?",
+        "answer": "Mitosis"
+    },
+    {
+        "question": "What is the study of heredity called?",
+        "answer": "Genetics"
+    },
+    {
+        "question": "What is the chemical symbol for copper?",
+        "answer": "Cu"
+    },
+    {
+        "question": "How many chambers does the human heart have?",
+        "answer": "Four"
+    },
+    {
+        "question": "What is the study of animal behavior called?",
+        "answer": "Ethology"
+    },
+    {
+        "question": "Which planet is known as the Morning Star?",
+        "answer": "Venus"
+    },
+    {
+        "question": "What is the chemical formula for ammonia?",
+        "answer": "NH3"
+    },
+    {
+        "question": "What is the main function of red blood cells?",
+        "answer": "Carry oxygen"
+    },
+    {
+        "question": "What is a light-year a measure of?",
+        "answer": "Distance"
+    },
+    {
+        "question": "What is the study of the atmosphere called?",
+        "answer": "Atmospheric science"
+    },
+    {
+        "question": "What is the chemical symbol for tin?",
+        "answer": "Sn"
+    },
+    {
+        "question": "What is the largest type of white blood cell?",
+        "answer": "Monocyte"
+    },
+    {
+        "question": "Which planet has the shortest day?",
+        "answer": "Jupiter (about 10 hours)"
+    },
+    {
+        "question": "What is the study of the immune system called?",
+        "answer": "Immunology"
+    },
+    {
+        "question": "What is the chemical formula for glucose?",
+        "answer": "C6H12O6"
+    },
+    {
+        "question": "What is the name of the galaxy we live in?",
+        "answer": "Milky Way"
+    },
+    {
+        "question": "What type of bond involves sharing electrons?",
+        "answer": "Covalent bond"
+    },
+    {
+        "question": "What is the study of cells called?",
+        "answer": "Cytology"
+    },
+    {
+        "question": "Which planet has the longest year?",
+        "answer": "Neptune (about 165 Earth years)"
+    },
+    {
+        "question": "What is the chemical symbol for tungsten?",
+        "answer": "W"
+    },
+    {
+        "question": "What is the main function of white blood cells?",
+        "answer": "Fight infection"
+    },
+    {
+        "question": "What is the speed of Earth's rotation at the equator?",
+        "answer": "About 1,670 km/h"
+    },
+    {
+        "question": "What is the study of viruses called?",
+        "answer": "Virology"
+    },
+    {
+        "question": "What is the chemical formula for sulfuric acid?",
+        "answer": "H2SO4"
+    },
+    {
+        "question": "How many valves does the human heart have?",
+        "answer": "Four"
+    },
+    {
+        "question": "What is the name of Saturn's largest moon?",
+        "answer": "Titan"
+    },
+    {
+        "question": "What is the study of the nervous system called?",
+        "answer": "Neurology"
+    },
+    {
+        "question": "What is the chemical symbol for mercury?",
+        "answer": "Hg"
+    },
+    {
+        "question": "What is the Earth's inner core made of?",
+        "answer": "Iron and nickel"
+    },
+    {
+        "question": "What is the unit of electrical resistance?",
+        "answer": "Ohm"
+    },
+    {
+        "question": "What is the study of blood called?",
+        "answer": "Hematology"
+    },
+    {
+        "question": "Which planet has the most violent storms?",
+        "answer": "Neptune"
+    },
+    {
+        "question": "What is the chemical formula for nitric acid?",
+        "answer": "HNO3"
+    },
+    {
+        "question": "What is the average human body temperature in Celsius?",
+        "answer": "37°C"
+    },
+    {
+        "question": "What is the study of sound called?",
+        "answer": "Acoustics"
+    },
+    {
+        "question": "What is the chemical symbol for phosphorus?",
+        "answer": "P"
+    },
+    {
+        "question": "How many pairs of ribs do humans have?",
+        "answer": "12 pairs"
+    },
+    {
+        "question": "What is the name of the nearest galaxy to the Milky Way?",
+        "answer": "Andromeda"
+    },
+    {
+        "question": "What is the unit of electric current?",
+        "answer": "Ampere"
+    },
+    {
+        "question": "What is the study of skin called?",
+        "answer": "Dermatology"
+    },
+    {
+        "question": "Which planet has the strongest magnetic field?",
+        "answer": "Jupiter"
+    },
+    {
+        "question": "What is the chemical formula for hydrochloric acid?",
+        "answer": "HCl"
+    },
+    {
+        "question": "What is the main component of natural gas?",
+        "answer": "Methane"
+    },
+    {
+        "question": "What is the study of drugs called?",
+        "answer": "Pharmacology"
+    },
+    {
+        "question": "What is the chemical symbol for calcium?",
+        "answer": "Ca"
+    },
+    {
+        "question": "How many muscles are in the human body approximately?",
+        "answer": "Over 600"
+    },
+    {
+        "question": "What is the name of Mars' largest moon?",
+        "answer": "Phobos"
+    },
+    {
+        "question": "What is the unit of frequency?",
+        "answer": "Hertz"
+    },
+    {
+        "question": "What is the study of the heart called?",
+        "answer": "Cardiology"
+    },
+    {
+        "question": "Which element is the best conductor of electricity?",
+        "answer": "Silver"
+    },
+    {
+        "question": "What is the chemical formula for ethanol?",
+        "answer": "C2H5OH"
+    },
+    {
+        "question": "What is the densest planet in our solar system?",
+        "answer": "Earth"
+    },
+    {
+        "question": "What is the study of the eye called?",
+        "answer": "Ophthalmology"
+    },
+    {
+        "question": "What is the chemical symbol for helium?",
+        "answer": "He"
+    },
+    {
+        "question": "What is the average lifespan of a red blood cell?",
+        "answer": "About 120 days"
+    },
+    {
+        "question": "What is the name of Jupiter's four largest moons?",
+        "answer": "Io, Europa, Ganymede, Callisto"
+    },
+    {
+        "question": "What is the unit of energy?",
+        "answer": "Joule"
+    },
+    {
+        "question": "What is the study of bones called?",
+        "answer": "Osteology"
+    },
+    {
+        "question": "What is the most reactive metal?",
+        "answer": "Francium"
+    },
+    {
+        "question": "What is the chemical formula for acetic acid?",
+        "answer": "CH3COOH"
+    },
+    {
+        "question": "What is the age of the Earth approximately?",
+        "answer": "4.5 billion years"
+    },
+    {
+        "question": "What is the study of teeth called?",
+        "answer": "Dentistry/Odontology"
+    },
+    {
+        "question": "What is the chemical symbol for zinc?",
+        "answer": "Zn"
+    },
+    {
+        "question": "What is the main function of platelets?",
+        "answer": "Blood clotting"
+    },
+    {
+        "question": "What is the name of the dwarf planet beyond Neptune?",
+        "answer": "Pluto"
+    },
+    {
+        "question": "What is the unit of force?",
+        "answer": "Newton"
+    },
+    {
+        "question": "What is the study of muscles called?",
+        "answer": "Myology"
+    },
+    {
+        "question": "Which noble gas is used in neon signs?",
+        "answer": "Neon"
+    },
+    {
+        "question": "What is the chemical formula for baking soda?",
+        "answer": "NaHCO3"
+    },
+    {
+        "question": "What is the distance from Earth to the Moon approximately?",
+        "answer": "384,400 km"
+    },
+    {
+        "question": "What is the study of the kidney called?",
+        "answer": "Nephrology"
+    },
+    {
+        "question": "What is the chemical symbol for argon?",
+        "answer": "Ar"
+    },
+    {
+        "question": "How many vertebrae does the human spine have?",
+        "answer": "33"
+    },
+    {
+        "question": "What is the name of the asteroid belt between Mars and Jupiter?",
+        "answer": "Main Asteroid Belt"
+    },
+    {
+        "question": "What is the unit of pressure?",
+        "answer": "Pascal"
+    },
+    {
+        "question": "What is the study of the liver called?",
+        "answer": "Hepatology"
+    },
+    {
+        "question": "What is the most abundant mineral in the human body?",
+        "answer": "Calcium"
+    },
+    {
+        "question": "What is the chemical formula for rust?",
+        "answer": "Fe2O3"
+    },
+    {
+        "question": "What is the temperature of the Sun's core?",
+        "answer": "About 15 million °C"
+    },
+    {
+        "question": "What is the study of the lungs called?",
+        "answer": "Pulmonology"
+    },
+    {
+        "question": "What is the chemical symbol for nickel?",
+        "answer": "Ni"
+    },
+    {
+        "question": "What is the largest internal organ in the human body?",
+        "answer": "Liver"
+    },
+    {
+        "question": "What is the name of the outer layer of the Sun?",
+        "answer": "Corona"
+    },
+    {
+        "question": "What is the unit of power?",
+        "answer": "Watt"
+    },
+    {
+        "question": "What is the study of the stomach called?",
+        "answer": "Gastroenterology"
+    },
+    {
+        "question": "What is the hardest substance in the human body?",
+        "answer": "Tooth enamel"
+    },
+    {
+        "question": "What is the chemical formula for ozone?",
+        "answer": "O3"
+    },
+    {
+        "question": "How long does light from the nearest star take to reach Earth?",
+        "answer": "About 4.2 years (Proxima Centauri)"
+    },
+    {
+        "question": "What is the study of the ear called?",
+        "answer": "Otology"
+    },
+    {
+        "question": "What is the chemical symbol for uranium?",
+        "answer": "U"
+    },
+    {
+        "question": "What percentage of the human body is water?",
+        "answer": "About 60%"
+    },
+    {
+        "question": "What is the name of the region around the Sun where solar wind originates?",
+        "answer": "Solar corona"
+    },
+    {
+        "question": "What is the unit of electric charge?",
+        "answer": "Coulomb"
+    },
+    {
+        "question": "What is the study of the brain called?",
+        "answer": "Neuroscience"
+    },
+    {
+        "question": "What is the lightest element?",
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "What is the chemical formula for hydrogen peroxide?",
+        "answer": "H2O2"
+    },
+    {
+        "question": "What is the name of the boundary of our solar system?",
+        "answer": "Heliopause"
+    },
+    {
+        "question": "What is the study of hormones called?",
+        "answer": "Endocrinology"
+    },
+    {
+        "question": "What is the chemical symbol for platinum?",
+        "answer": "Pt"
+    },
+    {
+        "question": "How many taste buds does an average human have?",
+        "answer": "About 10,000"
+    },
+    {
+        "question": "What is the name of the process by which stars form?",
+        "answer": "Stellar nucleosynthesis"
+    },
+    {
+        "question": "What is the unit of luminous intensity?",
+        "answer": "Candela"
+    },
+    {
+        "question": "What is the study of tumors called?",
+        "answer": "Oncology"
+    },
+    {
+        "question": "What is the densest naturally occurring element?",
+        "answer": "Osmium"
+    }
+]

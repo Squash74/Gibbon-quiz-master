@@ -1,0 +1,198 @@
+[
+    {
+        "question": "In what year did World War I begin?",
+        "answer": "1914"
+    },
+    {
+        "question": "Who was the first democratically elected president of South Africa?",
+        "answer": "Nelson Mandela"
+    },
+    {
+        "question": "Which empire built the Colosseum in Rome?",
+        "answer": "Roman Empire"
+    },
+    {
+        "question": "What year did apartheid officially begin in South Africa?",
+        "answer": "1948"
+    },
+    {
+        "question": "Who was the first Emperor of China?",
+        "answer": "Qin Shi Huang"
+    },
+    {
+        "question": "What was the Sharpeville Massacre?",
+        "answer": "A 1960 shooting where 69 protesters were killed by police"
+    },
+    {
+        "question": "Which war was fought between 1939 and 1945?",
+        "answer": "World War II"
+    },
+    {
+        "question": "Who led India to independence through non-violent resistance?",
+        "answer": "Mahatma Gandhi"
+    },
+    {
+        "question": "What was the Great Trek in South African history?",
+        "answer": "The migration of Boers from the Cape Colony (1836-1852)"
+    },
+    {
+        "question": "Which ancient wonder was located in Alexandria, Egypt?",
+        "answer": "The Lighthouse of Alexandria"
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "answer": "1989"
+    },
+    {
+        "question": "Who was the Zulu king who built a powerful military empire?",
+        "answer": "Shaka Zulu"
+    },
+    {
+        "question": "What was the name of the ship that brought the first Dutch settlers to the Cape?",
+        "answer": "The Drommedaris"
+    },
+    {
+        "question": "Which revolution began in France in 1789?",
+        "answer": "The French Revolution"
+    },
+    {
+        "question": "What year did Jan van Riebeeck arrive at the Cape?",
+        "answer": "1652"
+    },
+    {
+        "question": "Who was the British Prime Minister during most of World War II?",
+        "answer": "Winston Churchill"
+    },
+    {
+        "question": "What was the Anglo-Boer War?",
+        "answer": "A war between Britain and the Boer republics (1899-1902)"
+    },
+    {
+        "question": "Which ancient civilization built pyramids at Giza?",
+        "answer": "Ancient Egyptians"
+    },
+    {
+        "question": "What document did Magna Carta establish?",
+        "answer": "Limits on royal power and rights for citizens (1215)"
+    },
+    {
+        "question": "Who founded the African National Congress (ANC)?",
+        "answer": "John Dube, Pixley ka Isaka Seme, Sol Plaatje and others (1912)"
+    },
+    {
+        "question": "What year did humans first land on the Moon?",
+        "answer": "1969"
+    },
+    {
+        "question": "What was Robben Island used for during apartheid?",
+        "answer": "A maximum security prison for political prisoners"
+    },
+    {
+        "question": "Which explorer reached the southern tip of Africa in 1488?",
+        "answer": "Bartolomeu Dias"
+    },
+    {
+        "question": "What was the Renaissance?",
+        "answer": "A cultural rebirth in Europe (14th-17th century)"
+    },
+    {
+        "question": "Who was the first female president of an African country?",
+        "answer": "Ellen Johnson Sirleaf (Liberia, 2006)"
+    },
+    {
+        "question": "What year did World War II end?",
+        "answer": "1945"
+    },
+    {
+        "question": "What was the Group Areas Act in South Africa?",
+        "answer": "A law forcing racial segregation of residential areas (1950)"
+    },
+    {
+        "question": "Which queen ruled England for over 60 years in the 19th century?",
+        "answer": "Queen Victoria"
+    },
+    {
+        "question": "What is the significance of June 16 in South Africa?",
+        "answer": "Youth Day - commemorating the 1976 Soweto Uprising"
+    },
+    {
+        "question": "Who was Genghis Khan?",
+        "answer": "Founder and first ruler of the Mongol Empire"
+    },
+    {
+        "question": "What year did South Africa become a democracy?",
+        "answer": "1994"
+    },
+    {
+        "question": "Which trade route connected China to the Mediterranean?",
+        "answer": "The Silk Road"
+    },
+    {
+        "question": "Who discovered the sea route from Europe to India?",
+        "answer": "Vasco da Gama"
+    },
+    {
+        "question": "What was the Cold War?",
+        "answer": "Political tension between USA and USSR (1947-1991)"
+    },
+    {
+        "question": "Who was Steve Biko?",
+        "answer": "South African anti-apartheid activist and Black Consciousness leader"
+    },
+    {
+        "question": "Which empire was ruled by Mansa Musa?",
+        "answer": "Mali Empire"
+    },
+    {
+        "question": "What year did the Titanic sink?",
+        "answer": "1912"
+    },
+    {
+        "question": "Who wrote the Freedom Charter in South Africa?",
+        "answer": "The Congress of the People (1955)"
+    },
+    {
+        "question": "Which civilization invented paper?",
+        "answer": "Ancient China"
+    },
+    {
+        "question": "What is the significance of February 11, 1990 in SA?",
+        "answer": "Nelson Mandela was released from prison"
+    },
+    {
+        "question": "What was the Industrial Revolution?",
+        "answer": "The transition to new manufacturing processes (18th-19th century)"
+    },
+    {
+        "question": "Who was Julius Caesar?",
+        "answer": "Roman military leader and statesman"
+    },
+    {
+        "question": "What year did the United States declare independence?",
+        "answer": "1776"
+    },
+    {
+        "question": "Who was Cleopatra?",
+        "answer": "The last active ruler of the Ptolemaic Kingdom of Egypt"
+    },
+    {
+        "question": "What was the Holocaust?",
+        "answer": "The genocide of European Jews during World War II"
+    },
+    {
+        "question": "Who built the Great Wall of China?",
+        "answer": "Various Chinese dynasties, primarily the Ming Dynasty"
+    },
+    {
+        "question": "What was the Boston Tea Party?",
+        "answer": "A 1773 protest against British taxation in America"
+    },
+    {
+        "question": "Who was Alexander the Great?",
+        "answer": "King of Macedonia who created one of the largest empires in history"
+    },
+    {
+        "question": "What ended World War I?",
+        "answer": "The Armistice of 11 November 1918 (Treaty of Versailles 1919)"
+    }
+]
