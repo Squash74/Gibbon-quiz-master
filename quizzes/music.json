@@ -8,191 +8,795 @@
         "answer": "Piano"
     },
     {
-        "question": "Which British band released the album 'Abbey Road'?",
-        "answer": "The Beatles"
-    },
-    {
-        "question": "What is the national instrument of South Africa?",
-        "answer": "There is no official one, but the vuvuzela became iconic"
-    },
-    {
         "question": "Who is known as the 'King of Pop'?",
         "answer": "Michael Jackson"
     },
     {
-        "question": "Which South African singer was known as 'Mama Africa'?",
+        "question": "Which South African singer released the hit song 'Pata Pata'?",
         "answer": "Miriam Makeba"
     },
     {
-        "question": "What genre of music originated in Jamaica?",
-        "answer": "Reggae"
+        "question": "What was the best-selling album of all time?",
+        "answer": "Thriller by Michael Jackson"
     },
     {
-        "question": "Which composer wrote 'The Four Seasons'?",
-        "answer": "Antonio Vivaldi"
+        "question": "Which British band released 'Bohemian Rhapsody'?",
+        "answer": "Queen"
     },
     {
-        "question": "What South African music genre combines house music with African sounds?",
-        "answer": "Amapiano"
+        "question": "What is the highest male singing voice?",
+        "answer": "Countertenor or Falsetto"
     },
     {
-        "question": "Which instrument is Yo-Yo Ma famous for playing?",
-        "answer": "Cello"
+        "question": "Which South African musician is known as 'The Maestro'?",
+        "answer": "Hugh Masekela"
     },
     {
-        "question": "Who sang 'Asimbonanga', a song about Nelson Mandela?",
+        "question": "What musical term means to gradually get louder?",
+        "answer": "Crescendo"
+    },
+    {
+        "question": "Which rock band has members named Mick Jagger and Keith Richards?",
+        "answer": "The Rolling Stones"
+    },
+    {
+        "question": "What is the national instrument of Scotland?",
+        "answer": "Bagpipes"
+    },
+    {
+        "question": "Which South African artist sang 'Asimbonanga'?",
         "answer": "Johnny Clegg"
     },
     {
-        "question": "What is the highest female singing voice?",
-        "answer": "Soprano"
+        "question": "What is the musical term for playing notes smoothly connected?",
+        "answer": "Legato"
     },
     {
-        "question": "Which country is the origin of K-pop?",
-        "answer": "South Korea"
+        "question": "Who composed the 'Four Seasons'?",
+        "answer": "Vivaldi"
     },
     {
-        "question": "What South African genre emerged from townships in the 1960s?",
-        "answer": "Mbaqanga"
+        "question": "Which Beatle was assassinated in 1980?",
+        "answer": "John Lennon"
     },
     {
-        "question": "Who composed 'The Magic Flute'?",
-        "answer": "Wolfgang Amadeus Mozart"
+        "question": "What is the lowest female singing voice?",
+        "answer": "Contralto"
     },
     {
-        "question": "Which legendary guitarist was known as 'Slowhand'?",
-        "answer": "Eric Clapton"
-    },
-    {
-        "question": "What is the traditional music style of the Cape Malay community?",
-        "answer": "Ghoema"
+        "question": "Which South African DJ produced 'Black Coffee'?",
+        "answer": "Black Coffee (Nkosinathi Innocent Maphumulo)"
     },
     {
         "question": "How many strings does a standard guitar have?",
         "answer": "Six"
     },
     {
-        "question": "Which Swedish group had hits like 'Dancing Queen' and 'Mamma Mia'?",
-        "answer": "ABBA"
+        "question": "Which pop star is known as the 'Queen of Pop'?",
+        "answer": "Madonna"
     },
     {
-        "question": "What South African kwaito artist was known as 'Bra Hugh'?",
-        "answer": "Hugh Masekela"
+        "question": "What musical term means to gradually get softer?",
+        "answer": "Decrescendo or Diminuendo"
+    },
+    {
+        "question": "Which South African group is known for 'Imali'?",
+        "answer": "Big Nuz"
+    },
+    {
+        "question": "Who wrote the opera 'The Magic Flute'?",
+        "answer": "Mozart"
+    },
+    {
+        "question": "What instrument does a conductor use?",
+        "answer": "Baton"
+    },
+    {
+        "question": "Which band performed 'Hotel California'?",
+        "answer": "The Eagles"
+    },
+    {
+        "question": "What is the term for a group of four musicians?",
+        "answer": "Quartet"
+    },
+    {
+        "question": "Which South African kwaito star sang 'Tsa Mandebele'?",
+        "answer": "Arthur Mafokate"
+    },
+    {
+        "question": "What key is known as having no sharps or flats?",
+        "answer": "C major"
+    },
+    {
+        "question": "Who is known as the 'Godfather of Soul'?",
+        "answer": "James Brown"
+    },
+    {
+        "question": "What type of music originated in New Orleans?",
+        "answer": "Jazz"
+    },
+    {
+        "question": "Which famous composer was deaf?",
+        "answer": "Beethoven"
+    },
+    {
+        "question": "Which South African song became an anti-apartheid anthem?",
+        "answer": "Nkosi Sikelel' iAfrika"
+    },
+    {
+        "question": "What is the name of the clef used for higher notes?",
+        "answer": "Treble clef"
+    },
+    {
+        "question": "Which band released 'Stairway to Heaven'?",
+        "answer": "Led Zeppelin"
+    },
+    {
+        "question": "How many symphonies did Beethoven compose?",
+        "answer": "Nine"
+    },
+    {
+        "question": "What is the term for the speed of music?",
+        "answer": "Tempo"
+    },
+    {
+        "question": "Which South African artist released 'The Sound of Soweto'?",
+        "answer": "Various artists (compilation)"
+    },
+    {
+        "question": "Who composed 'The Nutcracker'?",
+        "answer": "Tchaikovsky"
+    },
+    {
+        "question": "What instrument family includes the violin and cello?",
+        "answer": "Strings"
+    },
+    {
+        "question": "Which singer is known for 'Like a Virgin'?",
+        "answer": "Madonna"
+    },
+    {
+        "question": "What is a musical composition for an orchestra called?",
+        "answer": "Symphony"
+    },
+    {
+        "question": "Which South African born singer-songwriter wrote 'Graceland'?",
+        "answer": "Paul Simon (not South African, but collaborated with SA musicians)"
+    },
+    {
+        "question": "What does 'forte' mean in music?",
+        "answer": "Loud"
+    },
+    {
+        "question": "Which band had members named Freddie Mercury and Brian May?",
+        "answer": "Queen"
+    },
+    {
+        "question": "What is the term for a song performed without instrumental accompaniment?",
+        "answer": "A cappella"
+    },
+    {
+        "question": "Who composed 'Moonlight Sonata'?",
+        "answer": "Beethoven"
+    },
+    {
+        "question": "Which South African genre combines house music with African elements?",
+        "answer": "Amapiano"
+    },
+    {
+        "question": "What instrument does Yo-Yo Ma play?",
+        "answer": "Cello"
+    },
+    {
+        "question": "Who is known as the 'King of Rock and Roll'?",
+        "answer": "Elvis Presley"
+    },
+    {
+        "question": "What does 'piano' mean in musical terms?",
+        "answer": "Soft or quiet"
+    },
+    {
+        "question": "Which South African artist is known for maskandi music?",
+        "answer": "Phuzekhemisi or Shwi Nomtekhala"
+    },
+    {
+        "question": "How many notes are in a musical octave?",
+        "answer": "Eight"
+    },
+    {
+        "question": "Which band released 'Abbey Road'?",
+        "answer": "The Beatles"
+    },
+    {
+        "question": "What is the name of the clef used for lower notes?",
+        "answer": "Bass clef"
+    },
+    {
+        "question": "Who composed the 'Hallelujah Chorus'?",
+        "answer": "Handel"
+    },
+    {
+        "question": "Which South African singer won The Voice SA?",
+        "answer": "Various winners across seasons"
+    },
+    {
+        "question": "What is the term for a recurring musical theme?",
+        "answer": "Motif or Leitmotif"
+    },
+    {
+        "question": "Which artist sang 'Purple Rain'?",
+        "answer": "Prince"
+    },
+    {
+        "question": "What type of music is characterized by improvisation?",
+        "answer": "Jazz"
+    },
+    {
+        "question": "Who composed 'The Blue Danube'?",
+        "answer": "Johann Strauss II"
+    },
+    {
+        "question": "Which South African gospel group sang 'Joyous Celebration'?",
+        "answer": "Joyous Celebration"
+    },
+    {
+        "question": "What instrument has pedals and is played with hands and feet?",
+        "answer": "Organ"
+    },
+    {
+        "question": "Who is known as the 'Material Girl'?",
+        "answer": "Madonna"
+    },
+    {
+        "question": "What is the musical term for a pause or rest?",
+        "answer": "Fermata (for a held note) or Rest"
+    },
+    {
+        "question": "Which band performed 'Sweet Child O' Mine'?",
+        "answer": "Guns N' Roses"
+    },
+    {
+        "question": "Who wrote the song 'Imagine'?",
+        "answer": "John Lennon"
+    },
+    {
+        "question": "Which South African DJ is known globally for deep house?",
+        "answer": "Black Coffee"
+    },
+    {
+        "question": "What is the term for the main melody in a piece of music?",
+        "answer": "Theme"
+    },
+    {
+        "question": "Who composed 'Swan Lake'?",
+        "answer": "Tchaikovsky"
+    },
+    {
+        "question": "What instrument does a timpanist play?",
+        "answer": "Timpani (kettledrums)"
+    },
+    {
+        "question": "Which artist released 'Thriller'?",
+        "answer": "Michael Jackson"
+    },
+    {
+        "question": "What is the term for two or more notes played together?",
+        "answer": "Chord"
+    },
+    {
+        "question": "Which South African artist is known for 'Jerusalem'?",
+        "answer": "Master KG"
+    },
+    {
+        "question": "How many keys are on a standard piano?",
+        "answer": "88"
+    },
+    {
+        "question": "Who is known as the 'Prince of Darkness' in rock music?",
+        "answer": "Ozzy Osbourne"
+    },
+    {
+        "question": "What musical term means very fast?",
+        "answer": "Presto"
+    },
+    {
+        "question": "Which band released 'Back in Black'?",
+        "answer": "AC/DC"
+    },
+    {
+        "question": "Who composed 'Carmen'?",
+        "answer": "Bizet"
+    },
+    {
+        "question": "Which South African artist performed 'Nkalakatha'?",
+        "answer": "Mandoza"
+    },
+    {
+        "question": "What is the term for a solo vocal piece in an opera?",
+        "answer": "Aria"
+    },
+    {
+        "question": "Who is known for the song 'Respect'?",
+        "answer": "Aretha Franklin"
+    },
+    {
+        "question": "What instrument family includes the trumpet and trombone?",
+        "answer": "Brass"
+    },
+    {
+        "question": "Which band performed 'Smells Like Teen Spirit'?",
+        "answer": "Nirvana"
+    },
+    {
+        "question": "Who composed 'The Planets'?",
+        "answer": "Gustav Holst"
+    },
+    {
+        "question": "Which South African genre originated in townships?",
+        "answer": "Kwaito"
+    },
+    {
+        "question": "What is the term for a gradual increase in tempo?",
+        "answer": "Accelerando"
+    },
+    {
+        "question": "Who sang 'I Will Always Love You' in The Bodyguard?",
+        "answer": "Whitney Houston"
+    },
+    {
+        "question": "What does BPM stand for in music?",
+        "answer": "Beats Per Minute"
+    },
+    {
+        "question": "Which band released 'The Dark Side of the Moon'?",
+        "answer": "Pink Floyd"
+    },
+    {
+        "question": "Who composed 'Für Elise'?",
+        "answer": "Beethoven"
+    },
+    {
+        "question": "Which South African artist is known for 'Midnight Starring'?",
+        "answer": "DJ Clock"
+    },
+    {
+        "question": "What is the highest female singing voice?",
+        "answer": "Soprano"
+    },
+    {
+        "question": "Who is known as the 'Fab Four'?",
+        "answer": "The Beatles"
+    },
+    {
+        "question": "What instrument does a flautist play?",
+        "answer": "Flute"
+    },
+    {
+        "question": "Which artist sang 'Bad Romance'?",
+        "answer": "Lady Gaga"
+    },
+    {
+        "question": "What is the term for repeating a section of music?",
+        "answer": "Da Capo or Repeat"
+    },
+    {
+        "question": "Which South African artist released 'Matorokisi'?",
+        "answer": "Makhadzi"
+    },
+    {
+        "question": "Who composed 'Rhapsody in Blue'?",
+        "answer": "George Gershwin"
+    },
+    {
+        "question": "What is the term for a group of five musicians?",
+        "answer": "Quintet"
+    },
+    {
+        "question": "Which band performed 'Livin' on a Prayer'?",
+        "answer": "Bon Jovi"
     },
     {
         "question": "What is the lowest male singing voice?",
         "answer": "Bass"
     },
     {
-        "question": "Which instrument is also called a 'mouth organ'?",
-        "answer": "Harmonica"
+        "question": "Who wrote 'Ode to Joy'?",
+        "answer": "Beethoven"
     },
     {
-        "question": "Who wrote 'Bohemian Rhapsody'?",
-        "answer": "Freddie Mercury (Queen)"
+        "question": "Which South African artist is known for 'Umshini Wam'?",
+        "answer": "Zulu Boy"
     },
     {
-        "question": "What traditional Zulu dance involves high kicking?",
-        "answer": "Indlamu"
+        "question": "What instrument does a percussionist primarily play?",
+        "answer": "Drums and percussion instruments"
     },
     {
-        "question": "Which composer became deaf but continued to compose?",
-        "answer": "Ludwig van Beethoven"
+        "question": "Who is known as the 'Boss' in rock music?",
+        "answer": "Bruce Springsteen"
     },
     {
-        "question": "What genre of music is associated with New Orleans?",
-        "answer": "Jazz"
+        "question": "What is the musical term for very slow?",
+        "answer": "Largo"
     },
     {
-        "question": "Which South African DJ is known internationally for house music?",
-        "answer": "Black Coffee"
+        "question": "Which band released 'Wish You Were Here'?",
+        "answer": "Pink Floyd"
     },
     {
-        "question": "How many musicians are in a quartet?",
+        "question": "Who composed 'The Four Seasons'?",
+        "answer": "Antonio Vivaldi"
+    },
+    {
+        "question": "Which South African rapper is known as 'Skhanda God'?",
+        "answer": "K.O."
+    },
+    {
+        "question": "What is the term for a piece of music played at a funeral?",
+        "answer": "Requiem or Dirge"
+    },
+    {
+        "question": "Who sang 'Rolling in the Deep'?",
+        "answer": "Adele"
+    },
+    {
+        "question": "What instrument family includes the clarinet and saxophone?",
+        "answer": "Woodwinds"
+    },
+    {
+        "question": "Which band performed 'Wonderwall'?",
+        "answer": "Oasis"
+    },
+    {
+        "question": "Who composed 'Eine Kleine Nachtmusik'?",
+        "answer": "Mozart"
+    },
+    {
+        "question": "Which South African artist performed 'Qongqothwane'?",
+        "answer": "Miriam Makeba"
+    },
+    {
+        "question": "What is the term for the pattern of strong and weak beats?",
+        "answer": "Rhythm or Meter"
+    },
+    {
+        "question": "Who is known for the album 'Purple Rain'?",
+        "answer": "Prince"
+    },
+    {
+        "question": "How many strings does a standard violin have?",
         "answer": "Four"
     },
     {
-        "question": "Which rock band featured Freddie Mercury as lead singer?",
+        "question": "Which band released 'Sgt. Pepper's Lonely Hearts Club Band'?",
+        "answer": "The Beatles"
+    },
+    {
+        "question": "Who composed 'William Tell Overture'?",
+        "answer": "Rossini"
+    },
+    {
+        "question": "Which South African artist is known for 'Nomvula'?",
+        "answer": "Freshlyground"
+    },
+    {
+        "question": "What is the term for a gradual decrease in tempo?",
+        "answer": "Ritardando"
+    },
+    {
+        "question": "Who sang 'My Heart Will Go On'?",
+        "answer": "Celine Dion"
+    },
+    {
+        "question": "What does 'mezzo' mean in music?",
+        "answer": "Medium or half"
+    },
+    {
+        "question": "Which band performed 'We Will Rock You'?",
         "answer": "Queen"
     },
     {
-        "question": "What is the name of the wooden stick used to conduct an orchestra?",
-        "answer": "Baton"
+        "question": "Who composed 'Clair de Lune'?",
+        "answer": "Debussy"
     },
     {
-        "question": "Which country is famous for flamenco music?",
-        "answer": "Spain"
+        "question": "Which South African DJ produced 'We Dance Again'?",
+        "answer": "Black Coffee"
     },
     {
-        "question": "What South African music award ceremony is similar to the Grammys?",
-        "answer": "South African Music Awards (SAMAs)"
+        "question": "What is the term for a piece of music for two performers?",
+        "answer": "Duet"
+    },
+    {
+        "question": "Who is known as the 'Queen of Soul'?",
+        "answer": "Aretha Franklin"
+    },
+    {
+        "question": "What instrument does a cellist play?",
+        "answer": "Cello"
+    },
+    {
+        "question": "Which band released 'Nevermind'?",
+        "answer": "Nirvana"
+    },
+    {
+        "question": "Who composed '1812 Overture'?",
+        "answer": "Tchaikovsky"
+    },
+    {
+        "question": "Which South African artist is known for 'DJ Tira'?",
+        "answer": "DJ Tira (Mthokozisi Khathi)"
+    },
+    {
+        "question": "What is the term for playing notes in a short, detached manner?",
+        "answer": "Staccato"
+    },
+    {
+        "question": "Who sang 'Hello' from 2015?",
+        "answer": "Adele"
+    },
+    {
+        "question": "What is the term for a group of singers?",
+        "answer": "Choir or Chorus"
+    },
+    {
+        "question": "Which band performed 'Sweet Home Alabama'?",
+        "answer": "Lynyrd Skynyrd"
+    },
+    {
+        "question": "Who composed 'Bolero'?",
+        "answer": "Ravel"
+    },
+    {
+        "question": "Which South African artist performed 'Weeping'?",
+        "answer": "Bright Blue"
+    },
+    {
+        "question": "What does 'allegro' mean in music?",
+        "answer": "Fast and lively"
+    },
+    {
+        "question": "Who is known for the song 'Bohemian Rhapsody'?",
+        "answer": "Freddie Mercury (Queen)"
+    },
+    {
+        "question": "How many strings does a standard bass guitar have?",
+        "answer": "Four"
+    },
+    {
+        "question": "Which band released 'Rumours'?",
+        "answer": "Fleetwood Mac"
+    },
+    {
+        "question": "Who composed 'Ride of the Valkyries'?",
+        "answer": "Wagner"
+    },
+    {
+        "question": "Which South African artist is known for 'Emathandweni'?",
+        "answer": "Musa Sukwene"
+    },
+    {
+        "question": "What is the term for the highness or lowness of a sound?",
+        "answer": "Pitch"
+    },
+    {
+        "question": "Who sang 'Single Ladies'?",
+        "answer": "Beyoncé"
+    },
+    {
+        "question": "What instrument does a harpist play?",
+        "answer": "Harp"
+    },
+    {
+        "question": "Which band performed 'Jump'?",
+        "answer": "Van Halen"
+    },
+    {
+        "question": "Who composed 'The Marriage of Figaro'?",
+        "answer": "Mozart"
+    },
+    {
+        "question": "Which South African music genre features fast tempo and bass?",
+        "answer": "Gqom"
+    },
+    {
+        "question": "What is the term for a piece of music based on a story?",
+        "answer": "Program music or Tone poem"
+    },
+    {
+        "question": "Who is known as the 'Rocket Man'?",
+        "answer": "Elton John"
+    },
+    {
+        "question": "What does 'andante' mean in music?",
+        "answer": "At a walking pace (moderate tempo)"
+    },
+    {
+        "question": "Which band released 'Led Zeppelin IV'?",
+        "answer": "Led Zeppelin"
+    },
+    {
+        "question": "Who composed 'Scheherazade'?",
+        "answer": "Rimsky-Korsakov"
+    },
+    {
+        "question": "Which South African artist is known as 'Brenda Fassie'?",
+        "answer": "Brenda Fassie (MaBrrr)"
+    },
+    {
+        "question": "What is the term for the main singer in a band?",
+        "answer": "Lead vocalist"
+    },
+    {
+        "question": "Who sang 'Crazy in Love'?",
+        "answer": "Beyoncé"
+    },
+    {
+        "question": "What instrument does a saxophonist play?",
+        "answer": "Saxophone"
+    },
+    {
+        "question": "Which band performed 'Enter Sandman'?",
+        "answer": "Metallica"
+    },
+    {
+        "question": "Who composed 'Also sprach Zarathustra'?",
+        "answer": "Richard Strauss"
+    },
+    {
+        "question": "Which South African artist released 'Weekend Special'?",
+        "answer": "Brenda Fassie"
+    },
+    {
+        "question": "What is the term for a repeated musical pattern?",
+        "answer": "Ostinato or Riff"
+    },
+    {
+        "question": "Who is known for the song 'Space Oddity'?",
+        "answer": "David Bowie"
+    },
+    {
+        "question": "What does 'moderato' mean in music?",
+        "answer": "Moderate tempo"
+    },
+    {
+        "question": "Which band released 'The Joshua Tree'?",
+        "answer": "U2"
+    },
+    {
+        "question": "Who composed 'The Rite of Spring'?",
+        "answer": "Stravinsky"
+    },
+    {
+        "question": "Which South African artist performed 'De La Rey'?",
+        "answer": "Bok van Blerk"
+    },
+    {
+        "question": "What is the term for a piece of music that returns to the beginning?",
+        "answer": "Da Capo"
     },
     {
         "question": "Who sang 'Shape of You'?",
         "answer": "Ed Sheeran"
     },
     {
-        "question": "What instrument does a timpanist play?",
-        "answer": "Timpani (kettle drums)"
+        "question": "How many valves does a standard trumpet have?",
+        "answer": "Three"
     },
     {
-        "question": "Which music genre originated in the Bronx, New York?",
-        "answer": "Hip-hop"
+        "question": "Which band performed 'Don't Stop Believin''?",
+        "answer": "Journey"
     },
     {
-        "question": "What is the Zulu word for music?",
-        "answer": "Umculo"
+        "question": "Who composed 'Hungarian Rhapsodies'?",
+        "answer": "Franz Liszt"
     },
     {
-        "question": "Which Italian term means to play softly?",
-        "answer": "Piano (or pianissimo)"
+        "question": "Which South African artist is known for 'Vulindlela'?",
+        "answer": "Brenda Fassie"
     },
     {
-        "question": "Who is the best-selling female artist of all time?",
-        "answer": "Madonna"
+        "question": "What is the term for the quality of a musical sound?",
+        "answer": "Timbre or Tone color"
     },
     {
-        "question": "What percussion instrument is essential in samba music?",
-        "answer": "Drums (particularly surdo or tamborim)"
+        "question": "Who is known as the 'King of Reggae'?",
+        "answer": "Bob Marley"
     },
     {
-        "question": "Which South African artist sang 'Pata Pata'?",
+        "question": "What does 'vivace' mean in music?",
+        "answer": "Lively and fast"
+    },
+    {
+        "question": "Which band released 'OK Computer'?",
+        "answer": "Radiohead"
+    },
+    {
+        "question": "Who composed 'Peer Gynt'?",
+        "answer": "Edvard Grieg"
+    },
+    {
+        "question": "Which South African artist is known for 'Pata Pata'?",
         "answer": "Miriam Makeba"
     },
     {
-        "question": "What is the musical term for gradually getting louder?",
-        "answer": "Crescendo"
+        "question": "What instrument does Yo-Yo Ma famously play?",
+        "answer": "Cello"
     },
     {
-        "question": "Which band sang 'Stairway to Heaven'?",
-        "answer": "Led Zeppelin"
+        "question": "Which band released 'Abbey Road'?",
+        "answer": "The Beatles"
     },
     {
-        "question": "What instrument does a violinist play?",
-        "answer": "Violin"
+        "question": "What does 'allegretto' mean in music?",
+        "answer": "Moderately fast"
     },
     {
-        "question": "Who composed 'Eine kleine Nachtmusik'?",
+        "question": "Who wrote 'Moonlight Sonata'?",
+        "answer": "Ludwig van Beethoven"
+    },
+    {
+        "question": "Which South African DJ won the Grammy for Best Dance/Electronic Album in 2022?",
+        "answer": "Black Coffee"
+    },
+    {
+        "question": "What is the highest female singing voice?",
+        "answer": "Soprano"
+    },
+    {
+        "question": "Which artist released 'Lemonade' in 2016?",
+        "answer": "Beyoncé"
+    },
+    {
+        "question": "What is the name of a group of five musicians?",
+        "answer": "Quintet"
+    },
+    {
+        "question": "Who composed 'The Marriage of Figaro'?",
         "answer": "Wolfgang Amadeus Mozart"
     },
     {
-        "question": "What is a cappella singing?",
-        "answer": "Singing without instrumental accompaniment"
+        "question": "Which rock band is known for 'Enter Sandman'?",
+        "answer": "Metallica"
     },
     {
-        "question": "Which female artist has won the most Grammy Awards?",
-        "answer": "Beyonc\u00e9"
+        "question": "What does 'pianissimo' mean?",
+        "answer": "Very soft"
     },
     {
-        "question": "What key is typically considered 'happy' in music?",
-        "answer": "Major key"
+        "question": "Who sang 'A Whiter Shade of Pale'?",
+        "answer": "Procol Harum"
     },
     {
-        "question": "Who wrote 'Imagine'?",
-        "answer": "John Lennon"
+        "question": "What is the traditional music of Jamaica called?",
+        "answer": "Reggae"
     },
     {
-        "question": "What does 'fortissimo' mean in music?",
-        "answer": "Very loud"
+        "question": "Which composer wrote 'Clair de Lune'?",
+        "answer": "Claude Debussy"
+    },
+    {
+        "question": "Who is the lead singer of Coldplay?",
+        "answer": "Chris Martin"
+    },
+    {
+        "question": "What African instrument is a type of thumb piano?",
+        "answer": "Mbira or Kalimba"
+    },
+    {
+        "question": "Which opera features the aria 'Nessun Dorma'?",
+        "answer": "Turandot"
+    },
+    {
+        "question": "Who released the album '21' in 2011?",
+        "answer": "Adele"
+    },
+    {
+        "question": "What does 'da capo' mean in music notation?",
+        "answer": "From the beginning"
+    },
+    {
+        "question": "Which South African singer was known as 'The Queen of African Pop'?",
+        "answer": "Brenda Fassie"
     }
 ]
