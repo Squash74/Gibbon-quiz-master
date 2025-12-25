@@ -230,6 +230,7 @@ const scoreEl = document.getElementById('score');
 const finalScore = document.getElementById('finalScore');
 const finalTotal = document.getElementById('finalTotal');
 const percentage = document.getElementById('percentage');
+const runningPercentEl = document.getElementById('runningPercent');
 
 // Theme Selection
 document.querySelectorAll('.theme-btn').forEach(btn => {
@@ -258,7 +259,8 @@ function startQuiz() {
     currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
     totalQuestions.textContent = questions.length;
     scoreEl.textContent = score;
-    
+    runningPercentEl.textContent = '0';
+
     displayQuestion();
 }
 
@@ -297,16 +299,25 @@ document.querySelector('.question-card').addEventListener('click', () => {
     }
 });
 
+// Update running percentage
+function updateRunningPercent() {
+    const answered = currentQuestionIndex + 1;
+    const percent = Math.round((score / answered) * 100);
+    runningPercentEl.textContent = percent;
+}
+
 // Correct Answer
 correctBtn.addEventListener('click', () => {
     score++;
     scoreEl.textContent = score;
+    updateRunningPercent();
     scoringButtons.classList.add('hidden');
     nextBtn.classList.remove('hidden');
 });
 
 // Incorrect Answer
 incorrectBtn.addEventListener('click', () => {
+    updateRunningPercent();
     scoringButtons.classList.add('hidden');
     nextBtn.classList.remove('hidden');
 });
