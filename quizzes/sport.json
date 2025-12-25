@@ -104,16 +104,16 @@
         "answer": "90 minutes"
     },
     {
-        "question": "What is the highest possible break in snooker?",
-        "answer": "155 (with free ball)"
+        "question": "What is the highest possible break in snooker with a free ball?",
+        "answer": "155"
     },
     {
         "question": "Which tennis player has won the most Grand Slam titles (men's singles)?",
-        "answer": "Novak Djokovic (as of 2023)"
+        "answer": "Novak Djokovic"
     },
     {
         "question": "In which sport would you perform a 'hat-trick'?",
-        "answer": "Cricket, football/soccer, ice hockey (various sports)"
+        "answer": "Cricket, football/soccer, ice hockey"
     },
     {
         "question": "What is the name of South Africa's premier first-class cricket competition?",
@@ -194,5 +194,609 @@
     {
         "question": "Which country has won the most Olympic gold medals?",
         "answer": "United States"
+    },
+    {
+        "question": "What is the term for three consecutive strikes in bowling?",
+        "answer": "Turkey"
+    },
+    {
+        "question": "Which football club has won the most UEFA Champions League titles?",
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "In which city were the 2020 Summer Olympics held?",
+        "answer": "Tokyo"
+    },
+    {
+        "question": "What is the name of the trophy awarded to the NBA champions?",
+        "answer": "Larry O'Brien Championship Trophy"
+    },
+    {
+        "question": "Which country has won the most Cricket World Cups?",
+        "answer": "Australia (5)"
+    },
+    {
+        "question": "How many periods are there in an ice hockey game?",
+        "answer": "Three"
+    },
+    {
+        "question": "Which Grand Slam tennis tournament is played on clay?",
+        "answer": "French Open (Roland Garros)"
+    },
+    {
+        "question": "What is the width of a football goal in meters?",
+        "answer": "7.32 meters"
+    },
+    {
+        "question": "Which country has won the most Rugby World Cups?",
+        "answer": "South Africa and New Zealand (4 each)"
+    },
+    {
+        "question": "What is the term for scoring zero points in tennis?",
+        "answer": "Love"
+    },
+    {
+        "question": "How many players are on a volleyball team on the court?",
+        "answer": "Six"
+    },
+    {
+        "question": "Which athlete has won the most gold medals at a single Olympic Games?",
+        "answer": "Michael Phelps (8 in 2008)"
+    },
+    {
+        "question": "What is the name of the annual cycling race in France?",
+        "answer": "Tour de France"
+    },
+    {
+        "question": "In which sport is the Ryder Cup contested?",
+        "answer": "Golf"
+    },
+    {
+        "question": "How many sets must a player win to win a men's singles Grand Slam tennis match?",
+        "answer": "Three out of five"
+    },
+    {
+        "question": "Which country hosted the first FIFA World Cup in 1930?",
+        "answer": "Uruguay"
+    },
+    {
+        "question": "What is the height of a basketball hoop from the ground?",
+        "answer": "10 feet (3.05 meters)"
+    },
+    {
+        "question": "Which sport uses a shuttlecock?",
+        "answer": "Badminton"
+    },
+    {
+        "question": "What is the name of the famous horse race held in Kentucky?",
+        "answer": "Kentucky Derby"
+    },
+    {
+        "question": "How many players are on an American football team on the field?",
+        "answer": "11"
+    },
+    {
+        "question": "Which country has won the most medals in Winter Olympics history?",
+        "answer": "Norway"
+    },
+    {
+        "question": "What is the term for winning all four Grand Slam tennis tournaments in one year?",
+        "answer": "Calendar Grand Slam"
+    },
+    {
+        "question": "In which sport would you perform a 'birdie'?",
+        "answer": "Golf"
+    },
+    {
+        "question": "What is the maximum number of clubs allowed in a golf bag?",
+        "answer": "14"
+    },
+    {
+        "question": "Which country has won the most FIFA Women's World Cups?",
+        "answer": "United States (4)"
+    },
+    {
+        "question": "How long is a cricket pitch in yards?",
+        "answer": "22 yards"
+    },
+    {
+        "question": "Which sport is known as 'the beautiful game'?",
+        "answer": "Football/Soccer"
+    },
+    {
+        "question": "What is the name of the championship game in American football?",
+        "answer": "Super Bowl"
+    },
+    {
+        "question": "How many players are on a field hockey team?",
+        "answer": "11"
+    },
+    {
+        "question": "Which tennis player has won the most women's Grand Slam singles titles?",
+        "answer": "Margaret Court (24)"
+    },
+    {
+        "question": "What is the diameter of a golf hole?",
+        "answer": "4.25 inches (108 mm)"
+    },
+    {
+        "question": "In which country did the sport of judo originate?",
+        "answer": "Japan"
+    },
+    {
+        "question": "How many points is a field goal worth in basketball?",
+        "answer": "Two or three (depending on distance)"
+    },
+    {
+        "question": "Which country won the first ever Cricket World Cup?",
+        "answer": "West Indies (1975)"
+    },
+    {
+        "question": "What is the name of the annual boat race between Oxford and Cambridge?",
+        "answer": "The Boat Race"
+    },
+    {
+        "question": "How many lanes are there in an Olympic swimming pool?",
+        "answer": "Eight"
+    },
+    {
+        "question": "Which country invented basketball?",
+        "answer": "United States (by James Naismith, a Canadian)"
+    },
+    {
+        "question": "What is the term for three goals scored by one player in football?",
+        "answer": "Hat-trick"
+    },
+    {
+        "question": "In which sport is the Davis Cup contested?",
+        "answer": "Tennis"
+    },
+    {
+        "question": "How many points is a try worth in rugby union?",
+        "answer": "Five"
+    },
+    {
+        "question": "Which country has hosted the most Summer Olympic Games?",
+        "answer": "United States (4 times)"
+    },
+    {
+        "question": "What is the name of the famous golf tournament held at Augusta?",
+        "answer": "The Masters"
+    },
+    {
+        "question": "How many players are on a baseball team on the field?",
+        "answer": "Nine"
+    },
+    {
+        "question": "Which sport uses the terms 'spare' and 'strike'?",
+        "answer": "Bowling"
+    },
+    {
+        "question": "What is the length of an Olympic marathon?",
+        "answer": "42.195 kilometers (26.2 miles)"
+    },
+    {
+        "question": "Which country has won the most Tour de France titles?",
+        "answer": "France"
+    },
+    {
+        "question": "In which sport would you perform a 'layup'?",
+        "answer": "Basketball"
+    },
+    {
+        "question": "How many innings are there in a standard baseball game?",
+        "answer": "Nine"
+    },
+    {
+        "question": "What is the name of the trophy awarded to the FIFA World Cup winners?",
+        "answer": "FIFA World Cup Trophy"
+    },
+    {
+        "question": "Which sport uses the term 'love' for zero?",
+        "answer": "Tennis"
+    },
+    {
+        "question": "How many players are on a water polo team in the water?",
+        "answer": "Seven"
+    },
+    {
+        "question": "Which country has won the most Olympic medals in gymnastics?",
+        "answer": "Soviet Union/Russia"
+    },
+    {
+        "question": "What is the term for scoring under par on a hole in golf?",
+        "answer": "Birdie (one under) or Eagle (two under)"
+    },
+    {
+        "question": "In which sport is the America's Cup contested?",
+        "answer": "Sailing"
+    },
+    {
+        "question": "How many weight classes are there in Olympic boxing?",
+        "answer": "Eight (men) and Five (women)"
+    },
+    {
+        "question": "Which country invented the sport of table tennis?",
+        "answer": "England"
+    },
+    {
+        "question": "What is the name of the annual marathon held in Boston?",
+        "answer": "Boston Marathon"
+    },
+    {
+        "question": "How many points is a conversion worth in rugby union?",
+        "answer": "Two"
+    },
+    {
+        "question": "Which sport is played on the largest field?",
+        "answer": "Polo"
+    },
+    {
+        "question": "What is the name of the famous horse race held at Churchill Downs?",
+        "answer": "Kentucky Derby"
+    },
+    {
+        "question": "In which sport would you perform a 'triple axel'?",
+        "answer": "Figure skating"
+    },
+    {
+        "question": "How many events are in a decathlon?",
+        "answer": "Ten"
+    },
+    {
+        "question": "Which country has won the most Olympic gold medals in track and field?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the name of the trophy awarded to the winner of the Six Nations rugby?",
+        "answer": "Six Nations Championship Trophy"
+    },
+    {
+        "question": "How long is a professional boxing round?",
+        "answer": "Three minutes"
+    },
+    {
+        "question": "Which Grand Slam tennis tournament is the oldest?",
+        "answer": "Wimbledon (1877)"
+    },
+    {
+        "question": "In which sport is the PGA Tour?",
+        "answer": "Golf"
+    },
+    {
+        "question": "How many players are on a handball team on the court?",
+        "answer": "Seven"
+    },
+    {
+        "question": "What is the term for winning a tennis game without the opponent scoring?",
+        "answer": "Love game"
+    },
+    {
+        "question": "Which country has won the most Olympic gold medals in swimming?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the name of the annual cycling race in Italy?",
+        "answer": "Giro d'Italia"
+    },
+    {
+        "question": "How many points is a drop goal worth in rugby union?",
+        "answer": "Three"
+    },
+    {
+        "question": "Which sport uses the term 'albatross'?",
+        "answer": "Golf (three under par)"
+    },
+    {
+        "question": "In which country did the sport of taekwondo originate?",
+        "answer": "South Korea"
+    },
+    {
+        "question": "How many games must a player win to win a set in tennis (minimum)?",
+        "answer": "Six"
+    },
+    {
+        "question": "What is the name of the famous tennis tournament held in New York?",
+        "answer": "US Open"
+    },
+    {
+        "question": "Which country has won the most FIFA Confederations Cups?",
+        "answer": "Brazil (4)"
+    },
+    {
+        "question": "How many events are in a heptathlon?",
+        "answer": "Seven"
+    },
+    {
+        "question": "What is the term for a perfect score in gymnastics?",
+        "answer": "10.0 (perfect ten)"
+    },
+    {
+        "question": "In which sport is the Ballon d'Or awarded?",
+        "answer": "Football/Soccer"
+    },
+    {
+        "question": "How many balls are used in a game of snooker?",
+        "answer": "22 (15 red, 6 colored, 1 white)"
+    },
+    {
+        "question": "Which country invented the sport of cricket?",
+        "answer": "England"
+    },
+    {
+        "question": "What is the name of the annual cycling race in Spain?",
+        "answer": "Vuelta a España"
+    },
+    {
+        "question": "How many laps are in a standard Formula 1 race?",
+        "answer": "Varies by circuit (typically 50-70)"
+    },
+    {
+        "question": "Which sport uses the term 'century'?",
+        "answer": "Cricket and Snooker"
+    },
+    {
+        "question": "In which city were the first modern Olympic Games held?",
+        "answer": "Athens, Greece"
+    },
+    {
+        "question": "How many players are on an ice hockey team on the ice?",
+        "answer": "Six"
+    },
+    {
+        "question": "What is the name of the trophy awarded to the Formula 1 World Champion?",
+        "answer": "FIA Formula One World Championship Trophy"
+    },
+    {
+        "question": "Which sport is also known as 'ping pong'?",
+        "answer": "Table tennis"
+    },
+    {
+        "question": "How long is a standard triathlon swim distance in Olympic distance?",
+        "answer": "1.5 kilometers"
+    },
+    {
+        "question": "In which country did the sport of karate originate?",
+        "answer": "Japan (Okinawa)"
+    },
+    {
+        "question": "What is the term for a score of one over par in golf?",
+        "answer": "Bogey"
+    },
+    {
+        "question": "How many points is an ace worth in tennis?",
+        "answer": "One point (15)"
+    },
+    {
+        "question": "Which country has won the most Olympic gold medals in athletics?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the name of the famous horse race held at Epsom?",
+        "answer": "The Derby (Epsom Derby)"
+    },
+    {
+        "question": "How many rounds are in a professional heavyweight boxing match?",
+        "answer": "12 rounds"
+    },
+    {
+        "question": "In which sport is the World Series the championship?",
+        "answer": "Baseball"
+    },
+    {
+        "question": "What is the term for a tie score in tennis?",
+        "answer": "Deuce (at 40-40)"
+    },
+    {
+        "question": "Which country hosted the 2014 FIFA World Cup?",
+        "answer": "Brazil"
+    },
+    {
+        "question": "How many players are on a cricket team playing at any time?",
+        "answer": "11 (batting team has 2 on field)"
+    },
+    {
+        "question": "What is the name of the annual tennis tournament held in Australia?",
+        "answer": "Australian Open"
+    },
+    {
+        "question": "In which sport would you perform a 'serve and volley'?",
+        "answer": "Tennis"
+    },
+    {
+        "question": "How many players are on a netball team on the court?",
+        "answer": "Seven"
+    },
+    {
+        "question": "Which country has won the most Olympic medals in total?",
+        "answer": "United States"
+    },
+    {
+        "question": "What is the term for hitting the ball over the boundary in cricket without bouncing?",
+        "answer": "Six"
+    },
+    {
+        "question": "In which sport is the Heisman Trophy awarded?",
+        "answer": "American college football"
+    },
+    {
+        "question": "How long is a soccer goal in feet?",
+        "answer": "24 feet (8 yards)"
+    },
+    {
+        "question": "Which country has produced the most Formula 1 World Champions?",
+        "answer": "United Kingdom"
+    },
+    {
+        "question": "What is the name of the trophy awarded to the winner of the UEFA European Championship?",
+        "answer": "Henri Delaunay Trophy"
+    },
+    {
+        "question": "How many hurdles are in a 110m hurdles race?",
+        "answer": "10"
+    },
+    {
+        "question": "In which sport is the Cy Young Award given?",
+        "answer": "Baseball (best pitcher)"
+    },
+    {
+        "question": "What is the term for a batter being dismissed without scoring in cricket?",
+        "answer": "Duck"
+    },
+    {
+        "question": "Which country hosted the 2016 Summer Olympics?",
+        "answer": "Brazil (Rio de Janeiro)"
+    },
+    {
+        "question": "How many points is a free throw worth in basketball?",
+        "answer": "One"
+    },
+    {
+        "question": "What is the name of the famous cricket ground in London?",
+        "answer": "Lord's"
+    },
+    {
+        "question": "In which sport would you perform a 'double fault'?",
+        "answer": "Tennis"
+    },
+    {
+        "question": "How many players are on a polo team?",
+        "answer": "Four"
+    },
+    {
+        "question": "Which country has won the most African Cup of Nations titles?",
+        "answer": "Egypt (7)"
+    },
+    {
+        "question": "What is the term for scoring two under par on a hole in golf?",
+        "answer": "Eagle"
+    },
+    {
+        "question": "In which sport is the Green Jacket awarded?",
+        "answer": "Golf (The Masters)"
+    },
+    {
+        "question": "How many overs are in a T20 cricket match per side?",
+        "answer": "20"
+    },
+    {
+        "question": "Which sport uses the term 'mulligan'?",
+        "answer": "Golf"
+    },
+    {
+        "question": "What is the name of the annual rowing race on the Thames?",
+        "answer": "The Boat Race"
+    },
+    {
+        "question": "In which country did the sport of rugby originate?",
+        "answer": "England"
+    },
+    {
+        "question": "How many players are on a lacrosse team on the field?",
+        "answer": "Ten"
+    },
+    {
+        "question": "What is the term for a goal scored directly from a corner kick?",
+        "answer": "Olympic goal"
+    },
+    {
+        "question": "Which Grand Slam tennis tournament is played on grass?",
+        "answer": "Wimbledon"
+    },
+    {
+        "question": "How long is an NBA basketball game in minutes?",
+        "answer": "48 minutes (four 12-minute quarters)"
+    },
+    {
+        "question": "In which sport is the Claret Jug the trophy?",
+        "answer": "Golf (The Open Championship)"
+    },
+    {
+        "question": "What is the name of the famous soccer stadium in Barcelona?",
+        "answer": "Camp Nou"
+    },
+    {
+        "question": "How many players are on a rugby league team?",
+        "answer": "13"
+    },
+    {
+        "question": "Which country has won the most Copa América titles?",
+        "answer": "Argentina and Uruguay (15 each)"
+    },
+    {
+        "question": "What is the term for hitting the ball along the ground in cricket?",
+        "answer": "Four (if it reaches the boundary)"
+    },
+    {
+        "question": "In which sport would you perform a 'slam'?",
+        "answer": "Skateboarding or Surfing"
+    },
+    {
+        "question": "How many overs are in a One Day International cricket match?",
+        "answer": "50 per side"
+    },
+    {
+        "question": "What is the name of the trophy for the European football club champions?",
+        "answer": "UEFA Champions League Trophy"
+    },
+    {
+        "question": "Which country has the most Grand Prix victories in Formula 1?",
+        "answer": "United Kingdom (by constructor)"
+    },
+    {
+        "question": "What is the term for hitting a golf ball from the tee?",
+        "answer": "Drive"
+    },
+    {
+        "question": "How many substitutes can be used in a FIFA World Cup match?",
+        "answer": "Five"
+    },
+    {
+        "question": "Which sport uses a velodrome?",
+        "answer": "Track cycling"
+    },
+    {
+        "question": "What is the length of an Olympic triathlon bike ride?",
+        "answer": "40 kilometers"
+    },
+    {
+        "question": "Which country has won the most Olympic gold medals in volleyball?",
+        "answer": "Soviet Union/Russia or Brazil"
+    },
+    {
+        "question": "What is the term for a dismissal in cricket when the ball hits the stumps?",
+        "answer": "Bowled"
+    },
+    {
+        "question": "How many points does a team need to win a standard volleyball set?",
+        "answer": "25 (with 2-point lead)"
+    },
+    {
+        "question": "Which country won the 2019 Cricket World Cup?",
+        "answer": "England"
+    },
+    {
+        "question": "What is the name of the annual tennis tournament held at the All England Club?",
+        "answer": "Wimbledon"
+    },
+    {
+        "question": "How many players are on a futsal team on the court?",
+        "answer": "Five"
+    },
+    {
+        "question": "Which sport is played on the longest pitch?",
+        "answer": "Golf or Polo"
+    },
+    {
+        "question": "What is the term for a score of 180 in darts?",
+        "answer": "Maximum"
+    },
+    {
+        "question": "How many weight categories are there in Olympic wrestling?",
+        "answer": "Six per style (freestyle and Greco-Roman)"
+    },
+    {
+        "question": "Which country hosted the 2018 Winter Olympics?",
+        "answer": "South Korea (Pyeongchang)"
     }
 ]
