@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibbon Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Gibbon Quiz Master 🎉</h1>
+            <p class="subtitle">Test your knowledge across different themes!</p>
+        </header>
+
+        <div id="themeSelection" class="theme-selection">
+            <h2>Choose Your Theme</h2>
+            <div class="theme-buttons">
+                <button class="theme-btn" data-theme="christmas">🎄 Christmas</button>
+                <button class="theme-btn" data-theme="movies">🎬 Movies</button>
+                <button class="theme-btn" data-theme="places">🌍 Places</button>
+                <button class="theme-btn" data-theme="people">👤 People</button>
+                <button class="theme-btn" data-theme="sport">⚽ Sport</button>
+            </div>
+        </div>
+
+        <div id="quizContainer" class="quiz-container hidden">
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">Theme:</span>
+                    <span id="currentTheme" class="score-value"></span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Question:</span>
+                    <span id="questionNumber" class="score-value">1</span>
+                    <span class="score-value"> of </span>
+                    <span id="totalQuestions" class="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Score:</span>
+                    <span id="score" class="score-value">0</span>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-text" id="questionText"></div>
+                <div class="answer-section hidden" id="answerSection">
+                    <div class="answer-label">Answer:</div>
+                    <div class="answer-text" id="answerText"></div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="showAnswerBtn" class="btn btn-primary">Show Answer</button>
+                <div id="scoringButtons" class="scoring-buttons hidden">
+                    <button id="correctBtn" class="btn btn-success">✓ Correct</button>
+                    <button id="incorrectBtn" class="btn btn-danger">✗ Incorrect</button>
+                </div>
+                <button id="nextBtn" class="btn btn-secondary hidden">Next Question</button>
+            </div>
+
+            <div class="game-controls">
+                <button id="newGameBtn" class="btn btn-new-game">New Game</button>
+            </div>
+        </div>
+
+        <div id="gameOver" class="game-over hidden">
+            <h2>🎊 Quiz Complete! 🎊</h2>
+            <div class="final-score">
+                <p>Your Final Score:</p>
+                <p class="big-score"><span id="finalScore">0</span> / <span id="finalTotal">0</span></p>
+                <p class="percentage" id="percentage"></p>
+            </div>
+            <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

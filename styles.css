@@ -1,0 +1,349 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Theme Selection */
+.theme-selection {
+    text-align: center;
+}
+
+.theme-selection h2 {
+    color: #667eea;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.theme-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.theme-btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.theme-btn:active {
+    transform: translateY(-2px);
+}
+
+/* Quiz Container */
+.quiz-container {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.score-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.score-label {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.score-value {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Question Card */
+.question-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question-text {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.answer-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #667eea;
+    animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.answer-label {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.answer-text {
+    font-size: 1.3rem;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.scoring-buttons {
+    display: flex;
+    gap: 15px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    color: white;
+    flex: 1;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+    color: white;
+    flex: 1;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    color: white;
+}
+
+.btn-new-game {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: white;
+}
+
+/* Game Controls */
+.game-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Game Over */
+.game-over {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.game-over h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.final-score {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.final-score p {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.big-score {
+    font-size: 3rem !important;
+    font-weight: bold;
+    margin: 20px 0 !important;
+}
+
+.percentage {
+    font-size: 1.5rem !important;
+    color: #fbbf24 !important;
+    font-weight: bold;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .theme-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .question-text {
+        font-size: 1.2rem;
+    }
+
+    .answer-text {
+        font-size: 1.1rem;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .scoring-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .big-score {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .theme-selection h2 {
+        font-size: 1.3rem;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+    }
+}
