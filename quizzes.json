@@ -29,7 +29,26 @@
         { "question": "Which composer wrote the music for 'The Nutcracker' ballet?", "answer": "Tchaikovsky" },
         { "question": "In which year did Christmas become a federal holiday in the United States?", "answer": "1870" },
         { "question": "What fruit is traditionally placed in Christmas stockings?", "answer": "Orange or tangerine" },
-        { "question": "What is the name of the main antagonist in 'The Nightmare Before Christmas'?", "answer": "Oogie Boogie" }
+        { "question": "What is the name of the main antagonist in 'The Nightmare Before Christmas'?", "answer": "Oogie Boogie" },
+        { "question": "What bird is traditionally eaten for Christmas dinner in the UK?", "answer": "Turkey" },
+        { "question": "In which country did the tradition of Christmas crackers originate?", "answer": "England" },
+        { "question": "What is Scrooge's first name in 'A Christmas Carol'?", "answer": "Ebenezer" },
+        { "question": "Which Christmas plant is known as the 'flower of the Holy Night' in Mexico?", "answer": "Poinsettia" },
+        { "question": "What is the name of the snowman in the movie 'Frozen'?", "answer": "Olaf" },
+        { "question": "In which modern-day country is the city of Bethlehem located?", "answer": "Palestine (West Bank)" },
+        { "question": "What do people traditionally put on top of a Christmas tree?", "answer": "A star or angel" },
+        { "question": "Which Christmas movie features the song 'Have Yourself a Merry Little Christmas'?", "answer": "Meet Me in St. Louis" },
+        { "question": "What is the traditional filling of a British Christmas mince pie?", "answer": "Mincemeat (dried fruit and spices)" },
+        { "question": "In Scandinavia, which mythical creature delivers Christmas presents?", "answer": "The Yule Goat (Julbock)" },
+        { "question": "What is the French name for Santa Claus?", "answer": "Père Noël" },
+        { "question": "Which gas makes Christmas tree lights glow?", "answer": "Neon or argon" },
+        { "question": "What is the name of Santa's workshop located at the North Pole?", "answer": "Elf workshop or Santa's workshop" },
+        { "question": "In 'The Polar Express,' where does the train take children?", "answer": "The North Pole" },
+        { "question": "What are the names of the ghosts that visit Scrooge in 'A Christmas Carol'?", "answer": "Past, Present, and Yet to Come" },
+        { "question": "Which reindeer has a name meaning 'thunder' in German?", "answer": "Donner" },
+        { "question": "What type of pie is traditionally left out for Santa in the US?", "answer": "Chocolate chip cookies (not pie)" },
+        { "question": "In which year did the first Christmas card get sent?", "answer": "1843" },
+        { "question": "What color are the berries on a holly plant?", "answer": "Red" }
     ],
     "movies": [
         { "question": "Which 1994 film features the line 'Life is like a box of chocolates'?", "answer": "Forrest Gump" },
@@ -71,7 +90,16 @@
         { "question": "Who directed 'E.T. the Extra-Terrestrial'?", "answer": "Steven Spielberg" },
         { "question": "Which 2019 film won the Oscar for Best Picture?", "answer": "Green Book" },
         { "question": "What is the name of the wizard school in the Harry Potter films?", "answer": "Hogwarts" },
-        { "question": "Who played the Joker in 'The Dark Knight' (2008)?", "answer": "Heath Ledger" }
+        { "question": "Who played the Joker in 'The Dark Knight' (2008)?", "answer": "Heath Ledger" },
+        { "question": "What is the name of the AI antagonist in 'The Terminator'?", "answer": "Skynet" },
+        { "question": "Which 2022 film won the Oscar for Best Picture?", "answer": "CODA" },
+        { "question": "Who directed 'Pulp Fiction'?", "answer": "Quentin Tarantino" },
+        { "question": "What is the name of the magical land in 'The Chronicles of Narnia'?", "answer": "Narnia" },
+        { "question": "Which actor plays Thanos in the Marvel Cinematic Universe?", "answer": "Josh Brolin" },
+        { "question": "What year was 'Jaws' released?", "answer": "1975" },
+        { "question": "Who directed 'Avatar' (2009)?", "answer": "James Cameron" },
+        { "question": "In 'Finding Nemo,' what type of fish is Nemo?", "answer": "Clownfish" },
+        { "question": "Which actress played Katniss Everdeen in 'The Hunger Games'?", "answer": "Jennifer Lawrence" }
     ],
     "places": [
         { "question": "What is the capital city of South Africa (executive)?", "answer": "Pretoria" },
@@ -113,7 +141,16 @@
         { "question": "What is the capital city of Hungary, divided by the Danube River?", "answer": "Budapest" },
         { "question": "What is the name of the famous beach in Rio de Janeiro?", "answer": "Copacabana" },
         { "question": "In which South African city would you find the Union Buildings?", "answer": "Pretoria" },
-        { "question": "What is the capital of Egypt?", "answer": "Cairo" }
+        { "question": "What is the capital of Egypt?", "answer": "Cairo" },
+        { "question": "Which city is known as the 'Big Apple'?", "answer": "New York City" },
+        { "question": "What is the name of the famous waterfall on the Zambezi River?", "answer": "Victoria Falls" },
+        { "question": "In which country would you find the city of Marrakech?", "answer": "Morocco" },
+        { "question": "What is the capital of Thailand?", "answer": "Bangkok" },
+        { "question": "Which strait separates Europe from Africa?", "answer": "Strait of Gibraltar" },
+        { "question": "What is the name of the highest waterfall in the world?", "answer": "Angel Falls" },
+        { "question": "In which city would you find the Colosseum?", "answer": "Rome" },
+        { "question": "What is the capital of Argentina?", "answer": "Buenos Aires" },
+        { "question": "Which country has the longest coastline in the world?", "answer": "Canada" }
     ],
     "people": [
         { "question": "Who was the first president of South Africa after apartheid?", "answer": "Nelson Mandela" },
@@ -155,7 +192,16 @@
         { "question": "Which scientist is famous for his laws of motion?", "answer": "Isaac Newton" },
         { "question": "Who was the first woman to win a Nobel Prize?", "answer": "Marie Curie" },
         { "question": "Which South African cricketer is known as 'AB'?", "answer": "AB de Villiers" },
-        { "question": "Who wrote 'The Catcher in the Rye'?", "answer": "J.D. Salinger" }
+        { "question": "Who wrote 'The Catcher in the Rye'?", "answer": "J.D. Salinger" },
+        { "question": "Who was the first person to fly solo across the Atlantic Ocean?", "answer": "Charles Lindbergh" },
+        { "question": "Which scientist is known for the 'double helix' structure of DNA?", "answer": "James Watson and Francis Crick" },
+        { "question": "Who is the richest person in the world as of 2023?", "answer": "Elon Musk (or Bernard Arnault, depending on date)" },
+        { "question": "Which ancient Egyptian queen was known for her relationship with Julius Caesar?", "answer": "Cleopatra" },
+        { "question": "Who wrote 'The Odyssey' and 'The Iliad'?", "answer": "Homer" },
+        { "question": "Which South African singer is known for the song 'Pata Pata'?", "answer": "Miriam Makeba" },
+        { "question": "Who invented the light bulb?", "answer": "Thomas Edison" },
+        { "question": "Who was the first woman in space?", "answer": "Valentina Tereshkova" },
+        { "question": "Which composer became deaf later in life but continued to compose?", "answer": "Ludwig van Beethoven" }
     ],
     "sport": [
         { "question": "Which country won the FIFA World Cup in 2018?", "answer": "France" },
@@ -197,7 +243,16 @@
         { "question": "In which sport do you compete for the Ashes?", "answer": "Cricket" },
         { "question": "What is the maximum weight of a soccer ball in grams?", "answer": "450 grams" },
         { "question": "Which South African athlete won gold in the 800m at the 2016 Olympics?", "answer": "Caster Semenya" },
-        { "question": "How many players are on a basketball team on the court at once?", "answer": "Five" }
+        { "question": "How many players are on a basketball team on the court at once?", "answer": "Five" },
+        { "question": "What is the national sport of India?", "answer": "Field Hockey" },
+        { "question": "Which country invented the sport of golf?", "answer": "Scotland" },
+        { "question": "How many rings are on the Olympic flag?", "answer": "Five" },
+        { "question": "Which sport uses the terms 'love' and 'deuce'?", "answer": "Tennis" },
+        { "question": "What is the distance of a marathon in kilometers?", "answer": "42.195 km" },
+        { "question": "Which sport is played at Wimbledon?", "answer": "Tennis" },
+        { "question": "How many points is a safety worth in American football?", "answer": "Two" },
+        { "question": "What is the name of the trophy awarded to the NHL champions?", "answer": "Stanley Cup" },
+        { "question": "Which country has won the most Olympic gold medals?", "answer": "United States" }
     ],
     "southafrica": [
         { "question": "What is the official name of South Africa?", "answer": "Republic of South Africa" },
@@ -239,7 +294,16 @@
         { "question": "Which South African freedom fighter was known as 'The Spear of the Nation'?", "answer": "uMkhonto we Sizwe (MK) - the armed wing of the ANC" },
         { "question": "What is the Karoo?", "answer": "A semi-desert natural region in South Africa" },
         { "question": "Which South African city was originally called 'eDuban' by the Zulu people?", "answer": "Durban" },
-        { "question": "What is 'rooibos'?", "answer": "A herbal tea plant native to South Africa" }
+        { "question": "What is 'rooibos'?", "answer": "A herbal tea plant native to South Africa" },
+        { "question": "What is the name of South Africa's national anthem?", "answer": "Nkosi Sikelel' iAfrika (combined with Die Stem)" },
+        { "question": "Which South African city hosted the 2010 FIFA World Cup final?", "answer": "Johannesburg (Soccer City)" },
+        { "question": "What is 'ubuntu'?", "answer": "A philosophy meaning 'I am because we are'" },
+        { "question": "Which South African national park is famous for the Big Five?", "answer": "Kruger National Park" },
+        { "question": "What is the Drakensberg?", "answer": "A mountain range in South Africa" },
+        { "question": "Who is Cyril Ramaphosa?", "answer": "President of South Africa (as of 2024)" },
+        { "question": "What is 'potjiekos'?", "answer": "A traditional South African stew cooked in a pot" },
+        { "question": "Which ocean borders South Africa's east coast?", "answer": "Indian Ocean" },
+        { "question": "What is the Apartheid Museum located in?", "answer": "Johannesburg" }
     ],
     "international": [
         { "question": "What is the largest country in the world by land area?", "answer": "Russia" },
@@ -281,7 +345,16 @@
         { "question": "Which country is the world's largest producer of tea?", "answer": "China" },
         { "question": "What is the capital of Nigeria?", "answer": "Abuja" },
         { "question": "Which country has the longest coastline in the world?", "answer": "Canada" },
-        { "question": "In which European city would you find the Colosseum?", "answer": "Rome" }
+        { "question": "In which European city would you find the Colosseum?", "answer": "Rome" },
+        { "question": "What is the capital of Iceland?", "answer": "Reykjavik" },
+        { "question": "Which country is known as the 'Land of Fire and Ice'?", "answer": "Iceland" },
+        { "question": "What is the currency of India?", "answer": "Indian Rupee" },
+        { "question": "Which country has the most islands in the world?", "answer": "Sweden" },
+        { "question": "What is the largest rainforest in the world?", "answer": "Amazon Rainforest" },
+        { "question": "Which European country is famous for its fjords?", "answer": "Norway" },
+        { "question": "What is the smallest country in Asia?", "answer": "Maldives" },
+        { "question": "Which country is home to the Sphinx?", "answer": "Egypt" },
+        { "question": "What language has the most native speakers in the world?", "answer": "Mandarin Chinese" }
     ],
     "music": [
         { "question": "Which South African group won a Grammy for 'Shaka Zulu' in 1988?", "answer": "Ladysmith Black Mambazo" },
@@ -323,7 +396,16 @@
         { "question": "Which Italian term means to play softly?", "answer": "Piano (or pianissimo)" },
         { "question": "Who is the best-selling female artist of all time?", "answer": "Madonna" },
         { "question": "What percussion instrument is essential in samba music?", "answer": "Drums (particularly surdo or tamborim)" },
-        { "question": "Which South African artist sang 'Pata Pata'?", "answer": "Miriam Makeba" }
+        { "question": "Which South African artist sang 'Pata Pata'?", "answer": "Miriam Makeba" },
+        { "question": "What is the musical term for gradually getting louder?", "answer": "Crescendo" },
+        { "question": "Which band sang 'Stairway to Heaven'?", "answer": "Led Zeppelin" },
+        { "question": "What instrument does a violinist play?", "answer": "Violin" },
+        { "question": "Who composed 'Eine kleine Nachtmusik'?", "answer": "Wolfgang Amadeus Mozart" },
+        { "question": "What is a cappella singing?", "answer": "Singing without instrumental accompaniment" },
+        { "question": "Which female artist has won the most Grammy Awards?", "answer": "Beyoncé" },
+        { "question": "What key is typically considered 'happy' in music?", "answer": "Major key" },
+        { "question": "Who wrote 'Imagine'?", "answer": "John Lennon" },
+        { "question": "What does 'fortissimo' mean in music?", "answer": "Very loud" }
     ],
     "science": [
         { "question": "What is the chemical symbol for gold?", "answer": "Au" },
@@ -365,7 +447,16 @@
         { "question": "How many planets are in our solar system?", "answer": "Eight" },
         { "question": "What is the pH of pure water?", "answer": "7 (neutral)" },
         { "question": "Which gas makes up about 21% of Earth's atmosphere?", "answer": "Oxygen" },
-        { "question": "What is the name of the supercontinent that existed 200 million years ago?", "answer": "Pangaea" }
+        { "question": "What is the name of the supercontinent that existed 200 million years ago?", "answer": "Pangaea" },
+        { "question": "What is DNA an abbreviation for?", "answer": "Deoxyribonucleic acid" },
+        { "question": "Which planet is closest to the Sun?", "answer": "Mercury" },
+        { "question": "What is the chemical symbol for sodium?", "answer": "Na" },
+        { "question": "How many teeth does an adult human typically have?", "answer": "32" },
+        { "question": "What is photosynthesis?", "answer": "The process by which plants convert sunlight to energy" },
+        { "question": "What particle has no electrical charge?", "answer": "Neutron" },
+        { "question": "What is the largest moon in our solar system?", "answer": "Ganymede (Jupiter's moon)" },
+        { "question": "What is the study of insects called?", "answer": "Entomology" },
+        { "question": "What element makes up most of the Sun?", "answer": "Hydrogen" }
     ],
     "history": [
         { "question": "In what year did World War I begin?", "answer": "1914" },
@@ -407,7 +498,16 @@
         { "question": "What year did the Titanic sink?", "answer": "1912" },
         { "question": "Who wrote the Freedom Charter in South Africa?", "answer": "The Congress of the People (1955)" },
         { "question": "Which civilization invented paper?", "answer": "Ancient China" },
-        { "question": "What is the significance of February 11, 1990 in SA?", "answer": "Nelson Mandela was released from prison" }
+        { "question": "What is the significance of February 11, 1990 in SA?", "answer": "Nelson Mandela was released from prison" },
+        { "question": "What was the Industrial Revolution?", "answer": "The transition to new manufacturing processes (18th-19th century)" },
+        { "question": "Who was Julius Caesar?", "answer": "Roman military leader and statesman" },
+        { "question": "What year did the United States declare independence?", "answer": "1776" },
+        { "question": "Who was Cleopatra?", "answer": "The last active ruler of the Ptolemaic Kingdom of Egypt" },
+        { "question": "What was the Holocaust?", "answer": "The genocide of European Jews during World War II" },
+        { "question": "Who built the Great Wall of China?", "answer": "Various Chinese dynasties, primarily the Ming Dynasty" },
+        { "question": "What was the Boston Tea Party?", "answer": "A 1773 protest against British taxation in America" },
+        { "question": "Who was Alexander the Great?", "answer": "King of Macedonia who created one of the largest empires in history" },
+        { "question": "What ended World War I?", "answer": "The Armistice of 11 November 1918 (Treaty of Versailles 1919)" }
     ],
     "food": [
         { "question": "What is the main ingredient in guacamole?", "answer": "Avocado" },
@@ -449,7 +549,16 @@
         { "question": "What is miso made from?", "answer": "Fermented soybeans" },
         { "question": "What is the Cape Malay dessert made with vermicelli?", "answer": "Sewerhana" },
         { "question": "Which spice is the most expensive by weight?", "answer": "Saffron" },
-        { "question": "What is rooibos commonly used for?", "answer": "Making tea (caffeine-free)" }
+        { "question": "What is rooibos commonly used for?", "answer": "Making tea (caffeine-free)" },
+        { "question": "What is the French word for a chef's tall white hat?", "answer": "Toque" },
+        { "question": "Which country is Parmesan cheese from?", "answer": "Italy" },
+        { "question": "What is the main ingredient in a traditional Caesar salad dressing?", "answer": "Anchovies (and egg, lemon, olive oil)" },
+        { "question": "What type of food is a 'jalapeño'?", "answer": "A chili pepper" },
+        { "question": "What grain is beer primarily made from?", "answer": "Barley" },
+        { "question": "What is tempura?", "answer": "Japanese deep-fried battered vegetables or seafood" },
+        { "question": "Which fruit is known as the 'king of fruits' in Southeast Asia?", "answer": "Durian" },
+        { "question": "What is the main ingredient in traditional pesto?", "answer": "Basil" },
+        { "question": "What does 'al dente' mean in cooking?", "answer": "Cooked to be firm when bitten" }
     ],
     "tvshows": [
         { "question": "What is the longest-running animated TV show?", "answer": "The Simpsons" },
@@ -491,7 +600,16 @@
         { "question": "Which SA show featured comedian Marc Sobel?", "answer": "Sober Companion (or his comedy specials)" },
         { "question": "What crime drama features a detective named Sherlock?", "answer": "Sherlock" },
         { "question": "Which SA show is set in the world of gospel music?", "answer": "Imbewu: The Seed (or various gospel shows)" },
-        { "question": "What is the most-watched series finale in US history?", "answer": "M*A*S*H" }
+        { "question": "What is the most-watched series finale in US history?", "answer": "M*A*S*H" },
+        { "question": "Which superhero show is set in Star City?", "answer": "Arrow" },
+        { "question": "What animated show features a yellow sponge?", "answer": "SpongeBob SquarePants" },
+        { "question": "Which reality show features people surviving on an island?", "answer": "Survivor" },
+        { "question": "What sitcom is set in a bar in Boston?", "answer": "Cheers" },
+        { "question": "Which Netflix show is about a chess prodigy?", "answer": "The Queen's Gambit" },
+        { "question": "What show features the Pearson family across different time periods?", "answer": "This Is Us" },
+        { "question": "Which cartoon features Scooby-Doo?", "answer": "Scooby-Doo, Where Are You!" },
+        { "question": "What hospital drama is the longest-running in TV history?", "answer": "Grey's Anatomy" },
+        { "question": "Which show is about a high school chemistry teacher turned drug dealer?", "answer": "Breaking Bad" }
     ],
     "artculture": [
         { "question": "Who painted the ceiling of the Sistine Chapel?", "answer": "Michelangelo" },
@@ -533,7 +651,16 @@
         { "question": "What is the name of traditional African masks' spiritual purpose?", "answer": "Connecting with ancestors and spirits" },
         { "question": "Who is Esther Mahlangu?", "answer": "Famous South African Ndebele artist" },
         { "question": "What movement was Pablo Picasso famous for?", "answer": "Cubism" },
-        { "question": "What is gumboot dancing?", "answer": "South African dance form originating from mine workers" }
+        { "question": "What is gumboot dancing?", "answer": "South African dance form originating from mine workers" },
+        { "question": "What is the name of the famous opera house in Sydney?", "answer": "Sydney Opera House" },
+        { "question": "What is ballet?", "answer": "A classical dance form characterized by grace and precision" },
+        { "question": "Which art movement is characterized by geometric shapes?", "answer": "Cubism" },
+        { "question": "What is a haiku?", "answer": "A traditional Japanese poem of 17 syllables" },
+        { "question": "Who wrote 'Hamlet'?", "answer": "William Shakespeare" },
+        { "question": "What is the Tate Modern?", "answer": "A modern art gallery in London" },
+        { "question": "What is mosaic art?", "answer": "Art made from small pieces of colored glass or stone" },
+        { "question": "Which country is famous for its tango dance?", "answer": "Argentina" },
+        { "question": "What is the oldest form of art known to humans?", "answer": "Cave paintings" }
     ],
     "wildlife": [
         { "question": "What are the Big Five animals in Africa?", "answer": "Lion, leopard, elephant, rhino, buffalo" },
@@ -575,7 +702,16 @@
         { "question": "Which mammal can hold its breath the longest?", "answer": "Cuvier's beaked whale" },
         { "question": "What is Boulders Beach in Simon's Town famous for?", "answer": "African penguin colony" },
         { "question": "What is the heaviest flying bird?", "answer": "Kori bustard (also found in SA)" },
-        { "question": "What is poaching's biggest target in South Africa?", "answer": "Rhinos (for their horns)" }
+        { "question": "What is poaching's biggest target in South Africa?", "answer": "Rhinos (for their horns)" },
+        { "question": "What is the slowest animal in the world?", "answer": "Three-toed sloth" },
+        { "question": "Which animal has the longest lifespan?", "answer": "Greenland shark (or giant tortoise)" },
+        { "question": "What is a group of lions called?", "answer": "A pride" },
+        { "question": "Which bird can mimic human speech?", "answer": "Parrot (especially African Grey)" },
+        { "question": "What is the largest species of penguin?", "answer": "Emperor penguin" },
+        { "question": "What animal is known for changing colors?", "answer": "Chameleon" },
+        { "question": "What is the only mammal that can truly fly?", "answer": "Bat" },
+        { "question": "Which animal has blue blood?", "answer": "Horseshoe crab" },
+        { "question": "What is a baby kangaroo called?", "answer": "Joey" }
     ],
     "african": [
         { "question": "How many countries are in Africa?", "answer": "54" },
@@ -617,6 +753,15 @@
         { "question": "What is the traditional South African/African practice of lobola?", "answer": "Bride price or dowry paid to bride's family" },
         { "question": "Which landlocked African country has the highest average elevation?", "answer": "Lesotho" },
         { "question": "What are dhows?", "answer": "Traditional sailing vessels used along East African coast" },
-        { "question": "What is the Swahili coast known for?", "answer": "Historic trade routes and Swahili culture" }
+        { "question": "What is the Swahili coast known for?", "answer": "Historic trade routes and Swahili culture" },
+        { "question": "What is the Suez Canal and where is it?", "answer": "A waterway in Egypt connecting Mediterranean to Red Sea" },
+        { "question": "Which African country is famous for gorilla trekking?", "answer": "Rwanda (or Uganda)" },
+        { "question": "What is the Kalahari?", "answer": "A large semi-arid sandy savanna in Southern Africa" },
+        { "question": "Which country hosts the ancient city of Carthage?", "answer": "Tunisia" },
+        { "question": "What language is widely spoken in East Africa?", "answer": "Swahili" },
+        { "question": "What is the Victoria Falls called locally?", "answer": "Mosi-oa-Tunya (The Smoke That Thunders)" },
+        { "question": "Which two countries share the Zambezi River at Victoria Falls?", "answer": "Zambia and Zimbabwe" },
+        { "question": "What is the African mahogany tree valued for?", "answer": "Its timber for furniture making" },
+        { "question": "Which North African country has the ancient city of Fez?", "answer": "Morocco" }
     ]
 }

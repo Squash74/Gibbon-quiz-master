@@ -192,10 +192,62 @@ header h1 {
     font-size: 1.8rem;
 }
 
-/* Timer Option Toggle */
-.timer-option {
+/* Quiz Options Container */
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 20px;
+    padding: 15px 20px;
+    background: #f3f4f6;
+    border-radius: 12px;
 }
+
+.option-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.option-label {
+    font-size: 1rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+/* Question Count Selector */
+.question-count-selector {
+    display: flex;
+    gap: 8px;
+}
+
+.count-btn {
+    width: 44px;
+    height: 36px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    color: #4b5563;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.count-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.count-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: transparent;
+    color: white;
+}
+
+/* Timer Option Toggle */
 
 .timer-toggle-label {
     display: inline-flex;
@@ -879,4 +931,29 @@ header h1 {
 
 [data-theme="dark"] .streak-display.streak-15 {
     background: rgba(239, 68, 68, 0.2);
+}
+
+[data-theme="dark"] .quiz-options {
+    background: #374151;
+}
+
+[data-theme="dark"] .option-label {
+    color: #d1d5db;
+}
+
+[data-theme="dark"] .count-btn {
+    background: #1f2937;
+    border-color: #6b7280;
+    color: #d1d5db;
+}
+
+[data-theme="dark"] .count-btn:hover {
+    border-color: #a5b4fc;
+    color: #a5b4fc;
+}
+
+[data-theme="dark"] .count-btn.active {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    border-color: transparent;
+    color: white;
 }

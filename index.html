@@ -45,12 +45,24 @@
         <div id="themeSelection" class="theme-selection">
             <h2>Choose Your Theme</h2>
 
-            <div class="timer-option">
-                <label class="timer-toggle-label">
-                    <input type="checkbox" id="timerToggle" class="timer-checkbox">
-                    <span class="timer-slider"></span>
-                    <span class="timer-text">⏱️ Timer Mode (30s per question)</span>
-                </label>
+            <div class="quiz-options">
+                <div class="option-group">
+                    <label class="option-label">Questions per quiz:</label>
+                    <div class="question-count-selector">
+                        <button class="count-btn" data-count="5">5</button>
+                        <button class="count-btn" data-count="10">10</button>
+                        <button class="count-btn active" data-count="15">15</button>
+                        <button class="count-btn" data-count="20">20</button>
+                        <button class="count-btn" data-count="30">30</button>
+                    </div>
+                </div>
+                <div class="option-group">
+                    <label class="timer-toggle-label">
+                        <input type="checkbox" id="timerToggle" class="timer-checkbox">
+                        <span class="timer-slider"></span>
+                        <span class="timer-text">⏱️ Timer Mode (30s per question)</span>
+                    </label>
+                </div>
             </div>
 
             <div class="theme-buttons">

@@ -378,6 +378,46 @@ async function shareResults() {
 }
 
 // ============================================
+// QUESTION COUNT SELECTOR
+// ============================================
+const QUESTION_COUNT_KEY = 'gibbonQuizQuestionCount';
+let selectedQuestionCount = 15; // Default
+
+function getQuestionCountPreference() {
+    const stored = localStorage.getItem(QUESTION_COUNT_KEY);
+    return stored ? parseInt(stored, 10) : 15;
+}
+
+function setQuestionCountPreference(count) {
+    localStorage.setItem(QUESTION_COUNT_KEY, count.toString());
+    selectedQuestionCount = count;
+}
+
+function initializeQuestionCountSelector() {
+    selectedQuestionCount = getQuestionCountPreference();
+
+    const buttons = document.querySelectorAll('.count-btn');
+    buttons.forEach(btn => {
+        const count = parseInt(btn.dataset.count, 10);
+
+        // Set active state based on stored preference
+        if (count === selectedQuestionCount) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+
+        btn.addEventListener('click', () => {
+            // Update active state
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            setQuestionCountPreference(count);
+        });
+    });
+}
+
+// ============================================
 // QUIZ STATE
 // ============================================
 let currentTheme = '';
@@ -429,8 +469,12 @@ function startQuiz() {
     updateStreakDisplay();
 
     // Get and shuffle questions for the theme
-    questions = [...quizData[currentTheme]];
-    shuffleArray(questions);
+    let allQuestions = [...quizData[currentTheme]];
+    shuffleArray(allQuestions);
+
+    // Limit to selected question count
+    const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
+    questions = allQuestions.slice(0, maxQuestions);
 
     // Update UI
     container.classList.add('quiz-active');
@@ -685,6 +729,7 @@ function updateThemeButtons() {
 async function initializeApp() {
     initializeTheme();
     initializeTimerToggle();
+    initializeQuestionCountSelector();
 
     // Show loading state while fetching quiz data
     showLoadingState();
