@@ -36,7 +36,7 @@
         "answer": "New York City"
     },
     {
-        "question": "What is the SA soapie set in Pretoria's Turfloop?",
+        "question": "What is the SA soapie set in Turfloop, Limpopo?",
         "answer": "Skeem Saam"
     },
     {
@@ -120,7 +120,7 @@
         "answer": "The Oprah Winfrey Show"
     },
     {
-        "question": "What SABC 1 show follows high school students in Tembisa?",
+        "question": "What SABC 1 show follows high school students in Turfloop?",
         "answer": "Skeem Saam"
     },
     {
@@ -252,8 +252,8 @@
         "answer": "MasterChef"
     },
     {
-        "question": "What show is set in a fictional African country called Wakanda?",
-        "answer": "Black Panther (not a TV show, but Marvel's Wakanda series)"
+        "question": "What Marvel animated series featured the kingdom of Wakanda?",
+        "answer": "Black Panther animated series"
     },
     {
         "question": "Which sitcom is about a nerdy group of scientists?",
@@ -552,8 +552,8 @@
         "answer": "Scandal!"
     },
     {
-        "question": "Which show is about a lawyer who can't lie for 24 hours?",
-        "answer": "Liar Liar (movie, not show)"
+        "question": "Which show is about a lawyer defending clients in high-profile cases?",
+        "answer": "Suits"
     },
     {
         "question": "What animated series features a baby genius?",
@@ -576,8 +576,8 @@
         "answer": "Bodyguard"
     },
     {
-        "question": "Which animated series is about a superhero family?",
-        "answer": "The Incredibles (movie/series)"
+        "question": "Which animated series is about a superhero family fighting crime?",
+        "answer": "The Powerpuff Girls"
     },
     {
         "question": "What show is about lawyers in Manhattan?",
