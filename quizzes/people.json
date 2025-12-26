@@ -120,8 +120,8 @@
         "answer": "Elon Musk"
     },
     {
-        "question": "Which South African swimmer won gold in the 4x100m freestyle relay at the 2004 Olympics?",
-        "answer": "Roland Schoeman and Ryk Neethling (part of the team)"
+        "question": "Which South African swimmer won gold at the 2004 Olympics?",
+        "answer": "Roland Schoeman and Ryk Neethling"
     },
     {
         "question": "Who painted 'The Last Supper'?",
@@ -132,7 +132,7 @@
         "answer": "Ferdinand Magellan"
     },
     {
-        "question": "Who was the CEO of Naspers that transformed it into a global internet and media giant?",
+        "question": "Who was the CEO of Naspers that transformed it into a global internet giant?",
         "answer": "Koos Bekker"
     },
     {
@@ -164,12 +164,12 @@
         "answer": "Charles Lindbergh"
     },
     {
-        "question": "Which scientist is known for the 'double helix' structure of DNA?",
+        "question": "Which scientist discovered the double helix structure of DNA?",
         "answer": "James Watson and Francis Crick"
     },
     {
-        "question": "Who is the richest person in the world as of 2023?",
-        "answer": "Elon Musk (or Bernard Arnault, depending on date)"
+        "question": "Who was the richest person in the world in 2023?",
+        "answer": "Elon Musk or Bernard Arnault"
     },
     {
         "question": "Which ancient Egyptian queen was known for her relationship with Julius Caesar?",
@@ -194,5 +194,609 @@
     {
         "question": "Which composer became deaf later in life but continued to compose?",
         "answer": "Ludwig van Beethoven"
+    },
+    {
+        "question": "Who was the anti-apartheid leader known for Black Consciousness?",
+        "answer": "Steve Biko"
+    },
+    {
+        "question": "Who created the theory of psychoanalysis?",
+        "answer": "Sigmund Freud"
+    },
+    {
+        "question": "Which South African rugby player is known as 'The Beast'?",
+        "answer": "Tendai Mtawarira"
+    },
+    {
+        "question": "Who wrote 'A Brief History of Time'?",
+        "answer": "Stephen Hawking"
+    },
+    {
+        "question": "Who founded Facebook?",
+        "answer": "Mark Zuckerberg"
+    },
+    {
+        "question": "Which South African was the first black editor of a major South African newspaper?",
+        "answer": "Percy Qoboza"
+    },
+    {
+        "question": "Who painted the ceiling of the Sistine Chapel?",
+        "answer": "Michelangelo"
+    },
+    {
+        "question": "Who was the first Secretary-General of the United Nations?",
+        "answer": "Trygve Lie"
+    },
+    {
+        "question": "Which South African activist was known as 'Mother of the Nation'?",
+        "answer": "Winnie Madikizela-Mandela"
+    },
+    {
+        "question": "Who discovered radioactivity?",
+        "answer": "Henri Becquerel"
+    },
+    {
+        "question": "Who founded Amazon?",
+        "answer": "Jeff Bezos"
+    },
+    {
+        "question": "Which South African won the 2019 Nobel Prize in Literature?",
+        "answer": "J.M. Coetzee (won in 2003)"
+    },
+    {
+        "question": "Who created Mickey Mouse?",
+        "answer": "Walt Disney"
+    },
+    {
+        "question": "Who was the longest-serving president of South Africa?",
+        "answer": "Jacob Zuma (9 years)"
+    },
+    {
+        "question": "Who wrote 'War and Peace'?",
+        "answer": "Leo Tolstoy"
+    },
+    {
+        "question": "Which South African musician was known as 'Bra Hugh'?",
+        "answer": "Hugh Masekela"
+    },
+    {
+        "question": "Who was the first person to reach the South Pole?",
+        "answer": "Roald Amundsen"
+    },
+    {
+        "question": "Who painted 'The Scream'?",
+        "answer": "Edvard Munch"
+    },
+    {
+        "question": "Which South African was the first black woman to become a doctor in the country?",
+        "answer": "Mamphela Ramphele"
+    },
+    {
+        "question": "Who developed the polio vaccine?",
+        "answer": "Jonas Salk"
+    },
+    {
+        "question": "Who wrote 'One Hundred Years of Solitude'?",
+        "answer": "Gabriel García Márquez"
+    },
+    {
+        "question": "Which South African athlete won the 800m at the 2012 and 2016 Olympics?",
+        "answer": "Caster Semenya"
+    },
+    {
+        "question": "Who discovered gravity?",
+        "answer": "Isaac Newton"
+    },
+    {
+        "question": "Who was the founder of Christianity?",
+        "answer": "Jesus Christ"
+    },
+    {
+        "question": "Which South African fashion designer is known internationally?",
+        "answer": "David Tlale"
+    },
+    {
+        "question": "Who invented the printing press?",
+        "answer": "Johannes Gutenberg"
+    },
+    {
+        "question": "Who wrote 'The Diary of a Young Girl'?",
+        "answer": "Anne Frank"
+    },
+    {
+        "question": "Which South African businessman founded Old Mutual?",
+        "answer": "John Fairbairn"
+    },
+    {
+        "question": "Who was the first person to climb Mount Everest?",
+        "answer": "Edmund Hillary and Tenzing Norgay"
+    },
+    {
+        "question": "Who wrote 'Don Quixote'?",
+        "answer": "Miguel de Cervantes"
+    },
+    {
+        "question": "Which South African was the first black professor at the University of Cape Town?",
+        "answer": "AC Jordan"
+    },
+    {
+        "question": "Who invented the airplane?",
+        "answer": "The Wright Brothers"
+    },
+    {
+        "question": "Who founded Islam?",
+        "answer": "Prophet Muhammad"
+    },
+    {
+        "question": "Which South African artist is known for painting political satire?",
+        "answer": "Zapiro (Jonathan Shapiro)"
+    },
+    {
+        "question": "Who composed 'The Four Seasons'?",
+        "answer": "Antonio Vivaldi"
+    },
+    {
+        "question": "Who was the first female African head of state?",
+        "answer": "Ellen Johnson Sirleaf"
+    },
+    {
+        "question": "Which South African poet wrote 'The Dead Will Arise'?",
+        "answer": "J.B. Peires"
+    },
+    {
+        "question": "Who discovered America in 1492?",
+        "answer": "Christopher Columbus"
+    },
+    {
+        "question": "Who wrote 'Beloved'?",
+        "answer": "Toni Morrison"
+    },
+    {
+        "question": "Which South African entrepreneur founded MTN?",
+        "answer": "M.T. Sobamowo Sosanya"
+    },
+    {
+        "question": "Who was the first person to break the sound barrier?",
+        "answer": "Chuck Yeager"
+    },
+    {
+        "question": "Who wrote 'The Alchemist'?",
+        "answer": "Paulo Coelho"
+    },
+    {
+        "question": "Which South African judge was the first President of the Constitutional Court?",
+        "answer": "Arthur Chaskalson"
+    },
+    {
+        "question": "Who invented the steam engine?",
+        "answer": "James Watt"
+    },
+    {
+        "question": "Who was the founder of Buddhism?",
+        "answer": "Siddhartha Gautama (Buddha)"
+    },
+    {
+        "question": "Which South African model became a global supermodel in the 1990s?",
+        "answer": "Candice Swanepoel"
+    },
+    {
+        "question": "Who painted 'Guernica'?",
+        "answer": "Pablo Picasso"
+    },
+    {
+        "question": "Who was the first African-American woman in space?",
+        "answer": "Mae Jemison"
+    },
+    {
+        "question": "Which South African was the founder of the Democratic Alliance?",
+        "answer": "Tony Leon"
+    },
+    {
+        "question": "Who wrote 'Crime and Punishment'?",
+        "answer": "Fyodor Dostoevsky"
+    },
+    {
+        "question": "Who invented the automobile?",
+        "answer": "Karl Benz"
+    },
+    {
+        "question": "Which South African entrepreneur co-founded PayPal?",
+        "answer": "Elon Musk"
+    },
+    {
+        "question": "Who was the Greek god of the sea?",
+        "answer": "Poseidon"
+    },
+    {
+        "question": "Who wrote 'Wuthering Heights'?",
+        "answer": "Emily Brontë"
+    },
+    {
+        "question": "Which South African was the first black Chief Justice?",
+        "answer": "Mogoeng Mogoeng"
+    },
+    {
+        "question": "Who discovered X-rays?",
+        "answer": "Wilhelm Röntgen"
+    },
+    {
+        "question": "Who was the first female US Secretary of State?",
+        "answer": "Madeleine Albright"
+    },
+    {
+        "question": "Which South African singer released 'Imali'?",
+        "answer": "Simphiwe Dana"
+    },
+    {
+        "question": "Who wrote 'The Divine Comedy'?",
+        "answer": "Dante Alighieri"
+    },
+    {
+        "question": "Who founded Apple Computer?",
+        "answer": "Steve Jobs and Steve Wozniak"
+    },
+    {
+        "question": "Which South African activist founded the Treatment Action Campaign?",
+        "answer": "Zackie Achmat"
+    },
+    {
+        "question": "Who painted 'Girl with a Pearl Earring'?",
+        "answer": "Johannes Vermeer"
+    },
+    {
+        "question": "Who was the first man in space?",
+        "answer": "Yuri Gagarin"
+    },
+    {
+        "question": "Which South African businesswoman founded Destiny magazine?",
+        "answer": "Khanyi Dhlomo"
+    },
+    {
+        "question": "Who wrote 'Jane Eyre'?",
+        "answer": "Charlotte Brontë"
+    },
+    {
+        "question": "Who discovered the circulation of blood?",
+        "answer": "William Harvey"
+    },
+    {
+        "question": "Which South African architect designed the Constitutional Court building?",
+        "answer": "OMM Design Workshop"
+    },
+    {
+        "question": "Who composed 'Swan Lake'?",
+        "answer": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+        "question": "Who was the first female Nobel Peace Prize winner?",
+        "answer": "Bertha von Suttner"
+    },
+    {
+        "question": "Which South African author wrote 'Cry, the Beloved Country'?",
+        "answer": "Alan Paton"
+    },
+    {
+        "question": "Who invented dynamite?",
+        "answer": "Alfred Nobel"
+    },
+    {
+        "question": "Who wrote 'The Canterbury Tales'?",
+        "answer": "Geoffrey Chaucer"
+    },
+    {
+        "question": "Which South African was the first black female advocate?",
+        "answer": "Desiree Soboku"
+    },
+    {
+        "question": "Who was the leader of India's independence movement?",
+        "answer": "Mahatma Gandhi"
+    },
+    {
+        "question": "Who created the first commercially successful personal computer?",
+        "answer": "Steve Jobs (Apple II)"
+    },
+    {
+        "question": "Which South African musician is known as 'Lady of the Struggle'?",
+        "answer": "Letta Mbulu"
+    },
+    {
+        "question": "Who wrote 'Moby-Dick'?",
+        "answer": "Herman Melville"
+    },
+    {
+        "question": "Who discovered electricity?",
+        "answer": "Benjamin Franklin"
+    },
+    {
+        "question": "Which South African was the first black mayor of Johannesburg?",
+        "answer": "Amos Masondo"
+    },
+    {
+        "question": "Who painted 'The Birth of Venus'?",
+        "answer": "Sandro Botticelli"
+    },
+    {
+        "question": "Who wrote 'Les Misérables'?",
+        "answer": "Victor Hugo"
+    },
+    {
+        "question": "Which South African businessperson founded Bidvest?",
+        "answer": "Brian Joffe"
+    },
+    {
+        "question": "Who was the first person to fly across the English Channel?",
+        "answer": "Louis Blériot"
+    },
+    {
+        "question": "Who invented television?",
+        "answer": "Philo Farnsworth"
+    },
+    {
+        "question": "Which South African was known as the 'Father of the Rainbow Nation'?",
+        "answer": "Nelson Mandela"
+    },
+    {
+        "question": "Who wrote 'The Brothers Karamazov'?",
+        "answer": "Fyodor Dostoevsky"
+    },
+    {
+        "question": "Who discovered radium?",
+        "answer": "Marie and Pierre Curie"
+    },
+    {
+        "question": "Which South African DJ is known as 'Black Coffee'?",
+        "answer": "Nkosinathi Innocent Maphumulo"
+    },
+    {
+        "question": "Who wrote 'Frankenstein'?",
+        "answer": "Mary Shelley"
+    },
+    {
+        "question": "Who was the first woman to win a Nobel Prize in Physics?",
+        "answer": "Marie Curie"
+    },
+    {
+        "question": "Which South African was the first black cricket player?",
+        "answer": "Makhaya Ntini"
+    },
+    {
+        "question": "Who composed 'Messiah'?",
+        "answer": "George Frideric Handel"
+    },
+    {
+        "question": "Who invented the radio?",
+        "answer": "Guglielmo Marconi"
+    },
+    {
+        "question": "Which South African designer is known for traditional African fashion?",
+        "answer": "Thula Sindi"
+    },
+    {
+        "question": "Who wrote 'Anna Karenina'?",
+        "answer": "Leo Tolstoy"
+    },
+    {
+        "question": "Who was the first black South African to win Wimbledon?",
+        "answer": "No one yet"
+    },
+    {
+        "question": "Which South African professor won the Nobel Prize in Chemistry?",
+        "answer": "Aaron Klug"
+    },
+    {
+        "question": "Who painted 'The Persistence of Memory'?",
+        "answer": "Salvador Dalí"
+    },
+    {
+        "question": "Who invented the modern computer?",
+        "answer": "Charles Babbage"
+    },
+    {
+        "question": "Which South African was the founder of the Inkatha Freedom Party?",
+        "answer": "Mangosuthu Buthelezi"
+    },
+    {
+        "question": "Who wrote 'A Thousand Splendid Suns'?",
+        "answer": "Khaled Hosseini"
+    },
+    {
+        "question": "Who was the founder of modern nursing?",
+        "answer": "Florence Nightingale"
+    },
+    {
+        "question": "Which South African poet wrote 'Begging to Be Black'?",
+        "answer": "Antjie Krog"
+    },
+    {
+        "question": "Who invented the vaccine for smallpox?",
+        "answer": "Edward Jenner"
+    },
+    {
+        "question": "Who wrote 'The Count of Monte Cristo'?",
+        "answer": "Alexandre Dumas"
+    },
+    {
+        "question": "Which South African was the first black female Member of Parliament?",
+        "answer": "Adelaide Tambo"
+    },
+    {
+        "question": "Who composed 'The Magic Flute'?",
+        "answer": "Wolfgang Amadeus Mozart"
+    },
+    {
+        "question": "Who founded Twitter?",
+        "answer": "Jack Dorsey"
+    },
+    {
+        "question": "Which South African was the first black woman to become a judge?",
+        "answer": "Yvonne Mokgoro"
+    },
+    {
+        "question": "Who wrote 'Dracula'?",
+        "answer": "Bram Stoker"
+    },
+    {
+        "question": "Who discovered the electron?",
+        "answer": "J.J. Thomson"
+    },
+    {
+        "question": "Which South African boxer was a world champion?",
+        "answer": "Baby Jake Matlala"
+    },
+    {
+        "question": "Who painted 'Water Lilies'?",
+        "answer": "Claude Monet"
+    },
+    {
+        "question": "Who was the first person to sail solo around the world?",
+        "answer": "Joshua Slocum"
+    },
+    {
+        "question": "Which South African artist is known for ndebele art?",
+        "answer": "Esther Mahlangu"
+    },
+    {
+        "question": "Who wrote 'Oliver Twist'?",
+        "answer": "Charles Dickens"
+    },
+    {
+        "question": "Who invented the zipper?",
+        "answer": "Whitcomb L. Judson"
+    },
+    {
+        "question": "Which South African was the first black Miss South Africa?",
+        "answer": "Basetsana Kumalo"
+    },
+    {
+        "question": "Who was the first female Nobel laureate in Economics?",
+        "answer": "Elinor Ostrom"
+    },
+    {
+        "question": "Who wrote 'The Picture of Dorian Gray'?",
+        "answer": "Oscar Wilde"
+    },
+    {
+        "question": "Which South African sang 'Click Song'?",
+        "answer": "Miriam Makeba"
+    },
+    {
+        "question": "Who discovered Neptune?",
+        "answer": "Johann Galle"
+    },
+    {
+        "question": "Who invented the assembly line?",
+        "answer": "Henry Ford"
+    },
+    {
+        "question": "Which South African activist was known as 'Tata'?",
+        "answer": "Nelson Mandela"
+    },
+    {
+        "question": "Who wrote 'The Kite Runner'?",
+        "answer": "Khaled Hosseini"
+    },
+    {
+        "question": "Who was the founder of psychotherapy?",
+        "answer": "Sigmund Freud"
+    },
+    {
+        "question": "Which South African directed 'Tsotsi'?",
+        "answer": "Gavin Hood"
+    },
+    {
+        "question": "Who composed 'Ode to Joy'?",
+        "answer": "Ludwig van Beethoven"
+    },
+    {
+        "question": "Who invented the telescope?",
+        "answer": "Hans Lippershey"
+    },
+    {
+        "question": "Which South African won the first democratic election?",
+        "answer": "Nelson Mandela"
+    },
+    {
+        "question": "Who wrote 'Lord of the Flies'?",
+        "answer": "William Golding"
+    },
+    {
+        "question": "Who was the first person to reach the North Pole?",
+        "answer": "Robert Peary (disputed)"
+    },
+    {
+        "question": "Which South African businesswoman is CEO of Discovery?",
+        "answer": "Adrian Gore (CEO, not a woman)"
+    },
+    {
+        "question": "Who painted 'American Gothic'?",
+        "answer": "Grant Wood"
+    },
+    {
+        "question": "Who wrote 'Slaughterhouse-Five'?",
+        "answer": "Kurt Vonnegut"
+    },
+    {
+        "question": "Which South African won the Man Booker Prize twice?",
+        "answer": "J.M. Coetzee"
+    },
+    {
+        "question": "Who invented the microscope?",
+        "answer": "Antonie van Leeuwenhoek"
+    },
+    {
+        "question": "Which South African musician founded Freshlyground?",
+        "answer": "Zolani Mahola"
+    },
+    {
+        "question": "Who was the first woman to win an Academy Award for Best Director?",
+        "answer": "Kathryn Bigelow"
+    },
+    {
+        "question": "Which South African comedian is known as 'Loyiso'?",
+        "answer": "Loyiso Gola"
+    },
+    {
+        "question": "Who wrote 'The Handmaid's Tale'?",
+        "answer": "Margaret Atwood"
+    },
+    {
+        "question": "Which South African actor starred in 'Blood Diamond'?",
+        "answer": "Djimon Hounsou (born Benin) or Arnold Vosloo (SA)"
+    },
+    {
+        "question": "Who founded the Red Cross?",
+        "answer": "Henry Dunant"
+    },
+    {
+        "question": "Which South African was Miss Universe 2019?",
+        "answer": "Zozibini Tunzi"
+    },
+    {
+        "question": "Who wrote 'The Road'?",
+        "answer": "Cormac McCarthy"
+    },
+    {
+        "question": "Which South African playwright wrote 'Master Harold... and the Boys'?",
+        "answer": "Athol Fugard"
+    },
+    {
+        "question": "Who was the first person to dive to the Mariana Trench?",
+        "answer": "Jacques Piccard and Don Walsh"
+    },
+    {
+        "question": "Which South African singer is known as 'Thandiswa'?",
+        "answer": "Thandiswa Mazwai"
+    },
+    {
+        "question": "Who invented the sewing machine?",
+        "answer": "Elias Howe"
+    },
+    {
+        "question": "Which South African was the first black female CEO of a major bank?",
+        "answer": "Wendy Sobey (FNB)"
+    },
+    {
+        "question": "Who founded the Salvation Army?",
+        "answer": "William Booth"
     }
 ]

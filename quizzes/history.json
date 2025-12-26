@@ -194,5 +194,609 @@
     {
         "question": "What ended World War I?",
         "answer": "The Armistice of 11 November 1918 (Treaty of Versailles 1919)"
+    },
+    {
+        "question": "What was the Battle of Blood River?",
+        "answer": "An 1838 battle between Voortrekkers and Zulu warriors"
+    },
+    {
+        "question": "Who was the first person to circumnavigate the globe?",
+        "answer": "Ferdinand Magellan's expedition (completed by Juan Sebastián Elcano)"
+    },
+    {
+        "question": "What year did the Soviet Union collapse?",
+        "answer": "1991"
+    },
+    {
+        "question": "Who was Chief Albert Luthuli?",
+        "answer": "ANC president and first African Nobel Peace Prize winner (1960)"
+    },
+    {
+        "question": "What was the Black Death?",
+        "answer": "A devastating plague that killed millions in Europe (14th century)"
+    },
+    {
+        "question": "Which president ended slavery in the United States?",
+        "answer": "Abraham Lincoln"
+    },
+    {
+        "question": "What was the Defiance Campaign in South Africa?",
+        "answer": "1952 civil disobedience against apartheid laws"
+    },
+    {
+        "question": "Who was Napoleon Bonaparte?",
+        "answer": "French military leader and Emperor"
+    },
+    {
+        "question": "What year did the first airplane fly?",
+        "answer": "1903"
+    },
+    {
+        "question": "Who was Oliver Tambo?",
+        "answer": "ANC leader in exile and anti-apartheid activist"
+    },
+    {
+        "question": "Which ancient city was destroyed by Mount Vesuvius?",
+        "answer": "Pompeii"
+    },
+    {
+        "question": "What was the Rivonia Trial?",
+        "answer": "1963-64 trial that sentenced Mandela to life imprisonment"
+    },
+    {
+        "question": "Who was the first woman to fly solo across the Atlantic?",
+        "answer": "Amelia Earhart"
+    },
+    {
+        "question": "What year was the ANC unbanned?",
+        "answer": "1990"
+    },
+    {
+        "question": "Which civilization built Machu Picchu?",
+        "answer": "The Inca Empire"
+    },
+    {
+        "question": "What was the Pass Laws in South Africa?",
+        "answer": "Laws requiring Black South Africans to carry identification documents"
+    },
+    {
+        "question": "Who was the first US president?",
+        "answer": "George Washington"
+    },
+    {
+        "question": "What year did apartheid officially end?",
+        "answer": "1994"
+    },
+    {
+        "question": "Which Viking explorer reached North America?",
+        "answer": "Leif Erikson"
+    },
+    {
+        "question": "Who was Winnie Madikizela-Mandela?",
+        "answer": "Anti-apartheid activist and former wife of Nelson Mandela"
+    },
+    {
+        "question": "What was the Cuban Missile Crisis?",
+        "answer": "1962 confrontation between US and USSR over missiles in Cuba"
+    },
+    {
+        "question": "What year was the Truth and Reconciliation Commission established?",
+        "answer": "1995"
+    },
+    {
+        "question": "Who was Attila the Hun?",
+        "answer": "Ruler of the Hunnic Empire"
+    },
+    {
+        "question": "What was the Soweto Uprising?",
+        "answer": "1976 student protests against Afrikaans in schools"
+    },
+    {
+        "question": "Which empire did Hannibal famously attack with elephants?",
+        "answer": "The Roman Republic"
+    },
+    {
+        "question": "Who was Walter Sisulu?",
+        "answer": "ANC leader and anti-apartheid activist imprisoned with Mandela"
+    },
+    {
+        "question": "What year did India gain independence?",
+        "answer": "1947"
+    },
+    {
+        "question": "What was the Bantu Education Act?",
+        "answer": "1953 law creating separate inferior education for Black South Africans"
+    },
+    {
+        "question": "Who was the last Pharaoh of Ancient Egypt?",
+        "answer": "Cleopatra VII"
+    },
+    {
+        "question": "What year did the Suez Canal open?",
+        "answer": "1869"
+    },
+    {
+        "question": "Who was Chris Hani?",
+        "answer": "ANC leader and Communist Party leader assassinated in 1993"
+    },
+    {
+        "question": "What was the Scramble for Africa?",
+        "answer": "European colonization of Africa (1881-1914)"
+    },
+    {
+        "question": "Who was King Henry VIII of England famous for?",
+        "answer": "Having six wives and breaking from the Catholic Church"
+    },
+    {
+        "question": "What year did Ghana become the first sub-Saharan African country to gain independence?",
+        "answer": "1957"
+    },
+    {
+        "question": "What was the Trojan War?",
+        "answer": "Legendary war between Greeks and the city of Troy"
+    },
+    {
+        "question": "Who was Helen Suzman?",
+        "answer": "Anti-apartheid politician who opposed apartheid in Parliament"
+    },
+    {
+        "question": "What year did the Panama Canal open?",
+        "answer": "1914"
+    },
+    {
+        "question": "Which kingdom did King Solomon rule?",
+        "answer": "Israel"
+    },
+    {
+        "question": "What was the Natives Land Act?",
+        "answer": "1913 law restricting Black land ownership to 7% of South Africa"
+    },
+    {
+        "question": "Who was Martin Luther?",
+        "answer": "German monk who started the Protestant Reformation"
+    },
+    {
+        "question": "What year did the Korean War begin?",
+        "answer": "1950"
+    },
+    {
+        "question": "Who was Desmond Tutu?",
+        "answer": "Anti-apartheid activist and Nobel Peace Prize winner"
+    },
+    {
+        "question": "What was the Ottoman Empire?",
+        "answer": "Turkish empire that lasted from 1299 to 1922"
+    },
+    {
+        "question": "What year was the first atomic bomb dropped?",
+        "answer": "1945 (Hiroshima)"
+    },
+    {
+        "question": "Who was Cetshwayo kaMpande?",
+        "answer": "Zulu king who defeated the British at Isandlwana"
+    },
+    {
+        "question": "What was the Battle of Isandlwana?",
+        "answer": "1879 Zulu victory over British forces"
+    },
+    {
+        "question": "Who was Queen Elizabeth I?",
+        "answer": "English queen known for the Elizabethan era"
+    },
+    {
+        "question": "What year did the Vietnam War end?",
+        "answer": "1975"
+    },
+    {
+        "question": "Who was Robert Sobukwe?",
+        "answer": "Founder of the Pan Africanist Congress (PAC)"
+    },
+    {
+        "question": "What was the Hundred Years' War?",
+        "answer": "Series of conflicts between England and France (1337-1453)"
+    },
+    {
+        "question": "What year did Martin Luther King Jr. deliver his 'I Have a Dream' speech?",
+        "answer": "1963"
+    },
+    {
+        "question": "Who was Samora Machel?",
+        "answer": "First president of Mozambique"
+    },
+    {
+        "question": "What ancient civilization developed democracy?",
+        "answer": "Ancient Greece"
+    },
+    {
+        "question": "What year did the Chernobyl disaster occur?",
+        "answer": "1986"
+    },
+    {
+        "question": "Who was Albertina Sisulu?",
+        "answer": "Anti-apartheid activist and wife of Walter Sisulu"
+    },
+    {
+        "question": "What was the Rwandan Genocide?",
+        "answer": "1994 mass killing of Tutsi people in Rwanda"
+    },
+    {
+        "question": "Who was Spartacus?",
+        "answer": "Roman slave who led a major uprising"
+    },
+    {
+        "question": "What year did East and West Germany reunify?",
+        "answer": "1990"
+    },
+    {
+        "question": "Who was Thabo Mbeki?",
+        "answer": "Second president of democratic South Africa"
+    },
+    {
+        "question": "What was the Crusades?",
+        "answer": "Religious wars to control the Holy Land (1095-1291)"
+    },
+    {
+        "question": "What year did Japan attack Pearl Harbor?",
+        "answer": "1941"
+    },
+    {
+        "question": "Who was F.W. de Klerk?",
+        "answer": "Last apartheid-era president who negotiated the transition"
+    },
+    {
+        "question": "What was the Spanish Armada?",
+        "answer": "Spanish fleet defeated by England in 1588"
+    },
+    {
+        "question": "What year did Nelson Mandela die?",
+        "answer": "2013"
+    },
+    {
+        "question": "Who was Nkosazana Dlamini-Zuma?",
+        "answer": "First female African Union Commission chairperson"
+    },
+    {
+        "question": "What was the Battle of Hastings?",
+        "answer": "1066 Norman victory that conquered England"
+    },
+    {
+        "question": "What year did the first successful heart transplant occur?",
+        "answer": "1967 (Cape Town, by Dr. Christiaan Barnard)"
+    },
+    {
+        "question": "Who was Patrice Lumumba?",
+        "answer": "First Prime Minister of the Democratic Republic of Congo"
+    },
+    {
+        "question": "What was the Ming Dynasty known for?",
+        "answer": "Building the Great Wall and forbidden City"
+    },
+    {
+        "question": "What year was Mahatma Gandhi assassinated?",
+        "answer": "1948"
+    },
+    {
+        "question": "Who was Ruth First?",
+        "answer": "Anti-apartheid activist assassinated by a letter bomb in 1982"
+    },
+    {
+        "question": "What was the Siege of Leningrad?",
+        "answer": "German siege of the Russian city during WWII (1941-1944)"
+    },
+    {
+        "question": "What year did the Zulu Kingdom fall to the British?",
+        "answer": "1879"
+    },
+    {
+        "question": "Who was Haile Selassie?",
+        "answer": "Last Emperor of Ethiopia"
+    },
+    {
+        "question": "What was the Treaty of Westphalia?",
+        "answer": "1648 peace treaties ending the Thirty Years' War"
+    },
+    {
+        "question": "What year was Martin Luther King Jr. assassinated?",
+        "answer": "1968"
+    },
+    {
+        "question": "Who was Hendrik Verwoerd?",
+        "answer": "South African prime minister called the 'architect of apartheid'"
+    },
+    {
+        "question": "What was the Meiji Restoration?",
+        "answer": "1868 political revolution that modernized Japan"
+    },
+    {
+        "question": "What year did Zimbabwe gain independence?",
+        "answer": "1980"
+    },
+    {
+        "question": "Who was Thomas Sankara?",
+        "answer": "Revolutionary leader of Burkina Faso"
+    },
+    {
+        "question": "What was the Opium Wars?",
+        "answer": "19th century conflicts between China and Britain"
+    },
+    {
+        "question": "What year did the Great Depression begin?",
+        "answer": "1929"
+    },
+    {
+        "question": "Who was Joe Slovo?",
+        "answer": "Anti-apartheid activist and Communist Party leader"
+    },
+    {
+        "question": "What was the Battle of Thermopylae?",
+        "answer": "480 BC battle where Spartans fought the Persians"
+    },
+    {
+        "question": "What year did South Africa host the Rugby World Cup?",
+        "answer": "1995"
+    },
+    {
+        "question": "Who was Kwame Nkrumah?",
+        "answer": "First president of Ghana and pan-Africanist leader"
+    },
+    {
+        "question": "What was the Norman Conquest?",
+        "answer": "1066 invasion of England by William of Normandy"
+    },
+    {
+        "question": "What year did the Boer War end?",
+        "answer": "1902"
+    },
+    {
+        "question": "Who was Jomo Kenyatta?",
+        "answer": "First president of Kenya"
+    },
+    {
+        "question": "What was the Byzantine Empire?",
+        "answer": "The Eastern Roman Empire that lasted until 1453"
+    },
+    {
+        "question": "What year was the African Union formed?",
+        "answer": "2002"
+    },
+    {
+        "question": "Who was Shaka's mother?",
+        "answer": "Nandi"
+    },
+    {
+        "question": "What was the Trail of Tears?",
+        "answer": "Forced relocation of Native Americans in the 1830s"
+    },
+    {
+        "question": "What year did the Suez Crisis occur?",
+        "answer": "1956"
+    },
+    {
+        "question": "Who was Julius Nyerere?",
+        "answer": "First president of Tanzania"
+    },
+    {
+        "question": "What was the Reconquista?",
+        "answer": "Christian reconquest of Spain from Muslims (711-1492)"
+    },
+    {
+        "question": "What year did Mandela become president?",
+        "answer": "1994"
+    },
+    {
+        "question": "Who was Mzilikazi?",
+        "answer": "Founder of the Ndebele Kingdom"
+    },
+    {
+        "question": "What was the Reign of Terror?",
+        "answer": "Period of violence during the French Revolution (1793-1794)"
+    },
+    {
+        "question": "What year did the Congo gain independence from Belgium?",
+        "answer": "1960"
+    },
+    {
+        "question": "Who was Cecil John Rhodes?",
+        "answer": "British imperialist and founder of Rhodesia"
+    },
+    {
+        "question": "What was the Boxer Rebellion?",
+        "answer": "1899-1901 anti-foreign uprising in China"
+    },
+    {
+        "question": "What year was the Organisation of African Unity founded?",
+        "answer": "1963"
+    },
+    {
+        "question": "Who was Dingane?",
+        "answer": "Zulu king who succeeded Shaka"
+    },
+    {
+        "question": "What was the War of the Roses?",
+        "answer": "English civil war between House of York and Lancaster (1455-1487)"
+    },
+    {
+        "question": "What year did Algeria gain independence?",
+        "answer": "1962"
+    },
+    {
+        "question": "Who was King Leopold II?",
+        "answer": "Belgian king who brutally colonized the Congo"
+    },
+    {
+        "question": "What was the Stone Age?",
+        "answer": "Prehistoric period when stone tools were used"
+    },
+    {
+        "question": "What year was CODESA (Convention for a Democratic South Africa) held?",
+        "answer": "1991-1992"
+    },
+    {
+        "question": "Who was Moshoeshoe I?",
+        "answer": "Founder of the Basotho nation (Lesotho)"
+    },
+    {
+        "question": "What was the Age of Enlightenment?",
+        "answer": "18th century European intellectual movement"
+    },
+    {
+        "question": "What year did Kenya gain independence?",
+        "answer": "1963"
+    },
+    {
+        "question": "Who was Paul Kruger?",
+        "answer": "President of the South African Republic (Transvaal)"
+    },
+    {
+        "question": "What was the Peloponnesian War?",
+        "answer": "War between Athens and Sparta (431-404 BC)"
+    },
+    {
+        "question": "What year was the Union of South Africa formed?",
+        "answer": "1910"
+    },
+    {
+        "question": "Who was Emperor Constantine?",
+        "answer": "Roman emperor who legalized Christianity"
+    },
+    {
+        "question": "What was the Great Zimbabwe?",
+        "answer": "Medieval African city and trading center"
+    },
+    {
+        "question": "What year did Nigeria gain independence?",
+        "answer": "1960"
+    },
+    {
+        "question": "Who was Louis Botha?",
+        "answer": "First Prime Minister of the Union of South Africa"
+    },
+    {
+        "question": "What was the Babylonian Captivity?",
+        "answer": "Period when Jews were exiled to Babylon"
+    },
+    {
+        "question": "What year did Namibia gain independence?",
+        "answer": "1990"
+    },
+    {
+        "question": "Who was Emily Hobhouse?",
+        "answer": "British activist who exposed Boer War concentration camps"
+    },
+    {
+        "question": "What was the Assyrian Empire known for?",
+        "answer": "Its military might and brutal conquests"
+    },
+    {
+        "question": "What year was the Battle of Cuito Cuanavale?",
+        "answer": "1987-1988"
+    },
+    {
+        "question": "Who was Ahmed Sékou Touré?",
+        "answer": "First president of Guinea"
+    },
+    {
+        "question": "What was the Persian Empire?",
+        "answer": "Ancient empire spanning from Egypt to India"
+    },
+    {
+        "question": "What year did Mozambique gain independence?",
+        "answer": "1975"
+    },
+    {
+        "question": "Who was Jan Smuts?",
+        "answer": "South African military leader and statesman"
+    },
+    {
+        "question": "What was the Mughal Empire?",
+        "answer": "Islamic empire that ruled most of India (1526-1857)"
+    },
+    {
+        "question": "What year did Angola gain independence?",
+        "answer": "1975"
+    },
+    {
+        "question": "Who was Olive Schreiner?",
+        "answer": "South African author and anti-war activist"
+    },
+    {
+        "question": "What was the Indus Valley Civilization?",
+        "answer": "Ancient civilization in South Asia (3300-1300 BC)"
+    },
+    {
+        "question": "What year was the Marikana massacre?",
+        "answer": "2012"
+    },
+    {
+        "question": "Who was Mangosuthu Buthelezi?",
+        "answer": "Founder and leader of the Inkatha Freedom Party"
+    },
+    {
+        "question": "What was the Enlightenment's main focus?",
+        "answer": "Reason, science, and individual rights"
+    },
+    {
+        "question": "What year did South Africa become a republic?",
+        "answer": "1961"
+    },
+    {
+        "question": "Who was the first female Prime Minister of the United Kingdom?",
+        "answer": "Margaret Thatcher"
+    },
+    {
+        "question": "What was the Khoikhoi uprising of 1659?",
+        "answer": "First resistance by indigenous people against Dutch colonists at the Cape"
+    },
+    {
+        "question": "What year did the French Revolution begin?",
+        "answer": "1789"
+    },
+    {
+        "question": "Who was Sobhuza II?",
+        "answer": "King of Swaziland who reigned for 82 years"
+    },
+    {
+        "question": "What was the significance of the Congress of Vienna?",
+        "answer": "1814-1815 conference that reorganized Europe after Napoleon"
+    },
+    {
+        "question": "What year was the Universal Declaration of Human Rights adopted?",
+        "answer": "1948"
+    },
+    {
+        "question": "Who was the Khoi leader who resisted Dutch expansion?",
+        "answer": "Doman (Autshumao's nephew)"
+    },
+    {
+        "question": "What was the Glorious Revolution?",
+        "answer": "1688 overthrow of King James II of England"
+    },
+    {
+        "question": "What year did the first democratic elections take place in South Africa?",
+        "answer": "27 April 1994"
+    },
+    {
+        "question": "Who was Askia Muhammad?",
+        "answer": "Emperor of the Songhai Empire"
+    },
+    {
+        "question": "What was the War of 1812?",
+        "answer": "Conflict between the United States and Britain"
+    },
+    {
+        "question": "What year did the Zulu nation defeat the Ndwandwe at the Battle of Mhlatuze?",
+        "answer": "1820"
+    },
+    {
+        "question": "Who was Ramesses II?",
+        "answer": "Pharaoh known as Ramesses the Great"
+    },
+    {
+        "question": "What was the Zimmermann Telegram?",
+        "answer": "1917 German proposal for Mexico to ally against the USA"
+    },
+    {
+        "question": "What was the Xhosa cattle-killing movement of 1856-1857?",
+        "answer": "A movement where Xhosa killed cattle believing ancestors would return"
     }
 ]

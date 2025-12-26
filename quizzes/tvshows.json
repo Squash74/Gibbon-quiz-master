@@ -64,10 +64,6 @@
         "answer": "Doctor Who"
     },
     {
-        "question": "What is Trevor Noah's SA comedy show called?",
-        "answer": "Trevor Noah: African American (and others)"
-    },
-    {
         "question": "What is the name of the coffee shop in 'Friends'?",
         "answer": "Central Perk"
     },
@@ -81,7 +77,7 @@
     },
     {
         "question": "Which cooking competition show is hosted by Gordon Ramsay?",
-        "answer": "Hell's Kitchen (or MasterChef)"
+        "answer": "Hell's Kitchen"
     },
     {
         "question": "What is the setting of 'The Queen' on Mzansi Magic?",
@@ -93,7 +89,7 @@
     },
     {
         "question": "Which SA comedy show featured sketches with politicians?",
-        "answer": "ZA News (or Late Nite News)"
+        "answer": "ZA News"
     },
     {
         "question": "In what decade is 'Stranger Things' set?",
@@ -132,28 +128,16 @@
         "answer": "The Handmaid's Tale"
     },
     {
-        "question": "Which SA game show is based on the UK's 'Who Wants to Be a Millionaire'?",
-        "answer": "Who Wants to Be a Millionaire South Africa"
-    },
-    {
         "question": "What show features the fictional paper company in Scranton?",
         "answer": "The Office"
     },
     {
         "question": "What BBC nature documentary series is narrated by David Attenborough?",
-        "answer": "Planet Earth (or Blue Planet)"
-    },
-    {
-        "question": "Which SA show featured comedian Marc Sobel?",
-        "answer": "Sober Companion (or his comedy specials)"
+        "answer": "Planet Earth"
     },
     {
         "question": "What crime drama features a detective named Sherlock?",
         "answer": "Sherlock"
-    },
-    {
-        "question": "Which SA show is set in the world of gospel music?",
-        "answer": "Imbewu: The Seed (or various gospel shows)"
     },
     {
         "question": "What is the most-watched series finale in US history?",
@@ -194,5 +178,625 @@
     {
         "question": "Which show is about a high school chemistry teacher turned drug dealer?",
         "answer": "Breaking Bad"
+    },
+    {
+        "question": "What is the name of Homer Simpson's favorite bar?",
+        "answer": "Moe's Tavern"
+    },
+    {
+        "question": "Which British period drama is set in an English country house?",
+        "answer": "Downton Abbey"
+    },
+    {
+        "question": "What is the name of the fictional town in 'Stranger Things'?",
+        "answer": "Hawkins"
+    },
+    {
+        "question": "Which SA telenovela features the Zulu family?",
+        "answer": "Imbewu: The Seed"
+    },
+    {
+        "question": "What show features the character Don Draper?",
+        "answer": "Mad Men"
+    },
+    {
+        "question": "Which animated series is set in the town of South Park?",
+        "answer": "South Park"
+    },
+    {
+        "question": "What is the name of the mother in 'The Simpsons'?",
+        "answer": "Marge Simpson"
+    },
+    {
+        "question": "Which TV show is about the Shelby crime family in Birmingham?",
+        "answer": "Peaky Blinders"
+    },
+    {
+        "question": "What Netflix series is about a tiger owner in Oklahoma?",
+        "answer": "Tiger King"
+    },
+    {
+        "question": "Which SA reality show is about finding love?",
+        "answer": "Date My Family"
+    },
+    {
+        "question": "What show features FBI agents Mulder and Scully?",
+        "answer": "The X-Files"
+    },
+    {
+        "question": "Which sitcom features a family called the Dunphys?",
+        "answer": "Modern Family"
+    },
+    {
+        "question": "What is the name of the dragon in 'How to Train Your Dragon'?",
+        "answer": "Toothless"
+    },
+    {
+        "question": "Which medical drama is set in Seattle Grace Hospital?",
+        "answer": "Grey's Anatomy"
+    },
+    {
+        "question": "What animated show features Bart, Lisa, and Maggie?",
+        "answer": "The Simpsons"
+    },
+    {
+        "question": "Which show is about a man with perfect memory solving crimes?",
+        "answer": "The Mentalist"
+    },
+    {
+        "question": "What SA drama is about the Khoza crime family?",
+        "answer": "The Queen"
+    },
+    {
+        "question": "Which reality show features aspiring chefs competing?",
+        "answer": "MasterChef"
+    },
+    {
+        "question": "What show is set in a fictional African country called Wakanda?",
+        "answer": "Black Panther (not a TV show, but Marvel's Wakanda series)"
+    },
+    {
+        "question": "Which sitcom is about a nerdy group of scientists?",
+        "answer": "The Big Bang Theory"
+    },
+    {
+        "question": "What animated series features a secret agent named Sterling Archer?",
+        "answer": "Archer"
+    },
+    {
+        "question": "Which British show is about a dysfunctional royal family?",
+        "answer": "The Crown"
+    },
+    {
+        "question": "What SA show is about the Dikana mining family?",
+        "answer": "The River"
+    },
+    {
+        "question": "Which crime drama features the NCIS team?",
+        "answer": "NCIS"
+    },
+    {
+        "question": "What animated series is set in Bikini Bottom?",
+        "answer": "SpongeBob SquarePants"
+    },
+    {
+        "question": "Which show features a robot named R2-D2?",
+        "answer": "Star Wars series (The Mandalorian, etc.)"
+    },
+    {
+        "question": "What HBO show is about the Soprano crime family?",
+        "answer": "The Sopranos"
+    },
+    {
+        "question": "Which British comedy features David Brent?",
+        "answer": "The Office (UK)"
+    },
+    {
+        "question": "What SA music competition is judged by local celebrities?",
+        "answer": "The Voice South Africa"
+    },
+    {
+        "question": "Which animated show features a boy with a talking dog?",
+        "answer": "Adventure Time"
+    },
+    {
+        "question": "What show features detectives from Brooklyn's 99th precinct?",
+        "answer": "Brooklyn Nine-Nine"
+    },
+    {
+        "question": "Which British series is about a forensic scientist?",
+        "answer": "Silent Witness"
+    },
+    {
+        "question": "What Netflix show is about a women's prison?",
+        "answer": "Orange Is the New Black"
+    },
+    {
+        "question": "Which SA show is set in the world of traditional medicine?",
+        "answer": "The Herd"
+    },
+    {
+        "question": "What sitcom features the Pritchett-Dunphy-Tucker clan?",
+        "answer": "Modern Family"
+    },
+    {
+        "question": "Which show is about time-traveling through a wormhole?",
+        "answer": "Stargate SG-1"
+    },
+    {
+        "question": "What animated series features Peter, Lois, and Stewie?",
+        "answer": "Family Guy"
+    },
+    {
+        "question": "Which reality show features home renovations?",
+        "answer": "Property Brothers (or Fixer Upper)"
+    },
+    {
+        "question": "What SA show is about the underground hip-hop scene?",
+        "answer": "Rhythm City"
+    },
+    {
+        "question": "Which show features a consulting detective at 221B Baker Street?",
+        "answer": "Sherlock"
+    },
+    {
+        "question": "What animated show is about a pink starfish?",
+        "answer": "SpongeBob SquarePants (Patrick Star)"
+    },
+    {
+        "question": "Which British drama is set in a 1920s English estate?",
+        "answer": "Downton Abbey"
+    },
+    {
+        "question": "What show features the character Ross Geller?",
+        "answer": "Friends"
+    },
+    {
+        "question": "Which SA soapie has been running since 1994?",
+        "answer": "Generations"
+    },
+    {
+        "question": "What HBO series is about the drug trade in Baltimore?",
+        "answer": "The Wire"
+    },
+    {
+        "question": "Which animated show features Rick and Morty?",
+        "answer": "Rick and Morty"
+    },
+    {
+        "question": "What show is about a group of survivors after a plane crash?",
+        "answer": "Lost"
+    },
+    {
+        "question": "Which British show features the Crawley family?",
+        "answer": "Downton Abbey"
+    },
+    {
+        "question": "What SA crime drama features detective Reyka Gama?",
+        "answer": "Reyka"
+    },
+    {
+        "question": "Which show features the character Eleven?",
+        "answer": "Stranger Things"
+    },
+    {
+        "question": "What animated show is set in Springfield?",
+        "answer": "The Simpsons"
+    },
+    {
+        "question": "Which reality show is about dating and finding love?",
+        "answer": "The Bachelor/Bachelorette"
+    },
+    {
+        "question": "What Netflix series is about the British royal family?",
+        "answer": "The Crown"
+    },
+    {
+        "question": "Which SA show is about a detective in Cape Town?",
+        "answer": "Trackers"
+    },
+    {
+        "question": "What show features the character Daenerys Targaryen?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "question": "Which cartoon features a boy genius named Dexter?",
+        "answer": "Dexter's Laboratory"
+    },
+    {
+        "question": "What British comedy is about the IT department?",
+        "answer": "The IT Crowd"
+    },
+    {
+        "question": "Which show is about a family of vampires?",
+        "answer": "What We Do in the Shadows"
+    },
+    {
+        "question": "What SA telenovela is about the Bhengu family?",
+        "answer": "House of Zwide"
+    },
+    {
+        "question": "Which show features a terminally ill teacher making meth?",
+        "answer": "Breaking Bad"
+    },
+    {
+        "question": "What animated show features Bob Belcher?",
+        "answer": "Bob's Burgers"
+    },
+    {
+        "question": "Which British show is about MI5 agents?",
+        "answer": "Spooks"
+    },
+    {
+        "question": "What Netflix show is about a Spanish heist?",
+        "answer": "Money Heist (La Casa de Papel)"
+    },
+    {
+        "question": "Which SA show is about the fashion industry?",
+        "answer": "Housekeepers (or House of Zwide)"
+    },
+    {
+        "question": "What show features Captain Jean-Luc Picard?",
+        "answer": "Star Trek: The Next Generation"
+    },
+    {
+        "question": "Which animated series features the Belcher family?",
+        "answer": "Bob's Burgers"
+    },
+    {
+        "question": "What reality show is about aspiring models?",
+        "answer": "America's Next Top Model"
+    },
+    {
+        "question": "Which show is about a motorcycle club?",
+        "answer": "Sons of Anarchy"
+    },
+    {
+        "question": "What SA comedy is about the Grootboom family?",
+        "answer": "Ses'Top La"
+    },
+    {
+        "question": "Which British show features Mr. Bean?",
+        "answer": "Mr. Bean"
+    },
+    {
+        "question": "What show is about survivors of a zombie apocalypse?",
+        "answer": "The Walking Dead"
+    },
+    {
+        "question": "Which animated series features the character Bender?",
+        "answer": "Futurama"
+    },
+    {
+        "question": "What SA talk show is hosted by a famous comedian?",
+        "answer": "Real Talk with Anele"
+    },
+    {
+        "question": "Which show features the character Sheldon Cooper?",
+        "answer": "The Big Bang Theory"
+    },
+    {
+        "question": "What animated show is about an agent and his dimwitted dog?",
+        "answer": "Johnny Bravo (or other)"
+    },
+    {
+        "question": "Which British cooking show features celebrity judges?",
+        "answer": "MasterChef UK"
+    },
+    {
+        "question": "What show is about the advertising industry in the 1960s?",
+        "answer": "Mad Men"
+    },
+    {
+        "question": "Which SA show is about life in Soweto?",
+        "answer": "Zone 14"
+    },
+    {
+        "question": "What show features the character Jon Snow?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "question": "Which animated series is set in the year 3000?",
+        "answer": "Futurama"
+    },
+    {
+        "question": "What reality show is about surviving in the wilderness?",
+        "answer": "Man vs. Wild (or Alone)"
+    },
+    {
+        "question": "Which show features a forensic blood spatter analyst who is a serial killer?",
+        "answer": "Dexter"
+    },
+    {
+        "question": "What SA show is about the construction industry?",
+        "answer": "iGazi"
+    },
+    {
+        "question": "Which British sitcom is set in a hotel in Torquay?",
+        "answer": "Fawlty Towers"
+    },
+    {
+        "question": "What show is about a genius doctor with bad bedside manner?",
+        "answer": "House"
+    },
+    {
+        "question": "Which animated series features Finn and Jake?",
+        "answer": "Adventure Time"
+    },
+    {
+        "question": "What Netflix show is about a haunted house?",
+        "answer": "The Haunting of Hill House"
+    },
+    {
+        "question": "Which SA show is about a car dealership?",
+        "answer": "Strings of Life"
+    },
+    {
+        "question": "What show features the character Michael Scott?",
+        "answer": "The Office (US)"
+    },
+    {
+        "question": "Which British drama is about a village with dark secrets?",
+        "answer": "Broadchurch"
+    },
+    {
+        "question": "What animated show is about four Colorado boys?",
+        "answer": "South Park"
+    },
+    {
+        "question": "Which reality show is about people living together?",
+        "answer": "Big Brother"
+    },
+    {
+        "question": "What SA drama is about the insurance industry?",
+        "answer": "Scandal!"
+    },
+    {
+        "question": "Which show is about a lawyer who can't lie for 24 hours?",
+        "answer": "Liar Liar (movie, not show)"
+    },
+    {
+        "question": "What animated series features a baby genius?",
+        "answer": "Family Guy (Stewie) or Jimmy Neutron"
+    },
+    {
+        "question": "Which British show is about a detective in Oxford?",
+        "answer": "Inspector Morse"
+    },
+    {
+        "question": "What show features the character Walter White's partner?",
+        "answer": "Breaking Bad (Jesse Pinkman)"
+    },
+    {
+        "question": "Which SA show is about the Mokoena family?",
+        "answer": "Lockdown"
+    },
+    {
+        "question": "What Netflix show is about bodyguards protecting a politician?",
+        "answer": "Bodyguard"
+    },
+    {
+        "question": "Which animated series is about a superhero family?",
+        "answer": "The Incredibles (movie/series)"
+    },
+    {
+        "question": "What show is about lawyers in Manhattan?",
+        "answer": "Suits"
+    },
+    {
+        "question": "Which British comedy is about a vicar?",
+        "answer": "The Vicar of Dibley"
+    },
+    {
+        "question": "What SA reality show is about weight loss?",
+        "answer": "Ngaa and Soul (or similar)"
+    },
+    {
+        "question": "Which show features Kiefer Sutherland as Jack Bauer?",
+        "answer": "24"
+    },
+    {
+        "question": "What animated series features the Teenage Mutant Ninja Turtles?",
+        "answer": "Teenage Mutant Ninja Turtles"
+    },
+    {
+        "question": "Which reality show is about entrepreneurs pitching ideas?",
+        "answer": "Shark Tank (or Dragons' Den)"
+    },
+    {
+        "question": "What show is about FBI profilers?",
+        "answer": "Criminal Minds"
+    },
+    {
+        "question": "Which SA show is about life in Alexandra?",
+        "answer": "Alex (or Tsha Tsha)"
+    },
+    {
+        "question": "What British show is about a time lord?",
+        "answer": "Doctor Who"
+    },
+    {
+        "question": "Which animated series features the character Cartman?",
+        "answer": "South Park"
+    },
+    {
+        "question": "What show is about the rivalry between two news anchors?",
+        "answer": "The Morning Show"
+    },
+    {
+        "question": "Which SA show is about the Mabaso family?",
+        "answer": "Isibaya"
+    },
+    {
+        "question": "What Netflix show is about a serial killer documentary?",
+        "answer": "You (or Making a Murderer)"
+    },
+    {
+        "question": "Which British sitcom is about two old ladies?",
+        "answer": "Keeping Up Appearances"
+    },
+    {
+        "question": "What animated show features King of the Hill?",
+        "answer": "King of the Hill"
+    },
+    {
+        "question": "Which show is about firefighters in Chicago?",
+        "answer": "Chicago Fire"
+    },
+    {
+        "question": "What SA music show features live performances?",
+        "answer": "Live Amp"
+    },
+    {
+        "question": "Which reality show is about baking cakes?",
+        "answer": "Cake Boss (or Nailed It!)"
+    },
+    {
+        "question": "What show features a group of thieves called The Professors?",
+        "answer": "Money Heist"
+    },
+    {
+        "question": "Which animated series is about the Griffin family?",
+        "answer": "Family Guy"
+    },
+    {
+        "question": "What British show is about a police force in Manchester?",
+        "answer": "Line of Duty"
+    },
+    {
+        "question": "Which SA show is about nurses?",
+        "answer": "Durban Gen"
+    },
+    {
+        "question": "What show is about wealthy families in Orange County?",
+        "answer": "The OC"
+    },
+    {
+        "question": "Which animated series features Homer's boss?",
+        "answer": "The Simpsons (Mr. Burns)"
+    },
+    {
+        "question": "What Netflix series is about British royals?",
+        "answer": "The Crown"
+    },
+    {
+        "question": "Which SA show is about township life?",
+        "answer": "Yizo Yizo"
+    },
+    {
+        "question": "What show features the character Arya Stark?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "question": "Which reality show is about dating with a twist?",
+        "answer": "Love Island (or Too Hot to Handle)"
+    },
+    {
+        "question": "What animated series is about a family in the Stone Age?",
+        "answer": "The Flintstones"
+    },
+    {
+        "question": "Which British comedy is about a priest on a remote island?",
+        "answer": "Father Ted"
+    },
+    {
+        "question": "What SA show is about doctors in a hospital?",
+        "answer": "Durban Gen"
+    },
+    {
+        "question": "Which show features the character Tyrion Lannister?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "question": "What animated series is set in the future with robots?",
+        "answer": "Futurama"
+    },
+    {
+        "question": "Which reality show is about renovation competitions?",
+        "answer": "The Block"
+    },
+    {
+        "question": "What show is about a high school glee club?",
+        "answer": "Glee"
+    },
+    {
+        "question": "Which SA show features the Zungu family?",
+        "answer": "The River"
+    },
+    {
+        "question": "What British drama is about a politician?",
+        "answer": "House of Cards (UK)"
+    },
+    {
+        "question": "Which animated series features a genius scientist?",
+        "answer": "Rick and Morty"
+    },
+    {
+        "question": "What show is about vampires in Louisiana?",
+        "answer": "True Blood"
+    },
+    {
+        "question": "Which reality show is about talent competitions?",
+        "answer": "Got Talent series"
+    },
+    {
+        "question": "What show features a vampire slayer named Buffy?",
+        "answer": "Buffy the Vampire Slayer"
+    },
+    {
+        "question": "Which SA show is about a funeral parlor?",
+        "answer": "The Estate"
+    },
+    {
+        "question": "What animated series features a superhero named Batman?",
+        "answer": "Batman: The Animated Series"
+    },
+    {
+        "question": "Which show is about a family running a fried chicken chain?",
+        "answer": "The Bear (or Los Pollos Hermanos in Breaking Bad)"
+    },
+    {
+        "question": "What British show is about a boarding school?",
+        "answer": "Grange Hill"
+    },
+    {
+        "question": "Which SA telenovela features traditional healers?",
+        "answer": "Igazi"
+    },
+    {
+        "question": "What show features a forensic anthropologist?",
+        "answer": "Bones"
+    },
+    {
+        "question": "Which animated series is about a boy named Timmy Turner?",
+        "answer": "The Fairly OddParents"
+    },
+    {
+        "question": "What Netflix show is about a serial killer who works in a bookstore?",
+        "answer": "You"
+    },
+    {
+        "question": "Which SA show is about the trucking industry?",
+        "answer": "Kings of Joburg"
+    },
+    {
+        "question": "What show features a character named Ted Mosby?",
+        "answer": "How I Met Your Mother"
+    },
+    {
+        "question": "Which British comedy is about a bookstore?",
+        "answer": "Black Books"
+    },
+    {
+        "question": "What show features the character Cersei Lannister?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "question": "Which SA reality show is about business competitions?",
+        "answer": "Dragon's Den South Africa"
+    },
+    {
+        "question": "What animated show features a squirrel named Sandy?",
+        "answer": "SpongeBob SquarePants"
     }
 ]

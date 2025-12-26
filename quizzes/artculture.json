@@ -48,7 +48,7 @@
         "answer": "Ulwaluko"
     },
     {
-        "question": "What art style is Salvador Dal\u00ed associated with?",
+        "question": "What art style is Salvador Dali associated with?",
         "answer": "Surrealism"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
         "question": "Which South African artist is known for sculptures of Nelson Mandela?",
-        "answer": "Marco Cianfanelli (or various artists)"
+        "answer": "Marco Cianfanelli"
     },
     {
         "question": "What art style uses small dots to create images?",
@@ -81,7 +81,7 @@
     },
     {
         "question": "Who painted 'The Persistence of Memory' (melting clocks)?",
-        "answer": "Salvador Dal\u00ed"
+        "answer": "Salvador Dali"
     },
     {
         "question": "What museum in Johannesburg focuses on apartheid history?",
@@ -117,7 +117,7 @@
     },
     {
         "question": "What traditional dance is performed at Zulu weddings?",
-        "answer": "Umgangela (or various wedding dances)"
+        "answer": "Umgangela"
     },
     {
         "question": "What does 'Renaissance' mean?",
@@ -140,11 +140,11 @@
         "answer": "The art of beautiful handwriting"
     },
     {
-        "question": "Where is Constitution Hill and what is it?",
+        "question": "Where is Constitution Hill?",
         "answer": "Johannesburg - former prison, now museum and court"
     },
     {
-        "question": "What is the name of traditional African masks' spiritual purpose?",
+        "question": "What is the spiritual purpose of African masks?",
         "answer": "Connecting with ancestors and spirits"
     },
     {
@@ -194,5 +194,609 @@
     {
         "question": "What is the oldest form of art known to humans?",
         "answer": "Cave paintings"
+    },
+    {
+        "question": "What is the traditional Swazi reed dance called?",
+        "answer": "Umhlanga"
+    },
+    {
+        "question": "Who painted 'The Last Supper'?",
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "What is toyi-toyi?",
+        "answer": "A South African protest dance"
+    },
+    {
+        "question": "What museum houses the Rosetta Stone?",
+        "answer": "British Museum"
+    },
+    {
+        "question": "What is Pantsula?",
+        "answer": "A South African township dance style"
+    },
+    {
+        "question": "Who painted 'Girl with a Pearl Earring'?",
+        "answer": "Johannes Vermeer"
+    },
+    {
+        "question": "What is the Domba dance?",
+        "answer": "A Venda initiation dance"
+    },
+    {
+        "question": "What is Baroque art known for?",
+        "answer": "Dramatic lighting and rich colors"
+    },
+    {
+        "question": "What is isicathamiya?",
+        "answer": "South African a cappella singing style"
+    },
+    {
+        "question": "Who created the 'Thinker' sculpture?",
+        "answer": "Auguste Rodin"
+    },
+    {
+        "question": "What is mbaqanga?",
+        "answer": "A South African music genre"
+    },
+    {
+        "question": "What art period came before the Renaissance?",
+        "answer": "Medieval/Gothic period"
+    },
+    {
+        "question": "What is kwaito?",
+        "answer": "A South African music genre from townships"
+    },
+    {
+        "question": "Who painted 'Water Lilies'?",
+        "answer": "Claude Monet"
+    },
+    {
+        "question": "What is marabi?",
+        "answer": "Early South African jazz style"
+    },
+    {
+        "question": "What is abstract art?",
+        "answer": "Art that doesn't represent recognizable subjects"
+    },
+    {
+        "question": "What is the South African kwela music played with?",
+        "answer": "Pennywhistle"
+    },
+    {
+        "question": "Who painted 'The Birth of Venus'?",
+        "answer": "Sandro Botticelli"
+    },
+    {
+        "question": "What is maskandi?",
+        "answer": "Traditional Zulu folk music"
+    },
+    {
+        "question": "What is Art Nouveau?",
+        "answer": "Decorative art style featuring flowing lines"
+    },
+    {
+        "question": "What is the traditional Tswana dance?",
+        "answer": "Tsutsube or Setapa"
+    },
+    {
+        "question": "Who painted 'American Gothic'?",
+        "answer": "Grant Wood"
+    },
+    {
+        "question": "What is the Ingoma dance?",
+        "answer": "A traditional Zulu war dance"
+    },
+    {
+        "question": "What is expressionism?",
+        "answer": "Art expressing emotional experience over reality"
+    },
+    {
+        "question": "What is the traditional Pedi dance?",
+        "answer": "Dinaka"
+    },
+    {
+        "question": "Who painted 'Guernica'?",
+        "answer": "Pablo Picasso"
+    },
+    {
+        "question": "What is amapiano?",
+        "answer": "A South African deep house music style"
+    },
+    {
+        "question": "What is minimalism in art?",
+        "answer": "Art stripped to essential elements"
+    },
+    {
+        "question": "What is the Indlamu dance?",
+        "answer": "Zulu warrior dance"
+    },
+    {
+        "question": "Who painted 'The Scream'?",
+        "answer": "Edvard Munch"
+    },
+    {
+        "question": "What is the traditional Tsonga dance?",
+        "answer": "Muchongolo"
+    },
+    {
+        "question": "What is dadaism?",
+        "answer": "Anti-art movement rejecting logic"
+    },
+    {
+        "question": "What is the South African jazz genre called?",
+        "answer": "Cape jazz"
+    },
+    {
+        "question": "Who is Rembrandt?",
+        "answer": "Dutch master painter of the 17th century"
+    },
+    {
+        "question": "What is the traditional Ndebele dance?",
+        "answer": "Isikombelo"
+    },
+    {
+        "question": "What is art deco?",
+        "answer": "1920s-30s decorative style with geometric patterns"
+    },
+    {
+        "question": "What is the Domba python dance for?",
+        "answer": "Venda girls' initiation"
+    },
+    {
+        "question": "Who painted 'Sunflowers'?",
+        "answer": "Vincent van Gogh"
+    },
+    {
+        "question": "What is the traditional San/Bushman trance dance?",
+        "answer": "Healing dance"
+    },
+    {
+        "question": "What is contemporary art?",
+        "answer": "Art from the late 20th century to present"
+    },
+    {
+        "question": "What is the South African gqom music genre?",
+        "answer": "Dark, minimal electronic dance music from Durban"
+    },
+    {
+        "question": "Who created 'Campbell's Soup Cans'?",
+        "answer": "Andy Warhol"
+    },
+    {
+        "question": "What is the Reed Dance ceremony for?",
+        "answer": "Celebrating virginity and womanhood"
+    },
+    {
+        "question": "What is the difference between art and craft?",
+        "answer": "Art is expression, craft is skilled making"
+    },
+    {
+        "question": "What is the traditional Xhosa dance?",
+        "answer": "Umxhentso"
+    },
+    {
+        "question": "Who painted 'Nighthawks'?",
+        "answer": "Edward Hopper"
+    },
+    {
+        "question": "What is lobola?",
+        "answer": "Traditional Southern African bride price custom"
+    },
+    {
+        "question": "What is installation art?",
+        "answer": "3D art designed to transform a space"
+    },
+    {
+        "question": "What is the South African Heritage Day about?",
+        "answer": "Celebrating cultural diversity"
+    },
+    {
+        "question": "Who painted 'Liberty Leading the People'?",
+        "answer": "Eugene Delacroix"
+    },
+    {
+        "question": "What is ubuntu?",
+        "answer": "African philosophy of human interconnectedness"
+    },
+    {
+        "question": "What is performance art?",
+        "answer": "Art using the artist's body as medium"
+    },
+    {
+        "question": "What is the significance of the protea flower?",
+        "answer": "South Africa's national flower"
+    },
+    {
+        "question": "Who painted 'The Creation of Adam'?",
+        "answer": "Michelangelo"
+    },
+    {
+        "question": "What is the traditional African storytelling called?",
+        "answer": "Oral tradition"
+    },
+    {
+        "question": "What is street art?",
+        "answer": "Art created in public spaces"
+    },
+    {
+        "question": "What does the South African flag symbolize?",
+        "answer": "Unity and diversity of the nation"
+    },
+    {
+        "question": "Who is Jackson Pollock?",
+        "answer": "American abstract expressionist painter"
+    },
+    {
+        "question": "What is the significance of cattle in African culture?",
+        "answer": "Wealth, status, and spiritual importance"
+    },
+    {
+        "question": "What is land art?",
+        "answer": "Art made from natural materials in nature"
+    },
+    {
+        "question": "What is the traditional African drum called?",
+        "answer": "Djembe"
+    },
+    {
+        "question": "Who painted 'The Kiss'?",
+        "answer": "Gustav Klimt"
+    },
+    {
+        "question": "What is sangoma?",
+        "answer": "Traditional African healer/diviner"
+    },
+    {
+        "question": "What is conceptual art?",
+        "answer": "Art where the idea is more important than the object"
+    },
+    {
+        "question": "What is the Zulu reed ceremony?",
+        "answer": "Umkhosi woMhlanga"
+    },
+    {
+        "question": "Who painted 'A Sunday Afternoon on the Island of La Grande Jatte'?",
+        "answer": "Georges Seurat"
+    },
+    {
+        "question": "What is inyanga?",
+        "answer": "Traditional African herbalist"
+    },
+    {
+        "question": "What is photorealism?",
+        "answer": "Art that resembles photographs"
+    },
+    {
+        "question": "What is the Zulu kraal?",
+        "answer": "Traditional homestead or cattle enclosure"
+    },
+    {
+        "question": "Who painted 'Les Demoiselles d'Avignon'?",
+        "answer": "Pablo Picasso"
+    },
+    {
+        "question": "What is the significance of ancestors in African culture?",
+        "answer": "Spiritual guides connecting living and dead"
+    },
+    {
+        "question": "What is digital art?",
+        "answer": "Art created using digital technology"
+    },
+    {
+        "question": "What is the Zulu ilobolo?",
+        "answer": "Bride wealth payment"
+    },
+    {
+        "question": "Who is Banksy?",
+        "answer": "Anonymous British street artist"
+    },
+    {
+        "question": "What is the traditional African coming-of-age ceremony?",
+        "answer": "Initiation rites"
+    },
+    {
+        "question": "What is graffiti art?",
+        "answer": "Art painted or drawn on public surfaces"
+    },
+    {
+        "question": "What is the Swazi Incwala ceremony?",
+        "answer": "First fruits ceremony"
+    },
+    {
+        "question": "Who painted 'The Night Watch'?",
+        "answer": "Rembrandt"
+    },
+    {
+        "question": "What is the significance of cattle in lobola?",
+        "answer": "Payment for bride to her family"
+    },
+    {
+        "question": "What is pop art?",
+        "answer": "Art inspired by popular culture and mass media"
+    },
+    {
+        "question": "What is the Zulu umemulo ceremony?",
+        "answer": "Coming-of-age ceremony for women"
+    },
+    {
+        "question": "Who created the Statue of Liberty?",
+        "answer": "Frederic Auguste Bartholdi"
+    },
+    {
+        "question": "What is the traditional African praise poetry called?",
+        "answer": "Izibongo (Zulu) or praise songs"
+    },
+    {
+        "question": "What is neo-impressionism?",
+        "answer": "Art movement using scientific color theory"
+    },
+    {
+        "question": "What is the Sotho mokorotlo hat?",
+        "answer": "Traditional conical straw hat"
+    },
+    {
+        "question": "Who painted 'Olympia'?",
+        "answer": "Edouard Manet"
+    },
+    {
+        "question": "What is the African concept of time?",
+        "answer": "Cyclical rather than linear"
+    },
+    {
+        "question": "What is constructivism in art?",
+        "answer": "Art movement focused on construction and materials"
+    },
+    {
+        "question": "What is the traditional Swazi marriage ceremony?",
+        "answer": "Umtsimba"
+    },
+    {
+        "question": "Who painted 'The Hay Wain'?",
+        "answer": "John Constable"
+    },
+    {
+        "question": "What is the role of elders in African culture?",
+        "answer": "Wisdom keepers and decision makers"
+    },
+    {
+        "question": "What is fauvism?",
+        "answer": "Art movement using bold, vivid colors"
+    },
+    {
+        "question": "What is the Xhosa ukuthwasa?",
+        "answer": "Training to become a sangoma"
+    },
+    {
+        "question": "Who painted 'Woman with a Parasol'?",
+        "answer": "Claude Monet"
+    },
+    {
+        "question": "What is the African belief in life force called?",
+        "answer": "Vital force or life energy"
+    },
+    {
+        "question": "What is kinetic art?",
+        "answer": "Art that contains movement"
+    },
+    {
+        "question": "What is the Venda domba ceremony?",
+        "answer": "Girls' initiation into womanhood"
+    },
+    {
+        "question": "Who painted 'Impression, Sunrise'?",
+        "answer": "Claude Monet"
+    },
+    {
+        "question": "What is the significance of fire in African rituals?",
+        "answer": "Purification and communication with spirits"
+    },
+    {
+        "question": "What is op art?",
+        "answer": "Art using optical illusions"
+    },
+    {
+        "question": "What is the Zulu isAngoma ceremony?",
+        "answer": "Ceremony to become a traditional healer"
+    },
+    {
+        "question": "Who painted 'Dance at Bougival'?",
+        "answer": "Pierre-Auguste Renoir"
+    },
+    {
+        "question": "What is communal living in African culture?",
+        "answer": "Extended family living together"
+    },
+    {
+        "question": "What is assemblage art?",
+        "answer": "Art made from found objects"
+    },
+    {
+        "question": "What is the Pedi koma initiation?",
+        "answer": "Traditional initiation school"
+    },
+    {
+        "question": "Who painted 'The Great Wave off Kanagawa'?",
+        "answer": "Katsushika Hokusai"
+    },
+    {
+        "question": "What is the African tradition of naming ceremonies?",
+        "answer": "Giving names with meaning and protection"
+    },
+    {
+        "question": "What is avant-garde art?",
+        "answer": "Experimental and innovative art"
+    },
+    {
+        "question": "What is the Tswana bogwera initiation?",
+        "answer": "Boys' initiation into manhood"
+    },
+    {
+        "question": "Who painted 'Arrangement in Grey and Black No. 1'?",
+        "answer": "James McNeill Whistler"
+    },
+    {
+        "question": "What is the significance of drums in African culture?",
+        "answer": "Communication and spiritual connection"
+    },
+    {
+        "question": "What is art therapy?",
+        "answer": "Using art for mental health healing"
+    },
+    {
+        "question": "What is the Ndebele isithembu practice?",
+        "answer": "Polygamous marriage tradition"
+    },
+    {
+        "question": "Who painted 'The Arnolfini Portrait'?",
+        "answer": "Jan van Eyck"
+    },
+    {
+        "question": "What is the African tradition of communal eating?",
+        "answer": "Sharing food from one pot"
+    },
+    {
+        "question": "What is outsider art?",
+        "answer": "Art by self-taught or marginalized artists"
+    },
+    {
+        "question": "What is the Zulu umuzi?",
+        "answer": "Traditional homestead"
+    },
+    {
+        "question": "Who painted 'Self-Portrait with Bandaged Ear'?",
+        "answer": "Vincent van Gogh"
+    },
+    {
+        "question": "What is the role of music in African funerals?",
+        "answer": "Guiding the soul to the afterlife"
+    },
+    {
+        "question": "What is naive art?",
+        "answer": "Art by untrained artists with childlike qualities"
+    },
+    {
+        "question": "What is the Xhosa umgidi ceremony?",
+        "answer": "Coming home celebration after initiation"
+    },
+    {
+        "question": "Who painted 'The Garden of Earthly Delights'?",
+        "answer": "Hieronymus Bosch"
+    },
+    {
+        "question": "What is the African tradition of respect for elders?",
+        "answer": "Hlonipha (respect customs)"
+    },
+    {
+        "question": "What is action painting?",
+        "answer": "Painting with physical gestures and movement"
+    },
+    {
+        "question": "What is the Sotho pitso?",
+        "answer": "Traditional community gathering"
+    },
+    {
+        "question": "Who painted 'Blue Nude II'?",
+        "answer": "Henri Matisse"
+    },
+    {
+        "question": "What is the African rites of passage purpose?",
+        "answer": "Marking life transitions"
+    },
+    {
+        "question": "What is happening in art?",
+        "answer": "Spontaneous artistic events"
+    },
+    {
+        "question": "What is the Venda tshikona dance?",
+        "answer": "Royal reed pipe dance"
+    },
+    {
+        "question": "Who painted 'The Treachery of Images' (pipe)?",
+        "answer": "Rene Magritte"
+    },
+    {
+        "question": "What is the African belief about twins?",
+        "answer": "Often considered special or sacred"
+    },
+    {
+        "question": "What is body art?",
+        "answer": "Art using the human body as canvas"
+    },
+    {
+        "question": "What is the Tsonga xibelani skirt?",
+        "answer": "Traditional colorful dancing skirt"
+    },
+    {
+        "question": "Who is Gerard Sekoto?",
+        "answer": "Pioneer of South African black urban art"
+    },
+    {
+        "question": "What is the traditional Zulu incwadi?",
+        "answer": "Love letter made of beadwork"
+    },
+    {
+        "question": "Who painted 'The Death of Marat'?",
+        "answer": "Jacques-Louis David"
+    },
+    {
+        "question": "What is the Ndebele isiPhephetu?",
+        "answer": "Traditional beaded apron"
+    },
+    {
+        "question": "What is the Baroque period known for?",
+        "answer": "Dramatic lighting and rich detail"
+    },
+    {
+        "question": "What is the Xhosa umrhubhe?",
+        "answer": "Traditional mouth bow instrument"
+    },
+    {
+        "question": "Who created 'The Thinker' sculpture?",
+        "answer": "Auguste Rodin"
+    },
+    {
+        "question": "What is the Venda domba dance?",
+        "answer": "Female initiation python dance"
+    },
+    {
+        "question": "What art movement did Claude Monet pioneer?",
+        "answer": "Impressionism"
+    },
+    {
+        "question": "What is the South African gumboot dance origin?",
+        "answer": "Mining workers communication"
+    },
+    {
+        "question": "Who painted 'The Night Watch'?",
+        "answer": "Rembrandt"
+    },
+    {
+        "question": "What is the Zulu indlamu war dance?",
+        "answer": "Traditional Zulu warrior dance"
+    },
+    {
+        "question": "What is the Romanticism art period?",
+        "answer": "Emotion and nature over reason"
+    },
+    {
+        "question": "What is the Sotho mokorotlo hat?",
+        "answer": "Conical traditional Basotho hat"
+    },
+    {
+        "question": "Who painted 'American Gothic'?",
+        "answer": "Grant Wood"
+    },
+    {
+        "question": "What is the African djembe drum origin?",
+        "answer": "West Africa (Mali/Guinea)"
+    },
+    {
+        "question": "What is the Pedi kiba dance?",
+        "answer": "Northern Sotho traditional dance"
+    },
+    {
+        "question": "Who painted 'The Garden of Earthly Delights'?",
+        "answer": "Hieronymus Bosch"
     }
 ]

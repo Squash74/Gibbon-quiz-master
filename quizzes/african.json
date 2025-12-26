@@ -104,7 +104,7 @@
         "answer": "Kenyan environmentalist, Nobel Peace Prize winner"
     },
     {
-        "question": "What is the okavango Delta?",
+        "question": "What is the Okavango Delta?",
         "answer": "An inland delta in Botswana, UNESCO site"
     },
     {
@@ -144,7 +144,7 @@
         "answer": "Last Emperor of Ethiopia, revered in Rastafarianism"
     },
     {
-        "question": "What is the traditional South African/African practice of lobola?",
+        "question": "What is the traditional African practice of lobola?",
         "answer": "Bride price or dowry paid to bride's family"
     },
     {
@@ -194,5 +194,609 @@
     {
         "question": "Which North African country has the ancient city of Fez?",
         "answer": "Morocco"
+    },
+    {
+        "question": "What is the longest river in Africa?",
+        "answer": "The Nile River"
+    },
+    {
+        "question": "What is the capital of Kenya?",
+        "answer": "Nairobi"
+    },
+    {
+        "question": "Which African country was formerly known as Rhodesia?",
+        "answer": "Zimbabwe"
+    },
+    {
+        "question": "What is the capital of Nigeria?",
+        "answer": "Abuja"
+    },
+    {
+        "question": "Which African country has the largest proven oil reserves?",
+        "answer": "Libya"
+    },
+    {
+        "question": "What is the second largest river in Africa?",
+        "answer": "Congo River"
+    },
+    {
+        "question": "What is the smallest country in mainland Africa?",
+        "answer": "The Gambia"
+    },
+    {
+        "question": "Which country is known as the 'Land of a Thousand Hills'?",
+        "answer": "Rwanda"
+    },
+    {
+        "question": "What is the capital of Egypt?",
+        "answer": "Cairo"
+    },
+    {
+        "question": "Which African lake is the largest by surface area?",
+        "answer": "Lake Victoria"
+    },
+    {
+        "question": "What is the capital of Ghana?",
+        "answer": "Accra"
+    },
+    {
+        "question": "Which African country was formerly called Gold Coast?",
+        "answer": "Ghana"
+    },
+    {
+        "question": "What mountain range runs through Morocco?",
+        "answer": "Atlas Mountains"
+    },
+    {
+        "question": "Which country is home to the ancient city of Lalibela?",
+        "answer": "Ethiopia"
+    },
+    {
+        "question": "What are the rock-hewn churches of Lalibela?",
+        "answer": "11 medieval churches carved from rock"
+    },
+    {
+        "question": "Which African country gained independence first?",
+        "answer": "Liberia (1847) or Ghana (1957 from colonial rule)"
+    },
+    {
+        "question": "What is the capital of Morocco?",
+        "answer": "Rabat"
+    },
+    {
+        "question": "Which African country is famous for its ancient pyramids of Meroe?",
+        "answer": "Sudan"
+    },
+    {
+        "question": "What is the capital of Tanzania?",
+        "answer": "Dodoma"
+    },
+    {
+        "question": "Which country borders South Africa and is completely surrounded by it?",
+        "answer": "Lesotho"
+    },
+    {
+        "question": "What is ugali?",
+        "answer": "East African maize porridge staple"
+    },
+    {
+        "question": "Which lake separates Democratic Republic of Congo and Tanzania?",
+        "answer": "Lake Tanganyika"
+    },
+    {
+        "question": "What is the capital of Ethiopia?",
+        "answer": "Addis Ababa"
+    },
+    {
+        "question": "Which African country has the most pyramids?",
+        "answer": "Sudan"
+    },
+    {
+        "question": "What is the Masai jumping dance called?",
+        "answer": "Adumu"
+    },
+    {
+        "question": "What is the capital of Senegal?",
+        "answer": "Dakar"
+    },
+    {
+        "question": "Which African country is famous for its lemurs?",
+        "answer": "Madagascar"
+    },
+    {
+        "question": "What is the Horn of Africa?",
+        "answer": "Peninsula including Somalia, Ethiopia, Eritrea, Djibouti"
+    },
+    {
+        "question": "Which African country produces the most coffee?",
+        "answer": "Ethiopia"
+    },
+    {
+        "question": "What is the capital of Zimbabwe?",
+        "answer": "Harare"
+    },
+    {
+        "question": "Which empire was centered in Mali and known for its wealth?",
+        "answer": "Mali Empire (Mansa Musa)"
+    },
+    {
+        "question": "What is the capital of Uganda?",
+        "answer": "Kampala"
+    },
+    {
+        "question": "Which country is Zanzibar part of?",
+        "answer": "Tanzania"
+    },
+    {
+        "question": "What is the traditional beer in East Africa?",
+        "answer": "Pombe or busaa"
+    },
+    {
+        "question": "Which country was the seat of the Songhai Empire?",
+        "answer": "Mali (and Niger)"
+    },
+    {
+        "question": "What is the capital of Botswana?",
+        "answer": "Gaborone"
+    },
+    {
+        "question": "Which African strait connects the Mediterranean and Atlantic?",
+        "answer": "Strait of Gibraltar"
+    },
+    {
+        "question": "What is the capital of Namibia?",
+        "answer": "Windhoek"
+    },
+    {
+        "question": "Which African country has eleven official languages?",
+        "answer": "South Africa"
+    },
+    {
+        "question": "What is couscous?",
+        "answer": "North African semolina dish"
+    },
+    {
+        "question": "Which country is home to the Dogon people?",
+        "answer": "Mali"
+    },
+    {
+        "question": "What is the capital of Zambia?",
+        "answer": "Lusaka"
+    },
+    {
+        "question": "Which country is the largest cocoa producer in Africa?",
+        "answer": "Ivory Coast (Cote d'Ivoire)"
+    },
+    {
+        "question": "What is the capital of Mozambique?",
+        "answer": "Maputo"
+    },
+    {
+        "question": "Which African country has the oldest university?",
+        "answer": "Morocco (University of Al-Qarawiyyin)"
+    },
+    {
+        "question": "What is the capital of Angola?",
+        "answer": "Luanda"
+    },
+    {
+        "question": "Which empire built the city of Great Zimbabwe?",
+        "answer": "Kingdom of Zimbabwe"
+    },
+    {
+        "question": "What is the capital of the Democratic Republic of Congo?",
+        "answer": "Kinshasa"
+    },
+    {
+        "question": "Which African country has the most languages?",
+        "answer": "Nigeria (over 500)"
+    },
+    {
+        "question": "What is the capital of Ivory Coast?",
+        "answer": "Yamoussoukro"
+    },
+    {
+        "question": "What is the Nile Delta famous for?",
+        "answer": "Fertile agricultural region in Egypt"
+    },
+    {
+        "question": "What is the capital of Cameroon?",
+        "answer": "Yaounde"
+    },
+    {
+        "question": "Which country is home to Lake Malawi?",
+        "answer": "Malawi"
+    },
+    {
+        "question": "What is the capital of Sudan?",
+        "answer": "Khartoum"
+    },
+    {
+        "question": "Which African bay is famous for great white sharks?",
+        "answer": "Shark Bay or False Bay"
+    },
+    {
+        "question": "What is the capital of Algeria?",
+        "answer": "Algiers"
+    },
+    {
+        "question": "Which ancient kingdom was located in present-day Sudan?",
+        "answer": "Kush (or Nubia)"
+    },
+    {
+        "question": "What is the capital of Tunisia?",
+        "answer": "Tunis"
+    },
+    {
+        "question": "What is the Rwandan genocide memorial?",
+        "answer": "Remembrance of 1994 genocide against Tutsi"
+    },
+    {
+        "question": "What is the capital of Libya?",
+        "answer": "Tripoli"
+    },
+    {
+        "question": "Which lake is shared by Kenya, Uganda, and Tanzania?",
+        "answer": "Lake Victoria"
+    },
+    {
+        "question": "What is the capital of Rwanda?",
+        "answer": "Kigali"
+    },
+    {
+        "question": "What is tagine?",
+        "answer": "North African slow-cooked stew"
+    },
+    {
+        "question": "What is the capital of Malawi?",
+        "answer": "Lilongwe"
+    },
+    {
+        "question": "Which empire was known for Mansa Musa's wealth?",
+        "answer": "Mali Empire"
+    },
+    {
+        "question": "What is the capital of Eritrea?",
+        "answer": "Asmara"
+    },
+    {
+        "question": "What is the traditional Kenyan warrior dance?",
+        "answer": "Maasai jumping dance"
+    },
+    {
+        "question": "What is the capital of Somalia?",
+        "answer": "Mogadishu"
+    },
+    {
+        "question": "Which country was formerly called Upper Volta?",
+        "answer": "Burkina Faso"
+    },
+    {
+        "question": "What is the capital of Niger?",
+        "answer": "Niamey"
+    },
+    {
+        "question": "What are the Pyramids of Giza?",
+        "answer": "Ancient Egyptian monuments near Cairo"
+    },
+    {
+        "question": "What is the capital of Mali?",
+        "answer": "Bamako"
+    },
+    {
+        "question": "Which African country is the newest (gained independence in 2011)?",
+        "answer": "South Sudan"
+    },
+    {
+        "question": "What is the capital of Liberia?",
+        "answer": "Monrovia"
+    },
+    {
+        "question": "What is the Sahara Desert?",
+        "answer": "World's largest hot desert in North Africa"
+    },
+    {
+        "question": "What is the capital of Sierra Leone?",
+        "answer": "Freetown"
+    },
+    {
+        "question": "Which African country is shaped like a long thin strip?",
+        "answer": "The Gambia"
+    },
+    {
+        "question": "What is the capital of Guinea?",
+        "answer": "Conakry"
+    },
+    {
+        "question": "What is the Cape Verde archipelago?",
+        "answer": "Island nation off West Africa"
+    },
+    {
+        "question": "What is the capital of Togo?",
+        "answer": "Lome"
+    },
+    {
+        "question": "What is the African baobab tree known for?",
+        "answer": "Its enormous trunk and long lifespan"
+    },
+    {
+        "question": "What is the capital of Benin?",
+        "answer": "Porto-Novo"
+    },
+    {
+        "question": "Which ancient trade crossed the Sahara Desert?",
+        "answer": "Trans-Saharan trade (gold, salt, slaves)"
+    },
+    {
+        "question": "What is the capital of Mauritania?",
+        "answer": "Nouakchott"
+    },
+    {
+        "question": "What is the significance of Goree Island?",
+        "answer": "Historic slave trading post off Senegal"
+    },
+    {
+        "question": "What is the capital of Chad?",
+        "answer": "N'Djamena"
+    },
+    {
+        "question": "Which African country has the most coastline?",
+        "answer": "Somalia"
+    },
+    {
+        "question": "What is the capital of Burkina Faso?",
+        "answer": "Ouagadougou"
+    },
+    {
+        "question": "What is the Sphinx?",
+        "answer": "Ancient Egyptian limestone statue near pyramids"
+    },
+    {
+        "question": "What is the capital of Central African Republic?",
+        "answer": "Bangui"
+    },
+    {
+        "question": "Which African country hosts the headquarters of the AU?",
+        "answer": "Ethiopia (Addis Ababa)"
+    },
+    {
+        "question": "What is the capital of Gabon?",
+        "answer": "Libreville"
+    },
+    {
+        "question": "What are the Berber people?",
+        "answer": "Indigenous peoples of North Africa"
+    },
+    {
+        "question": "What is the capital of Republic of Congo?",
+        "answer": "Brazzaville"
+    },
+    {
+        "question": "Which African mountain has glaciers on the equator?",
+        "answer": "Mount Kenya"
+    },
+    {
+        "question": "What is the capital of Eswatini (Swaziland)?",
+        "answer": "Mbabane"
+    },
+    {
+        "question": "What is the African djembe?",
+        "answer": "Traditional West African drum"
+    },
+    {
+        "question": "What is the capital of Djibouti?",
+        "answer": "Djibouti"
+    },
+    {
+        "question": "Which strait separates Africa from the Arabian Peninsula?",
+        "answer": "Bab el-Mandeb"
+    },
+    {
+        "question": "What is the capital of Equatorial Guinea?",
+        "answer": "Malabo"
+    },
+    {
+        "question": "What are the San people also known as?",
+        "answer": "Bushmen"
+    },
+    {
+        "question": "What is the capital of Sao Tome and Principe?",
+        "answer": "Sao Tome"
+    },
+    {
+        "question": "What is the Great Mosque of Djenne?",
+        "answer": "Largest mud-brick building in the world (Mali)"
+    },
+    {
+        "question": "What is the capital of Comoros?",
+        "answer": "Moroni"
+    },
+    {
+        "question": "Which African nation has the highest HDI?",
+        "answer": "Mauritius"
+    },
+    {
+        "question": "What is the capital of Mauritius?",
+        "answer": "Port Louis"
+    },
+    {
+        "question": "What is thieboudienne?",
+        "answer": "Senegalese national fish and rice dish"
+    },
+    {
+        "question": "What is the capital of Seychelles?",
+        "answer": "Victoria"
+    },
+    {
+        "question": "What is the African kora instrument?",
+        "answer": "21-string harp-lute from West Africa"
+    },
+    {
+        "question": "Which African country has French as its only official language?",
+        "answer": "Gabon (among others)"
+    },
+    {
+        "question": "What is the capital of South Sudan?",
+        "answer": "Juba"
+    },
+    {
+        "question": "What is the Cape of Good Hope?",
+        "answer": "Rocky headland on South African coast"
+    },
+    {
+        "question": "What is piri piri?",
+        "answer": "African bird's eye chili pepper/sauce"
+    },
+    {
+        "question": "Who was Julius Nyerere?",
+        "answer": "First President of Tanzania"
+    },
+    {
+        "question": "What is the Stone Town of Zanzibar?",
+        "answer": "Historic trading center and UNESCO site"
+    },
+    {
+        "question": "Who was Amilcar Cabral?",
+        "answer": "Guinea-Bissau/Cape Verde independence leader"
+    },
+    {
+        "question": "What is Afrikaans?",
+        "answer": "Language derived from Dutch in South Africa"
+    },
+    {
+        "question": "Who was Thomas Sankara?",
+        "answer": "Revolutionary leader of Burkina Faso"
+    },
+    {
+        "question": "What is the Drakensberge?",
+        "answer": "Mountain range in South Africa/Lesotho"
+    },
+    {
+        "question": "Who was Miriam Makeba?",
+        "answer": "South African singer, 'Mama Africa'"
+    },
+    {
+        "question": "What are the Tuareg people known for?",
+        "answer": "Nomadic desert traders in Sahara"
+    },
+    {
+        "question": "Who was Chinua Achebe?",
+        "answer": "Nigerian author of 'Things Fall Apart'"
+    },
+    {
+        "question": "What is the Ethiopian coffee ceremony?",
+        "answer": "Traditional coffee brewing and serving ritual"
+    },
+    {
+        "question": "Who was Leopold Sedar Senghor?",
+        "answer": "Senegalese poet and first president"
+    },
+    {
+        "question": "What is the significance of Lake Chad?",
+        "answer": "Large shallow lake shared by four countries"
+    },
+    {
+        "question": "Who was Yaa Asantewaa?",
+        "answer": "Queen mother who led Ashanti resistance"
+    },
+    {
+        "question": "What is Amharic?",
+        "answer": "Official language of Ethiopia"
+    },
+    {
+        "question": "Who was Shaka Zulu?",
+        "answer": "Founder of the Zulu Kingdom"
+    },
+    {
+        "question": "What is the Nubian Desert?",
+        "answer": "Desert region in northeastern Sudan"
+    },
+    {
+        "question": "What is the traditional West African griot?",
+        "answer": "Storyteller and oral historian"
+    },
+    {
+        "question": "What is the African ankole cattle known for?",
+        "answer": "Its extremely large horns"
+    },
+    {
+        "question": "What is the Cradle of Humankind?",
+        "answer": "UNESCO site in South Africa with human fossils"
+    },
+    {
+        "question": "What is bobotie?",
+        "answer": "South African spiced meat dish"
+    },
+    {
+        "question": "What is the Congo Basin?",
+        "answer": "Second largest rainforest in the world"
+    },
+    {
+        "question": "What are talking drums?",
+        "answer": "West African drums that mimic tonal languages"
+    },
+    {
+        "question": "What is the Limpopo River?",
+        "answer": "River forming border of South Africa/Botswana"
+    },
+    {
+        "question": "What is palm wine?",
+        "answer": "Alcoholic beverage from palm tree sap"
+    },
+    {
+        "question": "What is the Rift Valley lake region?",
+        "answer": "Chain of lakes along East African Rift"
+    },
+    {
+        "question": "What is Mancala?",
+        "answer": "Traditional African board game"
+    },
+    {
+        "question": "What is the Bight of Benin?",
+        "answer": "Bay on West African coast"
+    },
+    {
+        "question": "What is the African Union headquarters building?",
+        "answer": "Tallest building in Ethiopia, donated by China"
+    },
+    {
+        "question": "What is sadza?",
+        "answer": "Zimbabwean maize meal staple"
+    },
+    {
+        "question": "What is the Virunga National Park?",
+        "answer": "Africa's oldest national park in DRC"
+    },
+    {
+        "question": "What is nsima?",
+        "answer": "Malawian maize porridge staple"
+    },
+    {
+        "question": "What is the Table Mountain location?",
+        "answer": "Cape Town, South Africa"
+    },
+    {
+        "question": "What is attiéké?",
+        "answer": "Ivorian cassava couscous"
+    },
+    {
+        "question": "What is the African Fish River Canyon?",
+        "answer": "Second largest canyon in the world (Namibia)"
+    },
+    {
+        "question": "What is the Nollywood film industry's rank globally?",
+        "answer": "Second or third largest by volume"
+    },
+    {
+        "question": "What is the Skeleton Coast?",
+        "answer": "Treacherous coastline in Namibia"
+    },
+    {
+        "question": "What is the kanga garment?",
+        "answer": "East African printed cotton cloth"
+    },
+    {
+        "question": "What is the Orange River?",
+        "answer": "Longest river in South Africa"
     }
 ]

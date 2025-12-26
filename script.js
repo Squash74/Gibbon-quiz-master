@@ -450,6 +450,7 @@ const incorrectBtn = document.getElementById('incorrectBtn');
 const nextBtn = document.getElementById('nextBtn');
 const newGameBtn = document.getElementById('newGameBtn');
 const playAgainBtn = document.getElementById('playAgainBtn');
+const homeBtn = document.getElementById('homeBtn');
 const currentThemeEl = document.getElementById('currentTheme');
 const questionNumber = document.getElementById('questionNumber');
 const totalQuestions = document.getElementById('totalQuestions');
@@ -499,6 +500,7 @@ async function startQuiz() {
         themeSelection.classList.add('hidden');
         quizContainer.classList.remove('hidden');
         gameOver.classList.add('hidden');
+        showHomeButton();
 
         currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
         totalQuestions.textContent = questions.length;
@@ -658,6 +660,7 @@ newGameBtn.addEventListener('click', () => {
     container.classList.remove('quiz-active');
     quizContainer.classList.add('hidden');
     themeSelection.classList.remove('hidden');
+    hideHomeButton();
     updateStatsDisplay();
     updateThemeButtons();
 });
@@ -669,9 +672,38 @@ playAgainBtn.addEventListener('click', () => {
     container.classList.remove('quiz-active');
     gameOver.classList.add('hidden');
     themeSelection.classList.remove('hidden');
+    hideHomeButton();
     updateStatsDisplay();
     updateThemeButtons();
 });
+
+// Home Button Functions
+function showHomeButton() {
+    if (homeBtn) {
+        homeBtn.classList.remove('hidden');
+    }
+}
+
+function hideHomeButton() {
+    if (homeBtn) {
+        homeBtn.classList.add('hidden');
+    }
+}
+
+// Home Button Click Handler
+if (homeBtn) {
+    homeBtn.addEventListener('click', () => {
+        stopTimer();
+        hideTimerDisplay();
+        container.classList.remove('quiz-active');
+        quizContainer.classList.add('hidden');
+        gameOver.classList.add('hidden');
+        themeSelection.classList.remove('hidden');
+        hideHomeButton();
+        updateStatsDisplay();
+        updateThemeButtons();
+    });
+}
 
 // Utility Functions
 function shuffleArray(array) {

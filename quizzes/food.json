@@ -172,7 +172,7 @@
         "answer": "Anchovies (and egg, lemon, olive oil)"
     },
     {
-        "question": "What type of food is a 'jalape\u00f1o'?",
+        "question": "What type of food is a 'jalapeño'?",
         "answer": "A chili pepper"
     },
     {
@@ -194,5 +194,609 @@
     {
         "question": "What does 'al dente' mean in cooking?",
         "answer": "Cooked to be firm when bitten"
+    },
+    {
+        "question": "What is bobotie?",
+        "answer": "South African spiced minced meat dish with egg topping"
+    },
+    {
+        "question": "Which country is brie cheese originally from?",
+        "answer": "France"
+    },
+    {
+        "question": "What is malva pudding?",
+        "answer": "A sweet South African sponge pudding with apricot jam"
+    },
+    {
+        "question": "What type of wine is traditionally used in sangria?",
+        "answer": "Red wine"
+    },
+    {
+        "question": "What is droëwors?",
+        "answer": "South African dried sausage"
+    },
+    {
+        "question": "What vegetable is sauerkraut made from?",
+        "answer": "Cabbage"
+    },
+    {
+        "question": "What is breyani?",
+        "answer": "South African spiced rice dish similar to biryani"
+    },
+    {
+        "question": "What is the main spirit in a margarita?",
+        "answer": "Tequila"
+    },
+    {
+        "question": "What is skilpadjies in South African cuisine?",
+        "answer": "Grilled lamb liver wrapped in caul fat"
+    },
+    {
+        "question": "Which berry is used to make wine in the Bordeaux region?",
+        "answer": "Grapes (Cabernet Sauvignon, Merlot)"
+    },
+    {
+        "question": "What is the traditional filling of a Cornish pasty?",
+        "answer": "Beef, potato, swede, and onion"
+    },
+    {
+        "question": "What is atchaar?",
+        "answer": "South African spicy pickled vegetables"
+    },
+    {
+        "question": "What is the main ingredient in risotto?",
+        "answer": "Arborio rice"
+    },
+    {
+        "question": "What is konfyt?",
+        "answer": "South African preserved fruit in syrup"
+    },
+    {
+        "question": "What type of fish is commonly used in fish and chips?",
+        "answer": "Cod or haddock"
+    },
+    {
+        "question": "What is smoor?",
+        "answer": "A South African tomato and onion stew"
+    },
+    {
+        "question": "Which country is feta cheese from?",
+        "answer": "Greece"
+    },
+    {
+        "question": "What is denningvleis?",
+        "answer": "South African sweet and sour lamb dish"
+    },
+    {
+        "question": "What is the Japanese rice wine called?",
+        "answer": "Sake"
+    },
+    {
+        "question": "What is magwinya?",
+        "answer": "South African fried dough balls (fat cakes)"
+    },
+    {
+        "question": "What herb is traditionally used in béarnaise sauce?",
+        "answer": "Tarragon"
+    },
+    {
+        "question": "What is mogodu?",
+        "answer": "South African tripe stew"
+    },
+    {
+        "question": "Which country is the origin of croissants?",
+        "answer": "Austria (kipferl), but perfected in France"
+    },
+    {
+        "question": "What is a braaibroodjie?",
+        "answer": "South African grilled cheese sandwich with tomato and onion"
+    },
+    {
+        "question": "What nut is used in the Italian dessert tiramisu?",
+        "answer": "None (it uses coffee and mascarpone)"
+    },
+    {
+        "question": "What is peri-peri?",
+        "answer": "African bird's eye chili pepper sauce"
+    },
+    {
+        "question": "What is the main ingredient in tzatziki?",
+        "answer": "Greek yogurt and cucumber"
+    },
+    {
+        "question": "What is hertzoggies?",
+        "answer": "South African coconut and jam tartlets"
+    },
+    {
+        "question": "What does 'umami' mean in cooking?",
+        "answer": "The fifth taste - savory or meaty"
+    },
+    {
+        "question": "What is mashonzha?",
+        "answer": "Mopane worms, a South African delicacy"
+    },
+    {
+        "question": "What is the traditional bread of India?",
+        "answer": "Naan"
+    },
+    {
+        "question": "What is snoekbraai?",
+        "answer": "Grilled Cape snoek fish with apricot jam"
+    },
+    {
+        "question": "Which country invented chocolate?",
+        "answer": "The Aztecs and Mayans of Central America"
+    },
+    {
+        "question": "What is umleqwa?",
+        "answer": "South African free-range chicken"
+    },
+    {
+        "question": "What is the main ingredient in gnocchi?",
+        "answer": "Potatoes"
+    },
+    {
+        "question": "What is kaapse tameletjies?",
+        "answer": "Cape Malay caramelized candies"
+    },
+    {
+        "question": "What gives caramel its brown color?",
+        "answer": "Heated sugar (caramelization)"
+    },
+    {
+        "question": "What is jerepigo?",
+        "answer": "South African sweet fortified wine"
+    },
+    {
+        "question": "What type of pasta is shaped like little ears?",
+        "answer": "Orecchiette"
+    },
+    {
+        "question": "What is pampoenkoekies?",
+        "answer": "South African pumpkin fritters"
+    },
+    {
+        "question": "What is the base of a classic French bouillabaisse?",
+        "answer": "Fish and seafood stew"
+    },
+    {
+        "question": "What is kaapse smoorsnoek?",
+        "answer": "Cape style smothered snoek with onion and potato"
+    },
+    {
+        "question": "Which country is tempeh originally from?",
+        "answer": "Indonesia"
+    },
+    {
+        "question": "What is amasi?",
+        "answer": "Traditional South African fermented milk"
+    },
+    {
+        "question": "What is the main ingredient in gazpacho?",
+        "answer": "Tomatoes (cold soup)"
+    },
+    {
+        "question": "What is frikkadel?",
+        "answer": "South African fried meatballs"
+    },
+    {
+        "question": "What is the difference between jam and jelly?",
+        "answer": "Jam contains fruit pieces, jelly is clear"
+    },
+    {
+        "question": "What is stampmielies?",
+        "answer": "South African crushed maize kernels"
+    },
+    {
+        "question": "Which country is kimchi from?",
+        "answer": "Korea"
+    },
+    {
+        "question": "What is kerrievis?",
+        "answer": "South African curried fish"
+    },
+    {
+        "question": "What is the Italian word for 'cooked cream'?",
+        "answer": "Panna cotta"
+    },
+    {
+        "question": "What is Cape Malay curry famous for?",
+        "answer": "Its mild, fruity flavor with dried fruit"
+    },
+    {
+        "question": "What grain is Japanese sake made from?",
+        "answer": "Rice"
+    },
+    {
+        "question": "What is ingelegde vis?",
+        "answer": "South African pickled fish"
+    },
+    {
+        "question": "What is the main ingredient in traditional Irish soda bread?",
+        "answer": "Flour and baking soda"
+    },
+    {
+        "question": "What is borrie?",
+        "answer": "The Afrikaans word for turmeric"
+    },
+    {
+        "question": "What type of fish is lox?",
+        "answer": "Salmon (cured or smoked)"
+    },
+    {
+        "question": "What is stywepap?",
+        "answer": "South African stiff maize porridge"
+    },
+    {
+        "question": "Which country is chorizo sausage from?",
+        "answer": "Spain (and Portugal)"
+    },
+    {
+        "question": "What is gesmoorde vis?",
+        "answer": "South African smothered fish"
+    },
+    {
+        "question": "What is the French term for caramelized sugar on crème brûlée?",
+        "answer": "Burnt cream (literally)"
+    },
+    {
+        "question": "What is afval?",
+        "answer": "South African offal dishes"
+    },
+    {
+        "question": "What vegetable is the main ingredient in ratatouille?",
+        "answer": "Eggplant (aubergine)"
+    },
+    {
+        "question": "What is sousboontjies?",
+        "answer": "South African pickled beans"
+    },
+    {
+        "question": "What is the main flavoring in root beer?",
+        "answer": "Sassafras or sarsaparilla"
+    },
+    {
+        "question": "What is boerekos?",
+        "answer": "Traditional Afrikaner cuisine"
+    },
+    {
+        "question": "What is the main ingredient in Polish pierogi?",
+        "answer": "Dough dumplings with various fillings"
+    },
+    {
+        "question": "What is Karoo lamb known for?",
+        "answer": "Distinctive flavor from grazing on wild herbs"
+    },
+    {
+        "question": "What grain is couscous made from?",
+        "answer": "Semolina wheat"
+    },
+    {
+        "question": "What is vleis?",
+        "answer": "Afrikaans word for meat"
+    },
+    {
+        "question": "What is the main ingredient in Lebanese tabbouleh?",
+        "answer": "Bulgur wheat and parsley"
+    },
+    {
+        "question": "What is ystervarkies?",
+        "answer": "South African ginger biscuits"
+    },
+    {
+        "question": "What type of cheese is traditionally used on a Margherita pizza?",
+        "answer": "Mozzarella"
+    },
+    {
+        "question": "What is tamatiebredie?",
+        "answer": "South African tomato stew"
+    },
+    {
+        "question": "What is the French mother sauce made with milk?",
+        "answer": "Béchamel"
+    },
+    {
+        "question": "What is appelkooskonfyt?",
+        "answer": "South African apricot jam/preserve"
+    },
+    {
+        "question": "What type of bean is edamame?",
+        "answer": "Young soybeans"
+    },
+    {
+        "question": "What is Cape Seed Loaf?",
+        "answer": "South African multi-seeded bread"
+    },
+    {
+        "question": "Which country invented the fortune cookie?",
+        "answer": "United States (not China)"
+    },
+    {
+        "question": "What is hoenderpastei?",
+        "answer": "South African chicken pie"
+    },
+    {
+        "question": "What is the key ingredient that makes bread rise?",
+        "answer": "Yeast"
+    },
+    {
+        "question": "What is waterlemoen konfyt?",
+        "answer": "South African watermelon rind preserve"
+    },
+    {
+        "question": "What is the main ingredient in Japanese mochi?",
+        "answer": "Glutinous rice"
+    },
+    {
+        "question": "What is perlemoen?",
+        "answer": "South African abalone"
+    },
+    {
+        "question": "Which country did French fries actually originate from?",
+        "answer": "Belgium"
+    },
+    {
+        "question": "What is boontjiesop?",
+        "answer": "South African bean soup"
+    },
+    {
+        "question": "What is the difference between stock and broth?",
+        "answer": "Stock uses bones, broth uses meat"
+    },
+    {
+        "question": "What is mieliepap?",
+        "answer": "South African maize porridge"
+    },
+    {
+        "question": "What is the Italian term for half-frozen dessert?",
+        "answer": "Semifreddo"
+    },
+    {
+        "question": "What is roosterkoek?",
+        "answer": "South African bread rolls cooked on coals"
+    },
+    {
+        "question": "What is ghee?",
+        "answer": "Clarified butter used in Indian cooking"
+    },
+    {
+        "question": "What is kreef?",
+        "answer": "South African rock lobster (crayfish)"
+    },
+    {
+        "question": "What is the main ingredient in Japanese dashi?",
+        "answer": "Kombu seaweed and bonito flakes"
+    },
+    {
+        "question": "What is Gatsby's steak sandwich famous for?",
+        "answer": "Its enormous size (serves 2-4 people)"
+    },
+    {
+        "question": "What is the main ingredient in Greek spanakopita?",
+        "answer": "Spinach and feta cheese"
+    },
+    {
+        "question": "What is witblits?",
+        "answer": "South African grape spirit (moonshine)"
+    },
+    {
+        "question": "What type of nuts are used in pesto Genovese?",
+        "answer": "Pine nuts"
+    },
+    {
+        "question": "What is sous kluitjies?",
+        "answer": "South African cinnamon dumplings in sauce"
+    },
+    {
+        "question": "What gives traditional cola its flavor?",
+        "answer": "Kola nut and vanilla"
+    },
+    {
+        "question": "What is umphako?",
+        "answer": "Zulu word for packed lunch/provisions"
+    },
+    {
+        "question": "What is the main ingredient in Indian dosa?",
+        "answer": "Fermented rice and lentil batter"
+    },
+    {
+        "question": "What is springbokkie?",
+        "answer": "South African shooter with Amarula and crème de menthe"
+    },
+    {
+        "question": "What is the origin of the hamburger?",
+        "answer": "Germany (Hamburg)"
+    },
+    {
+        "question": "What is harissa?",
+        "answer": "North African chili paste"
+    },
+    {
+        "question": "What is Van der Hum liqueur?",
+        "answer": "South African naartjie-flavored brandy liqueur"
+    },
+    {
+        "question": "What is the main ingredient in Middle Eastern tahini?",
+        "answer": "Sesame seeds"
+    },
+    {
+        "question": "What is Granaatbols?",
+        "answer": "Cape Brandy Ball dessert"
+    },
+    {
+        "question": "What is the French term for lightly cooking vegetables?",
+        "answer": "Blanching"
+    },
+    {
+        "question": "What is melktertjies?",
+        "answer": "Mini milk tarts"
+    },
+    {
+        "question": "What is the main ingredient in Japanese okonomiyaki?",
+        "answer": "Cabbage and batter (savory pancake)"
+    },
+    {
+        "question": "What is vetkoek also known as in different regions?",
+        "answer": "Amagwinya"
+    },
+    {
+        "question": "What milk is used to make authentic Italian burrata?",
+        "answer": "Cow's milk"
+    },
+    {
+        "question": "What is beskuit?",
+        "answer": "South African rusks for dipping in coffee"
+    },
+    {
+        "question": "What is the main ingredient in authentic Champagne?",
+        "answer": "Chardonnay, Pinot Noir, or Pinot Meunier grapes"
+    },
+    {
+        "question": "What is a pannekoek?",
+        "answer": "South African thin pancake with cinnamon sugar"
+    },
+    {
+        "question": "What gives red velvet cake its color?",
+        "answer": "Red food coloring (originally beet juice)"
+    },
+    {
+        "question": "What is kaiings?",
+        "answer": "South African crispy rendered pork fat"
+    },
+    {
+        "question": "What is the main protein in Greek gyros?",
+        "answer": "Lamb, beef, pork, or chicken"
+    },
+    {
+        "question": "What is karringmelkbeskuit?",
+        "answer": "South African buttermilk rusks"
+    },
+    {
+        "question": "What is the fermented cabbage dish of Korea?",
+        "answer": "Kimchi"
+    },
+    {
+        "question": "What is ouma se brood?",
+        "answer": "Grandma's bread (traditional South African bread)"
+    },
+    {
+        "question": "What is the main ingredient in Turkish delight?",
+        "answer": "Sugar, starch, and rosewater"
+    },
+    {
+        "question": "What is Glühwein?",
+        "answer": "German/Austrian mulled wine"
+    },
+    {
+        "question": "What is mebos?",
+        "answer": "South African dried salted apricot"
+    },
+    {
+        "question": "What type of fat is traditionally used in pastry?",
+        "answer": "Butter or lard"
+    },
+    {
+        "question": "What is Cape Velvet?",
+        "answer": "South African cream liqueur"
+    },
+    {
+        "question": "What is the main ingredient in Hungarian goulash?",
+        "answer": "Beef and paprika"
+    },
+    {
+        "question": "What is suurdeegbrood?",
+        "answer": "South African sourdough bread"
+    },
+    {
+        "question": "What is the difference between sweet and dry wine?",
+        "answer": "Sugar content after fermentation"
+    },
+    {
+        "question": "What is vetbrood?",
+        "answer": "South African fat bread"
+    },
+    {
+        "question": "What is the main ingredient in Mexican pozole?",
+        "answer": "Hominy corn and meat"
+    },
+    {
+        "question": "What is Mampoer?",
+        "answer": "South African fruit brandy/moonshine"
+    },
+    {
+        "question": "What is the main ingredient in Japanese gyudon?",
+        "answer": "Beef and onions over rice"
+    },
+    {
+        "question": "What is potbrood?",
+        "answer": "South African bread baked in a pot over coals"
+    },
+    {
+        "question": "What is the main ingredient in Japanese sashimi?",
+        "answer": "Raw fish"
+    },
+    {
+        "question": "What is tsamaraka?",
+        "answer": "Traditional San/Khoi wild plant foods"
+    },
+    {
+        "question": "What is the difference between latte and cappuccino?",
+        "answer": "Ratio of milk to foam (latte has more milk)"
+    },
+    {
+        "question": "What is pampoenbredie?",
+        "answer": "South African pumpkin stew"
+    },
+    {
+        "question": "What type of meat is prosciutto?",
+        "answer": "Cured ham (pork)"
+    },
+    {
+        "question": "What is skuinslaan?",
+        "answer": "South African grape brandy drinking tradition"
+    },
+    {
+        "question": "What is the main ingredient in Indian sambar?",
+        "answer": "Lentils and vegetables"
+    },
+    {
+        "question": "What is waterblommetjie?",
+        "answer": "Cape water lily flower used in cooking"
+    },
+    {
+        "question": "What is the Italian word for tomato sauce?",
+        "answer": "Marinara or Pomodoro"
+    },
+    {
+        "question": "What is peppermintcrisp tart?",
+        "answer": "South African dessert with Peppermint Crisp chocolate"
+    },
+    {
+        "question": "What gives Earl Grey tea its distinctive flavor?",
+        "answer": "Bergamot oil"
+    },
+    {
+        "question": "What is umqombothi?",
+        "answer": "Traditional South African sorghum beer"
+    },
+    {
+        "question": "What is the main ingredient in Vietnamese pho?",
+        "answer": "Rice noodles in beef or chicken broth"
+    },
+    {
+        "question": "What is gesmoorde hoender?",
+        "answer": "South African smothered chicken"
+    },
+    {
+        "question": "What makes sourdough bread different from regular bread?",
+        "answer": "Wild yeast fermentation (no commercial yeast)"
+    },
+    {
+        "question": "What is a Durban bunny?",
+        "answer": "Bunny chow from Durban (hollowed bread with curry)"
+    },
+    {
+        "question": "What is Pinotage?",
+        "answer": "South African red wine grape variety (cross of Pinot Noir and Cinsaut)"
     }
 ]

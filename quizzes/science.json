@@ -718,5 +718,85 @@
     {
         "question": "What is the densest naturally occurring element?",
         "answer": "Osmium"
+    },
+    {
+        "question": "What is the chemical formula for aspirin?",
+        "answer": "C9H8O4"
+    },
+    {
+        "question": "What is the study of the origin of the universe called?",
+        "answer": "Cosmology"
+    },
+    {
+        "question": "What is the chemical symbol for magnesium?",
+        "answer": "Mg"
+    },
+    {
+        "question": "How many bones does a newborn baby have?",
+        "answer": "About 270"
+    },
+    {
+        "question": "What is the name of the largest known structure in the universe?",
+        "answer": "Hercules-Corona Borealis Great Wall"
+    },
+    {
+        "question": "What is the unit of magnetic flux?",
+        "answer": "Weber"
+    },
+    {
+        "question": "What is the study of the origin of life called?",
+        "answer": "Abiogenesis"
+    },
+    {
+        "question": "What is the chemical symbol for chlorine?",
+        "answer": "Cl"
+    },
+    {
+        "question": "What is the average resting heart rate for an adult?",
+        "answer": "60-100 beats per minute"
+    },
+    {
+        "question": "What is the name of the force that opposes motion between surfaces?",
+        "answer": "Friction"
+    },
+    {
+        "question": "What is the chemical formula for laughing gas?",
+        "answer": "N2O (nitrous oxide)"
+    },
+    {
+        "question": "What is the study of tissues called?",
+        "answer": "Histology"
+    },
+    {
+        "question": "What is the chemical symbol for manganese?",
+        "answer": "Mn"
+    },
+    {
+        "question": "How many liters of blood does an average adult have?",
+        "answer": "About 5 liters"
+    },
+    {
+        "question": "What is the name of the particle that carries the strong nuclear force?",
+        "answer": "Gluon"
+    },
+    {
+        "question": "What is the chemical formula for citric acid?",
+        "answer": "C6H8O7"
+    },
+    {
+        "question": "What is the study of ancient climates called?",
+        "answer": "Paleoclimatology"
+    },
+    {
+        "question": "What is the chemical symbol for chromium?",
+        "answer": "Cr"
+    },
+    {
+        "question": "What percentage of the brain is water?",
+        "answer": "About 73%"
+    },
+    {
+        "question": "What is the name of the region where meteors burn up in Earth's atmosphere?",
+        "answer": "Mesosphere"
     }
 ]
