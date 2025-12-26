@@ -58,12 +58,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 6. Basic Testing Setup
-- [ ] Add test runner (Vitest or plain Node.js assertions)
-- [ ] Write tests for `shuffleArray` function
-- [ ] Write tests for score calculations
-- [ ] Set up CI to run tests on commits
+- [x] Add test runner (Vitest or plain Node.js assertions)
+- [x] Write tests for `shuffleArray` function
+- [x] Write tests for score calculations
+- [x] Set up CI to run tests on commits
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -120,11 +120,11 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - External Quiz Data (#5) ✅
 - Streak & Combo System (#7) ✅
 - Share Results (#8) ✅
+- Basic Testing Setup (#6) ✅
 
 **Remaining - Medium Effort:**
 - Difficulty Levels (#1)
 
 **Remaining - Higher Effort:**
 - Multiplayer/Party Mode (#4)
-- Basic Testing Setup (#6)
 - Sound Effects (#9)
