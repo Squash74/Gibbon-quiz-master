@@ -374,6 +374,13 @@ function resetHintsForQuestion() {
 function useHint() {
     if (hintsRemaining <= 0 || answerRevealed) return;
 
+    // Confirm cost on first hint use
+    if (!hintCostPaid) {
+        if (!confirm('Use hints? This will cost 1 point for up to 3 hints.')) {
+            return;
+        }
+    }
+
     const question = questions[currentQuestionIndex];
 
     // Generate hints on first use for this question
