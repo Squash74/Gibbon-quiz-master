@@ -73,9 +73,41 @@
                         <span class="timer-text">🔀 Shuffle Questions</span>
                     </label>
                 </div>
+                <div class="option-group">
+                    <label class="timer-toggle-label">
+                        <input type="checkbox" id="partyModeToggle" class="timer-checkbox">
+                        <span class="timer-slider"></span>
+                        <span class="timer-text">🎉 Party Mode (2-4 players)</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Player Setup Screen (Party Mode) -->
+            <div id="playerSetup" class="player-setup hidden">
+                <h3>👥 Enter Player Names</h3>
+                <div class="player-inputs">
+                    <div class="player-input-row">
+                        <span class="player-number">1.</span>
+                        <input type="text" id="player1Name" class="player-name-input" placeholder="Player 1" maxlength="15">
+                    </div>
+                    <div class="player-input-row">
+                        <span class="player-number">2.</span>
+                        <input type="text" id="player2Name" class="player-name-input" placeholder="Player 2" maxlength="15">
+                    </div>
+                    <div class="player-input-row optional">
+                        <span class="player-number">3.</span>
+                        <input type="text" id="player3Name" class="player-name-input" placeholder="Player 3 (optional)" maxlength="15">
+                    </div>
+                    <div class="player-input-row optional">
+                        <span class="player-number">4.</span>
+                        <input type="text" id="player4Name" class="player-name-input" placeholder="Player 4 (optional)" maxlength="15">
+                    </div>
+                </div>
+                <p class="player-setup-note">Each player takes turns answering questions. Pass the device after each answer!</p>
             </div>
 
             <div class="theme-buttons">
+                <button class="theme-btn theme-btn-mix" data-theme="mix">🎲 Random Mix</button>
                 <button class="theme-btn" data-theme="african">🌍 African</button>
                 <button class="theme-btn" data-theme="artculture">🎨 Art & Culture</button>
                 <button class="theme-btn" data-theme="christmas">🎄 Christmas</button>
@@ -96,6 +128,10 @@
 
         <div id="quizContainer" class="quiz-container hidden">
             <div class="score-board">
+                <div class="score-item current-player-display hidden" id="currentPlayerDisplay">
+                    <span class="score-label">🎯</span>
+                    <span id="currentPlayerName" class="score-value current-player-name">Player 1</span>
+                </div>
                 <div class="score-item">
                     <span class="score-label">Theme:</span>
                     <span id="currentTheme" class="score-value"></span>
@@ -106,7 +142,7 @@
                     <span class="score-value"> of </span>
                     <span id="totalQuestions" class="score-value">0</span>
                 </div>
-                <div class="score-item">
+                <div class="score-item" id="singlePlayerScore">
                     <span class="score-label">Score:</span>
                     <span id="score" class="score-value">0</span>
                     <span class="score-value running-percent">(<span id="runningPercent">0</span>%)</span>
@@ -123,6 +159,7 @@
             </div>
 
             <div class="question-card">
+                <div class="question-category hidden" id="questionCategory"></div>
                 <div class="question-text" id="questionText"></div>
                 <div class="answer-section hidden" id="answerSection">
                     <div class="answer-label">Answer:</div>
@@ -130,7 +167,13 @@
                 </div>
             </div>
 
+            <div id="hintDisplay" class="hint-display hidden">
+                <span class="hint-label">💡 Hint:</span>
+                <span id="hintText" class="hint-text"></span>
+            </div>
+
             <div class="button-group">
+                <button id="hintBtn" class="btn btn-hint">💡 Hint (<span id="hintCount">3</span> left)</button>
                 <button id="showAnswerBtn" class="btn btn-primary">Show Answer</button>
                 <div id="scoringButtons" class="scoring-buttons hidden">
                     <button id="correctBtn" class="btn btn-success">✓ Correct</button>
@@ -152,10 +195,30 @@
                 <p class="percentage" id="percentage"></p>
                 <p class="total-points hidden" id="totalPointsDisplay">🏆 Total Points: <span id="totalPointsValue">0</span></p>
                 <p class="best-streak hidden" id="bestStreakDisplay">🔥 Best Streak: <span id="bestStreakValue">0</span> in a row!</p>
+                <p class="hints-used hidden" id="hintsUsedDisplay">💡 Hints Used: <span id="hintsUsedValue">0</span></p>
             </div>
             <div class="game-over-buttons">
                 <button id="shareBtn" class="btn btn-share">📋 Share Score</button>
                 <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Party Mode Game Over -->
+        <div id="partyGameOver" class="game-over party-game-over hidden">
+            <h2>🎉 Party Results! 🎉</h2>
+            <div class="party-scoreboard">
+                <div class="winner-announcement" id="winnerAnnouncement">
+                    <span class="winner-crown">👑</span>
+                    <span class="winner-name" id="winnerName">Player 1</span>
+                    <span class="winner-label">WINS!</span>
+                </div>
+                <div class="party-scores" id="partyScores">
+                    <!-- Scores will be inserted here dynamically -->
+                </div>
+            </div>
+            <div class="game-over-buttons">
+                <button id="partyShareBtn" class="btn btn-share">📋 Share Results</button>
+                <button id="partyPlayAgainBtn" class="btn btn-primary">Play Again</button>
             </div>
         </div>
         </div>

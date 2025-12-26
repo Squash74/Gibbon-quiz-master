@@ -27,6 +27,28 @@ async function loadCategoryData(category) {
     }
 }
 
+// Load questions from all categories for mix mode
+async function loadMixedCategoryData() {
+    const allQuestions = [];
+
+    // Load all categories in parallel
+    const loadPromises = AVAILABLE_THEMES.map(async (theme) => {
+        try {
+            const data = await loadCategoryData(theme);
+            // Add category info to each question
+            return data.map(q => ({ ...q, category: theme }));
+        } catch (error) {
+            console.error(`Failed to load ${theme} for mix:`, error);
+            return [];
+        }
+    });
+
+    const results = await Promise.all(loadPromises);
+    results.forEach(questions => allQuestions.push(...questions));
+
+    return allQuestions;
+}
+
 function showLoadingState() {
     const themeButtons = document.querySelector('.theme-buttons');
     if (themeButtons) {
@@ -310,6 +332,289 @@ function initializeShuffleToggle() {
 }
 
 // ============================================
+// PARTY MODE MANAGER
+// ============================================
+let partyModeEnabled = false;
+let players = []; // Array of { name: string, score: number, correct: number }
+let currentPlayerIndex = 0;
+
+function initializePartyModeToggle() {
+    const partyModeToggle = document.getElementById('partyModeToggle');
+    const playerSetup = document.getElementById('playerSetup');
+
+    if (partyModeToggle && playerSetup) {
+        partyModeToggle.addEventListener('change', (e) => {
+            partyModeEnabled = e.target.checked;
+            if (partyModeEnabled) {
+                playerSetup.classList.remove('hidden');
+            } else {
+                playerSetup.classList.add('hidden');
+            }
+        });
+    }
+}
+
+function getPlayerNames() {
+    const names = [];
+    for (let i = 1; i <= 4; i++) {
+        const input = document.getElementById(`player${i}Name`);
+        if (input && input.value.trim()) {
+            names.push(input.value.trim());
+        }
+    }
+    return names;
+}
+
+function initializePlayers() {
+    const names = getPlayerNames();
+
+    // Need at least 2 players for party mode
+    if (names.length < 2) {
+        // Use default names if not enough provided
+        if (names.length === 0) {
+            names.push('Player 1', 'Player 2');
+        } else if (names.length === 1) {
+            names.push('Player 2');
+        }
+    }
+
+    players = names.map(name => ({
+        name: name,
+        score: 0,
+        correct: 0
+    }));
+
+    currentPlayerIndex = 0;
+}
+
+function getCurrentPlayer() {
+    return players[currentPlayerIndex];
+}
+
+function nextPlayer() {
+    currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+    updateCurrentPlayerDisplay();
+}
+
+function updateCurrentPlayerDisplay() {
+    const currentPlayerDisplay = document.getElementById('currentPlayerDisplay');
+    const currentPlayerName = document.getElementById('currentPlayerName');
+
+    if (partyModeEnabled && currentPlayerDisplay && currentPlayerName) {
+        currentPlayerDisplay.classList.remove('hidden');
+        currentPlayerName.textContent = getCurrentPlayer().name;
+    } else if (currentPlayerDisplay) {
+        currentPlayerDisplay.classList.add('hidden');
+    }
+}
+
+function addScoreToCurrentPlayer(points, isCorrect) {
+    if (partyModeEnabled && players.length > 0) {
+        const player = getCurrentPlayer();
+        player.score += points;
+        if (isCorrect) {
+            player.correct++;
+        }
+    }
+}
+
+function getPartyResults() {
+    // Sort players by score (descending)
+    return [...players].sort((a, b) => b.score - a.score);
+}
+
+function showPartyGameOver() {
+    const partyGameOver = document.getElementById('partyGameOver');
+    const partyScores = document.getElementById('partyScores');
+    const winnerName = document.getElementById('winnerName');
+    const winnerAnnouncement = document.getElementById('winnerAnnouncement');
+
+    if (!partyGameOver || !partyScores) return;
+
+    const results = getPartyResults();
+
+    // Check for tie
+    const topScore = results[0].score;
+    const winners = results.filter(p => p.score === topScore);
+
+    if (winnerAnnouncement && winnerName) {
+        if (winners.length > 1) {
+            winnerName.textContent = winners.map(w => w.name).join(' & ');
+            winnerAnnouncement.querySelector('.winner-label').textContent = "IT'S A TIE!";
+        } else {
+            winnerName.textContent = results[0].name;
+            winnerAnnouncement.querySelector('.winner-label').textContent = 'WINS!';
+        }
+    }
+
+    // Build scoreboard
+    partyScores.innerHTML = results.map((player, index) => {
+        const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '';
+        const percentage = questions.length > 0 ? Math.round((player.correct / Math.ceil(questions.length / players.length)) * 100) : 0;
+        return `
+            <div class="party-score-row ${index === 0 ? 'winner' : ''}">
+                <span class="party-rank">${medal || (index + 1)}</span>
+                <span class="party-player-name">${player.name}</span>
+                <span class="party-player-score">${player.score} pts</span>
+                <span class="party-player-correct">(${player.correct} correct)</span>
+            </div>
+        `;
+    }).join('');
+
+    partyGameOver.classList.remove('hidden');
+}
+
+function getPartyShareText() {
+    const results = getPartyResults();
+    const themeName = capitalizeFirstLetter(currentTheme);
+
+    let scoreText = results.map((p, i) => {
+        const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}.`;
+        return `${medal} ${p.name}: ${p.score} pts`;
+    }).join('\n');
+
+    return `🎉 Party Quiz Results! 🎉
+
+Theme: ${themeName}
+${scoreText}
+
+Play at: https://squash74.github.io/Gibbon-quiz-master/`;
+}
+
+// ============================================
+// HINT SYSTEM
+// ============================================
+const HINTS_PER_QUIZ = 3;
+const HINT_COST = 1; // Total cost for using hints (charged on first use)
+let hintsRemaining = HINTS_PER_QUIZ;
+let hintsUsed = 0;
+let hintCostPaid = false; // Track if the 1-point cost has been paid
+let currentQuestionHints = []; // Hints for current question
+let currentHintIndex = 0; // Which hint we're on for this question
+
+function generateHints(answer) {
+    const hints = [];
+    const words = answer.split(' ');
+
+    // Hint 1: Number of words + first letter
+    if (words.length === 1) {
+        hints.push(`${answer.length} letters, starts with "${answer[0].toUpperCase()}"`);
+    } else {
+        hints.push(`${words.length} words, starts with "${answer[0].toUpperCase()}"`);
+    }
+
+    // Hint 2: First letter of each word (for multi-word) or more letters revealed
+    if (words.length > 1) {
+        const initials = words.map(w => w[0].toUpperCase()).join('.');
+        hints.push(`Initials: ${initials}`);
+    } else {
+        // Show first 2-3 letters for single word
+        const revealCount = Math.min(3, Math.ceil(answer.length / 3));
+        const revealed = answer.substring(0, revealCount);
+        hints.push(`Starts with "${revealed}..."`);
+    }
+
+    // Hint 3: Partial reveal with blanks
+    let partialReveal = '';
+    for (let i = 0; i < answer.length; i++) {
+        if (answer[i] === ' ') {
+            partialReveal += '  ';
+        } else if (i === 0 || i === answer.length - 1 || Math.random() < 0.4) {
+            partialReveal += answer[i];
+        } else {
+            partialReveal += '_';
+        }
+    }
+    hints.push(partialReveal);
+
+    return hints;
+}
+
+function resetHintsForQuiz() {
+    hintsRemaining = HINTS_PER_QUIZ;
+    hintsUsed = 0;
+    hintCostPaid = false;
+}
+
+function resetHintsForQuestion() {
+    currentHintIndex = 0;
+    currentQuestionHints = [];
+    hideHintDisplay();
+    updateHintButton();
+}
+
+function useHint() {
+    if (hintsRemaining <= 0 || answerRevealed) return;
+
+    // Confirm cost on first hint use
+    if (!hintCostPaid) {
+        if (!confirm('Use hints? This will cost 1 point for up to 3 hints.')) {
+            return;
+        }
+    }
+
+    const question = questions[currentQuestionIndex];
+
+    // Generate hints on first use for this question
+    if (currentQuestionHints.length === 0) {
+        currentQuestionHints = generateHints(question.answer);
+    }
+
+    // Show next hint
+    if (currentHintIndex < currentQuestionHints.length) {
+        showHintDisplay(currentQuestionHints[currentHintIndex]);
+        currentHintIndex++;
+        hintsRemaining--;
+        hintsUsed++;
+
+        // Deduct point only on first hint use (1 point for all 3 hints)
+        if (!hintCostPaid) {
+            score = Math.max(0, score - HINT_COST);
+            scoreEl.textContent = score;
+            hintCostPaid = true;
+        }
+
+        updateHintButton();
+    }
+}
+
+function showHintDisplay(hintText) {
+    const hintDisplay = document.getElementById('hintDisplay');
+    const hintText_el = document.getElementById('hintText');
+
+    if (hintDisplay && hintText_el) {
+        hintText_el.textContent = hintText;
+        hintDisplay.classList.remove('hidden');
+    }
+}
+
+function hideHintDisplay() {
+    const hintDisplay = document.getElementById('hintDisplay');
+    if (hintDisplay) {
+        hintDisplay.classList.add('hidden');
+    }
+}
+
+function updateHintButton() {
+    const hintBtn = document.getElementById('hintBtn');
+    const hintCount = document.getElementById('hintCount');
+
+    if (hintBtn) {
+        if (hintsRemaining <= 0 || answerRevealed) {
+            hintBtn.disabled = true;
+            hintBtn.classList.add('disabled');
+        } else {
+            hintBtn.disabled = false;
+            hintBtn.classList.remove('disabled');
+        }
+    }
+
+    if (hintCount) {
+        hintCount.textContent = hintsRemaining;
+    }
+}
+
+// ============================================
 // STREAK SYSTEM
 // ============================================
 let currentStreak = 0;
@@ -384,6 +689,11 @@ function showStreakMilestone(milestone) {
             streakDisplay.classList.remove('milestone-celebration');
         }, 600);
     }
+
+    // Confetti for reaching 15 streak
+    if (milestone === 15) {
+        showConfetti();
+    }
 }
 
 function calculateStreakBonus(streak) {
@@ -413,6 +723,118 @@ function showBonusPopup(bonus) {
 }
 
 // ============================================
+// CONFETTI SYSTEM
+// ============================================
+function createConfetti() {
+    const colors = ['#fbbf24', '#f97316', '#ef4444', '#a855f7', '#3b82f6', '#10b981'];
+    const confettiCount = 50;
+    const container = document.querySelector('.page-wrapper') || document.body;
+
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+
+        // Random properties
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.5;
+        const duration = 2 + Math.random() * 2;
+        const size = 8 + Math.random() * 8;
+        const rotation = Math.random() * 360;
+
+        confetti.style.cssText = `
+            left: ${left}%;
+            background-color: ${color};
+            width: ${size}px;
+            height: ${size}px;
+            animation-delay: ${delay}s;
+            animation-duration: ${duration}s;
+            transform: rotate(${rotation}deg);
+        `;
+
+        container.appendChild(confetti);
+
+        // Remove after animation
+        setTimeout(() => {
+            confetti.remove();
+        }, (delay + duration) * 1000);
+    }
+}
+
+function showConfetti() {
+    createConfetti();
+}
+
+// ============================================
+// KEYBOARD NAVIGATION
+// ============================================
+function initializeKeyboardNavigation() {
+    document.addEventListener('keydown', (e) => {
+        // Only handle keys when quiz is active
+        if (quizContainer.classList.contains('hidden')) {
+            return;
+        }
+
+        switch (e.key) {
+            case ' ':  // Spacebar - reveal answer
+                e.preventDefault();
+                if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
+                    showAnswerBtn.click();
+                }
+                break;
+
+            case 'Enter':  // Enter - next question
+                e.preventDefault();
+                if (!nextBtn.classList.contains('hidden')) {
+                    nextBtn.click();
+                }
+                break;
+
+            case 'c':  // C key - mark correct
+            case 'C':
+                if (!scoringButtons.classList.contains('hidden')) {
+                    correctBtn.click();
+                }
+                break;
+
+            case 'x':  // X key - mark incorrect
+            case 'X':
+                if (!scoringButtons.classList.contains('hidden')) {
+                    incorrectBtn.click();
+                }
+                break;
+
+            case '1':  // 1 key - mark correct (alternative)
+                if (!scoringButtons.classList.contains('hidden')) {
+                    correctBtn.click();
+                }
+                break;
+
+            case '2':  // 2 key - mark incorrect (alternative)
+                if (!scoringButtons.classList.contains('hidden')) {
+                    incorrectBtn.click();
+                }
+                break;
+
+            case 'h':  // H key - use hint
+            case 'H':
+                const hintBtn = document.getElementById('hintBtn');
+                if (hintBtn && !hintBtn.disabled) {
+                    hintBtn.click();
+                }
+                break;
+        }
+    });
+}
+
+function initializeHintButton() {
+    const hintBtn = document.getElementById('hintBtn');
+    if (hintBtn) {
+        hintBtn.addEventListener('click', useHint);
+    }
+}
+
+// ============================================
 // SHARE RESULTS
 // ============================================
 function getShareText() {
@@ -429,10 +851,15 @@ function getShareText() {
         bonusText = `\nTotal Points: ${score} (includes ${totalBonusPoints} bonus!)`;
     }
 
+    let hintsText = '';
+    if (hintsUsed > 0) {
+        hintsText = `\nHints Used: ${hintsUsed}`;
+    }
+
     return `🎉 Quiz time 🎉
 
 Theme: ${themeName}
-Score: ${correctAnswers}/${questions.length} (${percentScore}%)${bonusText}${streakText}
+Score: ${correctAnswers}/${questions.length} (${percentScore}%)${bonusText}${streakText}${hintsText}
 
 Play at: https://squash74.github.io/Gibbon-quiz-master/`;
 }
@@ -550,7 +977,12 @@ async function startQuiz() {
 
     try {
         // Load category data (from cache or fetch)
-        const categoryData = await loadCategoryData(currentTheme);
+        let categoryData;
+        if (currentTheme === 'mix') {
+            categoryData = await loadMixedCategoryData();
+        } else {
+            categoryData = await loadCategoryData(currentTheme);
+        }
 
         // Reset state
         score = 0;
@@ -560,7 +992,13 @@ async function startQuiz() {
         currentStreak = 0;
         maxStreak = 0;
         totalBonusPoints = 0;
+        resetHintsForQuiz();
         updateStreakDisplay();
+
+        // Initialize party mode if enabled
+        if (partyModeEnabled) {
+            initializePlayers();
+        }
 
         // Get questions for the theme (shuffle if enabled)
         let allQuestions = [...categoryData];
@@ -579,12 +1017,22 @@ async function startQuiz() {
         themeSelection.classList.add('hidden');
         quizContainer.classList.remove('hidden');
         gameOver.classList.add('hidden');
+        document.getElementById('partyGameOver')?.classList.add('hidden');
         showHomeButton();
 
         currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
         totalQuestions.textContent = questions.length;
         scoreEl.textContent = score;
         runningPercentEl.textContent = '0';
+
+        // Show/hide party mode elements
+        if (partyModeEnabled) {
+            updateCurrentPlayerDisplay();
+            document.getElementById('singlePlayerScore')?.classList.add('hidden');
+        } else {
+            document.getElementById('currentPlayerDisplay')?.classList.add('hidden');
+            document.getElementById('singlePlayerScore')?.classList.remove('hidden');
+        }
 
         // Show/hide timer display based on preference
         if (timerEnabled) {
@@ -610,12 +1058,26 @@ function displayQuestion() {
     // Update question number
     questionNumber.textContent = currentQuestionIndex + 1;
 
+    // Show category label for mix mode
+    const questionCategory = document.getElementById('questionCategory');
+    if (questionCategory) {
+        if (question.category) {
+            questionCategory.textContent = capitalizeFirstLetter(question.category);
+            questionCategory.classList.remove('hidden');
+        } else {
+            questionCategory.classList.add('hidden');
+        }
+    }
+
     // Reset UI state
     answerSection.classList.add('hidden');
     showAnswerBtn.classList.remove('hidden');
     scoringButtons.classList.add('hidden');
     nextBtn.classList.add('hidden');
     answerRevealed = false;
+
+    // Reset hints for this question
+    resetHintsForQuestion();
 
     // Start timer for this question
     stopTimer(); // Clear any existing timer
@@ -629,6 +1091,7 @@ showAnswerBtn.addEventListener('click', () => {
     showAnswerBtn.classList.add('hidden');
     scoringButtons.classList.remove('hidden');
     answerRevealed = true;
+    updateHintButton(); // Disable hint button
 });
 
 // Alternative: Click question card to show answer
@@ -639,6 +1102,7 @@ document.querySelector('.question-card').addEventListener('click', () => {
         showAnswerBtn.classList.add('hidden');
         scoringButtons.classList.remove('hidden');
         answerRevealed = true;
+        updateHintButton(); // Disable hint button
     }
 });
 
@@ -662,9 +1126,15 @@ correctBtn.addEventListener('click', () => {
 
     // Track correct answer and add points
     correctAnswers++;
-    score += 1 + bonus;
+    const pointsEarned = 1 + bonus;
+    score += pointsEarned;
     totalBonusPoints += bonus;
     scoreEl.textContent = score;
+
+    // Party mode: add score to current player
+    if (partyModeEnabled) {
+        addScoreToCurrentPlayer(pointsEarned, true);
+    }
 
     // Show bonus popup if earned
     if (bonus > 0) {
@@ -689,8 +1159,13 @@ incorrectBtn.addEventListener('click', () => {
 
 // Next Question
 nextBtn.addEventListener('click', () => {
+    // Party mode: rotate to next player
+    if (partyModeEnabled) {
+        nextPlayer();
+    }
+
     currentQuestionIndex++;
-    
+
     if (currentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
@@ -704,6 +1179,13 @@ function endQuiz() {
     hideTimerDisplay();
 
     quizContainer.classList.add('hidden');
+
+    // Show party mode results or regular results
+    if (partyModeEnabled) {
+        showPartyGameOver();
+        return;
+    }
+
     gameOver.classList.remove('hidden');
 
     // Show correct answers and percentage
@@ -715,6 +1197,11 @@ function endQuiz() {
 
     const percentScore = Math.round((correctAnswers / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Confetti for perfect score!
+    if (percentScore === 100) {
+        showConfetti();
+    }
 
     // Show total points only when bonus was earned
     const totalPointsValue = document.getElementById('totalPointsValue');
@@ -737,6 +1224,18 @@ function endQuiz() {
             bestStreakDisplay.classList.remove('hidden');
         } else {
             bestStreakDisplay.classList.add('hidden');
+        }
+    }
+
+    // Update hints used display
+    const hintsUsedValue = document.getElementById('hintsUsedValue');
+    const hintsUsedDisplay = document.getElementById('hintsUsedDisplay');
+    if (hintsUsedValue && hintsUsedDisplay) {
+        if (hintsUsed > 0) {
+            hintsUsedValue.textContent = hintsUsed;
+            hintsUsedDisplay.classList.remove('hidden');
+        } else {
+            hintsUsedDisplay.classList.add('hidden');
         }
     }
 
@@ -832,7 +1331,8 @@ function capitalizeFirstLetter(string) {
         'tvshows': 'TV Shows',
         'artculture': 'Art & Culture',
         'wildlife': 'Wildlife',
-        'african': 'African'
+        'african': 'African',
+        'mix': 'Random Mix'
     };
     return themeNames[string] || string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -901,6 +1401,9 @@ async function initializeApp() {
     initializeTimerToggle();
     initializeShuffleToggle();
     initializeQuestionCountSelector();
+    initializeKeyboardNavigation();
+    initializeHintButton();
+    initializePartyModeToggle();
 
     // Quiz data is now lazy-loaded per category when a theme is selected
     // No need to pre-load all data
@@ -914,6 +1417,39 @@ async function initializeApp() {
         clearStatsBtn.addEventListener('click', () => {
             if (confirm('Are you sure you want to reset all your progress? This cannot be undone.')) {
                 clearAllProgress();
+            }
+        });
+    }
+
+    // Party mode button handlers
+    const partyPlayAgainBtn = document.getElementById('partyPlayAgainBtn');
+    if (partyPlayAgainBtn) {
+        partyPlayAgainBtn.addEventListener('click', () => {
+            stopTimer();
+            hideTimerDisplay();
+            container.classList.remove('quiz-active');
+            document.getElementById('partyGameOver')?.classList.add('hidden');
+            themeSelection.classList.remove('hidden');
+            hideHomeButton();
+            updateStatsDisplay();
+            updateThemeButtons();
+        });
+    }
+
+    const partyShareBtn = document.getElementById('partyShareBtn');
+    if (partyShareBtn) {
+        partyShareBtn.addEventListener('click', async () => {
+            const shareText = getPartyShareText();
+            try {
+                await navigator.clipboard.writeText(shareText);
+                partyShareBtn.textContent = '✓ Copied!';
+                partyShareBtn.classList.add('copied');
+                setTimeout(() => {
+                    partyShareBtn.textContent = '📋 Share Results';
+                    partyShareBtn.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                alert('Copy this to share:\n\n' + shareText);
             }
         });
     }

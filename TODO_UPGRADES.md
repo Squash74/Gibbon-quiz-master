@@ -34,12 +34,15 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 4. Multiplayer/Party Mode
-- [ ] Implement "pass and play" mode for 2-4 players
-- [ ] Player name entry screen
-- [ ] Turn-based question answering
-- [ ] Scoreboard showing each player's score at the end
+- [x] Implement "pass and play" mode for 2-4 players
+- [x] Player name entry screen
+- [x] Turn-based question answering
+- [x] Current player indicator with pulsing animation
+- [x] Scoreboard showing each player's score at the end
+- [x] Winner announcement with crown animation
+- [x] Share party results
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -115,12 +118,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 11. Keyboard Navigation
-- [ ] Arrow keys or number keys to navigate options
-- [ ] Spacebar to reveal answer
-- [ ] Enter to confirm and move to next question
-- [ ] Keyboard shortcuts help overlay
+- [x] Spacebar to reveal answer
+- [x] Enter to move to next question
+- [x] C key or 1 key to mark correct
+- [x] X key or 2 key to mark incorrect
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -134,20 +137,23 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 13. Confetti Animation
-- [ ] Add confetti effect on perfect scores
-- [ ] Celebration animation on high streaks
-- [ ] Optional: particle effects for milestones
+- [x] Add confetti effect on perfect scores
+- [x] Celebration animation on high streaks (15+ streak)
+- [x] Colorful falling confetti with rotation animation
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
 ## 14. Question Hints
-- [ ] Add optional hints to questions
-- [ ] "Use Hint" button that costs points
-- [ ] Track hints used in results
+- [x] Add optional hints to questions (auto-generated from answers)
+- [x] "Use Hint" button - 1 point total for all 3 hints (charged on first use)
+- [x] 3 hints available per quiz
+- [x] Progressive hints: first letter, initials/more letters, partial reveal
+- [x] Track hints used in results
+- [x] H key keyboard shortcut
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -181,11 +187,11 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 18. Mixed Category Mode
-- [ ] "Random Mix" category option
-- [ ] Pull questions from all categories
-- [ ] Show which category each question is from
+- [x] "Random Mix" category option
+- [x] Pull questions from all categories (loads all in parallel)
+- [x] Show which category each question is from
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -238,23 +244,26 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Share Results (#8) ✅
 - Basic Testing Setup (#6) ✅
 - Quiz Shuffle Toggle (#12) ✅
+- Confetti Animation (#13) ✅
+- Keyboard Navigation (#11) ✅
+- Question Hints (#14) ✅
+- Mixed Category Mode (#18) ✅
+- Multiplayer/Party Mode (#4) ✅
 
 **Remaining - Low Effort:**
-- Keyboard Navigation (#11)
-- Confetti Animation (#13)
-- Question Hints (#14)
+- (none)
 
 **Remaining - Medium Effort:**
-- Difficulty Levels (#1)
 - Achievements/Badges (#15)
 - Daily Challenge (#16)
 - Review Mode (#17)
-- Mixed Category Mode (#18)
 - Accessibility Improvements (#19)
 
 **Remaining - Higher Effort:**
-- Multiplayer/Party Mode (#4)
 - Sound Effects (#9)
 - Local Leaderboard (#20)
 - PWA Support (#21)
 - Question Contribution (#22)
+
+**Someday/Maybe:**
+- Difficulty Levels (#1) - requires tagging 3,000 questions
