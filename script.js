@@ -373,7 +373,7 @@ function showBonusPopup(bonus) {
 // SHARE RESULTS
 // ============================================
 function getShareText() {
-    const percentScore = Math.round((score / questions.length) * 100);
+    const percentScore = Math.round((correctAnswers / questions.length) * 100);
     const themeName = capitalizeFirstLetter(currentTheme);
 
     let streakText = '';
@@ -383,13 +383,13 @@ function getShareText() {
 
     let bonusText = '';
     if (totalBonusPoints > 0) {
-        bonusText = ` (includes ${totalBonusPoints} bonus!)`;
+        bonusText = `\nTotal Points: ${score} (includes ${totalBonusPoints} bonus!)`;
     }
 
     return `🎉 Quiz time 🎉
 
 Theme: ${themeName}
-Score: ${score}/${questions.length} (${percentScore}%)${bonusText}${streakText}
+Score: ${correctAnswers}/${questions.length} (${percentScore}%)${bonusText}${streakText}
 
 Play at: https://squash74.github.io/Gibbon-quiz-master/`;
 }
@@ -465,6 +465,7 @@ let currentTheme = '';
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let correctAnswers = 0;
 let answerRevealed = false;
 
 // DOM Elements
@@ -487,7 +488,6 @@ const currentThemeEl = document.getElementById('currentTheme');
 const questionNumber = document.getElementById('questionNumber');
 const totalQuestions = document.getElementById('totalQuestions');
 const scoreEl = document.getElementById('score');
-const finalScore = document.getElementById('finalScore');
 const finalTotal = document.getElementById('finalTotal');
 const percentage = document.getElementById('percentage');
 const runningPercentEl = document.getElementById('runningPercent');
@@ -511,6 +511,7 @@ async function startQuiz() {
 
         // Reset state
         score = 0;
+        correctAnswers = 0;
         currentQuestionIndex = 0;
         answerRevealed = false;
         currentStreak = 0;
@@ -596,10 +597,10 @@ document.querySelector('.question-card').addEventListener('click', () => {
     }
 });
 
-// Update running percentage
+// Update running percentage (based on correct answers, not total points)
 function updateRunningPercent() {
     const answered = currentQuestionIndex + 1;
-    const percent = Math.round((score / answered) * 100);
+    const percent = Math.round((correctAnswers / answered) * 100);
     runningPercentEl.textContent = percent;
 }
 
@@ -614,7 +615,8 @@ correctBtn.addEventListener('click', () => {
     // Calculate bonus before incrementing streak
     const bonus = calculateStreakBonus(currentStreak);
 
-    // Add base point + bonus
+    // Track correct answer and add points
+    correctAnswers++;
     score += 1 + bonus;
     totalBonusPoints += bonus;
     scoreEl.textContent = score;
@@ -659,21 +661,25 @@ function endQuiz() {
     quizContainer.classList.add('hidden');
     gameOver.classList.remove('hidden');
 
-    finalScore.textContent = score;
+    // Show correct answers and percentage
+    const finalCorrect = document.getElementById('finalCorrect');
+    if (finalCorrect) {
+        finalCorrect.textContent = correctAnswers;
+    }
     finalTotal.textContent = questions.length;
 
-    const percentScore = Math.round((score / questions.length) * 100);
+    const percentScore = Math.round((correctAnswers / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
 
-    // Update bonus points display
-    const bonusValue = document.getElementById('bonusValue');
-    const bonusDisplay = document.getElementById('bonusDisplay');
-    if (bonusValue && bonusDisplay) {
+    // Show total points only when bonus was earned
+    const totalPointsValue = document.getElementById('totalPointsValue');
+    const totalPointsDisplay = document.getElementById('totalPointsDisplay');
+    if (totalPointsValue && totalPointsDisplay) {
         if (totalBonusPoints > 0) {
-            bonusValue.textContent = totalBonusPoints;
-            bonusDisplay.classList.remove('hidden');
+            totalPointsValue.textContent = score;
+            totalPointsDisplay.classList.remove('hidden');
         } else {
-            bonusDisplay.classList.add('hidden');
+            totalPointsDisplay.classList.add('hidden');
         }
     }
 
@@ -689,11 +695,11 @@ function endQuiz() {
         }
     }
 
-    // Save progress to localStorage
-    const progress = updateHighScore(currentTheme, score, questions.length);
+    // Save progress to localStorage (use correctAnswers for high score tracking)
+    const progress = updateHighScore(currentTheme, correctAnswers, questions.length);
 
     // Check if new high score
-    const isNewHighScore = progress.highScores[currentTheme].score === score &&
+    const isNewHighScore = progress.highScores[currentTheme].score === correctAnswers &&
                            progress.highScores[currentTheme].percentage === percentScore;
 
     // Show high score indicator if applicable
