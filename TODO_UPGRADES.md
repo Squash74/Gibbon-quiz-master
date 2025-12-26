@@ -144,7 +144,7 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 
 ## 14. Question Hints
 - [x] Add optional hints to questions (auto-generated from answers)
-- [x] "Use Hint" button that costs 1 point each
+- [x] "Use Hint" button - 1 point total for all 3 hints (charged on first use)
 - [x] 3 hints available per quiz
 - [x] Progressive hints: first letter, initials/more letters, partial reveal
 - [x] Track hints used in results

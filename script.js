@@ -313,9 +313,10 @@ function initializeShuffleToggle() {
 // HINT SYSTEM
 // ============================================
 const HINTS_PER_QUIZ = 3;
-const HINT_COST = 1;
+const HINT_COST = 1; // Total cost for using hints (charged on first use)
 let hintsRemaining = HINTS_PER_QUIZ;
 let hintsUsed = 0;
+let hintCostPaid = false; // Track if the 1-point cost has been paid
 let currentQuestionHints = []; // Hints for current question
 let currentHintIndex = 0; // Which hint we're on for this question
 
@@ -360,6 +361,7 @@ function generateHints(answer) {
 function resetHintsForQuiz() {
     hintsRemaining = HINTS_PER_QUIZ;
     hintsUsed = 0;
+    hintCostPaid = false;
 }
 
 function resetHintsForQuestion() {
@@ -386,9 +388,12 @@ function useHint() {
         hintsRemaining--;
         hintsUsed++;
 
-        // Deduct point (can go negative but we'll clamp at display)
-        score = Math.max(0, score - HINT_COST);
-        scoreEl.textContent = score;
+        // Deduct point only on first hint use (1 point for all 3 hints)
+        if (!hintCostPaid) {
+            score = Math.max(0, score - HINT_COST);
+            scoreEl.textContent = score;
+            hintCostPaid = true;
+        }
 
         updateHintButton();
     }
