@@ -240,8 +240,8 @@
         "answer": "Jeff Bezos"
     },
     {
-        "question": "Which South African won the 2019 Nobel Prize in Literature?",
-        "answer": "J.M. Coetzee (won in 2003)"
+        "question": "Which South African won the Nobel Prize in Literature in 2003?",
+        "answer": "J.M. Coetzee"
     },
     {
         "question": "Who created Mickey Mouse?",
@@ -724,8 +724,8 @@
         "answer": "Robert Peary (disputed)"
     },
     {
-        "question": "Which South African businesswoman is CEO of Discovery?",
-        "answer": "Adrian Gore (CEO, not a woman)"
+        "question": "Who is the founder and CEO of Discovery Limited?",
+        "answer": "Adrian Gore"
     },
     {
         "question": "Who painted 'American Gothic'?",
