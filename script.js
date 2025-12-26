@@ -283,6 +283,7 @@ function hideTimerDisplay() {
 // ============================================
 let currentStreak = 0;
 let maxStreak = 0;
+let totalBonusPoints = 0;
 
 function updateStreakDisplay() {
     const streakValue = document.getElementById('streakValue');
@@ -342,6 +343,32 @@ function showStreakMilestone(milestone) {
     }
 }
 
+function calculateStreakBonus(streak) {
+    if (streak >= 15) return 3;  // 15+ streak: +3 bonus (4 total)
+    if (streak >= 10) return 2;  // 10-14 streak: +2 bonus (3 total)
+    if (streak >= 5) return 1;   // 5-9 streak: +1 bonus (2 total)
+    return 0;                    // 0-4 streak: no bonus (1 total)
+}
+
+function showBonusPopup(bonus) {
+    // Create and show bonus notification
+    const popup = document.createElement('div');
+    popup.className = 'bonus-popup';
+    popup.textContent = `+${bonus} bonus!`;
+
+    const scoreItem = document.querySelector('.score-item:has(#score)') ||
+                      document.querySelector('.score-board');
+    if (scoreItem) {
+        scoreItem.style.position = 'relative';
+        scoreItem.appendChild(popup);
+
+        // Remove after animation
+        setTimeout(() => {
+            popup.remove();
+        }, 1000);
+    }
+}
+
 // ============================================
 // SHARE RESULTS
 // ============================================
@@ -354,10 +381,15 @@ function getShareText() {
         streakText = `\nBest Streak: ${maxStreak} in a row!`;
     }
 
+    let bonusText = '';
+    if (totalBonusPoints > 0) {
+        bonusText = ` (includes ${totalBonusPoints} bonus!)`;
+    }
+
     return `🎉 Quiz time 🎉
 
 Theme: ${themeName}
-Score: ${score}/${questions.length} (${percentScore}%)${streakText}
+Score: ${score}/${questions.length} (${percentScore}%)${bonusText}${streakText}
 
 Play at: https://squash74.github.io/Gibbon-quiz-master/`;
 }
@@ -483,6 +515,7 @@ async function startQuiz() {
         answerRevealed = false;
         currentStreak = 0;
         maxStreak = 0;
+        totalBonusPoints = 0;
         updateStreakDisplay();
 
         // Get and shuffle questions for the theme
@@ -578,8 +611,19 @@ function updateNextButtonText() {
 
 // Correct Answer
 correctBtn.addEventListener('click', () => {
-    score++;
+    // Calculate bonus before incrementing streak
+    const bonus = calculateStreakBonus(currentStreak);
+
+    // Add base point + bonus
+    score += 1 + bonus;
+    totalBonusPoints += bonus;
     scoreEl.textContent = score;
+
+    // Show bonus popup if earned
+    if (bonus > 0) {
+        showBonusPopup(bonus);
+    }
+
     incrementStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
@@ -620,6 +664,18 @@ function endQuiz() {
 
     const percentScore = Math.round((score / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Update bonus points display
+    const bonusValue = document.getElementById('bonusValue');
+    const bonusDisplay = document.getElementById('bonusDisplay');
+    if (bonusValue && bonusDisplay) {
+        if (totalBonusPoints > 0) {
+            bonusValue.textContent = totalBonusPoints;
+            bonusDisplay.classList.remove('hidden');
+        } else {
+            bonusDisplay.classList.add('hidden');
+        }
+    }
 
     // Update best streak display
     const bestStreakValue = document.getElementById('bestStreakValue');

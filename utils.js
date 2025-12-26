@@ -72,6 +72,18 @@ export function getStreakMilestone(streak) {
 }
 
 /**
+ * Calculates bonus points based on current streak
+ * @param {number} streak - Current streak count (before this answer)
+ * @returns {number} Bonus points to add (0, 1, 2, or 3)
+ */
+export function calculateStreakBonus(streak) {
+    if (streak >= 15) return 3;  // 15+ streak: +3 bonus (4 total)
+    if (streak >= 10) return 2;  // 10-14 streak: +2 bonus (3 total)
+    if (streak >= 5) return 1;   // 5-9 streak: +1 bonus (2 total)
+    return 0;                    // 0-4 streak: no bonus (1 total)
+}
+
+/**
  * Formats the share text for quiz results
  * @param {string} themeName - The formatted theme name
  * @param {number} score - Number of correct answers

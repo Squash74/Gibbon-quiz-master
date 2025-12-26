@@ -74,7 +74,10 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
   - 5+ streak (golden glow)
   - 10+ streak (orange glow)
   - 15+ streak (red glow + celebration)
-- [ ] Optional: Bonus points for streaks
+- [x] Bonus points for streaks:
+  - 5+ streak: +1 bonus point
+  - 10+ streak: +2 bonus points
+  - 15+ streak: +3 bonus points
 
 **Status:** Complete
 

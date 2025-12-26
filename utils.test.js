@@ -5,6 +5,7 @@ import {
     calculatePercentage,
     isNewHighScore,
     getStreakMilestone,
+    calculateStreakBonus,
     formatShareText
 } from './utils.js';
 
@@ -139,6 +140,40 @@ describe('getStreakMilestone', () => {
     it('should return red for streaks 15+', () => {
         expect(getStreakMilestone(15)).toBe('red');
         expect(getStreakMilestone(100)).toBe('red');
+    });
+});
+
+describe('calculateStreakBonus', () => {
+    it('should return 0 for streaks below 5', () => {
+        expect(calculateStreakBonus(0)).toBe(0);
+        expect(calculateStreakBonus(1)).toBe(0);
+        expect(calculateStreakBonus(4)).toBe(0);
+    });
+
+    it('should return 1 for streaks 5-9', () => {
+        expect(calculateStreakBonus(5)).toBe(1);
+        expect(calculateStreakBonus(7)).toBe(1);
+        expect(calculateStreakBonus(9)).toBe(1);
+    });
+
+    it('should return 2 for streaks 10-14', () => {
+        expect(calculateStreakBonus(10)).toBe(2);
+        expect(calculateStreakBonus(12)).toBe(2);
+        expect(calculateStreakBonus(14)).toBe(2);
+    });
+
+    it('should return 3 for streaks 15+', () => {
+        expect(calculateStreakBonus(15)).toBe(3);
+        expect(calculateStreakBonus(20)).toBe(3);
+        expect(calculateStreakBonus(100)).toBe(3);
+    });
+
+    it('should match streak milestones thresholds', () => {
+        // Bonus should align with milestone thresholds
+        expect(calculateStreakBonus(4)).toBe(0);  // No milestone
+        expect(calculateStreakBonus(5)).toBe(1);  // Gold milestone
+        expect(calculateStreakBonus(10)).toBe(2); // Orange milestone
+        expect(calculateStreakBonus(15)).toBe(3); // Red milestone
     });
 });
 
