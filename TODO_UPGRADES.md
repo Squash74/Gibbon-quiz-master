@@ -249,7 +249,6 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - (none)
 
 **Remaining - Medium Effort:**
-- Difficulty Levels (#1)
 - Achievements/Badges (#15)
 - Daily Challenge (#16)
 - Review Mode (#17)
@@ -262,3 +261,6 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Local Leaderboard (#20)
 - PWA Support (#21)
 - Question Contribution (#22)
+
+**Someday/Maybe:**
+- Difficulty Levels (#1) - requires tagging 3,000 questions
