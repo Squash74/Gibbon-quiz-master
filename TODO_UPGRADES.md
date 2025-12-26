@@ -184,11 +184,11 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 18. Mixed Category Mode
-- [ ] "Random Mix" category option
-- [ ] Pull questions from all categories
-- [ ] Show which category each question is from
+- [x] "Random Mix" category option
+- [x] Pull questions from all categories (loads all in parallel)
+- [x] Show which category each question is from
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -244,6 +244,7 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Confetti Animation (#13) ✅
 - Keyboard Navigation (#11) ✅
 - Question Hints (#14) ✅
+- Mixed Category Mode (#18) ✅
 
 **Remaining - Low Effort:**
 - (none)
@@ -252,7 +253,6 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Achievements/Badges (#15)
 - Daily Challenge (#16)
 - Review Mode (#17)
-- Mixed Category Mode (#18)
 - Accessibility Improvements (#19)
 
 **Remaining - Higher Effort:**

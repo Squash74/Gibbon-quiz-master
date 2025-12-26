@@ -27,6 +27,28 @@ async function loadCategoryData(category) {
     }
 }
 
+// Load questions from all categories for mix mode
+async function loadMixedCategoryData() {
+    const allQuestions = [];
+
+    // Load all categories in parallel
+    const loadPromises = AVAILABLE_THEMES.map(async (theme) => {
+        try {
+            const data = await loadCategoryData(theme);
+            // Add category info to each question
+            return data.map(q => ({ ...q, category: theme }));
+        } catch (error) {
+            console.error(`Failed to load ${theme} for mix:`, error);
+            return [];
+        }
+    });
+
+    const results = await Promise.all(loadPromises);
+    results.forEach(questions => allQuestions.push(...questions));
+
+    return allQuestions;
+}
+
 function showLoadingState() {
     const themeButtons = document.querySelector('.theme-buttons');
     if (themeButtons) {
@@ -805,7 +827,12 @@ async function startQuiz() {
 
     try {
         // Load category data (from cache or fetch)
-        const categoryData = await loadCategoryData(currentTheme);
+        let categoryData;
+        if (currentTheme === 'mix') {
+            categoryData = await loadMixedCategoryData();
+        } else {
+            categoryData = await loadCategoryData(currentTheme);
+        }
 
         // Reset state
         score = 0;
@@ -865,6 +892,17 @@ function displayQuestion() {
 
     // Update question number
     questionNumber.textContent = currentQuestionIndex + 1;
+
+    // Show category label for mix mode
+    const questionCategory = document.getElementById('questionCategory');
+    if (questionCategory) {
+        if (question.category) {
+            questionCategory.textContent = capitalizeFirstLetter(question.category);
+            questionCategory.classList.remove('hidden');
+        } else {
+            questionCategory.classList.add('hidden');
+        }
+    }
 
     // Reset UI state
     answerSection.classList.add('hidden');
@@ -1110,7 +1148,8 @@ function capitalizeFirstLetter(string) {
         'tvshows': 'TV Shows',
         'artculture': 'Art & Culture',
         'wildlife': 'Wildlife',
-        'african': 'African'
+        'african': 'African',
+        'mix': 'Random Mix'
     };
     return themeNames[string] || string.charAt(0).toUpperCase() + string.slice(1);
 }
