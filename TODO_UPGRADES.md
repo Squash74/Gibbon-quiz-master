@@ -125,11 +125,11 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 12. Quiz Shuffle Toggle
-- [ ] Add option to play questions in original order
-- [ ] Useful for study/practice mode
-- [ ] Save preference to localStorage
+- [x] Add option to play questions in original order
+- [x] Useful for study/practice mode
+- [x] Save preference to localStorage
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -237,10 +237,10 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Streak & Combo System (#7) ✅
 - Share Results (#8) ✅
 - Basic Testing Setup (#6) ✅
+- Quiz Shuffle Toggle (#12) ✅
 
 **Remaining - Low Effort:**
 - Keyboard Navigation (#11)
-- Quiz Shuffle Toggle (#12)
 - Confetti Animation (#13)
 - Question Hints (#14)
 

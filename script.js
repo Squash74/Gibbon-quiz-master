@@ -279,6 +279,37 @@ function hideTimerDisplay() {
 }
 
 // ============================================
+// SHUFFLE MANAGER
+// ============================================
+const SHUFFLE_STORAGE_KEY = 'gibbonQuizShuffleEnabled';
+let shuffleEnabled = true; // Default to shuffled
+
+function getShufflePreference() {
+    const stored = localStorage.getItem(SHUFFLE_STORAGE_KEY);
+    // Default to true if not set
+    return stored === null ? true : stored === 'true';
+}
+
+function setShufflePreference(enabled) {
+    localStorage.setItem(SHUFFLE_STORAGE_KEY, enabled.toString());
+    shuffleEnabled = enabled;
+}
+
+function initializeShuffleToggle() {
+    const shuffleToggle = document.getElementById('shuffleToggle');
+    if (shuffleToggle) {
+        // Load saved preference
+        shuffleEnabled = getShufflePreference();
+        shuffleToggle.checked = shuffleEnabled;
+
+        // Listen for changes
+        shuffleToggle.addEventListener('change', (e) => {
+            setShufflePreference(e.target.checked);
+        });
+    }
+}
+
+// ============================================
 // STREAK SYSTEM
 // ============================================
 let currentStreak = 0;
@@ -288,6 +319,7 @@ let totalBonusPoints = 0;
 function updateStreakDisplay() {
     const streakValue = document.getElementById('streakValue');
     const streakDisplay = document.getElementById('streakDisplay');
+    const bonusIndicator = document.getElementById('bonusIndicator');
 
     if (streakValue) {
         streakValue.textContent = currentStreak;
@@ -311,6 +343,17 @@ function updateStreakDisplay() {
             streakDisplay.classList.remove('hidden');
         } else {
             streakDisplay.classList.add('hidden');
+        }
+    }
+
+    // Update bonus indicator
+    if (bonusIndicator) {
+        const bonus = calculateStreakBonus(currentStreak);
+        if (bonus > 0) {
+            bonusIndicator.textContent = `+${bonus}`;
+            bonusIndicator.classList.remove('hidden');
+        } else {
+            bonusIndicator.classList.add('hidden');
         }
     }
 }
@@ -519,9 +562,11 @@ async function startQuiz() {
         totalBonusPoints = 0;
         updateStreakDisplay();
 
-        // Get and shuffle questions for the theme
+        // Get questions for the theme (shuffle if enabled)
         let allQuestions = [...categoryData];
-        shuffleArray(allQuestions);
+        if (shuffleEnabled) {
+            shuffleArray(allQuestions);
+        }
 
         // Limit to selected question count
         const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
@@ -854,6 +899,7 @@ function updateThemeButtons() {
 async function initializeApp() {
     initializeTheme();
     initializeTimerToggle();
+    initializeShuffleToggle();
     initializeQuestionCountSelector();
 
     // Quiz data is now lazy-loaded per category when a theme is selected
