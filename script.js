@@ -384,6 +384,11 @@ function showStreakMilestone(milestone) {
             streakDisplay.classList.remove('milestone-celebration');
         }, 600);
     }
+
+    // Confetti for reaching 15 streak
+    if (milestone === 15) {
+        showConfetti();
+    }
 }
 
 function calculateStreakBonus(streak) {
@@ -410,6 +415,49 @@ function showBonusPopup(bonus) {
             popup.remove();
         }, 1000);
     }
+}
+
+// ============================================
+// CONFETTI SYSTEM
+// ============================================
+function createConfetti() {
+    const colors = ['#fbbf24', '#f97316', '#ef4444', '#a855f7', '#3b82f6', '#10b981'];
+    const confettiCount = 50;
+    const container = document.querySelector('.page-wrapper') || document.body;
+
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+
+        // Random properties
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.5;
+        const duration = 2 + Math.random() * 2;
+        const size = 8 + Math.random() * 8;
+        const rotation = Math.random() * 360;
+
+        confetti.style.cssText = `
+            left: ${left}%;
+            background-color: ${color};
+            width: ${size}px;
+            height: ${size}px;
+            animation-delay: ${delay}s;
+            animation-duration: ${duration}s;
+            transform: rotate(${rotation}deg);
+        `;
+
+        container.appendChild(confetti);
+
+        // Remove after animation
+        setTimeout(() => {
+            confetti.remove();
+        }, (delay + duration) * 1000);
+    }
+}
+
+function showConfetti() {
+    createConfetti();
 }
 
 // ============================================
@@ -715,6 +763,11 @@ function endQuiz() {
 
     const percentScore = Math.round((correctAnswers / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Confetti for perfect score!
+    if (percentScore === 100) {
+        showConfetti();
+    }
 
     // Show total points only when bonus was earned
     const totalPointsValue = document.getElementById('totalPointsValue');

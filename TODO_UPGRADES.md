@@ -134,11 +134,11 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 13. Confetti Animation
-- [ ] Add confetti effect on perfect scores
-- [ ] Celebration animation on high streaks
-- [ ] Optional: particle effects for milestones
+- [x] Add confetti effect on perfect scores
+- [x] Celebration animation on high streaks (15+ streak)
+- [x] Colorful falling confetti with rotation animation
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -238,10 +238,10 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Share Results (#8) ✅
 - Basic Testing Setup (#6) ✅
 - Quiz Shuffle Toggle (#12) ✅
+- Confetti Animation (#13) ✅
 
 **Remaining - Low Effort:**
 - Keyboard Navigation (#11)
-- Confetti Animation (#13)
 - Question Hints (#14)
 
 **Remaining - Medium Effort:**

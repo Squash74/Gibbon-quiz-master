@@ -993,6 +993,38 @@ header h1 {
 }
 
 /* ============================================
+   CONFETTI ANIMATION
+   ============================================ */
+.confetti {
+    position: fixed;
+    top: -20px;
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 1000;
+    animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(25vh) rotate(180deg) translateX(20px);
+    }
+    50% {
+        transform: translateY(50vh) rotate(360deg) translateX(-20px);
+    }
+    75% {
+        transform: translateY(75vh) rotate(540deg) translateX(10px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(720deg) translateX(-10px);
+    }
+}
+
+/* ============================================
    SHARE BUTTON STYLES
    ============================================ */
 .game-over-buttons {
