@@ -310,6 +310,127 @@ function initializeShuffleToggle() {
 }
 
 // ============================================
+// HINT SYSTEM
+// ============================================
+const HINTS_PER_QUIZ = 3;
+const HINT_COST = 1;
+let hintsRemaining = HINTS_PER_QUIZ;
+let hintsUsed = 0;
+let currentQuestionHints = []; // Hints for current question
+let currentHintIndex = 0; // Which hint we're on for this question
+
+function generateHints(answer) {
+    const hints = [];
+    const words = answer.split(' ');
+
+    // Hint 1: Number of words + first letter
+    if (words.length === 1) {
+        hints.push(`${answer.length} letters, starts with "${answer[0].toUpperCase()}"`);
+    } else {
+        hints.push(`${words.length} words, starts with "${answer[0].toUpperCase()}"`);
+    }
+
+    // Hint 2: First letter of each word (for multi-word) or more letters revealed
+    if (words.length > 1) {
+        const initials = words.map(w => w[0].toUpperCase()).join('.');
+        hints.push(`Initials: ${initials}`);
+    } else {
+        // Show first 2-3 letters for single word
+        const revealCount = Math.min(3, Math.ceil(answer.length / 3));
+        const revealed = answer.substring(0, revealCount);
+        hints.push(`Starts with "${revealed}..."`);
+    }
+
+    // Hint 3: Partial reveal with blanks
+    let partialReveal = '';
+    for (let i = 0; i < answer.length; i++) {
+        if (answer[i] === ' ') {
+            partialReveal += '  ';
+        } else if (i === 0 || i === answer.length - 1 || Math.random() < 0.4) {
+            partialReveal += answer[i];
+        } else {
+            partialReveal += '_';
+        }
+    }
+    hints.push(partialReveal);
+
+    return hints;
+}
+
+function resetHintsForQuiz() {
+    hintsRemaining = HINTS_PER_QUIZ;
+    hintsUsed = 0;
+}
+
+function resetHintsForQuestion() {
+    currentHintIndex = 0;
+    currentQuestionHints = [];
+    hideHintDisplay();
+    updateHintButton();
+}
+
+function useHint() {
+    if (hintsRemaining <= 0 || answerRevealed) return;
+
+    const question = questions[currentQuestionIndex];
+
+    // Generate hints on first use for this question
+    if (currentQuestionHints.length === 0) {
+        currentQuestionHints = generateHints(question.answer);
+    }
+
+    // Show next hint
+    if (currentHintIndex < currentQuestionHints.length) {
+        showHintDisplay(currentQuestionHints[currentHintIndex]);
+        currentHintIndex++;
+        hintsRemaining--;
+        hintsUsed++;
+
+        // Deduct point (can go negative but we'll clamp at display)
+        score = Math.max(0, score - HINT_COST);
+        scoreEl.textContent = score;
+
+        updateHintButton();
+    }
+}
+
+function showHintDisplay(hintText) {
+    const hintDisplay = document.getElementById('hintDisplay');
+    const hintText_el = document.getElementById('hintText');
+
+    if (hintDisplay && hintText_el) {
+        hintText_el.textContent = hintText;
+        hintDisplay.classList.remove('hidden');
+    }
+}
+
+function hideHintDisplay() {
+    const hintDisplay = document.getElementById('hintDisplay');
+    if (hintDisplay) {
+        hintDisplay.classList.add('hidden');
+    }
+}
+
+function updateHintButton() {
+    const hintBtn = document.getElementById('hintBtn');
+    const hintCount = document.getElementById('hintCount');
+
+    if (hintBtn) {
+        if (hintsRemaining <= 0 || answerRevealed) {
+            hintBtn.disabled = true;
+            hintBtn.classList.add('disabled');
+        } else {
+            hintBtn.disabled = false;
+            hintBtn.classList.remove('disabled');
+        }
+    }
+
+    if (hintCount) {
+        hintCount.textContent = hintsRemaining;
+    }
+}
+
+// ============================================
 // STREAK SYSTEM
 // ============================================
 let currentStreak = 0;
@@ -510,8 +631,23 @@ function initializeKeyboardNavigation() {
                     incorrectBtn.click();
                 }
                 break;
+
+            case 'h':  // H key - use hint
+            case 'H':
+                const hintBtn = document.getElementById('hintBtn');
+                if (hintBtn && !hintBtn.disabled) {
+                    hintBtn.click();
+                }
+                break;
         }
     });
+}
+
+function initializeHintButton() {
+    const hintBtn = document.getElementById('hintBtn');
+    if (hintBtn) {
+        hintBtn.addEventListener('click', useHint);
+    }
 }
 
 // ============================================
@@ -531,10 +667,15 @@ function getShareText() {
         bonusText = `\nTotal Points: ${score} (includes ${totalBonusPoints} bonus!)`;
     }
 
+    let hintsText = '';
+    if (hintsUsed > 0) {
+        hintsText = `\nHints Used: ${hintsUsed}`;
+    }
+
     return `🎉 Quiz time 🎉
 
 Theme: ${themeName}
-Score: ${correctAnswers}/${questions.length} (${percentScore}%)${bonusText}${streakText}
+Score: ${correctAnswers}/${questions.length} (${percentScore}%)${bonusText}${streakText}${hintsText}
 
 Play at: https://squash74.github.io/Gibbon-quiz-master/`;
 }
@@ -662,6 +803,7 @@ async function startQuiz() {
         currentStreak = 0;
         maxStreak = 0;
         totalBonusPoints = 0;
+        resetHintsForQuiz();
         updateStreakDisplay();
 
         // Get questions for the theme (shuffle if enabled)
@@ -719,6 +861,9 @@ function displayQuestion() {
     nextBtn.classList.add('hidden');
     answerRevealed = false;
 
+    // Reset hints for this question
+    resetHintsForQuestion();
+
     // Start timer for this question
     stopTimer(); // Clear any existing timer
     startTimer();
@@ -731,6 +876,7 @@ showAnswerBtn.addEventListener('click', () => {
     showAnswerBtn.classList.add('hidden');
     scoringButtons.classList.remove('hidden');
     answerRevealed = true;
+    updateHintButton(); // Disable hint button
 });
 
 // Alternative: Click question card to show answer
@@ -741,6 +887,7 @@ document.querySelector('.question-card').addEventListener('click', () => {
         showAnswerBtn.classList.add('hidden');
         scoringButtons.classList.remove('hidden');
         answerRevealed = true;
+        updateHintButton(); // Disable hint button
     }
 });
 
@@ -844,6 +991,18 @@ function endQuiz() {
             bestStreakDisplay.classList.remove('hidden');
         } else {
             bestStreakDisplay.classList.add('hidden');
+        }
+    }
+
+    // Update hints used display
+    const hintsUsedValue = document.getElementById('hintsUsedValue');
+    const hintsUsedDisplay = document.getElementById('hintsUsedDisplay');
+    if (hintsUsedValue && hintsUsedDisplay) {
+        if (hintsUsed > 0) {
+            hintsUsedValue.textContent = hintsUsed;
+            hintsUsedDisplay.classList.remove('hidden');
+        } else {
+            hintsUsedDisplay.classList.add('hidden');
         }
     }
 
@@ -1009,6 +1168,7 @@ async function initializeApp() {
     initializeShuffleToggle();
     initializeQuestionCountSelector();
     initializeKeyboardNavigation();
+    initializeHintButton();
 
     // Quiz data is now lazy-loaded per category when a theme is selected
     // No need to pre-load all data

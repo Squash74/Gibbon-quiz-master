@@ -1083,3 +1083,102 @@ header h1 {
     border-color: transparent;
     color: white;
 }
+
+/* ============================================
+   HINT SYSTEM STYLES
+   ============================================ */
+.btn-hint {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    color: white;
+    position: relative;
+}
+
+.btn-hint:hover:not(.disabled) {
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+}
+
+.btn-hint.disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.hint-cost {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-left: 4px;
+}
+
+.hint-display {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    border: 2px solid #a855f7;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    animation: slideDown 0.3s ease-out;
+}
+
+.hint-label {
+    font-weight: 600;
+    color: #7c3aed;
+    margin-right: 8px;
+}
+
+.hint-text {
+    color: #581c87;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+
+/* Hints used in results */
+.hints-used {
+    font-size: 1rem !important;
+    color: #a855f7 !important;
+    margin-top: 8px !important;
+}
+
+/* Dark mode hint styles */
+[data-theme="dark"] .btn-hint {
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+}
+
+[data-theme="dark"] .btn-hint:hover:not(.disabled) {
+    background: linear-gradient(135deg, #6d28d9 0%, #4c1d95 100%);
+}
+
+[data-theme="dark"] .btn-hint.disabled {
+    background: #4b5563;
+}
+
+[data-theme="dark"] .hint-display {
+    background: linear-gradient(135deg, #2e1065 0%, #4c1d95 100%);
+    border-color: #7c3aed;
+}
+
+[data-theme="dark"] .hint-label {
+    color: #c4b5fd;
+}
+
+[data-theme="dark"] .hint-text {
+    color: #e9d5ff;
+}
+
+/* Responsive hint styles */
+@media (max-width: 768px) {
+    .btn-hint {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
+
+    .hint-display {
+        padding: 10px 12px;
+    }
+
+    .hint-text {
+        font-size: 1rem;
+    }
+}

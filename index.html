@@ -130,7 +130,13 @@
                 </div>
             </div>
 
+            <div id="hintDisplay" class="hint-display hidden">
+                <span class="hint-label">💡 Hint:</span>
+                <span id="hintText" class="hint-text"></span>
+            </div>
+
             <div class="button-group">
+                <button id="hintBtn" class="btn btn-hint">💡 Hint (<span id="hintCount">3</span> left) <span class="hint-cost">-1 pt</span></button>
                 <button id="showAnswerBtn" class="btn btn-primary">Show Answer</button>
                 <div id="scoringButtons" class="scoring-buttons hidden">
                     <button id="correctBtn" class="btn btn-success">✓ Correct</button>
@@ -152,6 +158,7 @@
                 <p class="percentage" id="percentage"></p>
                 <p class="total-points hidden" id="totalPointsDisplay">🏆 Total Points: <span id="totalPointsValue">0</span></p>
                 <p class="best-streak hidden" id="bestStreakDisplay">🔥 Best Streak: <span id="bestStreakValue">0</span> in a row!</p>
+                <p class="hints-used hidden" id="hintsUsedDisplay">💡 Hints Used: <span id="hintsUsedValue">0</span></p>
             </div>
             <div class="game-over-buttons">
                 <button id="shareBtn" class="btn btn-share">📋 Share Score</button>

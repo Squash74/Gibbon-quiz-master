@@ -143,11 +143,14 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 14. Question Hints
-- [ ] Add optional hints to questions
-- [ ] "Use Hint" button that costs points
-- [ ] Track hints used in results
+- [x] Add optional hints to questions (auto-generated from answers)
+- [x] "Use Hint" button that costs 1 point each
+- [x] 3 hints available per quiz
+- [x] Progressive hints: first letter, initials/more letters, partial reveal
+- [x] Track hints used in results
+- [x] H key keyboard shortcut
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -240,9 +243,10 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Quiz Shuffle Toggle (#12) ✅
 - Confetti Animation (#13) ✅
 - Keyboard Navigation (#11) ✅
+- Question Hints (#14) ✅
 
 **Remaining - Low Effort:**
-- Question Hints (#14)
+- (none)
 
 **Remaining - Medium Effort:**
 - Difficulty Levels (#1)
