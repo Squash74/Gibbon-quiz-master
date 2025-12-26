@@ -461,6 +461,60 @@ function showConfetti() {
 }
 
 // ============================================
+// KEYBOARD NAVIGATION
+// ============================================
+function initializeKeyboardNavigation() {
+    document.addEventListener('keydown', (e) => {
+        // Only handle keys when quiz is active
+        if (quizContainer.classList.contains('hidden')) {
+            return;
+        }
+
+        switch (e.key) {
+            case ' ':  // Spacebar - reveal answer
+                e.preventDefault();
+                if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
+                    showAnswerBtn.click();
+                }
+                break;
+
+            case 'Enter':  // Enter - next question
+                e.preventDefault();
+                if (!nextBtn.classList.contains('hidden')) {
+                    nextBtn.click();
+                }
+                break;
+
+            case 'c':  // C key - mark correct
+            case 'C':
+                if (!scoringButtons.classList.contains('hidden')) {
+                    correctBtn.click();
+                }
+                break;
+
+            case 'x':  // X key - mark incorrect
+            case 'X':
+                if (!scoringButtons.classList.contains('hidden')) {
+                    incorrectBtn.click();
+                }
+                break;
+
+            case '1':  // 1 key - mark correct (alternative)
+                if (!scoringButtons.classList.contains('hidden')) {
+                    correctBtn.click();
+                }
+                break;
+
+            case '2':  // 2 key - mark incorrect (alternative)
+                if (!scoringButtons.classList.contains('hidden')) {
+                    incorrectBtn.click();
+                }
+                break;
+        }
+    });
+}
+
+// ============================================
 // SHARE RESULTS
 // ============================================
 function getShareText() {
@@ -954,6 +1008,7 @@ async function initializeApp() {
     initializeTimerToggle();
     initializeShuffleToggle();
     initializeQuestionCountSelector();
+    initializeKeyboardNavigation();
 
     // Quiz data is now lazy-loaded per category when a theme is selected
     // No need to pre-load all data

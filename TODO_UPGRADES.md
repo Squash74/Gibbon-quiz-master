@@ -115,12 +115,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 11. Keyboard Navigation
-- [ ] Arrow keys or number keys to navigate options
-- [ ] Spacebar to reveal answer
-- [ ] Enter to confirm and move to next question
-- [ ] Keyboard shortcuts help overlay
+- [x] Spacebar to reveal answer
+- [x] Enter to move to next question
+- [x] C key or 1 key to mark correct
+- [x] X key or 2 key to mark incorrect
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -239,9 +239,9 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Basic Testing Setup (#6) ✅
 - Quiz Shuffle Toggle (#12) ✅
 - Confetti Animation (#13) ✅
+- Keyboard Navigation (#11) ✅
 
 **Remaining - Low Effort:**
-- Keyboard Navigation (#11)
 - Question Hints (#14)
 
 **Remaining - Medium Effort:**
