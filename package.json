@@ -1,0 +1,20 @@
+{
+  "name": "gibbon-quiz-master",
+  "version": "1.0.0",
+  "description": "A fun trivia quiz application with multiple categories",
+  "main": "script.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:21728/git/Squash74/Gibbon-quiz-master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^4.0.16"
+  }
+}

@@ -58,12 +58,12 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 6. Basic Testing Setup
-- [ ] Add test runner (Vitest or plain Node.js assertions)
-- [ ] Write tests for `shuffleArray` function
-- [ ] Write tests for score calculations
-- [ ] Set up CI to run tests on commits
+- [x] Add test runner (Vitest or plain Node.js assertions)
+- [x] Write tests for `shuffleArray` function
+- [x] Write tests for score calculations
+- [x] Set up CI to run tests on commits
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -74,7 +74,10 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
   - 5+ streak (golden glow)
   - 10+ streak (orange glow)
   - 15+ streak (red glow + celebration)
-- [ ] Optional: Bonus points for streaks
+- [x] Bonus points for streaks:
+  - 5+ streak: +1 bonus point
+  - 10+ streak: +2 bonus points
+  - 15+ streak: +3 bonus points
 
 **Status:** Complete
 
@@ -111,6 +114,119 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 
 ---
 
+## 11. Keyboard Navigation
+- [ ] Arrow keys or number keys to navigate options
+- [ ] Spacebar to reveal answer
+- [ ] Enter to confirm and move to next question
+- [ ] Keyboard shortcuts help overlay
+
+**Status:** Not started
+
+---
+
+## 12. Quiz Shuffle Toggle
+- [ ] Add option to play questions in original order
+- [ ] Useful for study/practice mode
+- [ ] Save preference to localStorage
+
+**Status:** Not started
+
+---
+
+## 13. Confetti Animation
+- [ ] Add confetti effect on perfect scores
+- [ ] Celebration animation on high streaks
+- [ ] Optional: particle effects for milestones
+
+**Status:** Not started
+
+---
+
+## 14. Question Hints
+- [ ] Add optional hints to questions
+- [ ] "Use Hint" button that costs points
+- [ ] Track hints used in results
+
+**Status:** Not started
+
+---
+
+## 15. Achievements/Badges
+- [ ] Design badge system for milestones
+- [ ] Unlock badges (e.g., "Complete all categories", "Perfect score", "10 streak master")
+- [ ] Badge display in stats panel
+- [ ] Save achievements to localStorage
+
+**Status:** Not started
+
+---
+
+## 16. Daily Challenge
+- [ ] Fixed set of questions each day (seeded random)
+- [ ] Track daily challenge completion
+- [ ] Show daily streak counter
+- [ ] Compare with previous days
+
+**Status:** Not started
+
+---
+
+## 17. Review Mode
+- [ ] After quiz, show all Q&A pairs
+- [ ] Highlight incorrect answers for review
+- [ ] Option to retry missed questions only
+
+**Status:** Not started
+
+---
+
+## 18. Mixed Category Mode
+- [ ] "Random Mix" category option
+- [ ] Pull questions from all categories
+- [ ] Show which category each question is from
+
+**Status:** Not started
+
+---
+
+## 19. Accessibility Improvements
+- [ ] Add ARIA labels to interactive elements
+- [ ] Improve focus management
+- [ ] Screen reader announcements for score changes
+- [ ] High contrast mode option
+
+**Status:** Not started
+
+---
+
+## 20. Local Leaderboard
+- [ ] Top 5 scores per category with initials
+- [ ] Entry screen for initials on high score
+- [ ] Persistent leaderboard in localStorage
+
+**Status:** Not started
+
+---
+
+## 21. PWA Support
+- [ ] Add web app manifest
+- [ ] Implement service worker for offline play
+- [ ] Cache quiz data for offline access
+- [ ] Install prompt for mobile users
+
+**Status:** Not started
+
+---
+
+## 22. Question Contribution
+- [ ] Simple form to submit new questions
+- [ ] Preview submitted question
+- [ ] Export as JSON for review
+
+**Status:** Not started
+
+---
+
 ## Priority Suggestions
 
 **Completed Features:**
@@ -120,11 +236,25 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - External Quiz Data (#5) ✅
 - Streak & Combo System (#7) ✅
 - Share Results (#8) ✅
+- Basic Testing Setup (#6) ✅
+
+**Remaining - Low Effort:**
+- Keyboard Navigation (#11)
+- Quiz Shuffle Toggle (#12)
+- Confetti Animation (#13)
+- Question Hints (#14)
 
 **Remaining - Medium Effort:**
 - Difficulty Levels (#1)
+- Achievements/Badges (#15)
+- Daily Challenge (#16)
+- Review Mode (#17)
+- Mixed Category Mode (#18)
+- Accessibility Improvements (#19)
 
 **Remaining - Higher Effort:**
 - Multiplayer/Party Mode (#4)
-- Basic Testing Setup (#6)
 - Sound Effects (#9)
+- Local Leaderboard (#20)
+- PWA Support (#21)
+- Question Contribution (#22)

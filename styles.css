@@ -928,6 +928,44 @@ header h1 {
     margin-top: 10px !important;
 }
 
+/* Total points display in game over (shown when bonus earned) */
+.total-points {
+    font-size: 1.1rem !important;
+    color: #a855f7 !important;
+    margin-top: 10px !important;
+}
+
+/* Bonus popup animation */
+.bonus-popup {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    animation: bonusFloat 1s ease-out forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes bonusFloat {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-15px) scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+}
+
 /* ============================================
    SHARE BUTTON STYLES
    ============================================ */

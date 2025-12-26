@@ -283,6 +283,7 @@ function hideTimerDisplay() {
 // ============================================
 let currentStreak = 0;
 let maxStreak = 0;
+let totalBonusPoints = 0;
 
 function updateStreakDisplay() {
     const streakValue = document.getElementById('streakValue');
@@ -342,11 +343,37 @@ function showStreakMilestone(milestone) {
     }
 }
 
+function calculateStreakBonus(streak) {
+    if (streak >= 15) return 3;  // 15+ streak: +3 bonus (4 total)
+    if (streak >= 10) return 2;  // 10-14 streak: +2 bonus (3 total)
+    if (streak >= 5) return 1;   // 5-9 streak: +1 bonus (2 total)
+    return 0;                    // 0-4 streak: no bonus (1 total)
+}
+
+function showBonusPopup(bonus) {
+    // Create and show bonus notification
+    const popup = document.createElement('div');
+    popup.className = 'bonus-popup';
+    popup.textContent = `+${bonus} bonus!`;
+
+    const scoreItem = document.querySelector('.score-item:has(#score)') ||
+                      document.querySelector('.score-board');
+    if (scoreItem) {
+        scoreItem.style.position = 'relative';
+        scoreItem.appendChild(popup);
+
+        // Remove after animation
+        setTimeout(() => {
+            popup.remove();
+        }, 1000);
+    }
+}
+
 // ============================================
 // SHARE RESULTS
 // ============================================
 function getShareText() {
-    const percentScore = Math.round((score / questions.length) * 100);
+    const percentScore = Math.round((correctAnswers / questions.length) * 100);
     const themeName = capitalizeFirstLetter(currentTheme);
 
     let streakText = '';
@@ -354,10 +381,15 @@ function getShareText() {
         streakText = `\nBest Streak: ${maxStreak} in a row!`;
     }
 
+    let bonusText = '';
+    if (totalBonusPoints > 0) {
+        bonusText = `\nTotal Points: ${score} (includes ${totalBonusPoints} bonus!)`;
+    }
+
     return `🎉 Quiz time 🎉
 
 Theme: ${themeName}
-Score: ${score}/${questions.length} (${percentScore}%)${streakText}
+Score: ${correctAnswers}/${questions.length} (${percentScore}%)${bonusText}${streakText}
 
 Play at: https://squash74.github.io/Gibbon-quiz-master/`;
 }
@@ -433,6 +465,7 @@ let currentTheme = '';
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let correctAnswers = 0;
 let answerRevealed = false;
 
 // DOM Elements
@@ -455,7 +488,6 @@ const currentThemeEl = document.getElementById('currentTheme');
 const questionNumber = document.getElementById('questionNumber');
 const totalQuestions = document.getElementById('totalQuestions');
 const scoreEl = document.getElementById('score');
-const finalScore = document.getElementById('finalScore');
 const finalTotal = document.getElementById('finalTotal');
 const percentage = document.getElementById('percentage');
 const runningPercentEl = document.getElementById('runningPercent');
@@ -479,10 +511,12 @@ async function startQuiz() {
 
         // Reset state
         score = 0;
+        correctAnswers = 0;
         currentQuestionIndex = 0;
         answerRevealed = false;
         currentStreak = 0;
         maxStreak = 0;
+        totalBonusPoints = 0;
         updateStreakDisplay();
 
         // Get and shuffle questions for the theme
@@ -563,10 +597,10 @@ document.querySelector('.question-card').addEventListener('click', () => {
     }
 });
 
-// Update running percentage
+// Update running percentage (based on correct answers, not total points)
 function updateRunningPercent() {
     const answered = currentQuestionIndex + 1;
-    const percent = Math.round((score / answered) * 100);
+    const percent = Math.round((correctAnswers / answered) * 100);
     runningPercentEl.textContent = percent;
 }
 
@@ -578,8 +612,20 @@ function updateNextButtonText() {
 
 // Correct Answer
 correctBtn.addEventListener('click', () => {
-    score++;
+    // Calculate bonus before incrementing streak
+    const bonus = calculateStreakBonus(currentStreak);
+
+    // Track correct answer and add points
+    correctAnswers++;
+    score += 1 + bonus;
+    totalBonusPoints += bonus;
     scoreEl.textContent = score;
+
+    // Show bonus popup if earned
+    if (bonus > 0) {
+        showBonusPopup(bonus);
+    }
+
     incrementStreak();
     updateRunningPercent();
     scoringButtons.classList.add('hidden');
@@ -615,11 +661,27 @@ function endQuiz() {
     quizContainer.classList.add('hidden');
     gameOver.classList.remove('hidden');
 
-    finalScore.textContent = score;
+    // Show correct answers and percentage
+    const finalCorrect = document.getElementById('finalCorrect');
+    if (finalCorrect) {
+        finalCorrect.textContent = correctAnswers;
+    }
     finalTotal.textContent = questions.length;
 
-    const percentScore = Math.round((score / questions.length) * 100);
+    const percentScore = Math.round((correctAnswers / questions.length) * 100);
     percentage.textContent = `${percentScore}%`;
+
+    // Show total points only when bonus was earned
+    const totalPointsValue = document.getElementById('totalPointsValue');
+    const totalPointsDisplay = document.getElementById('totalPointsDisplay');
+    if (totalPointsValue && totalPointsDisplay) {
+        if (totalBonusPoints > 0) {
+            totalPointsValue.textContent = score;
+            totalPointsDisplay.classList.remove('hidden');
+        } else {
+            totalPointsDisplay.classList.add('hidden');
+        }
+    }
 
     // Update best streak display
     const bestStreakValue = document.getElementById('bestStreakValue');
@@ -633,11 +695,11 @@ function endQuiz() {
         }
     }
 
-    // Save progress to localStorage
-    const progress = updateHighScore(currentTheme, score, questions.length);
+    // Save progress to localStorage (use correctAnswers for high score tracking)
+    const progress = updateHighScore(currentTheme, correctAnswers, questions.length);
 
     // Check if new high score
-    const isNewHighScore = progress.highScores[currentTheme].score === score &&
+    const isNewHighScore = progress.highScores[currentTheme].score === correctAnswers &&
                            progress.highScores[currentTheme].percentage === percentScore;
 
     // Show high score indicator if applicable
