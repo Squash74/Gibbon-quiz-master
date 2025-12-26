@@ -288,6 +288,7 @@ let totalBonusPoints = 0;
 function updateStreakDisplay() {
     const streakValue = document.getElementById('streakValue');
     const streakDisplay = document.getElementById('streakDisplay');
+    const bonusIndicator = document.getElementById('bonusIndicator');
 
     if (streakValue) {
         streakValue.textContent = currentStreak;
@@ -311,6 +312,17 @@ function updateStreakDisplay() {
             streakDisplay.classList.remove('hidden');
         } else {
             streakDisplay.classList.add('hidden');
+        }
+    }
+
+    // Update bonus indicator
+    if (bonusIndicator) {
+        const bonus = calculateStreakBonus(currentStreak);
+        if (bonus > 0) {
+            bonusIndicator.textContent = `+${bonus}`;
+            bonusIndicator.classList.remove('hidden');
+        } else {
+            bonusIndicator.classList.add('hidden');
         }
     }
 }
