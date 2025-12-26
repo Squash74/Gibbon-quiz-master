@@ -159,7 +159,10 @@
             </div>
 
             <div class="question-card">
-                <div class="question-category hidden" id="questionCategory"></div>
+                <div class="question-header">
+                    <div class="question-category hidden" id="questionCategory"></div>
+                    <button id="hintBtn" class="btn btn-hint btn-hint-top">💡 Hint (<span id="hintCount">3</span> left)</button>
+                </div>
                 <div class="question-text" id="questionText"></div>
                 <div class="answer-section hidden" id="answerSection">
                     <div class="answer-label">Answer:</div>
@@ -173,7 +176,6 @@
             </div>
 
             <div class="button-group">
-                <button id="hintBtn" class="btn btn-hint">💡 Hint (<span id="hintCount">3</span> left)</button>
                 <button id="showAnswerBtn" class="btn btn-primary">Show Answer</button>
                 <div id="scoringButtons" class="scoring-buttons hidden">
                     <button id="correctBtn" class="btn btn-success">✓ Correct</button>
