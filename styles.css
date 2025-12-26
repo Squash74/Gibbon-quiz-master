@@ -1218,3 +1218,248 @@ header h1 {
 [data-theme="dark"] .question-category {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
+
+/* ============================================
+   PARTY MODE STYLES
+   ============================================ */
+
+/* Player Setup */
+.player-setup {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 2px solid #f59e0b;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.player-setup h3 {
+    color: #92400e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.player-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.player-input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-number {
+    font-weight: bold;
+    color: #92400e;
+    width: 24px;
+}
+
+.player-name-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #fbbf24;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.player-name-input:focus {
+    outline: none;
+    border-color: #f59e0b;
+}
+
+.player-input-row.optional .player-name-input {
+    border-style: dashed;
+}
+
+.player-setup-note {
+    text-align: center;
+    color: #92400e;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Current Player Display */
+.current-player-display {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    padding: 6px 14px;
+    border-radius: 8px;
+    animation: playerPulse 2s ease-in-out infinite;
+}
+
+.current-player-name {
+    font-weight: bold;
+    color: #78350f;
+}
+
+@keyframes playerPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(251, 191, 36, 0); }
+}
+
+/* Party Game Over */
+.party-game-over {
+    text-align: center;
+}
+
+.party-scoreboard {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.winner-announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.winner-crown {
+    font-size: 3rem;
+    animation: crownBounce 1s ease-in-out infinite;
+}
+
+@keyframes crownBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.winner-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fbbf24;
+    margin: 10px 0;
+}
+
+.winner-label {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.party-scores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.party-score-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: white;
+}
+
+.party-score-row.winner {
+    background: rgba(251, 191, 36, 0.3);
+    border: 2px solid #fbbf24;
+}
+
+.party-rank {
+    font-size: 1.3rem;
+    min-width: 30px;
+}
+
+.party-player-name {
+    flex: 1;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.party-player-score {
+    font-weight: bold;
+    color: #fbbf24;
+    margin-right: 10px;
+}
+
+.party-player-correct {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Dark mode party styles */
+[data-theme="dark"] .player-setup {
+    background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+    border-color: #b45309;
+}
+
+[data-theme="dark"] .player-setup h3 {
+    color: #fef3c7;
+}
+
+[data-theme="dark"] .player-number {
+    color: #fde68a;
+}
+
+[data-theme="dark"] .player-name-input {
+    background: #1f2937;
+    border-color: #b45309;
+    color: white;
+}
+
+[data-theme="dark"] .player-name-input::placeholder {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .player-setup-note {
+    color: #fde68a;
+}
+
+[data-theme="dark"] .current-player-display {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
+
+[data-theme="dark"] .current-player-name {
+    color: #fef3c7;
+}
+
+[data-theme="dark"] .party-scoreboard {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+/* Responsive party styles */
+@media (max-width: 768px) {
+    .player-setup {
+        padding: 15px;
+    }
+
+    .player-name-input {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .party-scoreboard {
+        padding: 20px 15px;
+    }
+
+    .winner-crown {
+        font-size: 2.5rem;
+    }
+
+    .winner-name {
+        font-size: 1.4rem;
+    }
+
+    .party-score-row {
+        padding: 10px 12px;
+        flex-wrap: wrap;
+    }
+
+    .party-player-correct {
+        width: 100%;
+        text-align: right;
+        margin-top: 4px;
+    }
+}

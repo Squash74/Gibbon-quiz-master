@@ -332,6 +332,156 @@ function initializeShuffleToggle() {
 }
 
 // ============================================
+// PARTY MODE MANAGER
+// ============================================
+let partyModeEnabled = false;
+let players = []; // Array of { name: string, score: number, correct: number }
+let currentPlayerIndex = 0;
+
+function initializePartyModeToggle() {
+    const partyModeToggle = document.getElementById('partyModeToggle');
+    const playerSetup = document.getElementById('playerSetup');
+
+    if (partyModeToggle && playerSetup) {
+        partyModeToggle.addEventListener('change', (e) => {
+            partyModeEnabled = e.target.checked;
+            if (partyModeEnabled) {
+                playerSetup.classList.remove('hidden');
+            } else {
+                playerSetup.classList.add('hidden');
+            }
+        });
+    }
+}
+
+function getPlayerNames() {
+    const names = [];
+    for (let i = 1; i <= 4; i++) {
+        const input = document.getElementById(`player${i}Name`);
+        if (input && input.value.trim()) {
+            names.push(input.value.trim());
+        }
+    }
+    return names;
+}
+
+function initializePlayers() {
+    const names = getPlayerNames();
+
+    // Need at least 2 players for party mode
+    if (names.length < 2) {
+        // Use default names if not enough provided
+        if (names.length === 0) {
+            names.push('Player 1', 'Player 2');
+        } else if (names.length === 1) {
+            names.push('Player 2');
+        }
+    }
+
+    players = names.map(name => ({
+        name: name,
+        score: 0,
+        correct: 0
+    }));
+
+    currentPlayerIndex = 0;
+}
+
+function getCurrentPlayer() {
+    return players[currentPlayerIndex];
+}
+
+function nextPlayer() {
+    currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+    updateCurrentPlayerDisplay();
+}
+
+function updateCurrentPlayerDisplay() {
+    const currentPlayerDisplay = document.getElementById('currentPlayerDisplay');
+    const currentPlayerName = document.getElementById('currentPlayerName');
+
+    if (partyModeEnabled && currentPlayerDisplay && currentPlayerName) {
+        currentPlayerDisplay.classList.remove('hidden');
+        currentPlayerName.textContent = getCurrentPlayer().name;
+    } else if (currentPlayerDisplay) {
+        currentPlayerDisplay.classList.add('hidden');
+    }
+}
+
+function addScoreToCurrentPlayer(points, isCorrect) {
+    if (partyModeEnabled && players.length > 0) {
+        const player = getCurrentPlayer();
+        player.score += points;
+        if (isCorrect) {
+            player.correct++;
+        }
+    }
+}
+
+function getPartyResults() {
+    // Sort players by score (descending)
+    return [...players].sort((a, b) => b.score - a.score);
+}
+
+function showPartyGameOver() {
+    const partyGameOver = document.getElementById('partyGameOver');
+    const partyScores = document.getElementById('partyScores');
+    const winnerName = document.getElementById('winnerName');
+    const winnerAnnouncement = document.getElementById('winnerAnnouncement');
+
+    if (!partyGameOver || !partyScores) return;
+
+    const results = getPartyResults();
+
+    // Check for tie
+    const topScore = results[0].score;
+    const winners = results.filter(p => p.score === topScore);
+
+    if (winnerAnnouncement && winnerName) {
+        if (winners.length > 1) {
+            winnerName.textContent = winners.map(w => w.name).join(' & ');
+            winnerAnnouncement.querySelector('.winner-label').textContent = "IT'S A TIE!";
+        } else {
+            winnerName.textContent = results[0].name;
+            winnerAnnouncement.querySelector('.winner-label').textContent = 'WINS!';
+        }
+    }
+
+    // Build scoreboard
+    partyScores.innerHTML = results.map((player, index) => {
+        const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '';
+        const percentage = questions.length > 0 ? Math.round((player.correct / Math.ceil(questions.length / players.length)) * 100) : 0;
+        return `
+            <div class="party-score-row ${index === 0 ? 'winner' : ''}">
+                <span class="party-rank">${medal || (index + 1)}</span>
+                <span class="party-player-name">${player.name}</span>
+                <span class="party-player-score">${player.score} pts</span>
+                <span class="party-player-correct">(${player.correct} correct)</span>
+            </div>
+        `;
+    }).join('');
+
+    partyGameOver.classList.remove('hidden');
+}
+
+function getPartyShareText() {
+    const results = getPartyResults();
+    const themeName = capitalizeFirstLetter(currentTheme);
+
+    let scoreText = results.map((p, i) => {
+        const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}.`;
+        return `${medal} ${p.name}: ${p.score} pts`;
+    }).join('\n');
+
+    return `🎉 Party Quiz Results! 🎉
+
+Theme: ${themeName}
+${scoreText}
+
+Play at: https://squash74.github.io/Gibbon-quiz-master/`;
+}
+
+// ============================================
 // HINT SYSTEM
 // ============================================
 const HINTS_PER_QUIZ = 3;
@@ -845,6 +995,11 @@ async function startQuiz() {
         resetHintsForQuiz();
         updateStreakDisplay();
 
+        // Initialize party mode if enabled
+        if (partyModeEnabled) {
+            initializePlayers();
+        }
+
         // Get questions for the theme (shuffle if enabled)
         let allQuestions = [...categoryData];
         if (shuffleEnabled) {
@@ -862,12 +1017,22 @@ async function startQuiz() {
         themeSelection.classList.add('hidden');
         quizContainer.classList.remove('hidden');
         gameOver.classList.add('hidden');
+        document.getElementById('partyGameOver')?.classList.add('hidden');
         showHomeButton();
 
         currentThemeEl.textContent = capitalizeFirstLetter(currentTheme);
         totalQuestions.textContent = questions.length;
         scoreEl.textContent = score;
         runningPercentEl.textContent = '0';
+
+        // Show/hide party mode elements
+        if (partyModeEnabled) {
+            updateCurrentPlayerDisplay();
+            document.getElementById('singlePlayerScore')?.classList.add('hidden');
+        } else {
+            document.getElementById('currentPlayerDisplay')?.classList.add('hidden');
+            document.getElementById('singlePlayerScore')?.classList.remove('hidden');
+        }
 
         // Show/hide timer display based on preference
         if (timerEnabled) {
@@ -961,9 +1126,15 @@ correctBtn.addEventListener('click', () => {
 
     // Track correct answer and add points
     correctAnswers++;
-    score += 1 + bonus;
+    const pointsEarned = 1 + bonus;
+    score += pointsEarned;
     totalBonusPoints += bonus;
     scoreEl.textContent = score;
+
+    // Party mode: add score to current player
+    if (partyModeEnabled) {
+        addScoreToCurrentPlayer(pointsEarned, true);
+    }
 
     // Show bonus popup if earned
     if (bonus > 0) {
@@ -988,8 +1159,13 @@ incorrectBtn.addEventListener('click', () => {
 
 // Next Question
 nextBtn.addEventListener('click', () => {
+    // Party mode: rotate to next player
+    if (partyModeEnabled) {
+        nextPlayer();
+    }
+
     currentQuestionIndex++;
-    
+
     if (currentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
@@ -1003,6 +1179,13 @@ function endQuiz() {
     hideTimerDisplay();
 
     quizContainer.classList.add('hidden');
+
+    // Show party mode results or regular results
+    if (partyModeEnabled) {
+        showPartyGameOver();
+        return;
+    }
+
     gameOver.classList.remove('hidden');
 
     // Show correct answers and percentage
@@ -1220,6 +1403,7 @@ async function initializeApp() {
     initializeQuestionCountSelector();
     initializeKeyboardNavigation();
     initializeHintButton();
+    initializePartyModeToggle();
 
     // Quiz data is now lazy-loaded per category when a theme is selected
     // No need to pre-load all data
@@ -1233,6 +1417,39 @@ async function initializeApp() {
         clearStatsBtn.addEventListener('click', () => {
             if (confirm('Are you sure you want to reset all your progress? This cannot be undone.')) {
                 clearAllProgress();
+            }
+        });
+    }
+
+    // Party mode button handlers
+    const partyPlayAgainBtn = document.getElementById('partyPlayAgainBtn');
+    if (partyPlayAgainBtn) {
+        partyPlayAgainBtn.addEventListener('click', () => {
+            stopTimer();
+            hideTimerDisplay();
+            container.classList.remove('quiz-active');
+            document.getElementById('partyGameOver')?.classList.add('hidden');
+            themeSelection.classList.remove('hidden');
+            hideHomeButton();
+            updateStatsDisplay();
+            updateThemeButtons();
+        });
+    }
+
+    const partyShareBtn = document.getElementById('partyShareBtn');
+    if (partyShareBtn) {
+        partyShareBtn.addEventListener('click', async () => {
+            const shareText = getPartyShareText();
+            try {
+                await navigator.clipboard.writeText(shareText);
+                partyShareBtn.textContent = '✓ Copied!';
+                partyShareBtn.classList.add('copied');
+                setTimeout(() => {
+                    partyShareBtn.textContent = '📋 Share Results';
+                    partyShareBtn.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                alert('Copy this to share:\n\n' + shareText);
             }
         });
     }

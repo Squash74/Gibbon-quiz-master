@@ -34,12 +34,15 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 ---
 
 ## 4. Multiplayer/Party Mode
-- [ ] Implement "pass and play" mode for 2-4 players
-- [ ] Player name entry screen
-- [ ] Turn-based question answering
-- [ ] Scoreboard showing each player's score at the end
+- [x] Implement "pass and play" mode for 2-4 players
+- [x] Player name entry screen
+- [x] Turn-based question answering
+- [x] Current player indicator with pulsing animation
+- [x] Scoreboard showing each player's score at the end
+- [x] Winner announcement with crown animation
+- [x] Share party results
 
-**Status:** Not started
+**Status:** Complete
 
 ---
 
@@ -245,6 +248,7 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Keyboard Navigation (#11) ✅
 - Question Hints (#14) ✅
 - Mixed Category Mode (#18) ✅
+- Multiplayer/Party Mode (#4) ✅
 
 **Remaining - Low Effort:**
 - (none)
@@ -256,7 +260,6 @@ This document tracks planned feature upgrades for the Gibbon Quiz application.
 - Accessibility Improvements (#19)
 
 **Remaining - Higher Effort:**
-- Multiplayer/Party Mode (#4)
 - Sound Effects (#9)
 - Local Leaderboard (#20)
 - PWA Support (#21)
