@@ -354,7 +354,7 @@ function getShareText() {
         streakText = `\nBest Streak: ${maxStreak} in a row!`;
     }
 
-    return `🎉 Gibbon Quiz Master 🎉
+    return `🎉 Quiz time 🎉
 
 Theme: ${themeName}
 Score: ${score}/${questions.length} (${percentScore}%)${streakText}
