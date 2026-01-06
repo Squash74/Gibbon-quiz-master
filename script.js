@@ -1,5 +1,7 @@
 // Quiz Data - Lazy loaded per category for better performance
 const quizCache = {}; // Cache loaded categories
+const usedQuestionsCache = {}; // Track used questions per theme to prevent repetition
+
 const AVAILABLE_THEMES = [
     'christmas', 'movies', 'places', 'people', 'sport',
     'southafrica', 'international', 'music', 'science',
@@ -514,13 +516,24 @@ function generateHints(answer) {
         hints.push(`Starts with "${revealed}..."`);
     }
 
-    // Hint 3: Partial reveal with blanks
+    // Hint 3: Partial reveal with blanks - ensure we never reveal too much
     let partialReveal = '';
+    const nonSpaceChars = answer.replace(/\s/g, '').length;
+    // Reveal at most 40% of characters (excluding spaces), minimum 2 hidden
+    const maxRevealed = Math.max(2, Math.floor(nonSpaceChars * 0.4));
+    let revealedCount = 0;
+
     for (let i = 0; i < answer.length; i++) {
         if (answer[i] === ' ') {
             partialReveal += '  ';
-        } else if (i === 0 || i === answer.length - 1 || Math.random() < 0.4) {
+        } else if (i === 0) {
+            // Always show first letter
             partialReveal += answer[i];
+            revealedCount++;
+        } else if (revealedCount < maxRevealed && Math.random() < 0.2) {
+            // Lower probability (20%) and respect max limit
+            partialReveal += answer[i];
+            revealedCount++;
         } else {
             partialReveal += '_';
         }
@@ -1002,13 +1015,34 @@ async function startQuiz() {
 
         // Get questions for the theme (shuffle if enabled)
         let allQuestions = [...categoryData];
+
+        // Filter out already-used questions to prevent repetition
+        const themeKey = currentTheme;
+        if (!usedQuestionsCache[themeKey]) {
+            usedQuestionsCache[themeKey] = new Set();
+        }
+
+        // Filter to only unused questions
+        let unusedQuestions = allQuestions.filter((q, idx) =>
+            !usedQuestionsCache[themeKey].has(q.question)
+        );
+
+        // If we've used all questions, reset the cache for this theme
+        if (unusedQuestions.length < selectedQuestionCount) {
+            usedQuestionsCache[themeKey].clear();
+            unusedQuestions = allQuestions;
+        }
+
         if (shuffleEnabled) {
-            shuffleArray(allQuestions);
+            shuffleArray(unusedQuestions);
         }
 
         // Limit to selected question count
-        const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
-        questions = allQuestions.slice(0, maxQuestions);
+        const maxQuestions = Math.min(selectedQuestionCount, unusedQuestions.length);
+        questions = unusedQuestions.slice(0, maxQuestions);
+
+        // Mark these questions as used
+        questions.forEach(q => usedQuestionsCache[themeKey].add(q.question));
 
         hideLoadingState();
 
