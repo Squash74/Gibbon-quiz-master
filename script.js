@@ -33,12 +33,29 @@ async function loadCategoryData(category) {
 async function loadMixedCategoryData() {
     const allQuestions = [];
 
+    // Define category weights - reduce SA-heavy themes to balance the mix
+    const categoryWeights = {
+        'southafrica': 0.5,  // Reduced weight
+        'african': 0.5,      // Reduced weight
+        // All others default to 1.0
+    };
+
     // Load all categories in parallel
     const loadPromises = AVAILABLE_THEMES.map(async (theme) => {
         try {
             const data = await loadCategoryData(theme);
             // Add category info to each question
-            return data.map(q => ({ ...q, category: theme }));
+            const questionsWithCategory = data.map(q => ({ ...q, category: theme }));
+
+            // Apply weight - take a proportional sample from weighted categories
+            const weight = categoryWeights[theme] || 1.0;
+            if (weight < 1.0) {
+                const sampleSize = Math.floor(questionsWithCategory.length * weight);
+                // Shuffle and take sample
+                const shuffled = [...questionsWithCategory].sort(() => Math.random() - 0.5);
+                return shuffled.slice(0, sampleSize);
+            }
+            return questionsWithCategory;
         } catch (error) {
             console.error(`Failed to load ${theme} for mix:`, error);
             return [];
