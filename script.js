@@ -539,18 +539,28 @@ function generateHints(answer, questionText, category) {
     }
 
     // Hint 3: Partial reveal with blanks
+    // Must be consistent with Hint 2:
+    // - Single word: Hint 2 shows first AND last letter, so Hint 3 must too
+    // - Multi-word: Hint 2 shows initials, so Hint 3 shows first letter of each word
     let partialReveal = '';
     const nonSpaceChars = answer.replace(/\s/g, '').length;
     const maxRevealed = Math.max(2, Math.floor(nonSpaceChars * 0.4));
     let revealedCount = 0;
+    const lastCharIndex = answer.length - 1;
 
     for (let i = 0; i < answer.length; i++) {
         if (answer[i] === ' ') {
             partialReveal += '  ';
         } else if (i === 0) {
+            // Always reveal first letter
             partialReveal += answer[i];
             revealedCount++;
         } else if (words.length > 1 && answer[i - 1] === ' ') {
+            // Multi-word: reveal first letter of each word (matches initials from Hint 2)
+            partialReveal += answer[i];
+            revealedCount++;
+        } else if (words.length === 1 && i === lastCharIndex) {
+            // Single word: always reveal last letter (matches Hint 2)
             partialReveal += answer[i];
             revealedCount++;
         } else if (revealedCount < maxRevealed && Math.random() < 0.15) {
