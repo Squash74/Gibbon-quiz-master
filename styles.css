@@ -466,12 +466,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-.btn-hint-top {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    margin-left: auto;
-}
-
 .question-text {
     font-size: 1.3rem;
     color: #333;
@@ -1125,6 +1119,12 @@ header h1 {
 /* ============================================
    HINT SYSTEM STYLES
    ============================================ */
+.hint-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
 .btn-hint {
     background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
     color: white;

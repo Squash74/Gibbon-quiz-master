@@ -860,10 +860,7 @@ function initializeKeyboardNavigation() {
 function initializeHintButton() {
     const hintBtn = document.getElementById('hintBtn');
     if (hintBtn) {
-        hintBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent click from bubbling to question-card
-            useHint();
-        });
+        hintBtn.addEventListener('click', useHint);
     }
 }
 
@@ -1149,11 +1146,7 @@ showAnswerBtn.addEventListener('click', () => {
 });
 
 // Alternative: Click question card to show answer
-document.querySelector('.question-card').addEventListener('click', (e) => {
-    // Don't reveal answer if clicking the hint button
-    if (e.target.closest('#hintBtn')) {
-        return;
-    }
+document.querySelector('.question-card').addEventListener('click', () => {
     if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
         stopTimer(); // Stop the timer when answer is revealed
         answerSection.classList.remove('hidden');
