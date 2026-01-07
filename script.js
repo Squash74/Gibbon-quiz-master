@@ -1,5 +1,7 @@
 // Quiz Data - Lazy loaded per category for better performance
 const quizCache = {}; // Cache loaded categories
+const usedQuestionsCache = {}; // Track used questions per theme to prevent repetition
+
 const AVAILABLE_THEMES = [
     'christmas', 'movies', 'places', 'people', 'sport',
     'southafrica', 'international', 'music', 'science',
@@ -31,12 +33,29 @@ async function loadCategoryData(category) {
 async function loadMixedCategoryData() {
     const allQuestions = [];
 
+    // Define category weights - reduce SA-heavy themes to balance the mix
+    const categoryWeights = {
+        'southafrica': 0.5,  // Reduced weight
+        'african': 0.5,      // Reduced weight
+        // All others default to 1.0
+    };
+
     // Load all categories in parallel
     const loadPromises = AVAILABLE_THEMES.map(async (theme) => {
         try {
             const data = await loadCategoryData(theme);
             // Add category info to each question
-            return data.map(q => ({ ...q, category: theme }));
+            const questionsWithCategory = data.map(q => ({ ...q, category: theme }));
+
+            // Apply weight - take a proportional sample from weighted categories
+            const weight = categoryWeights[theme] || 1.0;
+            if (weight < 1.0) {
+                const sampleSize = Math.floor(questionsWithCategory.length * weight);
+                // Shuffle and take sample
+                const shuffled = [...questionsWithCategory].sort(() => Math.random() - 0.5);
+                return shuffled.slice(0, sampleSize);
+            }
+            return questionsWithCategory;
         } catch (error) {
             console.error(`Failed to load ${theme} for mix:`, error);
             return [];
@@ -514,13 +533,24 @@ function generateHints(answer) {
         hints.push(`Starts with "${revealed}..."`);
     }
 
-    // Hint 3: Partial reveal with blanks
+    // Hint 3: Partial reveal with blanks - ensure we never reveal too much
     let partialReveal = '';
+    const nonSpaceChars = answer.replace(/\s/g, '').length;
+    // Reveal at most 40% of characters (excluding spaces), minimum 2 hidden
+    const maxRevealed = Math.max(2, Math.floor(nonSpaceChars * 0.4));
+    let revealedCount = 0;
+
     for (let i = 0; i < answer.length; i++) {
         if (answer[i] === ' ') {
             partialReveal += '  ';
-        } else if (i === 0 || i === answer.length - 1 || Math.random() < 0.4) {
+        } else if (i === 0) {
+            // Always show first letter
             partialReveal += answer[i];
+            revealedCount++;
+        } else if (revealedCount < maxRevealed && Math.random() < 0.2) {
+            // Lower probability (20%) and respect max limit
+            partialReveal += answer[i];
+            revealedCount++;
         } else {
             partialReveal += '_';
         }
@@ -830,7 +860,10 @@ function initializeKeyboardNavigation() {
 function initializeHintButton() {
     const hintBtn = document.getElementById('hintBtn');
     if (hintBtn) {
-        hintBtn.addEventListener('click', useHint);
+        hintBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent click from bubbling to question-card
+            useHint();
+        });
     }
 }
 
@@ -1002,13 +1035,34 @@ async function startQuiz() {
 
         // Get questions for the theme (shuffle if enabled)
         let allQuestions = [...categoryData];
+
+        // Filter out already-used questions to prevent repetition
+        const themeKey = currentTheme;
+        if (!usedQuestionsCache[themeKey]) {
+            usedQuestionsCache[themeKey] = new Set();
+        }
+
+        // Filter to only unused questions
+        let unusedQuestions = allQuestions.filter((q, idx) =>
+            !usedQuestionsCache[themeKey].has(q.question)
+        );
+
+        // If we've used all questions, reset the cache for this theme
+        if (unusedQuestions.length < selectedQuestionCount) {
+            usedQuestionsCache[themeKey].clear();
+            unusedQuestions = allQuestions;
+        }
+
         if (shuffleEnabled) {
-            shuffleArray(allQuestions);
+            shuffleArray(unusedQuestions);
         }
 
         // Limit to selected question count
-        const maxQuestions = Math.min(selectedQuestionCount, allQuestions.length);
-        questions = allQuestions.slice(0, maxQuestions);
+        const maxQuestions = Math.min(selectedQuestionCount, unusedQuestions.length);
+        questions = unusedQuestions.slice(0, maxQuestions);
+
+        // Mark these questions as used
+        questions.forEach(q => usedQuestionsCache[themeKey].add(q.question));
 
         hideLoadingState();
 
@@ -1095,7 +1149,11 @@ showAnswerBtn.addEventListener('click', () => {
 });
 
 // Alternative: Click question card to show answer
-document.querySelector('.question-card').addEventListener('click', () => {
+document.querySelector('.question-card').addEventListener('click', (e) => {
+    // Don't reveal answer if clicking the hint button
+    if (e.target.closest('#hintBtn')) {
+        return;
+    }
     if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
         stopTimer(); // Stop the timer when answer is revealed
         answerSection.classList.remove('hidden');
