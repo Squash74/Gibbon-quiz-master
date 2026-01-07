@@ -689,9 +689,9 @@ function useHint() {
         currentQuestionHints = generateHints(question.answer, question.question, question.category || currentTheme);
     }
 
-    // Show next hint
+    // Show next hint (cumulative - shows all hints up to current)
     if (currentHintIndex < currentQuestionHints.length) {
-        showHintDisplay(currentQuestionHints[currentHintIndex]);
+        showHintDisplay(currentHintIndex);
         currentHintIndex++;
         hintsRemaining--;
         hintsUsed++;
@@ -707,12 +707,14 @@ function useHint() {
     }
 }
 
-function showHintDisplay(hintText) {
+function showHintDisplay(hintIndex) {
     const hintDisplay = document.getElementById('hintDisplay');
     const hintText_el = document.getElementById('hintText');
 
     if (hintDisplay && hintText_el) {
-        hintText_el.textContent = hintText;
+        // Build cumulative hint showing all hints up to current index
+        const hintsToShow = currentQuestionHints.slice(0, hintIndex + 1);
+        hintText_el.textContent = hintsToShow.join(' | ');
         hintDisplay.classList.remove('hidden');
     }
 }
