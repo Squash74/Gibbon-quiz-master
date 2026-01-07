@@ -1149,7 +1149,11 @@ showAnswerBtn.addEventListener('click', () => {
 });
 
 // Alternative: Click question card to show answer
-document.querySelector('.question-card').addEventListener('click', () => {
+document.querySelector('.question-card').addEventListener('click', (e) => {
+    // Don't reveal answer if clicking the hint button
+    if (e.target.closest('#hintBtn')) {
+        return;
+    }
     if (!answerRevealed && !showAnswerBtn.classList.contains('hidden')) {
         stopTimer(); // Stop the timer when answer is revealed
         answerSection.classList.remove('hidden');
