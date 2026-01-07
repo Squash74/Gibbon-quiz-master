@@ -587,25 +587,31 @@ function generateContextHint(questionText, answer, category) {
         contexts.push('Italian');
     }
 
-    // Profession/type clues
+    // Profession/type clues - only add if NOT already obvious from question
+    // (Don't say "writer" if question asks "who wrote...")
     if (qLower.includes('actor') || qLower.includes('actress')) {
-        contexts.push('actor');
+        // Only hint if question doesn't already mention acting
+        if (!qLower.includes('played') && !qLower.includes('starred')) {
+            contexts.push('actor');
+        }
     } else if (qLower.includes('singer') || qLower.includes('musician') || qLower.includes('band')) {
-        contexts.push('musician');
+        if (!qLower.includes('sang') && !qLower.includes('performed')) {
+            contexts.push('musician');
+        }
     } else if (qLower.includes('author') || qLower.includes('wrote') || qLower.includes('writer')) {
-        contexts.push('writer');
-    } else if (qLower.includes('director')) {
-        contexts.push('director');
-    } else if (qLower.includes('president') || qLower.includes('prime minister') || qLower.includes('politician')) {
-        contexts.push('political figure');
-    } else if (qLower.includes('scientist') || qLower.includes('physicist') || qLower.includes('invented')) {
-        contexts.push('scientist/inventor');
-    } else if (qLower.includes('athlete') || qLower.includes('player') || qLower.includes('footballer')) {
-        contexts.push('athlete');
-    } else if (qLower.includes('painter') || qLower.includes('artist') || qLower.includes('painted')) {
-        contexts.push('artist');
-    } else if (qLower.includes('composer') || qLower.includes('composed')) {
-        contexts.push('composer');
+        // Don't add - already obvious from question
+    } else if (qLower.includes('directed')) {
+        // Don't add - already obvious
+    } else if (qLower.includes('president') || qLower.includes('prime minister')) {
+        // Don't add - already obvious
+    } else if (qLower.includes('invented') || qLower.includes('discovered')) {
+        // Don't add - already obvious
+    } else if (qLower.includes('painted') || qLower.includes('sculpted')) {
+        // Don't add - already obvious
+    } else if (qLower.includes('composed')) {
+        // Don't add - already obvious
+    } else if (qLower.includes('founded') || qLower.includes('created')) {
+        contexts.push('entrepreneur/founder');
     }
 
     // Time period clues
