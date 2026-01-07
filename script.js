@@ -511,13 +511,16 @@ let hintCostPaid = false; // Track if the 1-point cost has been paid
 let currentQuestionHints = []; // Hints for current question
 let currentHintIndex = 0; // Which hint we're on for this question
 
-function generateHints(answer) {
+function generateHints(answer, questionText, category) {
     const hints = [];
     const words = answer.split(' ');
-    const cleanAnswer = answer.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    const qLower = questionText.toLowerCase();
 
-    // Hint 1: Structure hint
-    if (words.length === 1) {
+    // Hint 1: Context hint based on question/category
+    let contextHint = generateContextHint(questionText, answer, category);
+    if (contextHint) {
+        hints.push(contextHint);
+    } else if (words.length === 1) {
         hints.push(`${answer.length} letters, starts with "${answer[0].toUpperCase()}"`);
     } else {
         hints.push(`${words.length} words, ${answer.length} characters total`);
@@ -538,7 +541,6 @@ function generateHints(answer) {
     // Hint 3: Partial reveal with blanks
     let partialReveal = '';
     const nonSpaceChars = answer.replace(/\s/g, '').length;
-    // Reveal about 35-40% of characters
     const maxRevealed = Math.max(2, Math.floor(nonSpaceChars * 0.4));
     let revealedCount = 0;
 
@@ -546,11 +548,9 @@ function generateHints(answer) {
         if (answer[i] === ' ') {
             partialReveal += '  ';
         } else if (i === 0) {
-            // Always show first letter
             partialReveal += answer[i];
             revealedCount++;
         } else if (words.length > 1 && answer[i - 1] === ' ') {
-            // Show first letter of each word for multi-word answers
             partialReveal += answer[i];
             revealedCount++;
         } else if (revealedCount < maxRevealed && Math.random() < 0.15) {
@@ -563,6 +563,94 @@ function generateHints(answer) {
     hints.push(partialReveal);
 
     return hints;
+}
+
+function generateContextHint(questionText, answer, category) {
+    const qLower = questionText.toLowerCase();
+    const words = answer.split(' ');
+
+    // Extract context clues from the question
+    const contexts = [];
+
+    // Nationality/origin clues
+    if (qLower.includes('south african') || qLower.includes('from south africa')) {
+        contexts.push('South African');
+    } else if (qLower.includes('american') || qLower.includes('from america') || qLower.includes('from the us')) {
+        contexts.push('American');
+    } else if (qLower.includes('british') || qLower.includes('from britain') || qLower.includes('from the uk')) {
+        contexts.push('British');
+    } else if (qLower.includes('french')) {
+        contexts.push('French');
+    } else if (qLower.includes('german')) {
+        contexts.push('German');
+    } else if (qLower.includes('italian')) {
+        contexts.push('Italian');
+    }
+
+    // Profession/type clues
+    if (qLower.includes('actor') || qLower.includes('actress')) {
+        contexts.push('actor');
+    } else if (qLower.includes('singer') || qLower.includes('musician') || qLower.includes('band')) {
+        contexts.push('musician');
+    } else if (qLower.includes('author') || qLower.includes('wrote') || qLower.includes('writer')) {
+        contexts.push('writer');
+    } else if (qLower.includes('director')) {
+        contexts.push('director');
+    } else if (qLower.includes('president') || qLower.includes('prime minister') || qLower.includes('politician')) {
+        contexts.push('political figure');
+    } else if (qLower.includes('scientist') || qLower.includes('physicist') || qLower.includes('invented')) {
+        contexts.push('scientist/inventor');
+    } else if (qLower.includes('athlete') || qLower.includes('player') || qLower.includes('footballer')) {
+        contexts.push('athlete');
+    } else if (qLower.includes('painter') || qLower.includes('artist') || qLower.includes('painted')) {
+        contexts.push('artist');
+    } else if (qLower.includes('composer') || qLower.includes('composed')) {
+        contexts.push('composer');
+    }
+
+    // Time period clues
+    if (qLower.match(/\b(19\d{2}|20\d{2})\b/)) {
+        const year = qLower.match(/\b(19\d{2}|20\d{2})\b/)[1];
+        const decade = Math.floor(parseInt(year) / 10) * 10;
+        contexts.push(`${decade}s era`);
+    } else if (qLower.includes('first')) {
+        contexts.push('a pioneer/first');
+    }
+
+    // Build the hint
+    if (contexts.length > 0) {
+        const contextStr = contexts.slice(0, 2).join(' ');
+        if (words.length > 1) {
+            return `${contextStr}, ${words.length} words`;
+        } else {
+            return `${contextStr}, ${answer.length} letters`;
+        }
+    }
+
+    // Fallback to category-based hint
+    if (category) {
+        const categoryHints = {
+            'movies': 'Film-related',
+            'music': 'Music-related',
+            'sport': 'Sports-related',
+            'science': 'Science-related',
+            'history': 'Historical',
+            'food': 'Food & drink',
+            'tvshows': 'TV-related',
+            'places': 'A place/location',
+            'people': 'A person',
+            'wildlife': 'Wildlife/nature'
+        };
+        if (categoryHints[category]) {
+            if (words.length > 1) {
+                return `${categoryHints[category]}, ${words.length} words`;
+            } else {
+                return `${categoryHints[category]}, ${answer.length} letters`;
+            }
+        }
+    }
+
+    return null; // Fall back to default hint
 }
 
 function resetHintsForQuiz() {
@@ -592,7 +680,7 @@ function useHint() {
 
     // Generate hints on first use for this question
     if (currentQuestionHints.length === 0) {
-        currentQuestionHints = generateHints(question.answer);
+        currentQuestionHints = generateHints(question.answer, question.question, question.category || currentTheme);
     }
 
     // Show next hint
