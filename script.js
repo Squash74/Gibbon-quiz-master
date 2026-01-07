@@ -514,29 +514,31 @@ let currentHintIndex = 0; // Which hint we're on for this question
 function generateHints(answer) {
     const hints = [];
     const words = answer.split(' ');
+    const cleanAnswer = answer.replace(/[^a-zA-Z]/g, '').toLowerCase();
 
-    // Hint 1: Number of words + first letter
+    // Hint 1: Structure hint
     if (words.length === 1) {
         hints.push(`${answer.length} letters, starts with "${answer[0].toUpperCase()}"`);
     } else {
-        hints.push(`${words.length} words, starts with "${answer[0].toUpperCase()}"`);
+        hints.push(`${words.length} words, ${answer.length} characters total`);
     }
 
-    // Hint 2: First letter of each word (for multi-word) or more letters revealed
+    // Hint 2: More revealing hint
     if (words.length > 1) {
+        // Show initials for multi-word
         const initials = words.map(w => w[0].toUpperCase()).join('.');
         hints.push(`Initials: ${initials}`);
     } else {
-        // Show first 2-3 letters for single word
-        const revealCount = Math.min(3, Math.ceil(answer.length / 3));
-        const revealed = answer.substring(0, revealCount);
-        hints.push(`Starts with "${revealed}..."`);
+        // For single word: show first and last letter
+        const first = answer[0].toUpperCase();
+        const last = answer[answer.length - 1].toUpperCase();
+        hints.push(`Starts with "${first}", ends with "${last}"`);
     }
 
-    // Hint 3: Partial reveal with blanks - ensure we never reveal too much
+    // Hint 3: Partial reveal with blanks
     let partialReveal = '';
     const nonSpaceChars = answer.replace(/\s/g, '').length;
-    // Reveal at most 40% of characters (excluding spaces), minimum 2 hidden
+    // Reveal about 35-40% of characters
     const maxRevealed = Math.max(2, Math.floor(nonSpaceChars * 0.4));
     let revealedCount = 0;
 
@@ -547,8 +549,11 @@ function generateHints(answer) {
             // Always show first letter
             partialReveal += answer[i];
             revealedCount++;
-        } else if (revealedCount < maxRevealed && Math.random() < 0.2) {
-            // Lower probability (20%) and respect max limit
+        } else if (words.length > 1 && answer[i - 1] === ' ') {
+            // Show first letter of each word for multi-word answers
+            partialReveal += answer[i];
+            revealedCount++;
+        } else if (revealedCount < maxRevealed && Math.random() < 0.15) {
             partialReveal += answer[i];
             revealedCount++;
         } else {
