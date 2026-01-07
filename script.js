@@ -860,7 +860,10 @@ function initializeKeyboardNavigation() {
 function initializeHintButton() {
     const hintBtn = document.getElementById('hintBtn');
     if (hintBtn) {
-        hintBtn.addEventListener('click', useHint);
+        hintBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent click from bubbling to question-card
+            useHint();
+        });
     }
 }
 
